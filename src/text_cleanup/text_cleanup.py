@@ -1,7 +1,6 @@
 import cltk.alphabet.lat as latAlphabet
 import cltk.lemmatize.lat as latLemmatize
 
-from cltk.sentence.lat import LatinPunktSentenceTokenizer
 from cltk.tokenizers.line import LineTokenizer
 
 # TODO: there is also remove_non_latin in cltk
@@ -12,12 +11,6 @@ def create_corpus_by_line(raw_text):
     lowered_text = raw_text.lower()
     tokenizer = LineTokenizer('latin')
     
-    return [ cleanup(t) for t in tokenizer.tokenize(lowered_text) ]
-
-def create_corpus_by_sentence(raw_text):
-    lowered_text = raw_text.lower()
-    tokenizer = LatinPunktSentenceTokenizer()
-
     return [ cleanup(t) for t in tokenizer.tokenize(lowered_text) ]
 
 def jvtext(text):
