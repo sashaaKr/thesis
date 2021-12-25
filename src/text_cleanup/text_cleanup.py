@@ -1,3 +1,4 @@
+import re
 import cltk.alphabet.lat as latAlphabet
 import cltk.lemmatize.lat as latLemmatize
 
@@ -5,7 +6,29 @@ from cltk.tokenizers.line import LineTokenizer
 
 # TODO: there is also remove_non_latin in cltk
 def cleanup(t):
-    return t.strip().replace("„", "").replace("“", "").replace(".", "").replace("?", "").replace("‘","").replace("’", "").replace(":", "").replace(";", "").replace(",", "").replace("  ", " ")
+    # this regex handle (1r) and (49r) references that appear in b_london version
+    # and (112vb) and (117r) that appear in a_zwickau version
+    clean_date = re.sub(r'\([1-9][0-9]?[0-9]?[a-z][a-z]?\)', '', t)
+
+    clean_date = (clean_date
+        .strip()
+        .replace("„", "")
+        .replace("“", "")
+        .replace(".", "")
+        .replace("!", "")
+        .replace("?", "")
+        .replace("‘","")
+        .replace("’", "")
+        .replace(":", "")
+        .replace(";", "")
+        .replace(",", "")
+        .replace("”", "")
+        .replace("(", "")
+        .replace(")", "")
+        .replace("  ", " "))
+
+    # return t.strip().replace("„", "").replace("“", "").replace(".", "").replace("!", "").replace("?", "").replace("‘","").replace("’", "").replace(":", "").replace(";", "").replace(",", "").replace("  ", " ")
+    return clean_date
 
 def create_corpus_by_line(raw_text):
     lowered_text = raw_text.lower()
