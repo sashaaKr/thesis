@@ -36,7 +36,7 @@ def create_corpus_by_line(raw_text):
     
     return [ cleanup(t) for t in tokenizer.tokenize(lowered_text) ]
 
-def jvtext(text):
+def jvtext(text): #TODO: how it can affect style recognition?
     replacer = latAlphabet.JVReplacer()
     return replacer.replace(text)
 
