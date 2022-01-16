@@ -5,9 +5,9 @@ import features.tf_idf.n_gram as thesisTfIdfNgramFeatures
 from sklearn.metrics.pairwise import cosine_similarity
 
 FEATURES = [
-    # ['2_gram', thesisTfIdfNgramFeatures.create_2_gram],
-    # ['3_gram', thesisTfIdfNgramFeatures.create_3_gram],
-    # ['4_gram', thesisTfIdfNgramFeatures.create_4_gram],
+    ['2_gram', thesisTfIdfNgramFeatures.create_2_gram],
+    ['3_gram', thesisTfIdfNgramFeatures.create_3_gram],
+    ['4_gram', thesisTfIdfNgramFeatures.create_4_gram],
     ['5_gram', thesisTfIdfNgramFeatures.create_5_gram]
 ]
 

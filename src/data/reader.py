@@ -5,7 +5,8 @@ A_ZWICKAU_FILE_NAME = "A_Zwickau_RB_I_XII_5 (12).txt"
 B_LONDON_FILE_NAME = "B_London_BL_Add_18929 (6).txt"
 STOP_WORDS_FILE_NAME = "stop_words.json"
 
-ROOT = os.path.join('..') # root related to notebook
+USER_HOME_DIR = os.path.expanduser('~')
+ROOT = os.path.join(USER_HOME_DIR, 'thesis',) 
 
 def get_data_file_path(file_name):
     return os.path.join(ROOT, 'full', file_name)

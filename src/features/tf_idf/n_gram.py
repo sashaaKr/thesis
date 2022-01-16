@@ -1,4 +1,5 @@
 import pandas as pd
+import data.reader as thesisDataReader
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 def get_features(corpus, n_gram):
@@ -20,3 +21,11 @@ def create_4_gram(corpus):
 
 def create_5_gram(corpus):
     return get_features(corpus, 5)
+
+def create_zwickau_5_gram():
+    corpus = thesisDataReader.get_zwickau_corpus()
+    return create_5_gram(corpus)
+
+def create_london_5_gram():
+    corpus = thesisDataReader.get_london_corpus()
+    return create_5_gram(corpus)
