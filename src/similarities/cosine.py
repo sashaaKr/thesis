@@ -68,13 +68,15 @@ def create_version_to_version_5_gram_comparison_csv(
     version_1_corpus, 
     version_1_name, 
     version_2_corpus,
-    version_2_name
+    version_2_name,
+    version_1_section_indexes,
+    version_2_section_indexes
     ):
-    all_best_result, _ = get_cross_version_best_similarities(version_1_corpus, version_2_corpus)
+    all_best_result = get_cross_version_best_similarities(version_1_corpus, version_2_corpus)
 
     data_frame_data = []
     for i, d in enumerate(all_best_result):
-        n_gram_5 = d[3]
+        n_gram_5 = d['5_gram']
 
         similarity_score = n_gram_5[1]
         paragraph = n_gram_5[0]
@@ -82,10 +84,29 @@ def create_version_to_version_5_gram_comparison_csv(
         version_1_text = version_1_corpus[i]
         version_2_text = version_2_corpus[paragraph]
         
-        data = [paragraph, similarity_score, version_1_text, version_2_text]
+        data = [
+            paragraph, 
+            similarity_score, 
+            version_1_text, 
+            version_2_text,
+            int(version_1_section_indexes[i]),
+            int(version_2_section_indexes[paragraph]),
+            i - paragraph,
+            int(version_1_section_indexes[i]) == int(version_2_section_indexes[paragraph])
+
+    ]
         data_frame_data.append(data)
 
-    data_frame_cols = [f'{version_2_name}_p_#', 'similarity_score', version_1_name, version_2_name]
+    data_frame_cols = [
+        f'{version_2_name}_p_#', 
+        'similarity_score', 
+        version_1_name, 
+        version_2_name,
+        f'{version_1_name}_section_index',
+        f'{version_2_name}_section_index',
+        'shift_in_paragraphs',
+        'same_section_similarity'
+        ]
 
     text_to_text_df = pd.DataFrame(data=np.array(data_frame_data), columns=data_frame_cols)
     text_to_text_df.index.rename(f'{version_1_name}_p_#', inplace=True)
