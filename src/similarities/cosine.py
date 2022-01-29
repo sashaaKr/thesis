@@ -2,13 +2,27 @@ import numpy as np
 import pandas as pd
 import data.reader as thesisDataReader
 import features.tf_idf.n_gram as thesisTfIdfNgramFeatures
+import features.count_vectorizer.n_gram as thesisCountVectorizerNgramFeatures
 from sklearn.metrics.pairwise import cosine_similarity
+
+# FEATURE_NAMES = {
+#     # TF_IDF: {},
+#     COUNT_VECTORIZER: {
+#         '2_gram': '2_gram',
+#         '3_gram': '3_gram',
+#         '4_gram': '4_gram',
+#         '5_gram': '5_gram',
+#     }
+# }
 
 FEATURES = [
     ['2_gram', thesisTfIdfNgramFeatures.create_2_gram],
     ['3_gram', thesisTfIdfNgramFeatures.create_3_gram],
     ['4_gram', thesisTfIdfNgramFeatures.create_4_gram],
-    ['5_gram', thesisTfIdfNgramFeatures.create_5_gram]
+    ['5_gram', thesisTfIdfNgramFeatures.create_5_gram],
+
+    # count_vectorizer_features
+    ['count_vectorizer_5_gram', thesisCountVectorizerNgramFeatures.create_5_gram]
 ]
 
 def calculate_p_to_version_similarity(paragraph_to_test, version_corpus, get_features):
@@ -45,14 +59,14 @@ def get_inner_version_best_similarities(version):
         all_best_result[feature_name] = all_best
     return all_best_result
     
-def get_cross_version_best_similarities(version_1, version_2):
+def get_cross_version_best_similarities(version_1, version_2, features=FEATURES):
     all_best_result = []
     
     for i, p in enumerate(version_1):
         all_best = {}
         uniq_best = set()
 
-        for [featire_name, get_feature] in FEATURES:
+        for [featire_name, get_feature] in features:
             smltr = calculate_p_to_version_similarity(p, version_2, get_feature)
             smltr_ordered = get_ordered_similatiries_without_self(smltr)
             
@@ -62,6 +76,10 @@ def get_cross_version_best_similarities(version_1, version_2):
         all_best_result.append(all_best)
         
     return all_best_result
+
+def get_cross_version_5_gram_best_similarities(verstion_1, version_2):
+    features = [['5_gram', thesisTfIdfNgramFeatures.create_5_gram]]
+    return get_cross_version_best_similarities(verstion_1, version_2, features)
 
 def create_version_to_version_5_gram_comparison_csv(
     file_name, 

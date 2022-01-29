@@ -1,0 +1,5122 @@
+[
+  {
+    "data": {
+      "source": "zwickau_0",
+      "target": "london_8",
+      "weight": 0.16006926335170077,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_1",
+      "target": "london_1",
+      "weight": 0.783605972171981,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_2",
+      "target": "london_2",
+      "weight": 0.8969272593860224,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_3",
+      "target": "london_3",
+      "weight": 0.860358094160387,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_4",
+      "target": "london_4",
+      "weight": 0.785025107503545,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_5",
+      "target": "london_5",
+      "weight": 0.8400810955761492,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_6",
+      "target": "london_6",
+      "weight": 0.6322286778840712,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_7",
+      "target": "london_7",
+      "weight": 0.7502278301502107,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_8",
+      "target": "london_8",
+      "weight": 0.7771212705872356,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_9",
+      "target": "london_9",
+      "weight": 0.6551042055784819,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_10",
+      "target": "london_10",
+      "weight": 0.47569529444602565,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_11",
+      "target": "london_11",
+      "weight": 0.7135247664998775,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_12",
+      "target": "london_12",
+      "weight": 0.3855188070772351,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_13",
+      "target": "london_13",
+      "weight": 0.5450317515996842,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_14",
+      "target": "london_14",
+      "weight": 0.653247874416192,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_15",
+      "target": "london_15",
+      "weight": 0.3684004106240543,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_16",
+      "target": "london_16",
+      "weight": 0.5144171531439848,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_17",
+      "target": "london_17",
+      "weight": 0.43940113106481915,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_18",
+      "target": "london_18",
+      "weight": 0.5861561719625039,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_19",
+      "target": "london_19",
+      "weight": 0.5106290646663838,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_20",
+      "target": "london_21",
+      "weight": 0.5697267279684837,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_21",
+      "target": "london_22",
+      "weight": 0.2761798984019958,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_22",
+      "target": "london_23",
+      "weight": 0.6425808490938469,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_23",
+      "target": "london_24",
+      "weight": 0.2870757162495726,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_24",
+      "target": "london_25",
+      "weight": 0.6021856914266912,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_25",
+      "target": "london_26",
+      "weight": 0.6102168238508946,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_26",
+      "target": "london_27",
+      "weight": 0.45816724197477543,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_27",
+      "target": "london_28",
+      "weight": 0.6286172205324623,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_28",
+      "target": "london_29",
+      "weight": 0.6441398196591909,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_29",
+      "target": "london_30",
+      "weight": 0.7288064717128261,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_30",
+      "target": "london_31",
+      "weight": 0.5063221364012799,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_31",
+      "target": "london_32",
+      "weight": 0.6700220923474601,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_32",
+      "target": "london_31",
+      "weight": 0.2499979445254445,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_33",
+      "target": "london_33",
+      "weight": 0.5856757407437566,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_34",
+      "target": "london_35",
+      "weight": 0.3052321265675244,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_35",
+      "target": "london_36",
+      "weight": 0.6462290643971256,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_36",
+      "target": "london_37",
+      "weight": 0.5741716762299777,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_37",
+      "target": "london_26",
+      "weight": 0.11639950625960681,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_38",
+      "target": "london_38",
+      "weight": 0.4573251932335851,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_39",
+      "target": "london_39",
+      "weight": 0.6736397738439643,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_40",
+      "target": "london_40",
+      "weight": 0.700172916507503,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_41",
+      "target": "london_41",
+      "weight": 0.5814448533972265,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_42",
+      "target": "london_42",
+      "weight": 0.7156536555464565,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_43",
+      "target": "london_43",
+      "weight": 0.7524858513157059,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_44",
+      "target": "london_44",
+      "weight": 0.4887831347646233,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_45",
+      "target": "london_45",
+      "weight": 0.39605246571620834,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_46",
+      "target": "london_46",
+      "weight": 0.501220144682536,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_47",
+      "target": "london_45",
+      "weight": 0.1638438044501434,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_48",
+      "target": "london_40",
+      "weight": 0.26783467800706684,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_49",
+      "target": "london_161",
+      "weight": 0.10148511599825112,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_50",
+      "target": "london_47",
+      "weight": 0.5077702145963647,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_51",
+      "target": "london_48",
+      "weight": 0.7612014375853619,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_52",
+      "target": "london_49",
+      "weight": 0.48165097124602124,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_53",
+      "target": "london_50",
+      "weight": 0.46697169819458356,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_54",
+      "target": "london_51",
+      "weight": 0.6297156940262358,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_55",
+      "target": "london_52",
+      "weight": 0.7060824291608131,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_56",
+      "target": "london_53",
+      "weight": 0.5611483768906589,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_57",
+      "target": "london_72",
+      "weight": 0.22349524911278879,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_58",
+      "target": "london_54",
+      "weight": 0.5446075701041057,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_59",
+      "target": "london_55",
+      "weight": 0.646580796945271,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_60",
+      "target": "london_56",
+      "weight": 0.33593613504107817,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_61",
+      "target": "london_57",
+      "weight": 0.4553807494776466,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_62",
+      "target": "london_58",
+      "weight": 0.46199882972892803,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_63",
+      "target": "london_59",
+      "weight": 0.6560706440459083,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_64",
+      "target": "london_60",
+      "weight": 0.5326092264752618,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_65",
+      "target": "london_61",
+      "weight": 0.5036609145002442,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_66",
+      "target": "london_63",
+      "weight": 0.5276719458833337,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_67",
+      "target": "london_64",
+      "weight": 0.5457098522427557,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_68",
+      "target": "london_65",
+      "weight": 0.4784816963773827,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_69",
+      "target": "london_68",
+      "weight": 0.7656260728038548,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_70",
+      "target": "london_53",
+      "weight": 0.42135701798200764,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_71",
+      "target": "london_242",
+      "weight": 0.17981130652404398,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_72",
+      "target": "london_67",
+      "weight": 0.2977263230466291,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_73",
+      "target": "london_73",
+      "weight": 0.6086746111369431,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_74",
+      "target": "london_74",
+      "weight": 0.5636488733142498,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_75",
+      "target": "london_75",
+      "weight": 0.2095398578061843,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_76",
+      "target": "london_76",
+      "weight": 0.4762466857402742,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_77",
+      "target": "london_77",
+      "weight": 0.42921682541643774,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_78",
+      "target": "london_65",
+      "weight": 0.4642987954761093,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_79",
+      "target": "london_66",
+      "weight": 0.3951034382917986,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_80",
+      "target": "london_69",
+      "weight": 0.7454166744879547,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_81",
+      "target": "london_70",
+      "weight": 0.6824132896308178,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_82",
+      "target": "london_71",
+      "weight": 0.7259184529597918,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_83",
+      "target": "london_149",
+      "weight": 0.14796717963364103,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_84",
+      "target": "london_67",
+      "weight": 0.4775051158466137,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_85",
+      "target": "london_79",
+      "weight": 0.31531844890725674,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_86",
+      "target": "london_80",
+      "weight": 0.7045163032722007,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_87",
+      "target": "london_82",
+      "weight": 0.5066379374282319,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_88",
+      "target": "london_83",
+      "weight": 0.6538799076969856,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_89",
+      "target": "london_85",
+      "weight": 0.44234195207589366,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_90",
+      "target": "london_84",
+      "weight": 0.40087146765708387,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_91",
+      "target": "london_74",
+      "weight": 0.09772621246956571,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_92",
+      "target": "london_86",
+      "weight": 0.32296305835808514,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_93",
+      "target": "london_86",
+      "weight": 0.5230342066890811,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_94",
+      "target": "london_87",
+      "weight": 0.543295330884757,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_95",
+      "target": "london_88",
+      "weight": 0.7411342468610606,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_96",
+      "target": "london_89",
+      "weight": 0.28062481680945184,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_97",
+      "target": "london_90",
+      "weight": 0.6726994199879759,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_98",
+      "target": "london_91",
+      "weight": 0.4116857682195298,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_99",
+      "target": "london_92",
+      "weight": 0.39359291674497704,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_100",
+      "target": "london_93",
+      "weight": 0.4044883307038077,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_101",
+      "target": "london_94",
+      "weight": 0.6366492698380015,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_102",
+      "target": "london_95",
+      "weight": 0.28892974565470736,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_103",
+      "target": "london_95",
+      "weight": 0.3461613186919425,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_104",
+      "target": "london_97",
+      "weight": 0.6852581635761096,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_105",
+      "target": "london_98",
+      "weight": 0.6545921112953195,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_106",
+      "target": "london_99",
+      "weight": 0.2173537465817167,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_107",
+      "target": "london_100",
+      "weight": 0.5528563363976304,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_108",
+      "target": "london_101",
+      "weight": 0.612510182468956,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_109",
+      "target": "london_102",
+      "weight": 0.5725871352715205,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_110",
+      "target": "london_103",
+      "weight": 0.601392536645957,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_111",
+      "target": "london_110",
+      "weight": 0.3431697078326238,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_112",
+      "target": "london_102",
+      "weight": 0.41127023147172753,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_113",
+      "target": "london_113",
+      "weight": 0.5194352339383769,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_114",
+      "target": "london_106",
+      "weight": 0.5665321573297385,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_115",
+      "target": "london_107",
+      "weight": 0.5276088665745633,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_116",
+      "target": "london_108",
+      "weight": 0.6392624905105417,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_117",
+      "target": "london_110",
+      "weight": 0.5443089058930767,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_118",
+      "target": "london_111",
+      "weight": 0.7205831356853014,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_119",
+      "target": "london_112",
+      "weight": 0.5716674510889597,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_120",
+      "target": "london_114",
+      "weight": 0.3963807594799275,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_121",
+      "target": "london_117",
+      "weight": 0.6029617111908643,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_122",
+      "target": "london_116",
+      "weight": 0.6235902843411133,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_123",
+      "target": "london_118",
+      "weight": 0.8017622875905459,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_124",
+      "target": "london_119",
+      "weight": 0.6744285531723332,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_125",
+      "target": "london_120",
+      "weight": 0.7697266634234137,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_126",
+      "target": "london_121",
+      "weight": 0.5670166975523268,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_127",
+      "target": "london_122",
+      "weight": 0.34437212194304756,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_128",
+      "target": "london_123",
+      "weight": 0.45548953017057275,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_129",
+      "target": "london_124",
+      "weight": 0.6507496894083652,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_130",
+      "target": "london_125",
+      "weight": 0.6167026873452195,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_131",
+      "target": "london_126",
+      "weight": 0.5300726518447401,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_132",
+      "target": "london_127",
+      "weight": 0.21192265071368424,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_133",
+      "target": "london_127",
+      "weight": 0.30044549312107083,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_134",
+      "target": "london_258",
+      "weight": 0.1623225068021774,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_135",
+      "target": "london_130",
+      "weight": 0.309410456998046,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_136",
+      "target": "london_131",
+      "weight": 0.4342451613031403,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_137",
+      "target": "london_132",
+      "weight": 0.492306707930547,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_138",
+      "target": "london_133",
+      "weight": 0.7675271787043203,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_139",
+      "target": "london_134",
+      "weight": 0.5617272893409768,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_140",
+      "target": "london_135",
+      "weight": 0.3729490507935675,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_141",
+      "target": "london_136",
+      "weight": 0.5819406411199505,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_142",
+      "target": "london_137",
+      "weight": 0.5936791588608208,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_143",
+      "target": "london_138",
+      "weight": 0.6332852164954884,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_144",
+      "target": "london_139",
+      "weight": 0.428044609211183,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_145",
+      "target": "london_140",
+      "weight": 0.4205367804309044,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_146",
+      "target": "london_141",
+      "weight": 0.5599945637996288,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_147",
+      "target": "london_142",
+      "weight": 0.2986862633896635,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_148",
+      "target": "london_143",
+      "weight": 0.20050409272030614,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_149",
+      "target": "london_144",
+      "weight": 0.6229277306599088,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_150",
+      "target": "london_145",
+      "weight": 0.3270682017142658,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_151",
+      "target": "london_146",
+      "weight": 0.31311689775063617,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_152",
+      "target": "london_147",
+      "weight": 0.6595416819316269,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_153",
+      "target": "london_148",
+      "weight": 0.3167169302002347,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_154",
+      "target": "london_150",
+      "weight": 0.753055206082998,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_155",
+      "target": "london_151",
+      "weight": 0.6595986780325769,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_156",
+      "target": "london_152",
+      "weight": 0.16266438498146707,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_157",
+      "target": "london_152",
+      "weight": 0.5666145101994154,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_158",
+      "target": "london_153",
+      "weight": 0.20913234964415336,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_159",
+      "target": "london_155",
+      "weight": 0.12651280396116268,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_160",
+      "target": "london_155",
+      "weight": 0.2648253785660932,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_161",
+      "target": "london_156",
+      "weight": 0.6517083653283274,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_162",
+      "target": "london_157",
+      "weight": 0.289661712683287,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_163",
+      "target": "london_158",
+      "weight": 0.3195788041588358,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_164",
+      "target": "london_154",
+      "weight": 0.4822528005254542,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_165",
+      "target": "london_160",
+      "weight": 0.17942157068352627,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_166",
+      "target": "london_206",
+      "weight": 0.26635079440709175,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_167",
+      "target": "london_161",
+      "weight": 0.6569898630678502,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_168",
+      "target": "london_5",
+      "weight": 0.09146535881825511,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_169",
+      "target": "london_162",
+      "weight": 0.7627196045603869,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_170",
+      "target": "london_193",
+      "weight": 0.8164938131445769,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_171",
+      "target": "london_194",
+      "weight": 0.8483030250482633,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_172",
+      "target": "london_195",
+      "weight": 0.5782388284644673,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_173",
+      "target": "london_163",
+      "weight": 0.7353758949444806,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_174",
+      "target": "london_164",
+      "weight": 0.5167171305967317,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_175",
+      "target": "london_165",
+      "weight": 0.5584045016749214,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_176",
+      "target": "london_166",
+      "weight": 0.7437124461104702,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_177",
+      "target": "london_167",
+      "weight": 0.8386556614500791,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_178",
+      "target": "london_168",
+      "weight": 0.6073037839503358,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_179",
+      "target": "london_169",
+      "weight": 0.7436792949773147,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_180",
+      "target": "london_170",
+      "weight": 0.7847573090160564,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_181",
+      "target": "london_171",
+      "weight": 0.6353561890001476,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_182",
+      "target": "london_172",
+      "weight": 0.6029665273083802,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_183",
+      "target": "london_173",
+      "weight": 0.7497842020577972,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_184",
+      "target": "london_174",
+      "weight": 0.6545094480030864,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_185",
+      "target": "london_176",
+      "weight": 0.6182642320824512,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_186",
+      "target": "london_177",
+      "weight": 0.6053213432848085,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_187",
+      "target": "london_178",
+      "weight": 0.7885142585881857,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_188",
+      "target": "london_179",
+      "weight": 0.6328727665562774,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_189",
+      "target": "london_180",
+      "weight": 0.47225268880841165,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_190",
+      "target": "london_181",
+      "weight": 0.36053948315827833,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_191",
+      "target": "london_182",
+      "weight": 0.627977229014735,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_192",
+      "target": "london_183",
+      "weight": 0.48228439674519874,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_193",
+      "target": "london_184",
+      "weight": 0.6080262832736099,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_194",
+      "target": "london_185",
+      "weight": 0.656262680229633,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_195",
+      "target": "london_186",
+      "weight": 0.7340215242410182,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_196",
+      "target": "london_187",
+      "weight": 0.7335193013256927,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_197",
+      "target": "london_188",
+      "weight": 0.5153332626042783,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_198",
+      "target": "london_189",
+      "weight": 0.5344308933719745,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_199",
+      "target": "london_190",
+      "weight": 0.3438066935994242,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_200",
+      "target": "london_191",
+      "weight": 0.7201224947512851,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_201",
+      "target": "london_192",
+      "weight": 0.2652188549516556,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_202",
+      "target": "london_129",
+      "weight": 0.1578312301206244,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_203",
+      "target": "london_211",
+      "weight": 0.4164894011529104,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_204",
+      "target": "london_212",
+      "weight": 0.5271146100833489,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_205",
+      "target": "london_210",
+      "weight": 0.2732406360491901,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_206",
+      "target": "london_258",
+      "weight": 0.36279041683402097,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_207",
+      "target": "london_213",
+      "weight": 0.3651561064556461,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_208",
+      "target": "london_213",
+      "weight": 0.2231332895381567,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_209",
+      "target": "london_216",
+      "weight": 0.28723846971481265,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_210",
+      "target": "london_217",
+      "weight": 0.45974219961068535,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_211",
+      "target": "london_218",
+      "weight": 0.37452339179211036,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_212",
+      "target": "london_220",
+      "weight": 0.46088513368469336,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_213",
+      "target": "london_222",
+      "weight": 0.6580330638075169,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_214",
+      "target": "london_223",
+      "weight": 0.1951390633024173,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_215",
+      "target": "london_224",
+      "weight": 0.742964011370067,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_216",
+      "target": "london_225",
+      "weight": 0.5358051047943049,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_217",
+      "target": "london_220",
+      "weight": 0.08641141672469803,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_218",
+      "target": "london_226",
+      "weight": 0.409728331085012,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_219",
+      "target": "london_227",
+      "weight": 0.2428234502956333,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_220",
+      "target": "london_227",
+      "weight": 0.144297208416196,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_221",
+      "target": "london_228",
+      "weight": 0.24207362974237898,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_222",
+      "target": "london_227",
+      "weight": 0.08270139426808827,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_223",
+      "target": "london_230",
+      "weight": 0.3968166238844937,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_224",
+      "target": "london_231",
+      "weight": 0.2688776999660891,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_225",
+      "target": "london_132",
+      "weight": 0.20498641950322574,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_226",
+      "target": "london_232",
+      "weight": 0.2566199480868837,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_227",
+      "target": "london_233",
+      "weight": 0.6403356652518775,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_228",
+      "target": "london_234",
+      "weight": 0.4477507805346797,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_229",
+      "target": "london_235",
+      "weight": 0.509729890713353,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_230",
+      "target": "london_231",
+      "weight": 0.2593516538054621,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_231",
+      "target": "london_231",
+      "weight": 0.11860759261400777,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_232",
+      "target": "london_236",
+      "weight": 0.7318571869484466,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_233",
+      "target": "london_237",
+      "weight": 0.6408988446850269,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_234",
+      "target": "london_238",
+      "weight": 0.6647993192162268,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_235",
+      "target": "london_239",
+      "weight": 0.828990405377399,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_236",
+      "target": "london_240",
+      "weight": 0.7497170744642357,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_237",
+      "target": "london_241",
+      "weight": 0.7170733463234328,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_238",
+      "target": "london_242",
+      "weight": 0.8146102630376341,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_239",
+      "target": "london_243",
+      "weight": 0.7821458802923716,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_240",
+      "target": "london_244",
+      "weight": 0.8072497062431476,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_241",
+      "target": "london_245",
+      "weight": 0.9324012145475298,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_242",
+      "target": "london_246",
+      "weight": 0.8838851764741833,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_243",
+      "target": "london_247",
+      "weight": 0.9699264218404949,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_244",
+      "target": "london_248",
+      "weight": 0.8215688717557748,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_245",
+      "target": "london_249",
+      "weight": 0.9191359156587191,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_246",
+      "target": "london_250",
+      "weight": 0.9090852086368125,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_247",
+      "target": "london_251",
+      "weight": 0.6978286315470463,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_248",
+      "target": "london_252",
+      "weight": 0.967808431181606,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_249",
+      "target": "london_253",
+      "weight": 0.9722489319719916,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_250",
+      "target": "london_254",
+      "weight": 0.8849551126234737,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_251",
+      "target": "london_255",
+      "weight": 0.821134802040839,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_252",
+      "target": "london_256",
+      "weight": 0.6965184219960532,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_253",
+      "target": "london_257",
+      "weight": 0.6780066364115073,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_254",
+      "target": "london_260",
+      "weight": 0.7049499258131253,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_255",
+      "target": "london_261",
+      "weight": 0.8670151048727527,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_256",
+      "target": "london_196",
+      "weight": 0.3785931786989825,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_257",
+      "target": "london_197",
+      "weight": 0.5741569876674794,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_258",
+      "target": "london_198",
+      "weight": 0.5796554417514429,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_259",
+      "target": "london_199",
+      "weight": 0.6649402660096407,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_260",
+      "target": "london_200",
+      "weight": 0.5840269413026036,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_261",
+      "target": "london_201",
+      "weight": 0.6059877293402756,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_262",
+      "target": "london_202",
+      "weight": 0.5351977059528649,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_263",
+      "target": "london_203",
+      "weight": 0.5679896621737511,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_264",
+      "target": "london_204",
+      "weight": 0.6603617869734267,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_265",
+      "target": "london_205",
+      "weight": 0.23997604449177293,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_266",
+      "target": "london_206",
+      "weight": 0.2207351956230238,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_267",
+      "target": "london_207",
+      "weight": 0.33135342301816906,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_268",
+      "target": "london_208",
+      "weight": 0.4266859394231749,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_269",
+      "target": "london_262",
+      "weight": 0.864604376149841,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_270",
+      "target": "london_263",
+      "weight": 0.907917117370677,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_271",
+      "target": "london_264",
+      "weight": 0.5084614952499994,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_272",
+      "target": "london_264",
+      "weight": 0.8094042965505052,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_273",
+      "target": "london_265",
+      "weight": 0.9151954988136456,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_274",
+      "target": "london_266",
+      "weight": 0.9187461361663033,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_275",
+      "target": "london_267",
+      "weight": 0.8958983263807605,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_276",
+      "target": "london_268",
+      "weight": 0.2735725171242304,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_277",
+      "target": "london_268",
+      "weight": 0.683557350611414,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_278",
+      "target": "london_269",
+      "weight": 0.8017896758765984,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_279",
+      "target": "london_271",
+      "weight": 0.8056128686302925,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_280",
+      "target": "london_272",
+      "weight": 0.844251068910906,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_281",
+      "target": "london_273",
+      "weight": 0.9090134502702395,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_282",
+      "target": "london_274",
+      "weight": 0.8809384714226105,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_283",
+      "target": "london_275",
+      "weight": 0.9059857351262062,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_284",
+      "target": "london_276",
+      "weight": 0.9096184629153392,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_285",
+      "target": "london_277",
+      "weight": 0.9309316042268094,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_286",
+      "target": "london_278",
+      "weight": 0.835140732410048,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_287",
+      "target": "london_279",
+      "weight": 0.9213196564306868,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_288",
+      "target": "london_280",
+      "weight": 0.8957612112036558,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_289",
+      "target": "london_281",
+      "weight": 0.8871981018289142,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_290",
+      "target": "london_282",
+      "weight": 0.868761499237182,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_291",
+      "target": "london_283",
+      "weight": 0.9115065909957079,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_292",
+      "target": "london_284",
+      "weight": 0.8921217509696183,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_293",
+      "target": "london_285",
+      "weight": 0.7982180469682993,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_294",
+      "target": "london_286",
+      "weight": 0.960299127155445,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_295",
+      "target": "london_287",
+      "weight": 0.8200381792853533,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_296",
+      "target": "london_288",
+      "weight": 0.8859778156796656,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_297",
+      "target": "london_289",
+      "weight": 0.9066584753885922,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_298",
+      "target": "london_290",
+      "weight": 0.7908671798758272,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_299",
+      "target": "london_291",
+      "weight": 0.8883184543759575,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_300",
+      "target": "london_292",
+      "weight": 0.88153547363103,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_301",
+      "target": "london_293",
+      "weight": 0.8975936237173234,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_302",
+      "target": "london_294",
+      "weight": 0.8407156198300414,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_303",
+      "target": "london_295",
+      "weight": 0.9016844644048363,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_304",
+      "target": "london_296",
+      "weight": 0.8915287663487699,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_305",
+      "target": "london_297",
+      "weight": 0.8376967372966045,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_306",
+      "target": "london_298",
+      "weight": 0.8222888563889901,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_307",
+      "target": "london_299",
+      "weight": 0.879555764465333,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_308",
+      "target": "london_300",
+      "weight": 0.8589250047562943,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_309",
+      "target": "london_301",
+      "weight": 0.8823707512465172,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_310",
+      "target": "london_302",
+      "weight": 0.861026794838145,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_311",
+      "target": "london_303",
+      "weight": 0.8160243903211226,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_312",
+      "target": "london_304",
+      "weight": 0.6873307549179453,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_313",
+      "target": "london_305",
+      "weight": 0.9338537111300209,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_314",
+      "target": "london_306",
+      "weight": 0.9339347349929786,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_315",
+      "target": "london_307",
+      "weight": 0.8368981110351056,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_316",
+      "target": "london_308",
+      "weight": 0.8541183458933486,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_317",
+      "target": "london_309",
+      "weight": 0.8952536571792925,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_318",
+      "target": "london_310",
+      "weight": 0.8425027117375292,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_319",
+      "target": "london_311",
+      "weight": 0.8102836812548742,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_320",
+      "target": "london_312",
+      "weight": 0.7971678041220638,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "zwickau_321",
+      "target": "london_19",
+      "weight": 0.08297797097884521,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_0",
+      "target": "zwickau_218",
+      "weight": 0.09413564509476889,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_1",
+      "target": "zwickau_1",
+      "weight": 0.7829597577102049,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_2",
+      "target": "zwickau_2",
+      "weight": 0.8975286768073327,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_3",
+      "target": "zwickau_3",
+      "weight": 0.8622085112751442,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_4",
+      "target": "zwickau_4",
+      "weight": 0.7891999341624071,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_5",
+      "target": "zwickau_5",
+      "weight": 0.8414421966084724,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_6",
+      "target": "zwickau_6",
+      "weight": 0.6370685726924131,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_7",
+      "target": "zwickau_7",
+      "weight": 0.7454428878920413,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_8",
+      "target": "zwickau_8",
+      "weight": 0.7827098905936879,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_9",
+      "target": "zwickau_9",
+      "weight": 0.6539085634974665,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_10",
+      "target": "zwickau_10",
+      "weight": 0.47784609519079313,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_11",
+      "target": "zwickau_11",
+      "weight": 0.7119176216232073,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_12",
+      "target": "zwickau_12",
+      "weight": 0.38683021103936543,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_13",
+      "target": "zwickau_13",
+      "weight": 0.5314835588147263,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_14",
+      "target": "zwickau_14",
+      "weight": 0.6519998104171145,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_15",
+      "target": "zwickau_15",
+      "weight": 0.3611591408994305,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_16",
+      "target": "zwickau_16",
+      "weight": 0.5157015100304713,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_17",
+      "target": "zwickau_17",
+      "weight": 0.43657127079465174,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_18",
+      "target": "zwickau_18",
+      "weight": 0.5886108108691093,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_19",
+      "target": "zwickau_19",
+      "weight": 0.5073336149281318,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_20",
+      "target": "zwickau_20",
+      "weight": 0.1403385899441687,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_21",
+      "target": "zwickau_20",
+      "weight": 0.5735837604270857,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_22",
+      "target": "zwickau_21",
+      "weight": 0.2746514728957211,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_23",
+      "target": "zwickau_22",
+      "weight": 0.6399663730043801,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_24",
+      "target": "zwickau_23",
+      "weight": 0.282203408493629,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_25",
+      "target": "zwickau_24",
+      "weight": 0.6018162248800598,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_26",
+      "target": "zwickau_25",
+      "weight": 0.6086990136171079,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_27",
+      "target": "zwickau_26",
+      "weight": 0.46516599089696004,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_28",
+      "target": "zwickau_27",
+      "weight": 0.6328336004502578,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_29",
+      "target": "zwickau_28",
+      "weight": 0.6404891687432247,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_30",
+      "target": "zwickau_29",
+      "weight": 0.7336300722861325,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_31",
+      "target": "zwickau_30",
+      "weight": 0.5081418859101262,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_32",
+      "target": "zwickau_31",
+      "weight": 0.6785885534285434,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_33",
+      "target": "zwickau_33",
+      "weight": 0.588778293957277,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_34",
+      "target": "zwickau_46",
+      "weight": 0.13073354761756853,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_35",
+      "target": "zwickau_34",
+      "weight": 0.3079250818186695,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_36",
+      "target": "zwickau_35",
+      "weight": 0.6509307022746502,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_37",
+      "target": "zwickau_36",
+      "weight": 0.5718275441405438,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_38",
+      "target": "zwickau_38",
+      "weight": 0.46146049868287625,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_39",
+      "target": "zwickau_39",
+      "weight": 0.6677844869775812,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_40",
+      "target": "zwickau_40",
+      "weight": 0.6989520863027571,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_41",
+      "target": "zwickau_41",
+      "weight": 0.5749130827541526,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_42",
+      "target": "zwickau_42",
+      "weight": 0.7158528143407176,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_43",
+      "target": "zwickau_43",
+      "weight": 0.7452992765448718,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_44",
+      "target": "zwickau_44",
+      "weight": 0.491965271931546,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_45",
+      "target": "zwickau_45",
+      "weight": 0.40063049305837906,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_46",
+      "target": "zwickau_46",
+      "weight": 0.49773430607362745,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_47",
+      "target": "zwickau_50",
+      "weight": 0.5069045079109079,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_48",
+      "target": "zwickau_51",
+      "weight": 0.7616487650235302,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_49",
+      "target": "zwickau_52",
+      "weight": 0.4870334963198796,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_50",
+      "target": "zwickau_53",
+      "weight": 0.47651940376811003,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_51",
+      "target": "zwickau_54",
+      "weight": 0.6369420514791025,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_52",
+      "target": "zwickau_55",
+      "weight": 0.7039602438762316,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_53",
+      "target": "zwickau_56",
+      "weight": 0.5692063549328277,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_54",
+      "target": "zwickau_58",
+      "weight": 0.5451278682262095,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_55",
+      "target": "zwickau_59",
+      "weight": 0.645625052673694,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_56",
+      "target": "zwickau_60",
+      "weight": 0.3508831997525934,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_57",
+      "target": "zwickau_61",
+      "weight": 0.470370344735871,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_58",
+      "target": "zwickau_62",
+      "weight": 0.45918611833479744,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_59",
+      "target": "zwickau_63",
+      "weight": 0.6679625406510313,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_60",
+      "target": "zwickau_64",
+      "weight": 0.5333291686866992,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_61",
+      "target": "zwickau_65",
+      "weight": 0.5168443163441753,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_62",
+      "target": "zwickau_64",
+      "weight": 0.3215486685844347,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_63",
+      "target": "zwickau_66",
+      "weight": 0.520589085295207,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_64",
+      "target": "zwickau_67",
+      "weight": 0.5550668479659798,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_65",
+      "target": "zwickau_68",
+      "weight": 0.49048403325554646,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_66",
+      "target": "zwickau_79",
+      "weight": 0.39873583612333396,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_67",
+      "target": "zwickau_84",
+      "weight": 0.47331792382548504,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_68",
+      "target": "zwickau_69",
+      "weight": 0.7591952191340969,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_69",
+      "target": "zwickau_80",
+      "weight": 0.7446292950753503,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_70",
+      "target": "zwickau_81",
+      "weight": 0.6865068455629225,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_71",
+      "target": "zwickau_82",
+      "weight": 0.7291104754631951,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_72",
+      "target": "zwickau_57",
+      "weight": 0.23033161670699792,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_73",
+      "target": "zwickau_73",
+      "weight": 0.6132632552805963,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_74",
+      "target": "zwickau_74",
+      "weight": 0.5590724099877705,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_75",
+      "target": "zwickau_75",
+      "weight": 0.21608772095076975,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_76",
+      "target": "zwickau_76",
+      "weight": 0.4731431423091496,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_77",
+      "target": "zwickau_77",
+      "weight": 0.4240394561431313,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_78",
+      "target": "zwickau_95",
+      "weight": 0.1307669797118022,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_79",
+      "target": "zwickau_85",
+      "weight": 0.3173456487476506,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_80",
+      "target": "zwickau_86",
+      "weight": 0.7056502725489788,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_81",
+      "target": "zwickau_19",
+      "weight": 0.09918221742357955,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_82",
+      "target": "zwickau_87",
+      "weight": 0.5089322752472177,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_83",
+      "target": "zwickau_88",
+      "weight": 0.648522724487621,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_84",
+      "target": "zwickau_90",
+      "weight": 0.40139058407163364,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_85",
+      "target": "zwickau_89",
+      "weight": 0.441584102992455,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_86",
+      "target": "zwickau_93",
+      "weight": 0.5238306090419473,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_87",
+      "target": "zwickau_94",
+      "weight": 0.5514949235074642,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_88",
+      "target": "zwickau_95",
+      "weight": 0.7456665541946206,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_89",
+      "target": "zwickau_96",
+      "weight": 0.29413096863076366,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_90",
+      "target": "zwickau_97",
+      "weight": 0.6811654552561088,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_91",
+      "target": "zwickau_98",
+      "weight": 0.40940172976086364,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_92",
+      "target": "zwickau_99",
+      "weight": 0.39853442013156615,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_93",
+      "target": "zwickau_100",
+      "weight": 0.4014679848812843,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_94",
+      "target": "zwickau_101",
+      "weight": 0.6344728591629054,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_95",
+      "target": "zwickau_103",
+      "weight": 0.3557294451724981,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_96",
+      "target": "zwickau_103",
+      "weight": 0.32689959570354415,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_97",
+      "target": "zwickau_104",
+      "weight": 0.6898737346649889,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_98",
+      "target": "zwickau_105",
+      "weight": 0.6545621334624573,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_99",
+      "target": "zwickau_106",
+      "weight": 0.2326043405149067,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_100",
+      "target": "zwickau_107",
+      "weight": 0.5597965904830629,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_101",
+      "target": "zwickau_108",
+      "weight": 0.6133576962037762,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_102",
+      "target": "zwickau_109",
+      "weight": 0.5734333321455172,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_103",
+      "target": "zwickau_110",
+      "weight": 0.6089122948391392,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_104",
+      "target": "zwickau_112",
+      "weight": 0.1536521534952752,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_105",
+      "target": "zwickau_112",
+      "weight": 0.27284350341437036,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_106",
+      "target": "zwickau_114",
+      "weight": 0.5718006888495649,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_107",
+      "target": "zwickau_115",
+      "weight": 0.5374537058158565,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_108",
+      "target": "zwickau_116",
+      "weight": 0.6488166115633681,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_109",
+      "target": "zwickau_56",
+      "weight": 0.13167129301960856,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_110",
+      "target": "zwickau_117",
+      "weight": 0.5411855654727659,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_111",
+      "target": "zwickau_118",
+      "weight": 0.7277532249391828,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_112",
+      "target": "zwickau_119",
+      "weight": 0.574753322968709,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_113",
+      "target": "zwickau_113",
+      "weight": 0.5157785879857784,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_114",
+      "target": "zwickau_120",
+      "weight": 0.4057022057724336,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_115",
+      "target": "zwickau_121",
+      "weight": 0.3052520911387863,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_116",
+      "target": "zwickau_122",
+      "weight": 0.6299651624771555,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_117",
+      "target": "zwickau_121",
+      "weight": 0.6068403670184427,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_118",
+      "target": "zwickau_123",
+      "weight": 0.802913542492367,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_119",
+      "target": "zwickau_124",
+      "weight": 0.6767781510401792,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_120",
+      "target": "zwickau_125",
+      "weight": 0.7692306157115895,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_121",
+      "target": "zwickau_126",
+      "weight": 0.5717335451194965,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_122",
+      "target": "zwickau_127",
+      "weight": 0.3494121757152188,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_123",
+      "target": "zwickau_128",
+      "weight": 0.4513800993688032,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_124",
+      "target": "zwickau_129",
+      "weight": 0.6540158125188203,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_125",
+      "target": "zwickau_130",
+      "weight": 0.6225126506889395,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_126",
+      "target": "zwickau_131",
+      "weight": 0.5303486709080161,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_127",
+      "target": "zwickau_133",
+      "weight": 0.2961423792797787,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_128",
+      "target": "zwickau_74",
+      "weight": 0.08092273145705721,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_129",
+      "target": "zwickau_202",
+      "weight": 0.16358968542124597,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_130",
+      "target": "zwickau_135",
+      "weight": 0.3091888883184528,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_131",
+      "target": "zwickau_136",
+      "weight": 0.43604372132384245,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_132",
+      "target": "zwickau_137",
+      "weight": 0.49686715035207385,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_133",
+      "target": "zwickau_138",
+      "weight": 0.7766344548939744,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_134",
+      "target": "zwickau_139",
+      "weight": 0.5630024614103456,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_135",
+      "target": "zwickau_140",
+      "weight": 0.3742462766106609,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_136",
+      "target": "zwickau_141",
+      "weight": 0.5798947859502231,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_137",
+      "target": "zwickau_142",
+      "weight": 0.6037467415064957,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_138",
+      "target": "zwickau_143",
+      "weight": 0.6403451166485888,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_139",
+      "target": "zwickau_144",
+      "weight": 0.42852462160656657,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_140",
+      "target": "zwickau_145",
+      "weight": 0.4006082111117004,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_141",
+      "target": "zwickau_146",
+      "weight": 0.5668065506607789,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_142",
+      "target": "zwickau_147",
+      "weight": 0.30312126092505964,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_143",
+      "target": "zwickau_145",
+      "weight": 0.31591286273228675,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_144",
+      "target": "zwickau_149",
+      "weight": 0.6139828478230765,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_145",
+      "target": "zwickau_150",
+      "weight": 0.33070082688212865,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_146",
+      "target": "zwickau_151",
+      "weight": 0.3172164302524665,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_147",
+      "target": "zwickau_152",
+      "weight": 0.6569968260667604,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_148",
+      "target": "zwickau_153",
+      "weight": 0.3164836220460294,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_149",
+      "target": "zwickau_152",
+      "weight": 0.38672535504949956,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_150",
+      "target": "zwickau_154",
+      "weight": 0.7524707825231871,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_151",
+      "target": "zwickau_155",
+      "weight": 0.6632173654396198,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_152",
+      "target": "zwickau_157",
+      "weight": 0.5694920493606271,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_153",
+      "target": "zwickau_158",
+      "weight": 0.20969143666888845,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_154",
+      "target": "zwickau_164",
+      "weight": 0.48157827088130195,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_155",
+      "target": "zwickau_160",
+      "weight": 0.2594978791151576,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_156",
+      "target": "zwickau_161",
+      "weight": 0.6464222420557219,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_157",
+      "target": "zwickau_162",
+      "weight": 0.29161867969325517,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_158",
+      "target": "zwickau_163",
+      "weight": 0.3215432465377092,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_159",
+      "target": "zwickau_165",
+      "weight": 0.10946676798437391,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_160",
+      "target": "zwickau_165",
+      "weight": 0.17672860228133064,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_161",
+      "target": "zwickau_167",
+      "weight": 0.6572124241520817,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_162",
+      "target": "zwickau_169",
+      "weight": 0.7619964315636049,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_163",
+      "target": "zwickau_173",
+      "weight": 0.7343113904586573,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_164",
+      "target": "zwickau_174",
+      "weight": 0.5185645799066663,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_165",
+      "target": "zwickau_175",
+      "weight": 0.5614298090557752,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_166",
+      "target": "zwickau_176",
+      "weight": 0.7445227653020344,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_167",
+      "target": "zwickau_177",
+      "weight": 0.8394185802470737,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_168",
+      "target": "zwickau_178",
+      "weight": 0.6106130325541373,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_169",
+      "target": "zwickau_179",
+      "weight": 0.7434486668735758,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_170",
+      "target": "zwickau_180",
+      "weight": 0.789003954374698,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_171",
+      "target": "zwickau_181",
+      "weight": 0.6368372964429329,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_172",
+      "target": "zwickau_182",
+      "weight": 0.6010040264980794,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_173",
+      "target": "zwickau_183",
+      "weight": 0.7507226726566089,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_174",
+      "target": "zwickau_184",
+      "weight": 0.6636104624468425,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_175",
+      "target": "zwickau_187",
+      "weight": 0.1167810981827973,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_176",
+      "target": "zwickau_185",
+      "weight": 0.6211046523192199,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_177",
+      "target": "zwickau_186",
+      "weight": 0.6177258550994054,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_178",
+      "target": "zwickau_187",
+      "weight": 0.795869338026667,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_179",
+      "target": "zwickau_188",
+      "weight": 0.6345720332642402,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_180",
+      "target": "zwickau_189",
+      "weight": 0.46848246687807116,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_181",
+      "target": "zwickau_190",
+      "weight": 0.36402653579915706,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_182",
+      "target": "zwickau_191",
+      "weight": 0.6279937402250435,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_183",
+      "target": "zwickau_192",
+      "weight": 0.48273850255538103,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_184",
+      "target": "zwickau_193",
+      "weight": 0.6070980209901875,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_185",
+      "target": "zwickau_194",
+      "weight": 0.6737618704464005,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_186",
+      "target": "zwickau_195",
+      "weight": 0.7545171070329378,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_187",
+      "target": "zwickau_196",
+      "weight": 0.7303367537708455,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_188",
+      "target": "zwickau_197",
+      "weight": 0.5132857994569152,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_189",
+      "target": "zwickau_198",
+      "weight": 0.5378701780890669,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_190",
+      "target": "zwickau_199",
+      "weight": 0.34660406296680585,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_191",
+      "target": "zwickau_200",
+      "weight": 0.7144156991881508,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_192",
+      "target": "zwickau_201",
+      "weight": 0.26732372407643146,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_193",
+      "target": "zwickau_170",
+      "weight": 0.8238978316297673,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_194",
+      "target": "zwickau_171",
+      "weight": 0.8492961639745602,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_195",
+      "target": "zwickau_172",
+      "weight": 0.5746120869032173,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_196",
+      "target": "zwickau_256",
+      "weight": 0.37947806099224646,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_197",
+      "target": "zwickau_257",
+      "weight": 0.5738941154790683,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_198",
+      "target": "zwickau_258",
+      "weight": 0.5787029494436259,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_199",
+      "target": "zwickau_259",
+      "weight": 0.6672832056811898,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_200",
+      "target": "zwickau_260",
+      "weight": 0.5814347095401141,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_201",
+      "target": "zwickau_261",
+      "weight": 0.6077778323171524,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_202",
+      "target": "zwickau_262",
+      "weight": 0.5380271085723974,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_203",
+      "target": "zwickau_263",
+      "weight": 0.5687258832279785,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_204",
+      "target": "zwickau_264",
+      "weight": 0.6656269509691616,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_205",
+      "target": "zwickau_265",
+      "weight": 0.23705736977196262,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_206",
+      "target": "zwickau_166",
+      "weight": 0.26389803776703596,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_207",
+      "target": "zwickau_267",
+      "weight": 0.33736338630958335,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_208",
+      "target": "zwickau_268",
+      "weight": 0.4287713145712919,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_209",
+      "target": "zwickau_201",
+      "weight": 0.20357186569391425,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_210",
+      "target": "zwickau_205",
+      "weight": 0.2632631099208133,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_211",
+      "target": "zwickau_203",
+      "weight": 0.42582196069035777,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_212",
+      "target": "zwickau_204",
+      "weight": 0.5346238903656962,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_213",
+      "target": "zwickau_207",
+      "weight": 0.3614683322208275,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_214",
+      "target": "zwickau_206",
+      "weight": 0.3168806187131995,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_215",
+      "target": "zwickau_244",
+      "weight": 0.30012447890980787,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_216",
+      "target": "zwickau_209",
+      "weight": 0.2900312509919958,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_217",
+      "target": "zwickau_210",
+      "weight": 0.46091493495572367,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_218",
+      "target": "zwickau_211",
+      "weight": 0.3669549195543411,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_219",
+      "target": "zwickau_211",
+      "weight": 0.2136830760546204,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_220",
+      "target": "zwickau_212",
+      "weight": 0.45559249503727,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_221",
+      "target": "zwickau_214",
+      "weight": 0.13520865702538606,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_222",
+      "target": "zwickau_213",
+      "weight": 0.662885596572063,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_223",
+      "target": "zwickau_214",
+      "weight": 0.20407328166533759,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_224",
+      "target": "zwickau_215",
+      "weight": 0.7423196556996194,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_225",
+      "target": "zwickau_216",
+      "weight": 0.5351900585077811,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_226",
+      "target": "zwickau_218",
+      "weight": 0.4124933268832793,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_227",
+      "target": "zwickau_219",
+      "weight": 0.252413851738947,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_228",
+      "target": "zwickau_221",
+      "weight": 0.25202027232306223,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_229",
+      "target": "zwickau_160",
+      "weight": 0.1620572900483245,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_230",
+      "target": "zwickau_223",
+      "weight": 0.40204064914005383,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_231",
+      "target": "zwickau_224",
+      "weight": 0.2727326044846866,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_232",
+      "target": "zwickau_226",
+      "weight": 0.2529578532712682,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_233",
+      "target": "zwickau_227",
+      "weight": 0.6381268949617578,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_234",
+      "target": "zwickau_228",
+      "weight": 0.4527337916603617,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_235",
+      "target": "zwickau_229",
+      "weight": 0.5099479545480362,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_236",
+      "target": "zwickau_232",
+      "weight": 0.7370907309335342,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_237",
+      "target": "zwickau_233",
+      "weight": 0.6427736306169902,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_238",
+      "target": "zwickau_234",
+      "weight": 0.6681225635431364,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_239",
+      "target": "zwickau_235",
+      "weight": 0.8313038811885736,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_240",
+      "target": "zwickau_236",
+      "weight": 0.7577092952140313,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_241",
+      "target": "zwickau_237",
+      "weight": 0.7228466043877737,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_242",
+      "target": "zwickau_238",
+      "weight": 0.8194227736259722,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_243",
+      "target": "zwickau_239",
+      "weight": 0.7848168969635904,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_244",
+      "target": "zwickau_240",
+      "weight": 0.8088003658690721,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_245",
+      "target": "zwickau_241",
+      "weight": 0.9353888227483673,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_246",
+      "target": "zwickau_242",
+      "weight": 0.881525159119938,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_247",
+      "target": "zwickau_243",
+      "weight": 0.971940160918845,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_248",
+      "target": "zwickau_244",
+      "weight": 0.82049605981915,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_249",
+      "target": "zwickau_245",
+      "weight": 0.9258295495412003,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_250",
+      "target": "zwickau_246",
+      "weight": 0.9194586421562648,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_251",
+      "target": "zwickau_247",
+      "weight": 0.6815039431020127,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_252",
+      "target": "zwickau_248",
+      "weight": 0.9685213569435963,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_253",
+      "target": "zwickau_249",
+      "weight": 0.9738184333178137,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_254",
+      "target": "zwickau_250",
+      "weight": 0.8860818083178151,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_255",
+      "target": "zwickau_251",
+      "weight": 0.818940095168798,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_256",
+      "target": "zwickau_252",
+      "weight": 0.6839659683768653,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_257",
+      "target": "zwickau_253",
+      "weight": 0.6765743608590488,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_258",
+      "target": "zwickau_206",
+      "weight": 0.35758780698463594,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_259",
+      "target": "zwickau_202",
+      "weight": 0.12780935940688923,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_260",
+      "target": "zwickau_254",
+      "weight": 0.7154782951063702,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_261",
+      "target": "zwickau_255",
+      "weight": 0.8704348780856591,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_262",
+      "target": "zwickau_269",
+      "weight": 0.8630804184959157,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_263",
+      "target": "zwickau_270",
+      "weight": 0.9082730868442169,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_264",
+      "target": "zwickau_272",
+      "weight": 0.8087120731224732,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_265",
+      "target": "zwickau_273",
+      "weight": 0.9153688856689626,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_266",
+      "target": "zwickau_274",
+      "weight": 0.920302394724308,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_267",
+      "target": "zwickau_275",
+      "weight": 0.8952224618961273,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_268",
+      "target": "zwickau_277",
+      "weight": 0.6997329757933268,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_269",
+      "target": "zwickau_278",
+      "weight": 0.8051814231490443,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_270",
+      "target": "zwickau_279",
+      "weight": 0.3205868437795076,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_271",
+      "target": "zwickau_279",
+      "weight": 0.8051591937140156,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_272",
+      "target": "zwickau_280",
+      "weight": 0.8467957312702171,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_273",
+      "target": "zwickau_281",
+      "weight": 0.908896957868826,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_274",
+      "target": "zwickau_282",
+      "weight": 0.8839312784559642,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_275",
+      "target": "zwickau_283",
+      "weight": 0.907535630721142,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_276",
+      "target": "zwickau_284",
+      "weight": 0.9083306458248872,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_277",
+      "target": "zwickau_285",
+      "weight": 0.933408467674059,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_278",
+      "target": "zwickau_286",
+      "weight": 0.8346668534786911,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_279",
+      "target": "zwickau_287",
+      "weight": 0.9253825630068954,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_280",
+      "target": "zwickau_288",
+      "weight": 0.8975491662632007,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_281",
+      "target": "zwickau_289",
+      "weight": 0.8924024306649941,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_282",
+      "target": "zwickau_290",
+      "weight": 0.869838250634948,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_283",
+      "target": "zwickau_291",
+      "weight": 0.9102446475635433,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_284",
+      "target": "zwickau_292",
+      "weight": 0.8920045147808681,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_285",
+      "target": "zwickau_293",
+      "weight": 0.8022369986991325,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_286",
+      "target": "zwickau_294",
+      "weight": 0.9588997282127034,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_287",
+      "target": "zwickau_295",
+      "weight": 0.8232390557623436,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_288",
+      "target": "zwickau_296",
+      "weight": 0.887098675092125,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_289",
+      "target": "zwickau_297",
+      "weight": 0.9061793723840468,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_290",
+      "target": "zwickau_298",
+      "weight": 0.7885821457414309,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_291",
+      "target": "zwickau_299",
+      "weight": 0.8901382904141109,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_292",
+      "target": "zwickau_300",
+      "weight": 0.8843777551713397,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_293",
+      "target": "zwickau_301",
+      "weight": 0.8953734924754435,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_294",
+      "target": "zwickau_302",
+      "weight": 0.8375139624918235,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_295",
+      "target": "zwickau_303",
+      "weight": 0.903654837037357,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_296",
+      "target": "zwickau_304",
+      "weight": 0.8910213866825811,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_297",
+      "target": "zwickau_305",
+      "weight": 0.839764007353078,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_298",
+      "target": "zwickau_306",
+      "weight": 0.8219618761130625,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_299",
+      "target": "zwickau_307",
+      "weight": 0.8726260727941948,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_300",
+      "target": "zwickau_308",
+      "weight": 0.8654731014495419,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_301",
+      "target": "zwickau_309",
+      "weight": 0.8813014831424387,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_302",
+      "target": "zwickau_310",
+      "weight": 0.8617756650149555,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_303",
+      "target": "zwickau_311",
+      "weight": 0.8180051204314264,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_304",
+      "target": "zwickau_312",
+      "weight": 0.675397231283121,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_305",
+      "target": "zwickau_313",
+      "weight": 0.9351108385745633,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_306",
+      "target": "zwickau_314",
+      "weight": 0.9319074155530279,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_307",
+      "target": "zwickau_315",
+      "weight": 0.8370113894160195,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_308",
+      "target": "zwickau_316",
+      "weight": 0.8542611794264258,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_309",
+      "target": "zwickau_317",
+      "weight": 0.8959864104169962,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_310",
+      "target": "zwickau_318",
+      "weight": 0.8450453358901324,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_311",
+      "target": "zwickau_319",
+      "weight": 0.8117101381717111,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_312",
+      "target": "zwickau_320",
+      "weight": 0.8030793868975742,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_313",
+      "target": "zwickau_297",
+      "weight": 0.17541740105984663,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_314",
+      "target": "zwickau_115",
+      "weight": 0.21493033853287305,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_315",
+      "target": "zwickau_115",
+      "weight": 0.19902956656102122,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_316",
+      "target": "zwickau_115",
+      "weight": 0.09801390438308374,
+      "arrow": "triangle"
+    }
+  },
+  {
+    "data": {
+      "source": "london_317",
+      "target": "zwickau_115",
+      "weight": 0.19650777333292604,
+      "arrow": "triangle"
+    }
+  }
+]
