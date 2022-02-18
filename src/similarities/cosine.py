@@ -16,9 +16,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 # }
 
 FEATURES = [
-    ['2_gram', thesisTfIdfNgramFeatures.create_2_gram],
-    ['3_gram', thesisTfIdfNgramFeatures.create_3_gram],
-    ['4_gram', thesisTfIdfNgramFeatures.create_4_gram],
+    # ['2_gram', thesisTfIdfNgramFeatures.create_2_gram],
+    # ['3_gram', thesisTfIdfNgramFeatures.create_3_gram],
+    # ['4_gram', thesisTfIdfNgramFeatures.create_4_gram],
     ['5_gram', thesisTfIdfNgramFeatures.create_5_gram],
 
     # count_vectorizer_features
@@ -294,9 +294,6 @@ def create_statistics_df(version_1, version_2, version_1_name):
                 results.append(None)
                 results.append(None)
                 results.append(None)
-
-
-            # TODO: add most similar dropped
 
             all_data.append(results)
     
