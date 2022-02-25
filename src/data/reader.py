@@ -4,8 +4,12 @@ import numpy as np
 
 A_ZWICKAU_FILE_NAME = "A_Zwickau_RB_I_XII_5 (12).txt"
 A_ZWICKAU_WITH_SECTION_SEPARATION_FILE_NAME = "A_Zwickau_RB_I_XII_5 with section separation.txt"
+
 B_LONDON_FILE_NAME = "B_London_BL_Add_18929 (6).txt"
 B_LONDON_WITH_SECTION_SEPARATION_FILE_NAME = "B_London_BL_Add_18929 with section separation.txt"
+
+BREALAU_FILE_NAME = 'SV_Breslau_221-transcription2.txt'
+
 STOP_WORDS_FILE_NAME = "stop_words.json"
 
 SECTION_SEPARATOR = '*********** SECTION ***********'
@@ -18,6 +22,8 @@ def get_data_file_path(file_name):
 
 a_zwickau_file_path = get_data_file_path(A_ZWICKAU_FILE_NAME)
 b_london_file_path = get_data_file_path(B_LONDON_FILE_NAME)
+breslau_file_path = get_data_file_path(BREALAU_FILE_NAME)
+
 stop_words_file_path = get_data_file_path(STOP_WORDS_FILE_NAME)
 
 def read_file(file_path):
@@ -32,6 +38,9 @@ def read_zwickau_with_section_separation():
 def read_london():
     return read_file(b_london_file_path)
 
+def read_breslau():
+    return read_file(breslau_file_path)
+
 def read_london_with_section_separation():
     return read_file(get_data_file_path(B_LONDON_WITH_SECTION_SEPARATION_FILE_NAME))
 
@@ -44,6 +53,11 @@ def get_zwickau_corpus():
     zwickau_text = read_zwickau()
     zwickau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(zwickau_text))
     return zwickau_corpus
+
+def get_breslau_corpus():
+    breslau_text = read_breslau()
+    breslau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(breslau_text))
+    return breslau_corpus
 
 def get_zwickau_separated_by_sections():
     zwickau_text_with_separation = read_zwickau_with_section_separation()

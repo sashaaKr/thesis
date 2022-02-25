@@ -27,10 +27,18 @@ def create_london_5_gram():
     corpus = thesisDataReader.get_london_corpus()
     return create_5_gram(corpus)
 
+def create_breslau_5_gram():
+    corpus = thesisDataReader.get_brealsu_corpus()
+    return create_5_gram(corpus)
+
 def create_zwikau_5_gram_corpus():
     corpus = thesisDataReader.get_zwickau_corpus()
     return create_n_gram_corpus(corpus, 5)
 
 def create_london_5_gram_corpus():
     corpus = thesisDataReader.get_london_corpus()
+    return create_n_gram_corpus(corpus, 5)
+
+def create_breslau_5_gram_corpus():
+    corpus = thesisDataReader.get_breslau_corpus()
     return create_n_gram_corpus(corpus, 5)
