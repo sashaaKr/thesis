@@ -31,5 +31,5 @@ def create_london_5_gram():
     return create_5_gram(corpus)
 
 def create_breslau_5_gram():
-    corpus = thesisDataReader.get_brealsu_corpus()
+    corpus = thesisDataReader.get_breslau_corpus()
     return create_5_gram(corpus)
