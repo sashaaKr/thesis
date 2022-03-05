@@ -22,7 +22,7 @@ FEATURES = [
     ['5_gram', thesisTfIdfNgramFeatures.create_5_gram],
 
     # count_vectorizer_features
-    ['count_vectorizer_5_gram', thesisCountVectorizerNgramFeatures.create_5_gram]
+    # ['count_vectorizer_5_gram', thesisCountVectorizerNgramFeatures.create_5_gram]
 ]
 
 def calculate_p_to_version_similarity(paragraph_to_test, version_corpus, get_features):
