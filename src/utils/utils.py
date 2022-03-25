@@ -13,3 +13,9 @@ def get_max_similarity_per_p(similarities):
         max_similarity = value[max_indices_without_self[-1]]
         res.append(max_similarity)
     return res
+
+def convert_array_of_tuples_to_dics(arr):
+    dict = {}
+    for a, b in arr:
+        dict.setdefault(a, b)
+    return dict
