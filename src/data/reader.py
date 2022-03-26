@@ -59,6 +59,24 @@ def get_breslau_corpus():
     breslau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(breslau_text))
     return breslau_corpus
 
+
+###  CORPUSES BY 3 SENTENCES  ###
+def get_zwickau_by_3_sentences():
+    zwickau_text = read_zwickau()
+    zwickau_corpus = thesisCleanUp.create_corpus_by_3_sentences(thesisCleanUp.jvtext(zwickau_text))
+    return zwickau_corpus
+
+def get_london_by_3_sentences():
+    london_text = read_london()
+    london_corpus = thesisCleanUp.create_corpus_by_3_sentences(thesisCleanUp.jvtext(london_text))
+    return london_corpus
+
+def get_breslau_by_3_sentences():
+    breslau_text = read_breslau()
+    breslau_corpus = thesisCleanUp.create_corpus_by_3_sentences(thesisCleanUp.jvtext(breslau_text))
+    return breslau_corpus
+
+
 def get_zwickau_separated_by_sections():
     zwickau_text_with_separation = read_zwickau_with_section_separation()
     zwickau_sections = zwickau_text_with_separation.split(SECTION_SEPARATOR)
