@@ -19,3 +19,11 @@ def convert_array_of_tuples_to_dics(arr):
     for a, b in arr:
         dict.setdefault(a, b)
     return dict
+
+def chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        if i + (2*n) > len(lst):
+            yield lst[i:len(lst)]
+            break
+        else: yield lst[i:i + n]

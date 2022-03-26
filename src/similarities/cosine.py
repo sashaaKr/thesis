@@ -301,3 +301,15 @@ def create_statistics_df(version_1, version_2, version_1_name):
         d.append(version_1_name)
             
     return pd.DataFrame(all_data, columns=columns)
+
+def cross_version_similarity(version_1_corpus, version_2_corpus, get_features):
+    res = []
+    for i, p in enumerate(version_1_corpus):
+        temp_corpus = [p] + version_2_corpus
+        df_features = get_features(temp_corpus)
+        temp_similarities = cosine_similarity(df_features, df_features)
+        res.append(temp_similarities[0])
+    return res
+
+def cross_version_similarity_5_gram(version_1_corpus, version_2_corpus):
+    return cross_version_similarity(version_1_corpus, version_2_corpus, thesisTfIdfNgramFeatures.create_5_gram)
