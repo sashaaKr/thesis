@@ -17,7 +17,6 @@ def cleanup(t):
     clean_data = re.sub(r'[0-9]+', '', clean_data)
 
     clean_data = (clean_data
-        .strip()
         .replace("„", "")
         .replace("“", "")
         .replace(".", "")
@@ -43,10 +42,23 @@ def cleanup(t):
         .replace("(", "")
         .replace(")", "")
         .replace("ff", "f") # from Yoni table
+        .replace("ll", "l") # from Yoni table
+        .replace("mm", "m") # from Yoni table
+        .replace("tt", "t") # from Yoni table
+        .replace("z", "s") # from Yoni table
+        .replace("ih", "i") # from Yoni table
+        .replace("Ih", "i") # from Yoni table
+        .replace("ph", "p") # from Yoni table
+        .replace("Ph", "p") # from Yoni table
+        .replace("ae", "e") # from Yoni table
+        # .replace("ch", "c") # from Yoni table
         .replace("cio", "tio") # from Yoni table
         .replace("cia", "tia") # from Yoni table
         .replace("tiu", "ciu") # from Yoni table
-        .replace("  ", " "))
+        .replace("atque", "et") # from Yoni table
+        .replace("  ", " ")
+        .strip()
+    )
 
     return clean_data
 
