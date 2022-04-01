@@ -70,21 +70,31 @@ def cleanup(t):
 
     return clean_data
 
-def create_corpus_by_line(raw_text):
+def tokenize_text(raw_text):
     lowered_text = raw_text.lower()
     tokenizer = LineTokenizer('latin')
 
     # without that rule: Mons Bethulie Inde ad 3 leucis est mons Bethulie, ubi Iudit occidit Holofernem.  Qui mons per totam fere Galileam videtur, pulcher valde et firmus.
     # will be distinguished as 2 lines
     lowered_text = lowered_text.replace(" ", "")
+
+    return tokenizer.tokenize(lowered_text)
+
+def create_corpus_by_line(raw_text):
+    # lowered_text = raw_text.lower()
+    # tokenizer = LineTokenizer('latin')
+
+    # without that rule: Mons Bethulie Inde ad 3 leucis est mons Bethulie, ubi Iudit occidit Holofernem.  Qui mons per totam fere Galileam videtur, pulcher valde et firmus.
+    # will be distinguished as 2 lines
+    # lowered_text = lowered_text.replace(" ", "")
     
-    return [ cleanup(t) for t in tokenizer.tokenize(lowered_text) ]
+    return [ cleanup(t) for t in tokenize_text(raw_text) ]
 
 def create_corpus_by_3_sentences(raw_text):
-    lowered_text = raw_text.lower()
-    lowered_text = lowered_text.replace(" ", "")
-    tokenizer = LineTokenizer('latin')
-    corpus_by_line = tokenizer.tokenize(lowered_text)
+    # lowered_text = raw_text.lower()
+    # lowered_text = lowered_text.replace(" ", "")
+    # tokenizer = LineTokenizer('latin')
+    corpus_by_line = tokenize_text(raw_text)
 
     corpus_limited_by_lenght = []
     for line in corpus_by_line:

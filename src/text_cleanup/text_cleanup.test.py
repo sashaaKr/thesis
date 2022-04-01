@@ -90,7 +90,7 @@ original_vs_expexted = [
         # change y -> i
         "Fuit autem in campo per longum disposita tendens ab austro in aquilonem sub monte Antylibano inter ipsum et mare spaciosa valde.",
         "fuit autem in campo per longum disposita tendens ab austro in aquilonem sub monte antilibano inter ipsum et mare spatiosa ualde"
-    ]
+    ],
 ]
 
 class TestTextCleanupMethods(unittest.TestCase):
@@ -99,7 +99,6 @@ class TestTextCleanupMethods(unittest.TestCase):
         self.maxDiff = None
         for original, expected in original_vs_expexted:
             result = text_cleanup.create_corpus_by_line(text_cleanup.jvtext(original))
-            # print(result)
             self.assertEqual(result, [expected])
 
 if __name__ == '__main__':
