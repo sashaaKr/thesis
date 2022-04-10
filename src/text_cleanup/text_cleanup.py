@@ -83,13 +83,31 @@ def tokenize_text(raw_text):
 def create_corpus_by_line(raw_text):
     return [ cleanup(t) for t in tokenize_text(raw_text) ]
 
+def create_corpus_by_2_sentences(raw_text):
+    return create_corpus_by_n_sentences(raw_text, 2)
+
 def create_corpus_by_3_sentences(raw_text):
+    return create_corpus_by_n_sentences(raw_text, 3)
+    # corpus_by_line = tokenize_text(raw_text)
+
+    # corpus_limited_by_lenght = []
+    # for line in corpus_by_line:
+    #     line_by_sentences = sent_tokenize(line)
+    #     if len(line_by_sentences) > 6:
+    #         chunks = list(thesisUtils.chunks(line_by_sentences, 3))
+    #         for c in chunks:
+    #             corpus_limited_by_lenght.append(" ".join(c))
+    #     else: corpus_limited_by_lenght.append(line)
+
+    # return [ cleanup(t) for t in corpus_limited_by_lenght ]
+
+def create_corpus_by_n_sentences(raw_text, n):
     corpus_by_line = tokenize_text(raw_text)
 
     corpus_limited_by_lenght = []
     for line in corpus_by_line:
         line_by_sentences = sent_tokenize(line)
-        if len(line_by_sentences) > 6:
+        if len(line_by_sentences) > 2 * n:
             chunks = list(thesisUtils.chunks(line_by_sentences, 3))
             for c in chunks:
                 corpus_limited_by_lenght.append(" ".join(c))
