@@ -15,6 +15,11 @@ def cleanup(t):
 
     # this regex handle 33o, 3o, 1283o in zwickau version
     clean_data = re.sub(r'[1-9][0-9]?[0-9]?[0-9]?o', '', clean_data)
+
+    # in oritinal it is vii but because we are running uv replaces first it is uii
+    clean_data = re.sub(r'\bui?i?i\b', '', clean_data)
+    clean_data = re.sub(r'\bii?i?i\b', '', clean_data)
+    clean_data = re.sub(r'\bu\b', '', clean_data)
     
     # remove numbers
     clean_data = re.sub(r'[0-9]+', '', clean_data)
@@ -56,7 +61,6 @@ def cleanup(t):
         .replace("ph", "p") # from Yoni table
         .replace("Ph", "p") # from Yoni table
         .replace("ae", "e") # from Yoni table
-        # .replace("ch", "c") # from Yoni table
         .replace("cio", "tio") # from Yoni table
         .replace("cia", "tia") # from Yoni table
         .replace("ch", "c") # from Yoni table, MUST be after cia -> tia

@@ -91,6 +91,21 @@ original_vs_expexted = [
         "Fuit autem in campo per longum disposita tendens ab austro in aquilonem sub monte Antylibano inter ipsum et mare spaciosa valde.",
         "fuit autem in campo per longum disposita tendens ab austro in aquilonem sub monte antilibano inter ipsum et mare spatiosa ualde"
     ],
+    [
+        # remove vii
+        "Excrescit autem mare illud interdum de resolutione nivium de Lybano et aliis montanis, de inundatione Iordanis et torrentis Iaboth et Armon et Zareth et de pluviis cadentibus in Galilea, monte Galaad, terra Moab et Amon et Seyr de quibus omnibus aque descendunt per Jordanem ad mare istud reliquos autem vii viii vi",
+        "excrescit autem mare ilud interdum de resolutione niuium de libano et aliis montanis de inundatione iordanis et torrentis iabot et armon et saret et de pluuiis cadentibus in galilea monte galaad terra moab et amon et seir de quibus omnibus aque descendunt per iordanem ad mare istud reliquos autem"
+    ],
+    [
+        # should remove iii, ii, iiii
+        'De iherusalem ad iii leucas vel plus contra occidentem est emaus ubi dominus iiii agnitus est in fractione ii panis.',
+        'de ierusalem ad leucas aut plus contra occidentem est emaus ubi dominus agnitus est in fractione panis'
+    ],
+    [
+        # it should remove single v
+        'Est autem in rei veritate campus iste planicies galilee que cingitur ab oriente mari galilee et yordane ab austro monte effraym et samaria, ab occidente partim monte effraym, partim monte Carmelo, ab aquilone montibus phenicie qui pheniciam dividunt et galileam, et habet in longitudine plene v miliaria tentonica vel amplius, fertilis supra modum vini et frumenti et omnium bonorum que gignere solet humus, et aere saluberrimo, ita quod videtur michi quod terram non viderim meliorem, si esset in manu Christianorum.',
+        'est autem in rei ueritate campus iste planicies galilee que cingitur ab oriente mari galilee et iordane ab austro monte efraim et samaria ab occidente partim monte efraim partim monte carmelo ab aquilone montibus penicie qui penitiam diuidunt et galileam et habet in longitudine plene miliaria tentonica aut amplius fertilis supra modum uini et frumenti et omnium bonorum que gignere solet humus et ere saluberrimo ita quod uidetur mici quod terram non uiderim meliorem si esset in manu cristianorum'
+    ]
 ]
 
 class TestTextCleanupMethods(unittest.TestCase):
