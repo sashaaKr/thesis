@@ -105,6 +105,36 @@ original_vs_expexted = [
         # it should remove single v
         'Est autem in rei veritate campus iste planicies galilee que cingitur ab oriente mari galilee et yordane ab austro monte effraym et samaria, ab occidente partim monte effraym, partim monte Carmelo, ab aquilone montibus phenicie qui pheniciam dividunt et galileam, et habet in longitudine plene v miliaria tentonica vel amplius, fertilis supra modum vini et frumenti et omnium bonorum que gignere solet humus, et aere saluberrimo, ita quod videtur michi quod terram non viderim meliorem, si esset in manu Christianorum.',
         'est autem in rei ueritate campus iste planicies galilee que cingitur ab oriente mari galilee et iordane ab austro monte efraim et samaria ab occidente partim monte efraim partim monte carmelo ab aquilone montibus penicie qui penitiam diuidunt et galileam et habet in longitudine plene miliaria tentonica aut amplius fertilis supra modum uini et frumenti et omnium bonorum que gignere solet humus et ere saluberrimo ita quod uidetur mici quod terram non uiderim meliorem si esset in manu cristianorum'
+    ],
+    [
+        # it should remove some english mark
+        'De isto fonte ad dimidiam leucam yezrahel civitas quondam regalis nunc vix habet xx domos (236v is empty, 237r) in pede occidentali montis gelboe sita ubi adhuc vidi agrum naboth yezrahelite.',
+        'de isto fonte ad dimidiam leucam iesrahel ciuitas quondam regalis nunc uix habet xx domos in pede occidentali montis gelboe sita ubi adhuc uidi agrum nabot iesrahelite'
+    ],
+    [
+        # it should remove some english mark
+        'Videtur enim velle quod murus civitatis et superficies montis erant equales et desuper civitas edificata (237v is empty, 238r) quod non erat. murus enim civitatis erat fere in pede montis firmus valde turribus et interius mons paulatim in altum surgens et circumseptus edificiis quasi botrus vue granis consitus et tendens in.',
+        'uidetur enim aute quod murus ciuitatis et superficies montis erant equales et desuper ciuitas edificata quod non erat murus enim ciuitatis erat fere in pede montis firmus ualde turribus et interius mons paulatim in altum surgens et circumseptus edificiis quasi botrus uue granis consitus et tendens in'
+    ],
+    [
+        # it should remove <q>
+        'De monte Zacharie 2 leucis contra orientem fere via, que ducit Thecuam, sanctus Karychon abbas sepultus est <q> cum suis monachis, qui omnes eo migrante migraverunt et ostenditur ibidem usque hodie sepultura de Bethleem 2bus leucis.',
+        'de monte sacarie leucis contra orientem fere uia que ducit tecuam sanctus karicon abbas sepultus est cum suis monacis qui omnes eo migrante migrauerunt et ostenditur ibidem usque hodie sepultura de betleem bus leucis'
+    ],
+    [
+        # it should remove ix
+        'De isto opido usque ad cumulos yordanis contra orientem sunt fere ix leuce',
+        'de isto opido usque ad cumulos iordanis contra orientem sunt fere leuce'
+    ],
+    [
+        # it should remove [n]
+        'Est [n] insuper montana que sunt circa campestria iericho sunt alta supra modum et palatim descendant usque ad montem oliveti.',
+        'est insuper montana que sunt circa campestria ierico sunt alta supra modum et palatim descendant usque ad montem oliueti'
+    ],
+    [
+        # it should remove <n>
+        'Comedi tamen <n> in ea cum monachis missa dicta ad sanctum Bartholomeum.',
+        'comedi tamen in ea cum monacis missa dicta ad sanctum bartolomeum'
     ]
 ]
 

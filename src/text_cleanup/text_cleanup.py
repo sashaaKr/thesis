@@ -9,17 +9,26 @@ from cltk.tokenizers.line import LineTokenizer
 
 # TODO: there is also remove_non_latin in cltk
 def cleanup(t):
+    # some english marks from breslau version, 236u in original is 236v
+    clean_data = re.sub("\(236u is empty, 237r\)", '', t)
+    clean_data = re.sub("\(237u is empty, 238r\)", '', clean_data)
+    clean_data = re.sub("<q>", '', clean_data)
+    clean_data = re.sub("<n>", '', clean_data)
+    clean_data = re.sub("\[n\]", '', clean_data)
+    
     # this regex handle (1r) and (49r) references that appear in b_london version
     # and (112vb) and (117r) that appear in a_zwickau version
-    clean_data = re.sub(r'\([1-9][0-9]?[0-9]?[a-z][a-z]?\)', '', t)
+    clean_data = re.sub(r'\([1-9][0-9]?[0-9]?[a-z][a-z]?\)', '', clean_data)
 
     # this regex handle 33o, 3o, 1283o in zwickau version
     clean_data = re.sub(r'[1-9][0-9]?[0-9]?[0-9]?o', '', clean_data)
 
     # in oritinal it is vii but because we are running uv replaces first it is uii
+    clean_data = re.sub(r'\bix\b', '', clean_data)
     clean_data = re.sub(r'\bui?i?i\b', '', clean_data)
     clean_data = re.sub(r'\bii?i?i\b', '', clean_data)
     clean_data = re.sub(r'\bu\b', '', clean_data)
+
     
     # remove numbers
     clean_data = re.sub(r'[0-9]+', '', clean_data)
