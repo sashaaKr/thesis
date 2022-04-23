@@ -23,6 +23,16 @@ def get_version_unique_words(main_version_dictionary, version_2_dictionary, vers
             unique_word.append(word)
     return unique_word
 
+def get_version_shared_words(version_a_dictionary, version_a_name, version_b_dictionary, version_b_name, version_c_dictionary):
+    shared_words = {}
+    for word in version_a_dictionary:
+        if version_b_dictionary.get(word) is not None and version_c_dictionary.get(word) is None:
+            shared_words[word] = {
+                version_a_name: version_a_dictionary[word],
+                version_b_name: version_b_dictionary[word]
+            }
+    return shared_words
+
 # Create vocabulary that shared in vesion a and b, but not in c - for all permutations
 def get_shared_vocabulary_for_2_versions(
     corpus_a, 
@@ -35,14 +45,13 @@ def get_shared_vocabulary_for_2_versions(
     dictionary_b = create_words_dictionary(corpus_b)
     dictionary_c = create_words_dictionary(corpus_c)
 
-    shared_words = {}
-    for word in dictionary_a:
-        if dictionary_b.get(word) is not None and dictionary_c.get(word) is None:
-            shared_words[word] = {
-                corpus_a_name: dictionary_a[word],
-                corpus_b_name: dictionary_b[word]
-            }
-    return shared_words
+    return get_version_shared_words(
+        dictionary_a,
+        corpus_a_name,
+        dictionary_b,
+        corpus_b_name,
+        dictionary_c,
+    )
 
 def unique_vocabulary():
     london_corpus = thesisDataReader.get_london_corpus()
