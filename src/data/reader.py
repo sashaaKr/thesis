@@ -48,16 +48,22 @@ def get_london_corpus():
     london_text = read_london()
     london_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(london_text))
     return london_corpus
+def get_london_by_new_line():
+    return get_london_corpus()
 
 def get_zwickau_corpus():
     zwickau_text = read_zwickau()
     zwickau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(zwickau_text))
     return zwickau_corpus
+def get_zwickau_by_new_line():
+    return get_zwickau_corpus()
 
 def get_breslau_corpus():
     breslau_text = read_breslau()
     breslau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(breslau_text))
     return breslau_corpus
+def get_breslau_by_new_line():
+    return get_breslau_corpus()
 
 
 ###  CORPUSES BY 3 SENTENCES  ###
