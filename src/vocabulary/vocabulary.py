@@ -79,3 +79,14 @@ def unique_vocabulary():
             df_data.append(['breslau', word, breslau_dictionary.get(word)])
     
     return pd.DataFrame(df_data, columns=df_columns)
+
+def get_3_versions_shared_words(version_a_dictionary, version_a_name, version_b_dictionary, version_b_name, version_c_dictionary, version_c_name):
+    shared_words = {}
+    for word in version_a_dictionary:
+        if version_b_dictionary.get(word) is not None and version_c_dictionary.get(word) is not None:
+            shared_words[word] = {
+                version_a_name: version_a_dictionary[word],
+                version_b_name: version_b_dictionary[word],
+                version_c_name: version_c_dictionary[word],
+            }
+    return shared_words
