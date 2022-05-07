@@ -1,4 +1,5 @@
 import numpy as np
+import re
 
 def get_n_indexes_of_max_values(arr, n):
     indices = np.argpartition(-arr, n)[:n]
@@ -27,3 +28,11 @@ def chunks(lst, n):
             yield lst[i:len(lst)]
             break
         else: yield lst[i:i + n]
+
+def find_text_p_indexed_in_corpus(corpus, text_to_find):
+    found_indexes = []
+    for index, paragraph in enumerate(corpus):
+        match = re.search(r'\b' + text_to_find + r'\b', paragraph)
+        if match: found_indexes.append(index)
+    
+    return found_indexes
