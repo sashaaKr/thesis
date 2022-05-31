@@ -1,6 +1,8 @@
 import os
+import re
 import text_cleanup.text_cleanup as thesisCleanUp
 import numpy as np
+import pandas as pd
 
 A_ZWICKAU_FILE_NAME = "A_Zwickau_RB_I_XII_5 (12).txt"
 A_ZWICKAU_WITH_SECTION_SEPARATION_FILE_NAME = "A_Zwickau_RB_I_XII_5 with section separation.txt"
@@ -129,3 +131,50 @@ def get_london_section_indexes():
     london_sections_indexes[20+242+6:20+242+6+21] = 4
     london_sections_indexes[20+242+6+21:20+242+6+21+29] = 5
     return london_sections_indexes
+
+
+def get_burchard_candidate_version_based_on_p_aligment_london_base():
+  london_zwickau_breslau_p_aligment_df = pd.read_csv('../computed_data/p_aligment/by_new_line/london_zwickau_breslau.csv').drop(['Unnamed: 0'], axis=1)
+
+  result = []
+
+  for index, row in london_zwickau_breslau_p_aligment_df.iterrows():
+    london_p = row['london text']
+    zwickau_p = row['zwickau text']
+
+    shared_words = []
+
+    # TODO: interesting if it is matter which version to split and run the same function but split zwickau will provide different result
+    for word in london_p.split():
+      match_in_london = re.search(r'\b' + word + r'\b', london_p)
+      match_in_zwickau = re.search(r'\b' + word + r'\b', zwickau_p)
+
+      if match_in_london and match_in_zwickau:
+        shared_words.append(word)
+
+    result.append(' '.join(shared_words))
+
+  return result
+
+def get_burchard_candidate_version_based_on_p_aligment_zwickau_base():
+  london_zwickau_breslau_p_aligment_df = pd.read_csv('../computed_data/p_aligment/by_new_line/zwickau_london_breslau.csv').drop(['Unnamed: 0'], axis=1)
+
+  result = []
+
+  for index, row in london_zwickau_breslau_p_aligment_df.iterrows():
+    london_p = row['london text']
+    zwickau_p = row['zwickau text']
+
+    shared_words = []
+
+    # TODO: interesting if it is matter which version to split and run the same function but split zwickau will provide different result
+    for word in zwickau_p.split():
+      match_in_london = re.search(r'\b' + word + r'\b', london_p)
+      match_in_zwickau = re.search(r'\b' + word + r'\b', zwickau_p)
+
+      if match_in_london and match_in_zwickau:
+        shared_words.append(word)
+
+    result.append(' '.join(shared_words))
+
+  return result

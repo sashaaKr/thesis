@@ -83,6 +83,7 @@ def cleanup(t):
 
     return clean_data
 
+
 def tokenize_text(raw_text):
     lowered_text = raw_text.lower()
     tokenizer = LineTokenizer('latin')
