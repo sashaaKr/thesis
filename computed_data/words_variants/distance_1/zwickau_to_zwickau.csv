@@ -1,0 +1,3059 @@
+original_word,variants,variants_count
+iudeam,"[('iudea', 1)]",1
+biblum,"[('biblium', 1)]",1
+adiit,"[('abiit', 1)]",1
+regionem,"[('regionum', 1), ('regione', 1), ('regiones', 1)]",3
+ramesses,"[('ramasses', 1)]",1
+carmeleum,"[('carmelum', 1)]",1
+tiras,"[('tirus', 1)]",1
+uertit,"[('auertit', 1)]",1
+planicies,"[('planiciem', 1), ('planicie', 1), ('planiciei', 1)]",3
+grossi,"[('grosso', 1), ('grossa', 1)]",2
+baas,"[('baias', 1), ('baal', 1), ('bais', 1)]",3
+ilud,"[('iluc', 1), ('iludi', 1), ('ilum', 1)]",3
+fatentur,"[('fateantur', 1)]",1
+flumine,"[('flumina', 1)]",1
+fertilitate,"[('fertilitatem', 1)]",1
+peiora,"[('pecora', 1)]",1
+poma,"[('roma', 1), ('pona', 1)]",2
+sitis,"[('satis', 1), ('sitas', 1), ('situs', 1), ('siris', 1)]",4
+galilee,"[('galilea', 1)]",1
+iuditio,"[('iuditia', 1)]",1
+ritu,"[('ritum', 1), ('situ', 1)]",2
+altare,"[('altari', 1)]",1
+sepultus,"[('sepultum', 1)]",1
+septentrionali,"[('septentrionalis', 1)]",1
+torrentem,"[('torrentes', 1), ('torrente', 1)]",2
+peciui,"[('peciuit', 1)]",1
+distet,"[('distent', 1), ('distat', 1)]",2
+uolantes,"[('uolentes', 1)]",1
+longe,"[('longa', 1), ('longo', 1), ('loge', 1)]",3
+pretioso,"[('pretiosa', 1)]",1
+occurri,"[('occurrit', 1)]",1
+transferunt,"[('transierunt', 1)]",1
+appelatur,"[('appelantur', 1)]",1
+uulcano,"[('uulcani', 1)]",1
+decoratum,"[('decolatum', 1)]",1
+ortum,"[('ortus', 1), ('portum', 1), ('ortu', 1)]",3
+aliis,"[('altis', 1), ('alius', 1), ('alias', 1), ('alii', 1), ('alios', 1)]",5
+asor,"[('acor', 1)]",1
+uacant,"[('uocant', 1)]",1
+euersioni,"[('euersionis', 1)]",1
+magnam,"[('magna', 1), ('magnum', 1), ('magnas', 1)]",3
+patet,"[('pater', 1)]",1
+caparnum,"[('caparnaum', 1)]",1
+saluia,"[('saluias', 1)]",1
+factam,"[('factum', 1), ('facta', 1)]",2
+botum,"[('totum', 1), ('bonum', 1), ('botrum', 1), ('notum', 1), ('potum', 1), ('motum', 1), ('uotum', 1)]",7
+pulcerrimi,"[('pulcerrimo', 1)]",1
+destructionem,"[('destructiones', 1)]",1
+prouintia,"[('prouintias', 1)]",1
+firma,"[('firmo', 1)]",1
+nobilissime,"[('nobilissimo', 1), ('nobilissima', 1)]",2
+quarentena,"[('quarentene', 1)]",1
+decorare,"[('decolare', 1)]",1
+amenitatem,"[('amenitate', 1), ('amenitates', 1)]",2
+pacem,"[('panem', 1)]",1
+factum,"[('factam', 1), ('iactum', 1), ('factus', 1)]",3
+capelam,"[('camelam', 1), ('capela', 1)]",2
+piscibus,"[('pistibus', 1)]",1
+precium,"[('predium', 1), ('arecium', 1)]",2
+antiquum,"[('antiquam', 1)]",1
+uehementi,"[('uehementia', 1)]",1
+assisini,"[('assinini', 1)]",1
+pondere,"[('ponere', 1)]",1
+faciem,"[('facie', 1)]",1
+sanctam,"[('sanctum', 1), ('sancta', 1)]",2
+eleutero,"[('eleutereo', 1)]",1
+palmarum,"[('salmarum', 1)]",1
+predium,"[('precium', 1)]",1
+carmali,"[('carmeli', 1)]",1
+historias,"[('historia', 1), ('historiis', 1)]",2
+tabulis,"[('tabulas', 1)]",1
+incitus,"[('initus', 1)]",1
+pluuia,"[('pluuie', 1), ('pluria', 1)]",2
+ilam,"[('cilam', 1), ('ilas', 1), ('uilam', 1), ('olam', 1), ('iam', 1), ('ila', 1), ('ilum', 1)]",7
+meliorem,"[('meliores', 1)]",1
+triangule,"[('trianguli', 1), ('triangula', 1)]",2
+uocant,"[('uacant', 1)]",1
+oriantur,"[('oriuntur', 1)]",1
+sienen,"[('senen', 1), ('siene', 1)]",2
+episcopales,"[('episcopalis', 1)]",1
+apta,"[('capta', 1), ('alta', 1), ('auta', 1), ('apti', 1)]",4
+occidentalem,"[('occidentale', 1)]",1
+aqueductum,"[('aqueductus', 1)]",1
+queo,"[('que', 1), ('quo', 1), ('quem', 1)]",3
+palma,"[('palga', 1), ('palmas', 1), ('palme', 1), ('palmam', 1)]",4
+legendo,"[('legende', 1)]",1
+assumptis,"[('assumpti', 1)]",1
+tempore,"[('tempora', 1)]",1
+altos,"[('altis', 1), ('alto', 1), ('alios', 1), ('altus', 1)]",4
+modico,"[('modice', 1), ('modica', 1)]",2
+opidi,"[('opido', 1)]",1
+strata,"[('stratam', 1)]",1
+iactum,"[('factum', 1), ('iactus', 1)]",2
+pasga,"[('pasta', 1), ('palga', 1), ('pasca', 1)]",3
+uite,"[('uile', 1), ('uita', 1), ('uie', 1), ('uice', 1), ('site', 1)]",5
+igni,"[('igne', 1), ('digni', 1), ('ignis', 1)]",3
+situm,"[('sinum', 1), ('ritum', 1), ('sixtum', 1), ('situs', 1), ('situ', 1), ('titum', 1)]",6
+ueni,"[('uenti', 1), ('uenit', 1), ('uini', 1), ('ueri', 1)]",4
+supulcro,"[('sepulcro', 1)]",1
+pasta,"[('pasga', 1), ('pasca', 1)]",2
+tirus,"[('tiras', 1), ('tiirus', 1), ('tirum', 1)]",3
+horum,"[('eorum', 1), ('forum', 1), ('horam', 1)]",3
+quisque,"[('quinque', 1)]",1
+sunt,"[('sint', 1)]",1
+isti,"[('istis', 1), ('ista', 1), ('sti', 1), ('iste', 1), ('isto', 1)]",5
+ultima,"[('ultimo', 1)]",1
+prelatos,"[('prelatis', 1), ('prelatus', 1)]",2
+mansio,"[('mansi', 1), ('mansit', 1)]",2
+altis,"[('aliis', 1), ('altos', 1), ('artis', 1), ('altus', 1)]",4
+miserant,"[('miserat', 1), ('miserunt', 1)]",2
+dies,"[('die', 1), ('diem', 1), ('diei', 1), ('diues', 1)]",4
+dominis,"[('dominus', 1), ('domini', 1), ('nominis', 1), ('hominis', 1), ('dominio', 1)]",5
+mesopotamiam,"[('mesopotamia', 1)]",1
+ipsa,"[('isa', 1), ('ipse', 1), ('ipsas', 1), ('ipsi', 1), ('ipso', 1), ('ipsam', 1)]",6
+lege,"[('legi', 1), ('rege', 1), ('leges', 1), ('legem', 1), ('loge', 1)]",5
+carit,"[('caret', 1), ('caric', 1), ('cadit', 1)]",3
+ueneris,"[('ueteris', 1), ('generis', 1)]",2
+redactam,"[('redacta', 1)]",1
+homo,"[('domo', 1)]",1
+albam,"[('album', 1), ('altam', 1), ('aliam', 1)]",3
+botri,"[('botris', 1), ('botrim', 1)]",2
+deleta,"[('delta', 1)]",1
+fluens,"[('efluens', 1)]",1
+dimidie,"[('dimidia', 1), ('dimidio', 1), ('diridie', 1)]",3
+traconitide,"[('traconitidem', 1)]",1
+redeunt,"[('redeunti', 1)]",1
+marina,"[('maria', 1)]",1
+sexui,"[('sequi', 1)]",1
+spelunce,"[('spelunca', 1)]",1
+ualanie,"[('ualania', 1)]",1
+sior,"[('sion', 1), ('ior', 1)]",2
+turrim,"[('turris', 1), ('turrium', 1), ('turrem', 1)]",3
+pretiosas,"[('pretiosa', 1)]",1
+natatoria,"[('natatoriam', 1)]",1
+fructu,"[('fructus', 1), ('fructum', 1)]",2
+rubri,"[('rubris', 1), ('rubro', 1)]",2
+origentali,"[('orientali', 1)]",1
+tumulos,"[('cumulos', 1), ('tumolos', 1)]",2
+imagini,"[('imagine', 1)]",1
+mirifice,"[('mirifico', 1)]",1
+oliueti,"[('oliuetis', 1), ('oliueta', 1)]",2
+sirie,"[('sirin', 1), ('siria', 1), ('siri', 1), ('siris', 1)]",4
+dicti,"[('dici', 1), ('dictis', 1), ('dicte', 1), ('dicta', 1)]",4
+tulerunt,"[('tulerant', 1), ('atulerunt', 1)]",2
+quilibet,"[('qualibet', 1)]",1
+locauerunt,"[('uocauerunt', 1)]",1
+destructa,"[('destructam', 1)]",1
+filius,"[('filiis', 1), ('filios', 1), ('filium', 1), ('ilius', 1)]",4
+bona,"[('bono', 1), ('bone', 1), ('nona', 1), ('pona', 1), ('bonam', 1), ('bonas', 1)]",6
+iluc,"[('ilud', 1), ('ilic', 1), ('ilum', 1)]",3
+matei,"[('matri', 1)]",1
+scissio,"[('scissi', 1)]",1
+uadens,"[('uidens', 1)]",1
+gerasam,"[('gerasa', 1)]",1
+muniri,"[('muniti', 1)]",1
+tantum,"[('tantam', 1)]",1
+tabulam,"[('tabula', 1), ('tabulas', 1)]",2
+cristum,"[('cristus', 1)]",1
+armeniam,"[('armenia', 1)]",1
+preuenti,"[('presenti', 1)]",1
+milia,"[('filia', 1)]",1
+sufitiant,"[('sufitiat', 1)]",1
+castra,"[('castri', 1), ('castro', 1)]",2
+inditia,"[('iuditia', 1)]",1
+quarte,"[('quarta', 1), ('quare', 1)]",2
+inclusit,"[('includit', 1)]",1
+guta,"[('ruta', 1), ('tuta', 1), ('auta', 1)]",3
+acas,"[('acab', 1), ('acis', 1), ('acus', 1)]",3
+munitam,"[('munita', 1), ('munitum', 1)]",2
+quamlibet,"[('quemlibet', 1), ('qualibet', 1)]",2
+arto,"[('alto', 1)]",1
+tauri,"[('auri', 1)]",1
+sudore,"[('sudor', 1)]",1
+pede,"[('pedes', 1), ('pedem', 1), ('cede', 1)]",3
+pedibus,"[('pelibus', 1)]",1
+nauigaui,"[('nauigari', 1)]",1
+multitudinem,"[('multitudine', 1)]",1
+equis,"[('equos', 1), ('quis', 1), ('aquis', 1)]",3
+pomum,"[('potum', 1), ('domum', 1)]",2
+mansi,"[('mansio', 1), ('mansit', 1)]",2
+ciuitatis,"[('ciuitati', 1), ('ciuitates', 1)]",2
+sint,"[('sunt', 1), ('sit', 1), ('sin', 1), ('sine', 1)]",4
+saluias,"[('saluia', 1)]",1
+diuisione,"[('diuisiones', 1)]",1
+tobias,"[('tobia', 1)]",1
+fluit,"[('fuit', 1), ('efluit', 1), ('fluxit', 1)]",3
+mirabile,"[('mirabiles', 1), ('mirabili', 1), ('mirabilem', 1)]",3
+spatio,"[('spatia', 1)]",1
+capta,"[('apta', 1), ('captam', 1), ('capita', 1)]",3
+angulum,"[('angelum', 1)]",1
+proici,"[('proicit', 1)]",1
+aliquam,"[('aliquem', 1), ('aliqua', 1)]",2
+dicetur,"[('dicatur', 1), ('dicitur', 1)]",2
+elisii,"[('elisei', 1)]",1
+bono,"[('bona', 1), ('bone', 1)]",2
+diuersis,"[('diuersas', 1), ('diuersi', 1)]",2
+regno,"[('regio', 1), ('regni', 1), ('regna', 1)]",3
+uniuerso,"[('uniuerse', 1), ('uniuersa', 1)]",2
+munitio,"[('muniti', 1)]",1
+porte,"[('poete', 1), ('forte', 1), ('portu', 1), ('porta', 1), ('sorte', 1), ('parte', 1), ('morte', 1), ('portem', 1)]",8
+teutonice,"[('teutonie', 1), ('teutonica', 1)]",2
+cain,"[('can', 1)]",1
+cubitis,"[('cubitos', 1)]",1
+fratre,"[('fratres', 1)]",1
+ipse,"[('ipsa', 1), ('ipsi', 1), ('ipso', 1)]",3
+uenti,"[('ueni', 1), ('uentis', 1), ('uento', 1)]",3
+oriens,"[('moriens', 1)]",1
+piala,"[('pialam', 1)]",1
+mortuus,"[('mortus', 1), ('mortuum', 1)]",2
+uolui,"[('uoluit', 1)]",1
+nimia,"[('nimiam', 1), ('nimis', 1)]",2
+loci,"[('locis', 1), ('loca', 1), ('loco', 1)]",3
+biblium,"[('biblum', 1)]",1
+egiptus,"[('egiptum', 1)]",1
+totum,"[('botum', 1), ('notum', 1), ('potum', 1), ('totus', 1), ('motum', 1), ('uotum', 1), ('titum', 1), ('totam', 1)]",8
+adam,"[('aram', 1), ('axam', 1)]",2
+iarcam,"[('arcam', 1)]",1
+habuit,"[('habui', 1)]",1
+disposita,"[('dispositi', 1)]",1
+latus,"[('litus', 1), ('lacus', 1), ('latos', 1), ('latum', 1), ('natus', 1)]",5
+principes,"[('principis', 1)]",1
+gradu,"[('gradus', 1)]",1
+lapideam,"[('lapidem', 1)]",1
+diuersas,"[('diuersis', 1), ('diuersa', 1)]",2
+bene,"[('bone', 1), ('cene', 1)]",2
+nascitur,"[('noscitur', 1)]",1
+scissi,"[('scissio', 1)]",1
+altera,"[('alteram', 1), ('alter', 1)]",2
+propeta,"[('propete', 1)]",1
+annuntiationis,"[('annuntiationi', 1)]",1
+indi,"[('india', 1), ('inde', 1), ('indie', 1)]",3
+religiosis,"[('religionis', 1), ('religiosi', 1)]",2
+item,"[('iter', 1), ('idem', 1)]",2
+quarta,"[('quarte', 1), ('quartam', 1)]",2
+matri,"[('matei', 1), ('maturi', 1), ('matrim', 1), ('matris', 1), ('mari', 1)]",5
+aquilonem,"[('aquilone', 1)]",1
+miliare,"[('miliari', 1)]",1
+occulta,"[('occultas', 1)]",1
+consitus,"[('conditus', 1)]",1
+cipri,"[('cupri', 1)]",1
+istud,"[('istum', 1)]",1
+manum,"[('magnum', 1), ('manu', 1), ('panum', 1), ('manuum', 1), ('malum', 1)]",5
+diuo,"[('dio', 1), ('diu', 1), ('duo', 1), ('riuo', 1), ('dico', 1)]",5
+translatus,"[('translatum', 1)]",1
+continebat,"[('continebant', 1), ('continebit', 1)]",2
+romam,"[('rotam', 1), ('roma', 1)]",2
+ionas,"[('bonas', 1)]",1
+parum,"[('karum', 1), ('patrum', 1), ('panum', 1), ('paruo', 1), ('parui', 1), ('rarum', 1), ('earum', 1)]",7
+cabul,"[('kabul', 1)]",1
+niue,"[('noue', 1), ('siue', 1)]",2
+annulo,"[('angulo', 1)]",1
+appelatam,"[('appelata', 1)]",1
+termini,"[('terminis', 1)]",1
+uerbum,"[('uerum', 1)]",1
+litere,"[('latere', 1), ('litore', 1)]",2
+alibi,"[('alii', 1)]",1
+libro,"[('libri', 1)]",1
+reuerentia,"[('reuerentiam', 1)]",1
+cristiane,"[('cristiana', 1), ('cristiani', 1)]",2
+piniceam,"[('peniceam', 1)]",1
+peciuit,"[('peciui', 1), ('peciit', 1)]",2
+herode,"[('herodes', 1)]",1
+toto,"[('tot', 1), ('tota', 1)]",2
+locis,"[('loci', 1), ('locus', 1), ('lacis', 1)]",3
+lapis,"[('laris', 1), ('lacis', 1)]",2
+piscinas,"[('piscinam', 1), ('piscinis', 1), ('piscina', 1)]",3
+isaias,"[('isaia', 1)]",1
+nobilis,"[('nobiles', 1)]",1
+iuditiaria,"[('iuditiariam', 1)]",1
+funda,"[('fundo', 1)]",1
+uadit,"[('uidit', 1), ('uadis', 1), ('cadit', 1)]",3
+questiones,"[('questionem', 1)]",1
+habentur,"[('habetur', 1)]",1
+amplis,"[('amplius', 1)]",1
+panis,"[('canis', 1), ('pannis', 1)]",2
+steriles,"[('sterilis', 1)]",1
+sancte,"[('sancti', 1), ('sancto', 1), ('sancta', 1)]",3
+mirifico,"[('mirifice', 1)]",1
+eandem,"[('easdem', 1), ('eadem', 1), ('tandem', 1), ('eundem', 1)]",4
+claustri,"[('claustra', 1)]",1
+maiorem,"[('maiore', 1), ('maiores', 1)]",2
+mira,"[('mire', 1), ('pira', 1)]",2
+regine,"[('regina', 1), ('regie', 1), ('regione', 1)]",3
+ianon,"[('canon', 1)]",1
+aqua,"[('aquas', 1), ('qua', 1), ('aquam', 1), ('aque', 1)]",4
+pisis,"[('uisis', 1)]",1
+carmelo,"[('carmeli', 1), ('camelo', 1)]",2
+uersa,"[('uera', 1), ('tersa', 1), ('uerba', 1)]",3
+quadam,"[('quamdam', 1), ('quedam', 1), ('quodam', 1), ('quidam', 1), ('quandam', 1)]",5
+sanctus,"[('sanctum', 1)]",1
+damascus,"[('damascum', 1)]",1
+habitat,"[('habitant', 1)]",1
+neptalim,"[('neptalin', 1)]",1
+uici,"[('dici', 1), ('uidi', 1), ('uiri', 1), ('uico', 1), ('uini', 1), ('uice', 1), ('uiui', 1)]",7
+arbor,"[('arbore', 1)]",1
+laoditiam,"[('laoditia', 1)]",1
+uisis,"[('pisis', 1), ('uilis', 1), ('uiris', 1), ('uisus', 1)]",4
+coli,"[('cole', 1), ('colo', 1), ('colis', 1), ('soli', 1), ('celi', 1), ('cori', 1)]",6
+sumi,"[('sui', 1), ('sum', 1)]",2
+mortus,"[('mortuus', 1), ('ortus', 1), ('mortuo', 1), ('portus', 1), ('mortui', 1), ('mortua', 1)]",6
+quamdam,"[('quadam', 1), ('quemdam', 1), ('quandam', 1)]",3
+riuus,"[('riuos', 1), ('riuis', 1), ('riuum', 1)]",3
+elocati,"[('locati', 1)]",1
+dependenti,"[('dependente', 1)]",1
+sindone,"[('sidone', 1)]",1
+occidentali,"[('occidentalis', 1), ('occidentale', 1)]",2
+habes,"[('habens', 1), ('habet', 1)]",2
+fratrum,"[('aratrum', 1)]",1
+posse,"[('possem', 1), ('posset', 1)]",2
+artem,"[('partem', 1), ('autem', 1)]",2
+bone,"[('bona', 1), ('bono', 1), ('bene', 1), ('boue', 1)]",4
+confluxerunt,"[('confluxerant', 1)]",1
+delicatissimum,"[('delicatissimus', 1)]",1
+dieta,"[('dietas', 1), ('diete', 1), ('dicta', 1), ('dietam', 1)]",4
+uali,"[('uale', 1), ('mali', 1), ('ualis', 1), ('uli', 1)]",4
+nauigarem,"[('nauigare', 1)]",1
+filia,"[('milia', 1), ('filie', 1), ('filio', 1), ('folia', 1), ('filii', 1), ('filiam', 1)]",6
+inferior,"[('interior', 1), ('inferiori', 1)]",2
+gulfum,"[('gulfus', 1)]",1
+timpora,"[('tempora', 1)]",1
+alius,"[('aliis', 1), ('alium', 1), ('alias', 1), ('alcius', 1), ('aliud', 1), ('alios', 1), ('altus', 1), ('ilius', 1)]",8
+sidon,"[('sion', 1), ('sidone', 1)]",2
+tuli,"[('nuli', 1), ('tui', 1), ('uli', 1), ('tuti', 1)]",4
+infirmi,"[('infimi', 1)]",1
+aream,"[('arcam', 1), ('aram', 1), ('area', 1)]",3
+edom,"[('edon', 1)]",1
+dicam,"[('dictam', 1)]",1
+serra,"[('terra', 1), ('sarra', 1)]",2
+minora,"[('minore', 1), ('minor', 1)]",2
+bonum,"[('botum', 1), ('bonam', 1), ('bonus', 1)]",3
+ueteris,"[('ueneris', 1), ('ueteres', 1), ('ceteris', 1), ('ueteri', 1)]",4
+eneam,"[('eneum', 1)]",1
+dicebat,"[('ducebat', 1), ('dicebant', 1)]",2
+prerupte,"[('prerupti', 1), ('prerupta', 1)]",2
+amenus,"[('amenis', 1), ('amenum', 1), ('amenos', 1)]",3
+sola,"[('sol', 1), ('soli', 1)]",2
+plagam,"[('planam', 1), ('plaga', 1)]",2
+turci,"[('turcis', 1)]",1
+maceruta,"[('macerunta', 1)]",1
+scaleam,"[('scalam', 1)]",1
+cedes,"[('pedes', 1), ('celes', 1), ('cades', 1), ('sedes', 1), ('cede', 1)]",5
+arborum,"[('armorum', 1), ('arborem', 1)]",2
+ananeel,"[('anandel', 1)]",1
+lonbardia,"[('lombardia', 1)]",1
+modicum,"[('modicus', 1)]",1
+intentio,"[('inuentio', 1)]",1
+regia,"[('regio', 1), ('regi', 1), ('regina', 1), ('regna', 1), ('regis', 1), ('regie', 1)]",6
+uersus,"[('uerus', 1), ('uersui', 1)]",2
+ienua,"[('genua', 1)]",1
+amenis,"[('amenus', 1), ('amenos', 1)]",2
+patrem,"[('patre', 1), ('patrum', 1), ('matrem', 1), ('patres', 1)]",4
+uetus,"[('uerus', 1)]",1
+salis,"[('satis', 1), ('solis', 1), ('salim', 1), ('ualis', 1), ('talis', 1), ('malis', 1), ('saulis', 1)]",7
+translata,"[('translate', 1)]",1
+nouo,"[('ouo', 1), ('noua', 1), ('noui', 1), ('noue', 1)]",4
+campis,"[('campus', 1), ('campi', 1), ('campos', 1)]",3
+caput,"[('capud', 1)]",1
+canan,"[('canon', 1), ('cana', 1), ('canaan', 1)]",3
+natione,"[('nationes', 1)]",1
+colorum,"[('colorem', 1)]",1
+quare,"[('quarte', 1)]",1
+firmum,"[('firmus', 1)]",1
+australis,"[('australi', 1), ('australes', 1)]",2
+longum,"[('longus', 1)]",1
+stopuli,"[('scopuli', 1)]",1
+habitans,"[('habitant', 1)]",1
+exempla,"[('exempli', 1)]",1
+facili,"[('facile', 1)]",1
+possit,"[('posuit', 1), ('posset', 1), ('possim', 1)]",3
+ministrante,"[('ministrantes', 1)]",1
+akcon,"[('akon', 1), ('accon', 1), ('acon', 1)]",3
+iludi,"[('ilud', 1)]",1
+krak,"[('krac', 1)]",1
+excelsa,"[('excelsi', 1)]",1
+euersionis,"[('euersioni', 1)]",1
+palestina,"[('palestinam', 1), ('palestine', 1)]",2
+timet,"[('timent', 1)]",1
+edificate,"[('edificato', 1), ('edificata', 1)]",2
+petra,"[('petram', 1), ('petri', 1), ('petre', 1)]",3
+uehementia,"[('uehementi', 1)]",1
+manibus,"[('canibus', 1), ('panibus', 1)]",2
+scripture,"[('scriptura', 1)]",1
+iesse,"[('esse', 1), ('iessen', 1)]",2
+ecclesias,"[('ecclesiis', 1), ('ecclesia', 1), ('ecclesiam', 1)]",3
+tanta,"[('tante', 1), ('tantam', 1), ('tanti', 1)]",3
+inter,"[('iter', 1)]",1
+paruos,"[('paruo', 1), ('partos', 1), ('paruus', 1)]",3
+manassen,"[('manasse', 1)]",1
+ciuitati,"[('ciuitatis', 1), ('ciuitate', 1)]",2
+quinque,"[('quisque', 1)]",1
+minore,"[('minora', 1), ('minere', 1), ('minor', 1)]",3
+aradum,"[('aradium', 1)]",1
+cristi,"[('cristo', 1)]",1
+ualania,"[('ualanie', 1), ('ualaniam', 1)]",2
+domino,"[('domine', 1), ('domini', 1), ('dominio', 1), ('domina', 1)]",4
+holofernes,"[('holofernis', 1), ('holofernem', 1)]",2
+tebes,"[('tebe', 1)]",1
+carmeli,"[('carmali', 1), ('carmelo', 1), ('cameli', 1)]",3
+statim,"[('statum', 1)]",1
+templa,"[('templi', 1), ('templo', 1)]",2
+lineamenta,"[('liniamenta', 1)]",1
+multa,"[('multam', 1), ('multi', 1), ('multas', 1), ('multo', 1), ('multe', 1)]",5
+transit,"[('transito', 1)]",1
+botrus,"[('botros', 1), ('botris', 1), ('botrum', 1)]",3
+pingwis,"[('pinguis', 1)]",1
+huius,"[('humus', 1), ('cuius', 1)]",2
+nidus,"[('nilus', 1)]",1
+loquitur,"[('coquitur', 1)]",1
+magi,"[('magis', 1), ('mali', 1), ('magni', 1), ('mari', 1)]",4
+galee,"[('galea', 1)]",1
+replet,"[('repleta', 1)]",1
+uenientes,"[('uenientem', 1)]",1
+maturi,"[('matri', 1)]",1
+acab,"[('acas', 1)]",1
+lacuit,"[('latuit', 1), ('lauit', 1), ('placuit', 1)]",3
+accoliti,"[('accolitis', 1)]",1
+casus,"[('casum', 1)]",1
+nobilissimo,"[('nobilissime', 1), ('nobilissima', 1)]",2
+dissensiones,"[('dissensionem', 1)]",1
+constructas,"[('constructa', 1)]",1
+eidi,"[('uidi', 1)]",1
+ortus,"[('ortum', 1), ('mortus', 1), ('ortu', 1), ('portus', 1), ('ortos', 1), ('ortis', 1)]",6
+ipsos,"[('ipsas', 1), ('ipsis', 1), ('ipso', 1)]",3
+uera,"[('uersa', 1), ('era', 1), ('fera', 1), ('uero', 1), ('ueri', 1), ('uere', 1), ('uerba', 1)]",7
+numquam,"[('umquam', 1), ('nusquam', 1), ('nunquam', 1)]",3
+plana,"[('planam', 1), ('plena', 1), ('plaga', 1), ('lana', 1), ('plano', 1), ('plane', 1)]",6
+ioppem,"[('ioppen', 1), ('ioppes', 1), ('ioppe', 1)]",3
+atrio,"[('atria', 1)]",1
+fundo,"[('funda', 1), ('mundo', 1), ('eundo', 1)]",3
+sinum,"[('situm', 1), ('sineum', 1), ('signum', 1), ('sinus', 1), ('uinum', 1)]",5
+impleant,"[('inpleant', 1)]",1
+uile,"[('ile', 1), ('uite', 1), ('uale', 1), ('uila', 1), ('uie', 1), ('uice', 1)]",6
+ilis,"[('ilic', 1), ('uilis', 1), ('ilas', 1), ('ili', 1), ('ilius', 1)]",5
+regem,"[('rege', 1), ('gregem', 1), ('regum', 1), ('reges', 1), ('legem', 1)]",5
+antilibano,"[('antilibani', 1)]",1
+iosep,"[('ioser', 1), ('iosepi', 1)]",2
+petram,"[('petra', 1), ('petrum', 1)]",2
+altaris,"[('altari', 1)]",1
+piscem,"[('pisces', 1)]",1
+pretea,"[('preter', 1)]",1
+aroca,"[('arca', 1)]",1
+silo,"[('ilo', 1), ('siloe', 1)]",2
+septentrionalis,"[('septentrionali', 1)]",1
+maior,"[('maiore', 1), ('maiori', 1), ('maiora', 1)]",3
+sufitiat,"[('sufitiant', 1)]",1
+istam,"[('istas', 1), ('ista', 1), ('istum', 1)]",3
+babilonia,"[('babilona', 1), ('babilonis', 1), ('babiloniam', 1)]",3
+causa,"[('causam', 1), ('cause', 1), ('cauda', 1), ('clausa', 1)]",4
+finem,"[('fine', 1), ('fidem', 1), ('fines', 1)]",3
+turris,"[('turrim', 1), ('terris', 1), ('turres', 1), ('turcis', 1)]",4
+idumea,"[('idumee', 1), ('idumeam', 1)]",2
+amplius,"[('amplis', 1)]",1
+australi,"[('australis', 1), ('australe', 1)]",2
+karum,"[('parum', 1), ('rarum', 1), ('earum', 1)]",3
+egipti,"[('egipto', 1)]",1
+colum,"[('solum', 1), ('celum', 1)]",2
+fluuius,"[('fluuium', 1)]",1
+detestabili,"[('detestabilis', 1)]",1
+camelus,"[('carmelus', 1), ('camelis', 1), ('camelos', 1)]",3
+nulam,"[('nudam', 1), ('nula', 1), ('nulum', 1)]",3
+cristiana,"[('cristiane', 1), ('cristiani', 1)]",2
+translatum,"[('translatus', 1)]",1
+secus,"[('sectus', 1), ('secum', 1)]",2
+cene,"[('bene', 1), ('cena', 1), ('cede', 1), ('cepe', 1)]",4
+iesum,"[('iesu', 1), ('ipsum', 1), ('iesus', 1)]",3
+luce,"[('leuce', 1), ('lucie', 1), ('lune', 1)]",3
+contingit,"[('contigit', 1)]",1
+magnos,"[('magnus', 1), ('magnas', 1), ('magno', 1), ('magos', 1), ('magnis', 1)]",5
+auibus,"[('ouibus', 1), ('nauibus', 1), ('quibus', 1)]",3
+generis,"[('ueneris', 1), ('genesis', 1)]",2
+sanguinem,"[('sanguine', 1), ('sanguineo', 1)]",2
+caparnaum,"[('caparnum', 1)]",1
+heresibus,"[('heredibus', 1)]",1
+poterunt,"[('poterant', 1)]",1
+tartari,"[('tartaris', 1)]",1
+dulces,"[('dulcem', 1), ('dulcis', 1), ('duces', 1)]",3
+spatia,"[('spatio', 1)]",1
+serpentis,"[('serpentes', 1)]",1
+abbatem,"[('abbates', 1)]",1
+uenit,"[('ueni', 1), ('ueniat', 1)]",2
+ueteres,"[('ueteris', 1), ('ueterem', 1)]",2
+finis,"[('finit', 1), ('fines', 1)]",2
+careat,"[('caret', 1)]",1
+geneba,"[('genera', 1)]",1
+pedes,"[('pede', 1), ('cedes', 1), ('sedes', 1), ('pedem', 1)]",4
+latinos,"[('latinis', 1)]",1
+occidit,"[('accidit', 1)]",1
+spelunca,"[('spelunce', 1), ('speluncam', 1)]",2
+antiocia,"[('antiociam', 1)]",1
+modicis,"[('modicus', 1)]",1
+paralipomeni,"[('paralippomeni', 1)]",1
+campus,"[('campis', 1), ('campum', 1), ('campos', 1)]",3
+distant,"[('distans', 1), ('distent', 1), ('distat', 1)]",3
+inmeabilis,"[('imeabilis', 1)]",1
+greci,"[('grece', 1)]",1
+cito,"[('scito', 1)]",1
+tabule,"[('tabula', 1)]",1
+botros,"[('botrus', 1), ('botris', 1)]",2
+secunda,"[('secundo', 1), ('secundam', 1), ('secunde', 1)]",3
+maria,"[('marina', 1), ('maris', 1), ('marie', 1), ('moria', 1), ('mariam', 1), ('mari', 1)]",6
+spetialis,"[('spetiali', 1)]",1
+maxim,"[('maximo', 1), ('maxime', 1), ('maxima', 1)]",3
+rupis,"[('rupes', 1), ('rupi', 1)]",2
+ducebat,"[('dicebat', 1)]",1
+istis,"[('isti', 1), ('istas', 1), ('istos', 1)]",3
+propete,"[('propeta', 1)]",1
+opidum,"[('oppidum', 1)]",1
+patriarca,"[('patriarce', 1)]",1
+puteum,"[('puteus', 1)]",1
+album,"[('albam', 1), ('alium', 1), ('altum', 1)]",3
+patre,"[('patrem', 1), ('petre', 1), ('patres', 1)]",3
+agro,"[('agros', 1), ('auro', 1)]",2
+india,"[('indi', 1), ('indie', 1), ('indiam', 1)]",3
+regio,"[('regno', 1), ('regia', 1), ('legio', 1), ('regi', 1), ('regis', 1), ('regie', 1)]",6
+reliquo,"[('reliqui', 1)]",1
+filie,"[('filia', 1), ('filio', 1), ('filii', 1)]",3
+minere,"[('minore', 1)]",1
+giardini,"[('iardini', 1)]",1
+scribit,"[('scribi', 1)]",1
+iordane,"[('iordanem', 1)]",1
+ducet,"[('duces', 1), ('decet', 1), ('ducit', 1)]",3
+terminatur,"[('terminantur', 1)]",1
+uidetur,"[('uidentur', 1), ('uideatur', 1)]",2
+penicie,"[('penice', 1), ('penicis', 1)]",2
+pascua,"[('pasca', 1)]",1
+beati,"[('beate', 1), ('beata', 1)]",2
+uideri,"[('uiderim', 1), ('uidere', 1)]",2
+caipa,"[('caipam', 1), ('caipas', 1), ('caipan', 1)]",3
+prius,"[('primus', 1)]",1
+botris,"[('botri', 1), ('botrus', 1), ('botros', 1), ('botrim', 1)]",4
+sententia,"[('sententiam', 1)]",1
+pannos,"[('annos', 1), ('panno', 1), ('pannis', 1)]",3
+nodi,"[('noui', 1)]",1
+galea,"[('galee', 1), ('galca', 1)]",2
+planam,"[('plagam', 1), ('plana', 1)]",2
+longitudine,"[('longitudinem', 1), ('logitudine', 1)]",2
+partia,"[('parti', 1), ('partis', 1), ('partim', 1)]",3
+satis,"[('sitis', 1), ('salis', 1)]",2
+sabatis,"[('sabati', 1)]",1
+factus,"[('factum', 1), ('factis', 1), ('iactus', 1), ('factos', 1)]",4
+helius,"[('melius', 1), ('helias', 1)]",2
+principio,"[('principis', 1)]",1
+interfectis,"[('interfectus', 1)]",1
+meca,"[('mea', 1)]",1
+ductores,"[('doctores', 1)]",1
+lipparis,"[('lippari', 1)]",1
+filio,"[('filia', 1), ('filie', 1), ('folio', 1), ('filios', 1), ('filii', 1)]",5
+habitant,"[('habitat', 1), ('habitans', 1)]",2
+fortibus,"[('fontibus', 1)]",1
+turre,"[('turrem', 1), ('turres', 1), ('terre', 1), ('turpe', 1)]",4
+eunucum,"[('enucum', 1)]",1
+ceteros,"[('cetero', 1), ('ceteris', 1)]",2
+tria,"[('atria', 1)]",1
+fine,"[('finem', 1), ('fide', 1), ('fines', 1), ('sine', 1)]",4
+descriptione,"[('descriptionem', 1)]",1
+poete,"[('porte', 1)]",1
+amaceum,"[('araceum', 1)]",1
+sententiam,"[('sententia', 1)]",1
+spatiosis,"[('spatiosus', 1), ('spetiosis', 1)]",2
+inferius,"[('interius', 1)]",1
+quadragesima,"[('quadragesimam', 1)]",1
+adenam,"[('amenam', 1)]",1
+adhuc,"[('adhoc', 1)]",1
+euleuterus,"[('eleuterus', 1)]",1
+seon,"[('sion', 1)]",1
+pelibus,"[('pedibus', 1)]",1
+ioppen,"[('ioppem', 1), ('ioppes', 1), ('ioppe', 1)]",3
+eufraten,"[('eufrate', 1), ('eufratem', 1)]",2
+questionem,"[('questiones', 1)]",1
+ieremias,"[('ieremia', 1)]",1
+pauli,"[('sauli', 1), ('paulo', 1), ('pauci', 1), ('paule', 1)]",4
+pectus,"[('sectus', 1), ('lectus', 1)]",2
+posuit,"[('possit', 1), ('posui', 1), ('potuit', 1)]",3
+accidit,"[('occidit', 1), ('accedit', 1)]",2
+rubris,"[('rubri', 1)]",1
+multum,"[('multam', 1), ('multus', 1)]",2
+nauigari,"[('nauigaui', 1), ('nauigare', 1)]",2
+ipsas,"[('ipsa', 1), ('ipsos', 1), ('ipsis', 1), ('ipsam', 1)]",4
+partem,"[('artem', 1), ('partes', 1), ('partim', 1), ('parte', 1), ('portem', 1)]",5
+maron,"[('aaron', 1), ('maon', 1), ('saron', 1), ('aron', 1)]",4
+iussit,"[('iussi', 1)]",1
+gemnim,"[('gemnin', 1), ('semnim', 1)]",2
+oppidum,"[('opidum', 1)]",1
+gentis,"[('gentes', 1), ('mentis', 1), ('uentis', 1)]",3
+galca,"[('galea', 1)]",1
+iohannem,"[('iohannes', 1), ('iohanne', 1)]",2
+longa,"[('longe', 1), ('longo', 1)]",2
+predicans,"[('predicant', 1)]",1
+uxorem,"[('uxores', 1), ('uxore', 1)]",2
+appelantur,"[('appelatur', 1)]",1
+talia,"[('alia', 1), ('talis', 1)]",2
+huic,"[('hic', 1), ('hunc', 1)]",2
+campi,"[('campis', 1), ('campo', 1)]",2
+unus,"[('ulus', 1), ('funus', 1), ('onus', 1), ('unum', 1), ('unius', 1)]",5
+necessaria,"[('necessarie', 1)]",1
+kaco,"[('karo', 1)]",1
+tecua,"[('tecue', 1), ('tecuam', 1), ('tecta', 1)]",3
+annotaui,"[('annotauit', 1)]",1
+tebe,"[('tebes', 1)]",1
+miliari,"[('miliare', 1), ('miliaria', 1)]",2
+accedit,"[('accidit', 1)]",1
+circumdata,"[('circumdat', 1), ('circumdati', 1)]",2
+ualide,"[('ualido', 1), ('ualde', 1), ('calide', 1)]",3
+tripoli,"[('tripolin', 1), ('tripolis', 1), ('tripolim', 1)]",3
+akon,"[('akcon', 1), ('amon', 1), ('aron', 1), ('acon', 1)]",4
+poterat,"[('poterant', 1)]",1
+boues,"[('oues', 1), ('boue', 1)]",2
+uoragine,"[('uoraginem', 1)]",1
+tapnis,"[('tafnis', 1), ('tapnim', 1)]",2
+missas,"[('missa', 1), ('missus', 1), ('missam', 1)]",3
+curiam,"[('curia', 1)]",1
+senen,"[('sienen', 1), ('senes', 1), ('semen', 1), ('senex', 1)]",4
+ilic,"[('iluc', 1), ('ilis', 1), ('ili', 1)]",3
+aran,"[('aram', 1), ('aron', 1), ('paran', 1), ('ara', 1)]",4
+samarie,"[('sacarie', 1), ('samaria', 1)]",2
+quas,"[('quos', 1), ('quam', 1), ('aquas', 1), ('quasi', 1), ('qua', 1), ('quis', 1), ('duas', 1), ('suas', 1)]",8
+sortis,"[('fortis', 1), ('portis', 1), ('ortis', 1)]",3
+acimelec,"[('abimelec', 1)]",1
+iosepum,"[('iosepus', 1)]",1
+eorundem,"[('eorumdem', 1)]",1
+leucas,"[('leucis', 1), ('leuca', 1), ('lucas', 1), ('leucam', 1)]",4
+habitum,"[('habitu', 1)]",1
+rodus,"[('rodum', 1)]",1
+patrum,"[('parum', 1), ('patrem', 1), ('petrum', 1)]",3
+mons,"[('fons', 1)]",1
+longitudinem,"[('longitudine', 1)]",1
+nuli,"[('tuli', 1), ('nula', 1), ('uli', 1), ('nili', 1), ('nulo', 1)]",5
+legi,"[('lege', 1), ('legio', 1), ('regi', 1), ('elegi', 1), ('legit', 1)]",5
+cela,"[('cena', 1), ('ceila', 1), ('celo', 1), ('celi', 1)]",4
+lecti,"[('tecti', 1)]",1
+primus,"[('prius', 1), ('primum', 1)]",2
+genuit,"[('tenuit', 1)]",1
+alia,"[('talia', 1), ('alias', 1), ('aliam', 1), ('alta', 1), ('alie', 1), ('alii', 1), ('alio', 1)]",7
+urbs,"[('urbi', 1), ('urbis', 1)]",2
+maximas,"[('maximis', 1), ('maximus', 1), ('maxima', 1)]",3
+scito,"[('cito', 1)]",1
+ouibus,"[('auibus', 1), ('quibus', 1)]",2
+australes,"[('australis', 1), ('australe', 1)]",2
+antonii,"[('antonia', 1)]",1
+presepio,"[('presepis', 1)]",1
+laodotia,"[('laoditia', 1)]",1
+eiusdem,"[('eisdem', 1)]",1
+quarentene,"[('quarentena', 1), ('querentene', 1)]",2
+casteli,"[('castelo', 1)]",1
+siriam,"[('siria', 1)]",1
+arecium,"[('precium', 1)]",1
+anno,"[('annos', 1), ('anne', 1), ('panno', 1)]",3
+misso,"[('misse', 1), ('missa', 1)]",2
+uenerant,"[('generant', 1), ('uenerat', 1)]",2
+rotam,"[('romam', 1), ('notam', 1), ('rotas', 1), ('totam', 1)]",4
+mortuo,"[('mortus', 1), ('mortui', 1), ('mortua', 1)]",3
+stent,"[('stant', 1)]",1
+causam,"[('causa', 1)]",1
+libani,"[('libano', 1), ('clibani', 1)]",2
+iter,"[('item', 1), ('inter', 1), ('ter', 1), ('itur', 1)]",4
+altam,"[('albam', 1), ('aliam', 1), ('alta', 1), ('altum', 1)]",4
+magna,"[('magnam', 1), ('magnas', 1), ('magno', 1), ('manna', 1), ('magni', 1), ('magne', 1)]",6
+superiores,"[('superioris', 1), ('superiorem', 1)]",2
+ducunt,"[('dicunt', 1)]",1
+casum,"[('casus', 1), ('carsum', 1), ('nasum', 1)]",3
+bestias,"[('bestiam', 1)]",1
+alto,"[('altos', 1), ('arto', 1), ('alta', 1), ('alte', 1), ('albo', 1), ('alio', 1)]",6
+mire,"[('mira', 1), ('ire', 1), ('mare', 1), ('tire', 1)]",4
+olei,"[('oleo', 1)]",1
+antiociam,"[('antiocia', 1)]",1
+rotundus,"[('rotundum', 1)]",1
+adherent,"[('adherens', 1), ('adheret', 1)]",2
+caudas,"[('cauda', 1)]",1
+simili,"[('similis', 1), ('similia', 1)]",2
+paradisum,"[('paradisus', 1)]",1
+abimelec,"[('acimelec', 1)]",1
+infra,"[('intra', 1)]",1
+agens,"[('gens', 1)]",1
+eorum,"[('horum', 1), ('forum', 1), ('eurum', 1), ('earum', 1)]",4
+superiori,"[('superioris', 1), ('superior', 1)]",2
+gregis,"[('greges', 1), ('regis', 1)]",2
+intus,"[('initus', 1)]",1
+esse,"[('iesse', 1), ('esset', 1), ('essem', 1)]",3
+annuntiationi,"[('annuntiationis', 1)]",1
+heredibus,"[('heresibus', 1)]",1
+aracos,"[('aracus', 1), ('aracis', 1), ('aracas', 1)]",3
+ulus,"[('unus', 1), ('plus', 1), ('nulus', 1)]",3
+dietas,"[('dieta', 1), ('dietam', 1)]",2
+rege,"[('lege', 1), ('regem', 1), ('regi', 1), ('regie', 1), ('reges', 1)]",5
+pulcra,"[('pulcro', 1), ('pulcram', 1), ('pulcre', 1)]",3
+plena,"[('plana', 1), ('plene', 1)]",2
+principatu,"[('principatus', 1), ('principatum', 1)]",2
+cole,"[('coli', 1), ('mole', 1), ('colo', 1)]",3
+militiam,"[('militia', 1)]",1
+ierosolimitanus,"[('ierosolimitanis', 1)]",1
+serici,"[('serico', 1)]",1
+priores,"[('peiores', 1)]",1
+prospectus,"[('prospectum', 1)]",1
+dependente,"[('dependenti', 1), ('dependentem', 1)]",2
+prospectum,"[('prospectus', 1)]",1
+ualido,"[('ualide', 1), ('calido', 1)]",2
+dimissum,"[('demissum', 1)]",1
+insulam,"[('insula', 1)]",1
+terminis,"[('termini', 1), ('terminos', 1), ('terminus', 1)]",3
+pocius,"[('tocius', 1)]",1
+ecclesiatica,"[('ecclesiastica', 1)]",1
+simonis,"[('sidonis', 1)]",1
+fugere,"[('fugeret', 1)]",1
+iabel,"[('abel', 1)]",1
+glosa,"[('glossa', 1)]",1
+stans,"[('stant', 1)]",1
+fluxum,"[('fluxus', 1)]",1
+alexandria,"[('alexandriam', 1), ('alexandri', 1)]",2
+aracus,"[('aracos', 1), ('arcus', 1), ('aracis', 1), ('araceus', 1), ('aracas', 1)]",5
+marte,"[('mare', 1), ('marie', 1), ('parte', 1), ('morte', 1)]",4
+melo,"[('meo', 1), ('mel', 1), ('celo', 1), ('mele', 1), ('belo', 1)]",5
+peregrini,"[('peregrino', 1), ('peregrinis', 1)]",2
+multos,"[('multis', 1), ('multas', 1), ('multo', 1), ('multus', 1)]",4
+interfectus,"[('interfectis', 1)]",1
+astante,"[('stante', 1)]",1
+greges,"[('gregis', 1), ('gregem', 1), ('reges', 1)]",3
+lippari,"[('lipparis', 1)]",1
+terras,"[('terris', 1), ('terram', 1), ('terra', 1)]",3
+aconensis,"[('aconensi', 1)]",1
+prerupti,"[('prerupte', 1), ('prerupta', 1)]",2
+quedam,"[('quadam', 1), ('quemdam', 1), ('quodam', 1), ('quidam', 1)]",4
+uirga,"[('uirgo', 1)]",1
+babilona,"[('babilonia', 1)]",1
+proiecta,"[('proiecti', 1)]",1
+habetur,"[('habentur', 1)]",1
+fortis,"[('sortis', 1), ('forti', 1), ('fontis', 1), ('portis', 1), ('foris', 1), ('ortis', 1)]",6
+capiti,"[('capite', 1), ('capita', 1), ('capitis', 1)]",3
+populus,"[('populum', 1)]",1
+oues,"[('boues', 1)]",1
+cilam,"[('ilam', 1), ('uilam', 1), ('ceilam', 1)]",3
+peregrino,"[('peregrini', 1), ('peregrinos', 1)]",2
+occultas,"[('occulta', 1)]",1
+stant,"[('stent', 1), ('stans', 1), ('stante', 1), ('stat', 1)]",4
+diuisiones,"[('diuisione', 1)]",1
+esecielis,"[('esecieli', 1)]",1
+uulcani,"[('uulcano', 1)]",1
+uilis,"[('uisis', 1), ('ilis', 1), ('ualis', 1), ('uiris', 1)]",4
+teutoniam,"[('teutonia', 1)]",1
+arcus,"[('aracus', 1), ('marcus', 1), ('acus', 1)]",3
+factis,"[('factus', 1), ('facti', 1), ('factos', 1), ('lactis', 1)]",4
+palestinam,"[('palestina', 1)]",1
+atamen,"[('tamen', 1)]",1
+caluarie,"[('caluaria', 1)]",1
+amenum,"[('amenus', 1), ('amenam', 1)]",2
+soldani,"[('soldano', 1)]",1
+accessus,"[('accessum', 1)]",1
+betsaida,"[('betsaidam', 1)]",1
+foro,"[('fore', 1)]",1
+hostias,"[('hostia', 1)]",1
+aquilonale,"[('aquilonali', 1)]",1
+roma,"[('poma', 1), ('romam', 1), ('rama', 1)]",3
+muniti,"[('muniri', 1), ('munitio', 1), ('munita', 1), ('munite', 1)]",4
+fontem,"[('fonte', 1), ('fontes', 1), ('montem', 1)]",3
+terris,"[('turris', 1), ('terras', 1)]",2
+pueris,"[('pueri', 1)]",1
+supradicte,"[('supradicto', 1)]",1
+iotapata,"[('iocapata', 1)]",1
+nisi,"[('nili', 1)]",1
+corui,"[('cori', 1)]",1
+infesta,"[('infesti', 1)]",1
+mortem,"[('morem', 1), ('sortem', 1), ('morte', 1), ('montem', 1), ('portem', 1)]",5
+migrauerant,"[('migrauerunt', 1)]",1
+paseli,"[('pasel', 1)]",1
+nudam,"[('nulam', 1), ('nuda', 1)]",2
+deserta,"[('desertas', 1), ('desertam', 1), ('deserto', 1), ('deserti', 1)]",4
+egiptum,"[('egiptus', 1)]",1
+aliquem,"[('aliquam', 1)]",1
+camelam,"[('capelam', 1), ('carmelam', 1)]",2
+ridere,"[('uidere', 1)]",1
+leucis,"[('leucas', 1), ('leuis', 1)]",2
+ueritatem,"[('ueritates', 1), ('ueritate', 1)]",2
+tiberim,"[('tiberii', 1)]",1
+teutonie,"[('teutonice', 1), ('teutonia', 1)]",2
+arena,"[('amena', 1), ('area', 1)]",2
+latuisse,"[('lauisse', 1)]",1
+uirgis,"[('uiris', 1)]",1
+gentes,"[('gentis', 1), ('gente', 1)]",2
+patris,"[('matris', 1), ('patres', 1)]",2
+constituta,"[('constitutas', 1), ('constituto', 1)]",2
+antipatridem,"[('antipatridam', 1)]",1
+aliter,"[('alter', 1)]",1
+nominibus,"[('hominibus', 1)]",1
+habent,"[('habens', 1), ('habeant', 1), ('habet', 1), ('habeat', 1)]",4
+dicebatur,"[('dicebantur', 1)]",1
+discipulis,"[('discipuli', 1), ('discipulos', 1)]",2
+secundo,"[('secunda', 1), ('secunde', 1)]",2
+alium,"[('alius', 1), ('album', 1), ('aliam', 1), ('aliud', 1), ('palium', 1), ('altum', 1)]",6
+dauidi,"[('dauid', 1)]",1
+arabiam,"[('arabia', 1)]",1
+nilum,"[('nilus', 1), ('nulum', 1), ('ilum', 1)]",3
+monacis,"[('monacus', 1), ('monaci', 1)]",2
+alias,"[('aliis', 1), ('alius', 1), ('alia', 1), ('aliam', 1), ('alios', 1)]",5
+interfuit,"[('interfui', 1)]",1
+sepultum,"[('sepultus', 1)]",1
+sibi,"[('siri', 1), ('cibi', 1), ('ibi', 1)]",3
+susan,"[('sunan', 1)]",1
+persia,"[('persida', 1)]",1
+absorbetur,"[('absorbitur', 1)]",1
+desertas,"[('deserta', 1), ('desertam', 1), ('desertus', 1)]",3
+transiuit,"[('transiui', 1)]",1
+proni,"[('poni', 1), ('prona', 1)]",2
+secula,"[('seculo', 1)]",1
+serpentes,"[('serpentis', 1)]",1
+litora,"[('litore', 1)]",1
+fortissima,"[('fortissimi', 1), ('fortissime', 1)]",2
+exterior,"[('exteriori', 1)]",1
+dici,"[('dicti', 1), ('uici', 1), ('dixi', 1), ('duci', 1), ('dii', 1), ('dicit', 1), ('diei', 1), ('dico', 1)]",8
+copinis,"[('copini', 1)]",1
+peciit,"[('peciuit', 1)]",1
+ritum,"[('ritu', 1), ('situm', 1), ('riuum', 1), ('titum', 1)]",4
+scribo,"[('scribi', 1)]",1
+uerum,"[('uerbum', 1), ('puerum', 1), ('uerus', 1), ('rerum', 1), ('uterum', 1)]",5
+domine,"[('domino', 1), ('domini', 1), ('nomine', 1), ('domina', 1)]",4
+stulti,"[('stultis', 1)]",1
+tiirus,"[('tirus', 1)]",1
+rupe,"[('rupem', 1), ('rute', 1), ('rupes', 1), ('rupi', 1)]",4
+easdem,"[('eandem', 1), ('eadem', 1), ('eisdem', 1), ('eosdem', 1)]",4
+nona,"[('bona', 1), ('noua', 1), ('non', 1), ('pona', 1), ('nota', 1)]",5
+numerus,"[('numerum', 1)]",1
+munitione,"[('munitionem', 1)]",1
+cumulos,"[('tumulos', 1)]",1
+soldano,"[('soldani', 1)]",1
+magnus,"[('magnos', 1), ('magnum', 1), ('magnas', 1), ('magnis', 1)]",4
+magnum,"[('magnam', 1), ('manum', 1), ('magnus', 1)]",3
+baias,"[('baas', 1), ('bais', 1)]",2
+tersa,"[('uersa', 1), ('terra', 1)]",2
+ueniant,"[('ueniat', 1), ('ueniunt', 1)]",2
+superioris,"[('superiores', 1), ('superiori', 1)]",2
+rubeam,"[('rubeum', 1)]",1
+ipsi,"[('ipsa', 1), ('ipse', 1), ('ipsis', 1), ('ipso', 1)]",4
+delta,"[('deleta', 1), ('delte', 1)]",2
+uoluit,"[('uolui', 1), ('uolunt', 1), ('noluit', 1)]",3
+becel,"[('betel', 1)]",1
+suis,"[('sui', 1), ('quis', 1), ('suos', 1), ('suas', 1), ('uuis', 1)]",5
+penas,"[('penam', 1)]",1
+ascensus,"[('ascensu', 1), ('ascensum', 1)]",2
+populo,"[('populi', 1)]",1
+fugit,"[('fuit', 1)]",1
+legio,"[('regio', 1), ('legi', 1), ('legit', 1)]",3
+idem,"[('item', 1), ('fidem', 1), ('ideo', 1), ('eidem', 1)]",4
+matrim,"[('matri', 1), ('matrem', 1), ('matris', 1)]",3
+bersan,"[('betsan', 1)]",1
+locus,"[('locis', 1), ('lacus', 1), ('locum', 1)]",3
+kalendis,"[('alendis', 1)]",1
+pendens,"[('tendens', 1)]",1
+tribu,"[('tribum', 1), ('tribui', 1), ('tribus', 1)]",3
+tracones,"[('traconem', 1)]",1
+testitudines,"[('testitudine', 1), ('testitudinem', 1)]",2
+aliam,"[('albam', 1), ('alia', 1), ('altam', 1), ('alium', 1), ('alias', 1)]",5
+moriens,"[('oriens', 1)]",1
+sauli,"[('pauli', 1), ('saule', 1), ('saul', 1), ('saulis', 1)]",4
+principales,"[('principalem', 1)]",1
+iessen,"[('iesse', 1)]",1
+ilas,"[('ilam', 1), ('ilis', 1), ('ila', 1)]",3
+inuolutus,"[('inuolutum', 1)]",1
+litus,"[('latus', 1), ('situs', 1)]",2
+opere,"[('opera', 1)]",1
+ciues,"[('diues', 1)]",1
+maximis,"[('maximas', 1), ('maximus', 1)]",2
+infinitos,"[('infinitas', 1), ('infinitis', 1)]",2
+paralippomeni,"[('paralipomeni', 1)]",1
+episcopus,"[('episcopos', 1), ('episcopis', 1)]",2
+petri,"[('petra', 1), ('petre', 1)]",2
+dixi,"[('dici', 1), ('dii', 1), ('diei', 1), ('dixit', 1)]",4
+manu,"[('manum', 1), ('mane', 1)]",2
+beteron,"[('betoron', 1)]",1
+matrem,"[('patrem', 1), ('matrim', 1)]",2
+forum,"[('horum', 1), ('eorum', 1), ('florum', 1)]",3
+rose,"[('rore', 1), ('ros', 1), ('rase', 1)]",3
+umbram,"[('umbra', 1)]",1
+rediit,"[('redii', 1)]",1
+recedenti,"[('precedenti', 1)]",1
+apud,"[('capud', 1)]",1
+dicebant,"[('dicebat', 1)]",1
+uidit,"[('uadit', 1), ('uidi', 1), ('uiuit', 1), ('uidet', 1)]",4
+uilam,"[('ilam', 1), ('cilam', 1), ('uila', 1), ('uitam', 1), ('uiam', 1)]",5
+nomina,"[('nomine', 1), ('domina', 1)]",2
+irrigatur,"[('irrigantur', 1)]",1
+armorum,"[('arborum', 1)]",1
+monaco,"[('monaci', 1)]",1
+salomon,"[('salomone', 1)]",1
+delicatus,"[('delicatum', 1)]",1
+eleutereo,"[('eleutero', 1)]",1
+destructam,"[('destructa', 1), ('destructum', 1)]",2
+dicatur,"[('dicetur', 1), ('dicitur', 1)]",2
+nula,"[('nulam', 1), ('nuli', 1), ('nulo', 1), ('nuda', 1)]",4
+presens,"[('prebens', 1)]",1
+sion,"[('sior', 1), ('sidon', 1), ('seon', 1), ('gion', 1), ('sin', 1)]",5
+peregrinis,"[('peregrini', 1), ('peregrinos', 1)]",2
+puerum,"[('uerum', 1)]",1
+etati,"[('metati', 1), ('etatis', 1)]",2
+desertam,"[('deserta', 1), ('desertas', 1), ('desertum', 1)]",3
+pectora,"[('pecora', 1)]",1
+imundi,"[('mundi', 1)]",1
+plumbo,"[('plumbi', 1)]",1
+laneam,"[('laneum', 1), ('lineam', 1)]",2
+memoriam,"[('memoria', 1)]",1
+certe,"[('certo', 1)]",1
+dictis,"[('dicti', 1), ('dictus', 1)]",2
+botrum,"[('botum', 1), ('botrus', 1), ('botrim', 1)]",3
+principatus,"[('principatu', 1), ('principatum', 1)]",2
+generent,"[('tenerent', 1), ('generant', 1)]",2
+extendit,"[('extendat', 1)]",1
+uides,"[('uidet', 1), ('uideo', 1), ('uidens', 1)]",3
+metati,"[('etati', 1)]",1
+delicati,"[('delicata', 1)]",1
+monumenta,"[('monumenti', 1)]",1
+remi,"[('regi', 1), ('rem', 1), ('rei', 1)]",3
+infinitas,"[('infinitos', 1), ('infinitis', 1)]",2
+mirabiles,"[('mirabile', 1), ('mirabilem', 1), ('mirabilis', 1)]",3
+ramases,"[('ramasses', 1)]",1
+misse,"[('misso', 1), ('missa', 1)]",2
+lombardia,"[('lonbardia', 1)]",1
+quantitate,"[('quantitatem', 1)]",1
+paulus,"[('paulum', 1)]",1
+genua,"[('ienua', 1)]",1
+leuce,"[('luce', 1), ('leuca', 1)]",2
+meis,"[('melis', 1), ('eis', 1)]",2
+uolunt,"[('uoluit', 1), ('colunt', 1)]",2
+spatiosus,"[('spatiosis', 1)]",1
+principis,"[('principes', 1), ('principio', 1)]",2
+mensam,"[('mensa', 1)]",1
+sterquilinii,"[('sterquilini', 1)]",1
+gestu,"[('gesta', 1)]",1
+portum,"[('ortum', 1), ('portam', 1), ('portu', 1), ('portus', 1), ('potum', 1), ('portem', 1)]",6
+aliqui,"[('aliquid', 1), ('aliquo', 1), ('aliqua', 1), ('aliquis', 1)]",4
+uoraginem,"[('uoragine', 1)]",1
+capele,"[('capela', 1)]",1
+uiridis,"[('uirilis', 1)]",1
+templi,"[('templa', 1), ('templo', 1)]",2
+umquam,"[('numquam', 1), ('unquam', 1), ('usquam', 1)]",3
+iepore,"[('sepore', 1)]",1
+carsum,"[('casum', 1), ('cursum', 1)]",2
+turingiam,"[('turingia', 1)]",1
+mole,"[('cole', 1), ('mele', 1)]",2
+antiqui,"[('antiquo', 1), ('antiqua', 1)]",2
+anacot,"[('anacat', 1), ('anatot', 1)]",2
+deus,"[('deum', 1)]",1
+superficie,"[('superficies', 1), ('superificie', 1)]",2
+uineis,"[('uineas', 1), ('uinetis', 1)]",2
+origente,"[('oriente', 1)]",1
+genero,"[('genera', 1), ('genere', 1)]",2
+mane,"[('manu', 1), ('mare', 1), ('pane', 1), ('magne', 1), ('manet', 1)]",5
+aquiloni,"[('aquilone', 1), ('aquilonis', 1)]",2
+duci,"[('dici', 1), ('ducit', 1)]",2
+tigri,"[('tigrim', 1), ('tiri', 1)]",2
+poterant,"[('poterunt', 1), ('poterat', 1)]",2
+portam,"[('portum', 1), ('porta', 1), ('portat', 1), ('portem', 1)]",4
+tepet,"[('sepet', 1), ('topet', 1)]",2
+araceum,"[('amaceum', 1), ('araceus', 1)]",2
+nemine,"[('nemini', 1), ('femine', 1), ('nomine', 1)]",3
+diem,"[('dies', 1), ('die', 1), ('diei', 1)]",3
+uisum,"[('uisu', 1), ('uisus', 1), ('uinum', 1)]",3
+habens,"[('habes', 1), ('habent', 1)]",2
+nobilissima,"[('nobilissime', 1), ('nobilissimo', 1)]",2
+paulo,"[('pauli', 1), ('paule', 1)]",2
+profundum,"[('profundam', 1)]",1
+herodes,"[('herode', 1), ('herodis', 1)]",2
+templo,"[('templa', 1), ('templi', 1)]",2
+tenuit,"[('genuit', 1)]",1
+noua,"[('nouo', 1), ('nona', 1), ('noui', 1), ('nota', 1), ('noue', 1)]",5
+pilippi,"[('pilippo', 1)]",1
+nemini,"[('nemine', 1)]",1
+pueri,"[('pueris', 1), ('ueri', 1), ('puero', 1), ('puer', 1)]",4
+gregem,"[('regem', 1), ('greges', 1)]",2
+descendes,"[('descendens', 1)]",1
+incidit,"[('incipit', 1)]",1
+caipam,"[('caipa', 1), ('caipas', 1), ('caipan', 1)]",3
+possemus,"[('possumus', 1)]",1
+multam,"[('multa', 1), ('multum', 1), ('multas', 1)]",3
+eliopolis,"[('eliopolim', 1), ('eliopoli', 1)]",2
+ioppes,"[('ioppem', 1), ('ioppen', 1), ('ioppe', 1)]",3
+sepe,"[('sepet', 1), ('cepe', 1), ('spe', 1)]",3
+oculis,"[('oculos', 1)]",1
+amon,"[('akon', 1), ('aron', 1), ('acon', 1), ('amos', 1)]",4
+mergat,"[('margat', 1)]",1
+desertus,"[('desertas', 1), ('desertum', 1)]",2
+tuos,"[('quos', 1), ('tuo', 1), ('duos', 1), ('suos', 1), ('uos', 1)]",5
+uale,"[('uali', 1), ('uile', 1), ('uales', 1), ('ualde', 1), ('ualem', 1), ('tale', 1), ('ualeo', 1)]",7
+facto,"[('facti', 1), ('factos', 1), ('facte', 1), ('facta', 1)]",4
+lacus,"[('latus', 1), ('locus', 1), ('acus', 1), ('lacis', 1), ('lacius', 1)]",5
+istas,"[('istam', 1), ('istis', 1), ('istos', 1), ('ista', 1)]",4
+cetero,"[('ceteros', 1), ('cetera', 1), ('cetere', 1)]",3
+pecora,"[('peiora', 1), ('pectora', 1)]",2
+uita,"[('uite', 1), ('uina', 1), ('uila', 1), ('uitam', 1), ('sita', 1), ('uia', 1), ('ita', 1)]",7
+uales,"[('uale', 1), ('ualis', 1), ('quales', 1), ('uates', 1), ('ualem', 1), ('tales', 1), ('ualeo', 1)]",7
+principalem,"[('principales', 1)]",1
+sedens,"[('sedes', 1)]",1
+mensa,"[('mensam', 1), ('menia', 1), ('mense', 1)]",3
+olerum,"[('oleum', 1)]",1
+firmus,"[('firmum', 1)]",1
+sedem,"[('sedes', 1), ('pedem', 1)]",2
+ruina,"[('uina', 1), ('ruine', 1), ('ruinas', 1)]",3
+ilorum,"[('ilarum', 1), ('florum', 1)]",2
+quosdam,"[('quoddam', 1), ('quodam', 1), ('quondam', 1)]",3
+pisces,"[('piscem', 1)]",1
+confitentur,"[('confitetur', 1)]",1
+beritum,"[('berictum', 1), ('beritus', 1), ('bericum', 1)]",3
+uadis,"[('uadit', 1), ('ualis', 1)]",2
+magis,"[('magi', 1), ('magos', 1), ('magnis', 1), ('maris', 1), ('malis', 1)]",5
+tiberiadem,"[('tiberiade', 1)]",1
+facit,"[('facie', 1), ('fecit', 1)]",2
+solis,"[('salis', 1), ('solus', 1), ('colis', 1), ('soli', 1), ('solos', 1)]",5
+caloris,"[('coloris', 1)]",1
+oculos,"[('oculis', 1)]",1
+lineum,"[('laneum', 1), ('sineum', 1), ('lineam', 1)]",3
+fidem,"[('finem', 1), ('idem', 1), ('fide', 1), ('eidem', 1)]",4
+alta,"[('apta', 1), ('alia', 1), ('altam', 1), ('alto', 1), ('alte', 1), ('auta', 1)]",6
+regi,"[('regia', 1), ('regio', 1), ('legi', 1), ('rege', 1), ('remi', 1), ('regni', 1), ('regis', 1), ('regie', 1), ('rei', 1)]",9
+gerasa,"[('gerasam', 1)]",1
+complanata,"[('complanato', 1)]",1
+prelati,"[('prelatis', 1)]",1
+inueni,"[('inuenio', 1), ('inuenit', 1)]",2
+stepani,"[('stefani', 1)]",1
+sectus,"[('secus', 1), ('pectus', 1), ('sextus', 1), ('lectus', 1), ('secutus', 1)]",5
+hominum,"[('dominum', 1), ('hominem', 1)]",2
+miror,"[('minor', 1)]",1
+fonte,"[('fontem', 1), ('forte', 1), ('fontes', 1), ('fronte', 1), ('monte', 1)]",5
+cena,"[('cene', 1), ('cela', 1), ('cana', 1)]",3
+terram,"[('terras', 1), ('terra', 1)]",2
+abbates,"[('abbatem', 1), ('abates', 1)]",2
+arciepiscopi,"[('arciepiscopis', 1)]",1
+descripsi,"[('descripsit', 1)]",1
+dispositionem,"[('dispositione', 1)]",1
+prime,"[('prima', 1), ('primo', 1)]",2
+larisse,"[('lauisse', 1)]",1
+recedit,"[('recepit', 1)]",1
+notum,"[('botum', 1), ('totum', 1), ('notam', 1), ('nouum', 1), ('notus', 1), ('potum', 1), ('nodum', 1), ('motum', 1), ('uotum', 1), ('natum', 1)]",10
+antonia,"[('antonii', 1)]",1
+saxonia,"[('saxoniam', 1)]",1
+morem,"[('mortem', 1)]",1
+homicidia,"[('homicida', 1)]",1
+resonant,"[('resonat', 1)]",1
+notam,"[('rotam', 1), ('notum', 1), ('nota', 1), ('totam', 1)]",4
+descripsit,"[('descripsi', 1)]",1
+diuisio,"[('diuisi', 1)]",1
+inpressio,"[('impressio', 1)]",1
+tolitur,"[('colitur', 1)]",1
+redacta,"[('redactam', 1), ('reducta', 1)]",2
+tante,"[('tanta', 1), ('stante', 1), ('tanti', 1), ('ante', 1)]",4
+eram,"[('era', 1), ('oram', 1), ('aram', 1), ('erem', 1), ('eam', 1), ('erat', 1), ('ceram', 1)]",7
+sudor,"[('sudore', 1)]",1
+seculo,"[('secula', 1)]",1
+betoron,"[('beteron', 1)]",1
+oram,"[('eram', 1), ('aram', 1), ('doram', 1), ('olam', 1), ('ioram', 1), ('ora', 1), ('coram', 1), ('horam', 1)]",8
+iudicum,"[('iudicium', 1)]",1
+genera,"[('geneba', 1), ('genero', 1), ('genere', 1)]",3
+silicie,"[('milicie', 1), ('cilicie', 1)]",2
+dimidia,"[('dimidie', 1), ('dimidio', 1), ('dimidiam', 1)]",3
+columpnas,"[('columpnam', 1), ('columpnis', 1), ('columpna', 1)]",3
+fere,"[('ere', 1), ('fera', 1), ('fore', 1), ('uere', 1), ('iere', 1)]",5
+iordanem,"[('iordane', 1)]",1
+plaga,"[('plagam', 1), ('plana', 1)]",2
+eliopolim,"[('eliopolis', 1), ('eliopoli', 1)]",2
+regibus,"[('retibus', 1)]",1
+possumus,"[('possemus', 1)]",1
+ecclesiis,"[('ecclesias', 1)]",1
+camos,"[('campos', 1), ('amos', 1)]",2
+quoddam,"[('quosdam', 1), ('quodam', 1), ('quondam', 1)]",3
+antiquam,"[('antiquum', 1), ('antequam', 1), ('antiqua', 1)]",3
+secundam,"[('secunda', 1), ('secundum', 1)]",2
+canibus,"[('manibus', 1), ('panibus', 1)]",2
+alcius,"[('alius', 1)]",1
+dependentem,"[('dependente', 1)]",1
+ortu,"[('ortum', 1), ('ortus', 1), ('portu', 1), ('orti', 1), ('orta', 1)]",5
+dominus,"[('dominis', 1), ('dominum', 1)]",2
+margat,"[('mergat', 1), ('margant', 1)]",2
+pona,"[('poma', 1), ('bona', 1), ('nona', 1), ('poni', 1), ('prona', 1)]",5
+interior,"[('inferior', 1), ('interiori', 1)]",2
+comedit,"[('comedi', 1)]",1
+colo,"[('coli', 1), ('cole', 1), ('celo', 1)]",3
+lucie,"[('luce', 1)]",1
+spetiale,"[('spetialem', 1), ('spetiali', 1)]",2
+aracis,"[('aracos', 1), ('aracus', 1), ('aracas', 1)]",3
+opera,"[('opere', 1)]",1
+habundat,"[('habundant', 1)]",1
+panum,"[('manum', 1), ('parum', 1), ('panem', 1), ('pannum', 1)]",4
+mentum,"[('uentum', 1)]",1
+magnas,"[('magnam', 1), ('magnos', 1), ('magna', 1), ('magnus', 1), ('magmas', 1), ('magnis', 1)]",6
+antipatridam,"[('antipatridem', 1), ('antipatrida', 1)]",2
+medi,"[('sedi', 1), ('medio', 1), ('media', 1)]",3
+puteo,"[('puto', 1)]",1
+gloriosum,"[('gloriosam', 1)]",1
+latere,"[('litere', 1)]",1
+turrium,"[('turrim', 1)]",1
+eadem,"[('eandem', 1), ('easdem', 1), ('eodem', 1), ('eidem', 1)]",4
+cameli,"[('carmeli', 1), ('camelo', 1), ('camelis', 1)]",3
+montes,"[('fontes', 1), ('monte', 1), ('montem', 1), ('montis', 1)]",4
+manuum,"[('manum', 1)]",1
+paucos,"[('paucas', 1)]",1
+salim,"[('salis', 1), ('selim', 1), ('salem', 1)]",3
+mortuum,"[('mortuus', 1)]",1
+bericus,"[('beritus', 1), ('bericum', 1)]",2
+magnitudini,"[('magnitudine', 1), ('magnitudinis', 1)]",2
+berictum,"[('beritum', 1), ('bericum', 1)]",2
+delicata,"[('delicati', 1)]",1
+textus,"[('sextus', 1)]",1
+caluaria,"[('caluarie', 1)]",1
+sepulcra,"[('sepulcro', 1), ('sepulcri', 1)]",2
+orientalem,"[('orientale', 1)]",1
+ideo,"[('idem', 1), ('deo', 1), ('uideo', 1)]",3
+arbore,"[('arbor', 1), ('arborem', 1)]",2
+nubie,"[('nubia', 1)]",1
+militia,"[('militiam', 1), ('militie', 1), ('silitia', 1)]",3
+forti,"[('fortis', 1), ('forte', 1), ('orti', 1)]",3
+singule,"[('singula', 1)]",1
+possent,"[('possunt', 1), ('posset', 1)]",2
+horrei,"[('horrea', 1)]",1
+sinistris,"[('ministris', 1)]",1
+iactus,"[('iactum', 1), ('factus', 1)]",2
+antilibani,"[('antilibano', 1)]",1
+uiderem,"[('uiderim', 1), ('uideram', 1), ('uideret', 1), ('uidere', 1)]",4
+uidebatur,"[('uideatur', 1)]",1
+deuotione,"[('deuotionem', 1)]",1
+cruce,"[('crucem', 1)]",1
+iudas,"[('iuda', 1)]",1
+lusam,"[('lusa', 1), ('lucam', 1)]",2
+arcam,"[('iarcam', 1), ('aream', 1), ('aram', 1), ('arca', 1)]",4
+distans,"[('distant', 1)]",1
+solitudinis,"[('solitudines', 1)]",1
+plurium,"[('plurimum', 1)]",1
+testitudine,"[('testitudines', 1), ('testitudinem', 1)]",2
+rupem,"[('rupe', 1), ('rupes', 1)]",2
+aram,"[('adam', 1), ('aream', 1), ('aran', 1), ('eram', 1), ('oram', 1), ('arcam', 1), ('saram', 1), ('axam', 1), ('ara', 1)]",9
+mentio,"[('mentis', 1)]",1
+peasel,"[('pasel', 1)]",1
+dimidio,"[('dimidie', 1), ('dimidia', 1)]",2
+maleo,"[('ualeo', 1)]",1
+passuum,"[('passum', 1)]",1
+betulia,"[('betulie', 1), ('betuliam', 1)]",2
+redeunti,"[('redeunt', 1)]",1
+diete,"[('dieta', 1), ('dicte', 1)]",2
+laneum,"[('laneam', 1), ('lineum', 1)]",2
+betsan,"[('bersan', 1)]",1
+macabei,"[('macabeis', 1)]",1
+spiritus,"[('spiritu', 1)]",1
+munitissima,"[('munitissimam', 1)]",1
+decens,"[('dicens', 1)]",1
+nauibus,"[('auibus', 1), ('niuibus', 1)]",2
+krac,"[('krak', 1), ('karac', 1)]",2
+betsames,"[('betsamis', 1)]",1
+cuidam,"[('quidam', 1)]",1
+pariete,"[('parietes', 1), ('parietem', 1)]",2
+samariam,"[('samaria', 1)]",1
+hermonim,"[('hermonin', 1)]",1
+domini,"[('dominis', 1), ('domino', 1), ('domine', 1), ('dominio', 1), ('domina', 1)]",5
+sidonia,"[('sidonie', 1), ('sidonis', 1)]",2
+emim,"[('enim', 1)]",1
+nauis,"[('nauim', 1), ('naui', 1), ('naues', 1)]",3
+tripolin,"[('tripoli', 1), ('tripolis', 1), ('tripolim', 1)]",3
+tocius,"[('pocius', 1)]",1
+libet,"[('licet', 1), ('liber', 1)]",2
+rotas,"[('rotam', 1)]",1
+passim,"[('passis', 1), ('passum', 1), ('assim', 1), ('possim', 1)]",4
+sweta,"[('swita', 1)]",1
+nouum,"[('notum', 1), ('nodum', 1), ('ouum', 1)]",3
+habuerunt,"[('habuerant', 1)]",1
+anacat,"[('anacot', 1)]",1
+iudicium,"[('iudicum', 1)]",1
+galgala,"[('galgale', 1)]",1
+iterum,"[('uterum', 1)]",1
+macerunta,"[('maceruta', 1)]",1
+sancti,"[('sancte', 1), ('sancto', 1), ('sancta', 1)]",3
+esset,"[('esse', 1), ('essent', 1), ('essem', 1)]",3
+edificatum,"[('edificatus', 1)]",1
+anguli,"[('angulo', 1), ('angeli', 1)]",2
+patriarce,"[('patriarca', 1)]",1
+domo,"[('homo', 1), ('domos', 1)]",2
+fructus,"[('fructu', 1), ('fructum', 1)]",2
+terremotu,"[('terremotus', 1)]",1
+gregorius,"[('gregorium', 1)]",1
+fuit,"[('fluit', 1), ('fugit', 1), ('fit', 1), ('fui', 1)]",4
+reuerentiam,"[('reuerentia', 1)]",1
+quos,"[('quas', 1), ('tuos', 1), ('equos', 1), ('quis', 1), ('duos', 1), ('suos', 1), ('uos', 1), ('quo', 1), ('quod', 1)]",9
+sortem,"[('mortem', 1), ('sorte', 1), ('portem', 1)]",3
+hereticis,"[('heretici', 1)]",1
+sanus,"[('sinus', 1)]",1
+penitentia,"[('penitentiam', 1)]",1
+colatio,"[('solatio', 1)]",1
+discipuli,"[('discipulis', 1)]",1
+hoscium,"[('oscium', 1)]",1
+fertiles,"[('fertilem', 1), ('fertilis', 1)]",2
+campestria,"[('campestri', 1)]",1
+bodwini,"[('boduini', 1), ('bodowini', 1)]",2
+pelem,"[('pedem', 1)]",1
+noui,"[('nouo', 1), ('nodi', 1), ('noua', 1), ('naui', 1), ('oui', 1), ('noue', 1), ('nouit', 1)]",7
+pilisteis,"[('pilistei', 1)]",1
+menses,"[('mensis', 1), ('mense', 1)]",2
+prerupta,"[('prerupte', 1), ('prerupti', 1), ('preruptam', 1)]",3
+tenere,"[('genere', 1)]",1
+credi,"[('credo', 1)]",1
+caipas,"[('caipa', 1), ('caipam', 1), ('caipan', 1)]",3
+quam,"[('quas', 1), ('qua', 1), ('suam', 1), ('aquam', 1), ('quem', 1)]",5
+circuit,"[('circuitu', 1)]",1
+uniuerse,"[('uniuerso', 1), ('uniuersa', 1)]",2
+gaba,"[('gabaa', 1), ('faba', 1), ('gasa', 1)]",3
+dicant,"[('dicunt', 1)]",1
+forte,"[('porte', 1), ('fonte', 1), ('forti', 1), ('fore', 1), ('sorte', 1), ('morte', 1)]",6
+durat,"[('durant', 1)]",1
+migrauerunt,"[('migrauerant', 1)]",1
+peruenerant,"[('peruenerunt', 1)]",1
+holofernis,"[('holofernes', 1)]",1
+portu,"[('porte', 1), ('portum', 1), ('ortu', 1), ('portus', 1), ('porta', 1)]",5
+ipsis,"[('ipsos', 1), ('ipsas', 1), ('ipsi', 1), ('ipsius', 1)]",4
+tunc,"[('hunc', 1), ('nunc', 1)]",2
+baal,"[('baas', 1), ('bail', 1)]",2
+magno,"[('magnos', 1), ('magna', 1), ('magni', 1), ('magne', 1)]",4
+angelus,"[('angelos', 1), ('angelum', 1)]",2
+rotundam,"[('rotundum', 1), ('rotunda', 1)]",2
+canne,"[('anne', 1), ('canna', 1)]",2
+fortissimi,"[('fortissima', 1), ('fortissime', 1), ('fortissimis', 1)]",3
+magnitudine,"[('magnitudini', 1), ('magnitudinem', 1)]",2
+responderent,"[('responderint', 1)]",1
+mali,"[('uali', 1), ('magi', 1), ('mala', 1), ('malis', 1), ('mari', 1)]",5
+sana,"[('lana', 1), ('sano', 1), ('cana', 1)]",3
+marac,"[('karac', 1), ('barac', 1)]",2
+ciuitate,"[('ciuitati', 1), ('ciuitates', 1), ('ciuitatem', 1)]",3
+pendet,"[('perdet', 1)]",1
+menia,"[('mensa', 1), ('media', 1)]",2
+ilarum,"[('ilorum', 1)]",1
+spatiosa,"[('spetiosa', 1)]",1
+umbra,"[('umbram', 1)]",1
+ciprum,"[('ciparum', 1)]",1
+cristo,"[('cristi', 1)]",1
+uineas,"[('uineis', 1), ('uinea', 1)]",2
+terra,"[('serra', 1), ('terras', 1), ('tersa', 1), ('terram', 1), ('terre', 1)]",5
+filiis,"[('filius', 1), ('filios', 1), ('foliis', 1), ('filii', 1)]",4
+presides,"[('preside', 1)]",1
+sineum,"[('sinum', 1), ('lineum', 1)]",2
+uidi,"[('uici', 1), ('eidi', 1), ('uidit', 1), ('uiri', 1), ('uini', 1), ('uiui', 1)]",6
+flumina,"[('flumine', 1)]",1
+modice,"[('modico', 1), ('modica', 1)]",2
+ecclesia,"[('ecclesias', 1), ('ecclesiam', 1), ('ecclesie', 1)]",3
+circuitu,"[('circuit', 1), ('circuitum', 1), ('circuitus', 1)]",3
+iudei,"[('iudee', 1), ('iude', 1), ('iudea', 1)]",3
+fera,"[('era', 1), ('uera', 1), ('fere', 1)]",3
+beate,"[('beati', 1), ('beata', 1)]",2
+parti,"[('partia', 1), ('partis', 1), ('parui', 1), ('partim', 1), ('parte', 1)]",5
+iohanni,"[('iohann', 1), ('iohannis', 1), ('iohanne', 1)]",3
+egipcii,"[('egipciis', 1)]",1
+galileam,"[('galilea', 1)]",1
+dexteram,"[('dextram', 1), ('dextera', 1)]",2
+lauisse,"[('latuisse', 1), ('larisse', 1)]",2
+monumenti,"[('monumenta', 1)]",1
+doram,"[('oram', 1), ('ioram', 1), ('coram', 1), ('horam', 1), ('dora', 1)]",5
+arescit,"[('crescit', 1)]",1
+infesti,"[('infesta', 1), ('infecti', 1)]",2
+quid,"[('quis', 1), ('qui', 1), ('quin', 1), ('quod', 1), ('quia', 1)]",5
+unquam,"[('umquam', 1), ('usquam', 1), ('nunquam', 1)]",3
+solus,"[('solis', 1), ('solum', 1), ('solos', 1)]",3
+senes,"[('senen', 1), ('sedes', 1), ('senex', 1)]",3
+portus,"[('mortus', 1), ('ortus', 1), ('portum', 1), ('portu', 1), ('portis', 1)]",5
+naim,"[('nam', 1), ('nauim', 1)]",2
+equos,"[('equis', 1), ('quos', 1)]",2
+ioppe,"[('ioppem', 1), ('ioppen', 1), ('ioppes', 1)]",3
+noscitur,"[('nascitur', 1)]",1
+habundans,"[('habundant', 1)]",1
+caret,"[('carit', 1), ('careat', 1)]",2
+cursum,"[('carsum', 1), ('curkum', 1)]",2
+castri,"[('castra', 1), ('castro', 1), ('castris', 1)]",3
+aquas,"[('aqua', 1), ('quas', 1), ('aquam', 1), ('aquis', 1)]",4
+occidentem,"[('occidente', 1)]",1
+colectis,"[('colectus', 1)]",1
+fluxus,"[('fluxum', 1)]",1
+quasi,"[('quas', 1)]",1
+salomine,"[('salomone', 1)]",1
+sotio,"[('stio', 1)]",1
+dextram,"[('dexteram', 1), ('dextrum', 1)]",2
+ceilam,"[('cilam', 1), ('ceila', 1)]",2
+humus,"[('huius', 1), ('fumus', 1), ('sumus', 1)]",3
+aliud,"[('alius', 1), ('alium', 1)]",2
+usquam,"[('umquam', 1), ('unquam', 1), ('nusquam', 1)]",3
+fuerat,"[('fuerant', 1), ('fuerit', 1)]",2
+uiderim,"[('uideri', 1), ('uiderem', 1), ('uideram', 1)]",3
+honore,"[('honorem', 1)]",1
+dicens,"[('decens', 1)]",1
+annos,"[('pannos', 1), ('anno', 1), ('annis', 1)]",3
+caric,"[('carit', 1)]",1
+finit,"[('finis', 1)]",1
+superficies,"[('superficie', 1)]",1
+bonam,"[('bona', 1), ('bonum', 1), ('bonas', 1)]",3
+precipui,"[('precipua', 1)]",1
+diuino,"[('diuina', 1)]",1
+ueritates,"[('ueritatem', 1), ('ueritate', 1)]",2
+pinea,"[('linea', 1), ('uinea', 1)]",2
+comunis,"[('comuni', 1)]",1
+resonat,"[('resonant', 1)]",1
+ocosias,"[('ocorias', 1)]",1
+agros,"[('agro', 1), ('agris', 1)]",2
+aute,"[('aut', 1), ('alte', 1), ('rute', 1), ('autet', 1), ('autem', 1), ('auta', 1), ('ante', 1)]",7
+claustra,"[('claustri', 1)]",1
+uitrea,"[('uitree', 1)]",1
+ioab,"[('iob', 1), ('moab', 1)]",2
+eseciele,"[('eseciel', 1), ('esecielem', 1), ('esecieli', 1)]",3
+suorum,"[('quorum', 1)]",1
+mirum,"[('girum', 1), ('murum', 1), ('tirum', 1)]",3
+fontis,"[('fortis', 1), ('fontes', 1), ('montis', 1)]",3
+armis,"[('artis', 1)]",1
+olam,"[('ilam', 1), ('oram', 1), ('olim', 1)]",3
+maximus,"[('maximas', 1), ('maximis', 1), ('maximum', 1)]",3
+facere,"[('fecere', 1), ('iacere', 1)]",2
+cannas,"[('cannis', 1), ('canna', 1)]",2
+orientalis,"[('orientali', 1)]",1
+presepis,"[('presepio', 1)]",1
+paruo,"[('parum', 1), ('paruos', 1), ('parui', 1)]",3
+amena,"[('arena', 1), ('ameno', 1), ('amenam', 1)]",3
+quis,"[('equis', 1), ('quas', 1), ('suis', 1), ('quos', 1), ('quid', 1), ('uuis', 1), ('aquis', 1), ('qui', 1), ('quin', 1), ('quia', 1)]",10
+singula,"[('singule', 1)]",1
+penam,"[('penas', 1), ('uenam', 1)]",2
+isrel,"[('iesrel', 1)]",1
+spisso,"[('spissos', 1), ('spissa', 1)]",2
+miroen,"[('meroen', 1)]",1
+tabula,"[('tabulam', 1), ('tabule', 1), ('tabulas', 1)]",3
+imeabilis,"[('inmeabilis', 1)]",1
+ualis,"[('uali', 1), ('salis', 1), ('uilis', 1), ('uales', 1), ('uadis', 1), ('talis', 1), ('malis', 1)]",7
+melis,"[('meis', 1), ('melius', 1), ('malis', 1), ('pelis', 1)]",4
+fratres,"[('fratre', 1), ('fratris', 1)]",2
+rotundum,"[('rotundus', 1), ('rotundam', 1)]",2
+rotunda,"[('rotundam', 1)]",1
+etiopia,"[('etiopie', 1), ('etiopiam', 1)]",2
+carmelus,"[('camelus', 1), ('carmelum', 1)]",2
+neapolim,"[('neapoli', 1)]",1
+uina,"[('uita', 1), ('ruina', 1), ('uila', 1), ('una', 1), ('uini', 1), ('uia', 1), ('uinea', 1), ('uino', 1)]",8
+redire,"[('rediret', 1)]",1
+pape,"[('pane', 1)]",1
+cesarea,"[('ceserea', 1), ('cesaream', 1)]",2
+efluit,"[('fluit', 1), ('defluit', 1)]",2
+deuotam,"[('deuotum', 1)]",1
+neapoli,"[('neapolim', 1)]",1
+reducta,"[('redacta', 1)]",1
+femine,"[('nemine', 1)]",1
+fertili,"[('fertilis', 1)]",1
+stultus,"[('stultum', 1), ('stultis', 1)]",2
+colis,"[('coli', 1), ('solis', 1)]",2
+uiris,"[('uisis', 1), ('uilis', 1), ('uirgis', 1), ('uiri', 1), ('uiros', 1), ('siris', 1)]",6
+peruenerunt,"[('peruenerant', 1)]",1
+turrem,"[('turrim', 1), ('turre', 1), ('turres', 1)]",3
+hinc,"[('hic', 1), ('hunc', 1), ('hanc', 1)]",3
+saram,"[('aram', 1)]",1
+melius,"[('helius', 1), ('melis', 1)]",2
+milicie,"[('silicie', 1), ('cilicie', 1), ('militie', 1)]",3
+betsaidam,"[('betsaida', 1)]",1
+igne,"[('igni', 1), ('ignem', 1)]",2
+beata,"[('beati', 1), ('beate', 1), ('beatam', 1)]",3
+maumeria,"[('maumeriam', 1)]",1
+ortos,"[('ortus', 1), ('ortis', 1)]",2
+duos,"[('duo', 1), ('dos', 1), ('tuos', 1), ('quos', 1), ('duas', 1), ('suos', 1), ('uos', 1)]",7
+portis,"[('sortis', 1), ('fortis', 1), ('portus', 1), ('partis', 1), ('ortis', 1)]",5
+tenebat,"[('teneat', 1)]",1
+tandem,"[('eandem', 1)]",1
+uirgo,"[('uirga', 1)]",1
+dominum,"[('hominum', 1), ('dominus', 1)]",2
+similem,"[('similes', 1)]",1
+rapan,"[('rapin', 1)]",1
+dauid,"[('dauidi', 1)]",1
+uisu,"[('uisum', 1), ('uisus', 1)]",2
+marmore,"[('marmorea', 1), ('marmoree', 1)]",2
+deuotus,"[('deuotum', 1)]",1
+stratum,"[('statum', 1), ('stratam', 1)]",2
+nubiam,"[('nubia', 1)]",1
+latos,"[('latus', 1)]",1
+populi,"[('populo', 1)]",1
+arciepiscopos,"[('arciepiscopis', 1)]",1
+tecto,"[('tecti', 1), ('tecta', 1)]",2
+ruta,"[('guta', 1), ('rute', 1), ('tuta', 1), ('auta', 1)]",4
+desertum,"[('desertam', 1), ('desertus', 1)]",2
+oliuetis,"[('oliueti', 1)]",1
+fide,"[('fine', 1), ('fidem', 1)]",2
+insula,"[('insulam', 1), ('insule', 1)]",2
+includit,"[('inclusit', 1)]",1
+pater,"[('patet', 1)]",1
+ubique,"[('utique', 1), ('ibique', 1)]",2
+solebat,"[('uolebat', 1)]",1
+dedit,"[('sedit', 1)]",1
+monstratur,"[('monstrantur', 1)]",1
+rore,"[('rose', 1), ('fore', 1), ('ore', 1)]",3
+salmarum,"[('palmarum', 1)]",1
+separans,"[('separant', 1)]",1
+ismahel,"[('israhel', 1)]",1
+folio,"[('filio', 1), ('folia', 1)]",2
+colorem,"[('colorum', 1)]",1
+fuerunt,"[('fuerant', 1), ('fuerint', 1)]",2
+sepet,"[('tepet', 1), ('sepe', 1)]",2
+siloe,"[('silo', 1), ('siloem', 1)]",2
+aqueductus,"[('aqueductum', 1)]",1
+uila,"[('uile', 1), ('uilam', 1), ('uita', 1), ('uina', 1), ('uia', 1), ('ila', 1)]",6
+edifitia,"[('edifitio', 1)]",1
+ligno,"[('ligna', 1), ('signo', 1)]",2
+modica,"[('modico', 1), ('modice', 1)]",2
+sarra,"[('serra', 1)]",1
+similes,"[('similem', 1), ('similis', 1)]",2
+similis,"[('simili', 1), ('similes', 1), ('similia', 1)]",3
+alte,"[('alto', 1), ('alta', 1), ('aute', 1), ('alie', 1), ('alter', 1), ('ante', 1)]",6
+latuit,"[('lacuit', 1), ('lauit', 1)]",2
+munitissimum,"[('munitissimam', 1)]",1
+aaron,"[('maron', 1), ('acaron', 1), ('saron', 1), ('aron', 1)]",4
+monita,"[('munita', 1), ('ponita', 1)]",2
+cariatiarim,"[('kariatiarim', 1), ('cariaciarim', 1)]",2
+ereis,"[('cereis', 1)]",1
+tunica,"[('punica', 1)]",1
+ipso,"[('ipsa', 1), ('ipse', 1), ('ipsos', 1), ('ipsi', 1)]",4
+certo,"[('certe', 1)]",1
+eufrate,"[('eufraten', 1), ('eufratem', 1)]",2
+nominis,"[('dominis', 1), ('hominis', 1)]",2
+eundem,"[('eandem', 1)]",1
+secundus,"[('secundum', 1)]",1
+regina,"[('regine', 1), ('regia', 1), ('regna', 1)]",3
+magnitudinis,"[('magnitudini', 1)]",1
+alendis,"[('kalendis', 1)]",1
+fatebantur,"[('fateantur', 1)]",1
+nasum,"[('casum', 1), ('natum', 1)]",2
+soli,"[('sol', 1), ('coli', 1), ('sola', 1), ('solis', 1)]",4
+ciuitates,"[('ciuitatis', 1), ('ciuitate', 1), ('ciuitatem', 1)]",3
+eodem,"[('eadem', 1), ('eidem', 1), ('eosdem', 1)]",3
+palga,"[('palma', 1), ('pasga', 1)]",2
+assero,"[('asser', 1)]",1
+descendebant,"[('descendebat', 1)]",1
+munita,"[('munitam', 1), ('muniti', 1), ('monita', 1), ('munite', 1)]",4
+marcus,"[('arcus', 1)]",1
+gabaa,"[('gaba', 1)]",1
+polita,"[('ponita', 1)]",1
+duplices,"[('duplicem', 1)]",1
+predicant,"[('predicans', 1), ('predicat', 1)]",2
+laoditia,"[('laoditiam', 1), ('laodotia', 1)]",2
+sitas,"[('sitis', 1), ('sita', 1), ('situs', 1)]",3
+infimi,"[('infirmi', 1)]",1
+uero,"[('uera', 1), ('uerbo', 1), ('ueri', 1), ('puero', 1), ('uere', 1), ('uerno', 1)]",6
+ecclesiam,"[('ecclesias', 1), ('ecclesia', 1)]",2
+uerbo,"[('uero', 1), ('uerno', 1), ('uerba', 1)]",3
+libanus,"[('libanum', 1)]",1
+cadunt,"[('uadunt', 1)]",1
+habundant,"[('habundat', 1), ('habundans', 1)]",2
+aliorum,"[('aliarum', 1)]",1
+inde,"[('indi', 1), ('indie', 1), ('unde', 1), ('iude', 1)]",4
+etiopie,"[('etiopia', 1)]",1
+iuditia,"[('iuditio', 1), ('inditia', 1)]",2
+delicatissimus,"[('delicatissimum', 1)]",1
+laris,"[('lapis', 1), ('maris', 1), ('lacis', 1)]",3
+uerus,"[('uersus', 1), ('uetus', 1), ('uerum', 1)]",3
+interfui,"[('interfuit', 1)]",1
+sarracenus,"[('sarracenos', 1), ('sarracenis', 1)]",2
+paradisus,"[('paradisum', 1)]",1
+cilicie,"[('silicie', 1), ('milicie', 1)]",2
+aptus,"[('aptum', 1), ('captus', 1), ('altus', 1)]",3
+sidomorum,"[('sodomorum', 1)]",1
+uocatur,"[('uocantur', 1)]",1
+domos,"[('domo', 1), ('domus', 1)]",2
+sacerdotem,"[('sacerdote', 1), ('sacerdotes', 1), ('sacerdotum', 1)]",3
+posui,"[('posuit', 1), ('potui', 1)]",2
+haberent,"[('haberet', 1)]",1
+magdalene,"[('magdalena', 1)]",1
+detestabilis,"[('detestabili', 1)]",1
+axam,"[('adam', 1), ('aram', 1)]",2
+domus,"[('domos', 1), ('domum', 1)]",2
+sabulon,"[('sabulo', 1)]",1
+tendens,"[('pendens', 1)]",1
+angulo,"[('annulo', 1), ('anguli', 1)]",2
+babilonis,"[('babilonia', 1)]",1
+precedens,"[('procedens', 1), ('recedens', 1)]",2
+serico,"[('serici', 1), ('ierico', 1)]",2
+habitabat,"[('habitabant', 1)]",1
+egipto,"[('egipti', 1)]",1
+balsamum,"[('balsamus', 1)]",1
+manna,"[('magna', 1), ('canna', 1)]",2
+manent,"[('manet', 1), ('manente', 1)]",2
+potuit,"[('posuit', 1), ('potui', 1)]",2
+urbi,"[('urbs', 1), ('ursi', 1), ('ubi', 1), ('urbis', 1)]",4
+leges,"[('lege', 1), ('reges', 1), ('legem', 1), ('leues', 1)]",4
+notus,"[('notum', 1), ('totus', 1), ('natus', 1)]",3
+gratias,"[('gratiam', 1)]",1
+amenos,"[('amenus', 1), ('amenis', 1), ('ameno', 1)]",3
+initus,"[('incitus', 1), ('intus', 1)]",2
+gasaris,"[('gasarim', 1)]",1
+pluuialibus,"[('fluuialibus', 1)]",1
+bonus,"[('bonum', 1), ('bonas', 1), ('bobus', 1), ('onus', 1), ('bonis', 1)]",5
+religionis,"[('religiosis', 1)]",1
+antiquo,"[('antiqui', 1), ('antiqua', 1)]",2
+galaat,"[('galaad', 1)]",1
+ruine,"[('ruina', 1)]",1
+quales,"[('uales', 1), ('equales', 1)]",2
+eseciel,"[('eseciele', 1), ('esecie', 1), ('esecieli', 1)]",3
+libri,"[('libro', 1)]",1
+alie,"[('alia', 1), ('alte', 1), ('alii', 1), ('alio', 1)]",4
+presente,"[('presentem', 1), ('presenti', 1)]",2
+apparet,"[('apparent', 1)]",1
+amenitate,"[('amenitatem', 1), ('amenitates', 1)]",2
+aratrum,"[('fratrum', 1)]",1
+israhel,"[('ismahel', 1), ('iesrahel', 1)]",2
+duas,"[('quas', 1), ('duos', 1), ('suas', 1)]",3
+magos,"[('magnos', 1), ('magis', 1)]",2
+fontibus,"[('fortibus', 1), ('montibus', 1)]",2
+eliopoli,"[('eliopolis', 1), ('eliopolim', 1)]",2
+inuentio,"[('intentio', 1), ('inuenio', 1)]",2
+rase,"[('rose', 1)]",1
+docenti,"[('docent', 1)]",1
+ciuitatum,"[('ciuitatem', 1)]",1
+habui,"[('habuit', 1)]",1
+destendit,"[('descendit', 1)]",1
+torrentes,"[('torrentem', 1), ('torrente', 1)]",2
+tempora,"[('tempore', 1), ('timpora', 1)]",2
+gradus,"[('gradu', 1)]",1
+dictus,"[('dictis', 1), ('ductus', 1), ('dictum', 1)]",3
+girum,"[('mirum', 1), ('tirum', 1)]",2
+tenerent,"[('generent', 1)]",1
+excelsi,"[('excelsa', 1)]",1
+ceila,"[('cela', 1), ('ceilam', 1)]",2
+existenti,"[('existente', 1)]",1
+pilistei,"[('pilisteis', 1)]",1
+sabulo,"[('sabulon', 1)]",1
+trianguli,"[('triangule', 1), ('triangula', 1)]",2
+teutonica,"[('teutonice', 1), ('teutonia', 1)]",2
+amenissima,"[('amenissimo', 1)]",1
+celes,"[('cedes', 1), ('celos', 1)]",2
+hostio,"[('hostia', 1), ('ostio', 1)]",2
+quartam,"[('quarta', 1), ('quartum', 1)]",2
+tota,"[('toto', 1), ('tot', 1), ('nota', 1), ('tuta', 1), ('totam', 1)]",5
+turba,"[('tumba', 1)]",1
+autent,"[('autet', 1)]",1
+decolatus,"[('decolatum', 1)]",1
+molendini,"[('molendina', 1)]",1
+quantitatem,"[('quantitate', 1)]",1
+uitam,"[('uilam', 1), ('uita', 1), ('uiam', 1)]",3
+elegi,"[('legi', 1)]",1
+sacarie,"[('samarie', 1)]",1
+aparte,"[('parte', 1)]",1
+cedronam,"[('cedrona', 1)]",1
+isaie,"[('isaia', 1)]",1
+mundo,"[('fundo', 1), ('eundo', 1), ('mundi', 1)]",3
+frequenter,"[('frequentes', 1)]",1
+deserto,"[('deserta', 1), ('deserti', 1)]",2
+irrigare,"[('irrigari', 1)]",1
+cades,"[('cedes', 1)]",1
+fluuialibus,"[('pluuialibus', 1)]",1
+ualde,"[('ualide', 1), ('uale', 1)]",2
+militie,"[('militia', 1), ('milicie', 1)]",2
+gloriose,"[('gloriosa', 1)]",1
+nostri,"[('nostris', 1)]",1
+alii,"[('aliis', 1), ('alibi', 1), ('alia', 1), ('alie', 1), ('alio', 1)]",5
+oriuntur,"[('oriantur', 1)]",1
+partis,"[('partia', 1), ('parti', 1), ('portis', 1), ('partes', 1), ('artis', 1), ('partim', 1), ('partos', 1)]",7
+maiore,"[('maiorem', 1), ('maior', 1), ('maiori', 1), ('maiora', 1), ('maiores', 1)]",5
+religiosa,"[('religiosi', 1)]",1
+saltem,"[('salutem', 1), ('salem', 1)]",2
+betaniam,"[('betania', 1)]",1
+dicitur,"[('dicetur', 1), ('dicatur', 1)]",2
+testatur,"[('testatus', 1)]",1
+regionis,"[('regiones', 1)]",1
+sinistro,"[('sinistra', 1)]",1
+monacus,"[('monacis', 1)]",1
+suam,"[('quam', 1), ('suas', 1), ('sunam', 1), ('sum', 1), ('suum', 1), ('sua', 1)]",6
+missa,"[('missas', 1), ('misso', 1), ('misse', 1), ('missam', 1)]",4
+patures,"[('patres', 1)]",1
+proicit,"[('proici', 1)]",1
+lana,"[('plana', 1), ('sana', 1), ('lata', 1), ('cana', 1)]",4
+ductus,"[('dictus', 1)]",1
+multi,"[('multa', 1), ('multis', 1), ('multo', 1), ('multe', 1)]",4
+ambitus,"[('ambitu', 1), ('ambitum', 1)]",2
+beritus,"[('beritum', 1), ('bericus', 1)]",2
+tumba,"[('turba', 1)]",1
+precipiens,"[('recipiens', 1)]",1
+aurea,"[('area', 1)]",1
+sedi,"[('sed', 1), ('medi', 1), ('sedis', 1), ('sedit', 1)]",4
+oriente,"[('origente', 1), ('orientem', 1)]",2
+pasel,"[('paseli', 1), ('peasel', 1)]",2
+porta,"[('porte', 1), ('portam', 1), ('portu', 1), ('portat', 1), ('orta', 1)]",5
+palmira,"[('palmiram', 1)]",1
+partes,"[('partem', 1), ('partis', 1), ('partos', 1), ('parte', 1)]",4
+magmas,"[('magnas', 1)]",1
+dicit,"[('dici', 1), ('dixit', 1), ('eicit', 1), ('ducit', 1)]",4
+lusa,"[('lusam', 1)]",1
+angelos,"[('angelus', 1)]",1
+aquilone,"[('aquilonem', 1), ('aquiloni', 1)]",2
+cuius,"[('huius', 1)]",1
+uniuersa,"[('uniuerso', 1), ('uniuerse', 1)]",2
+circumdat,"[('circumdata', 1), ('circumdant', 1), ('circumdati', 1)]",3
+mirabili,"[('mirabile', 1), ('mirabilia', 1), ('mirabilis', 1)]",3
+murum,"[('mirum', 1), ('eurum', 1), ('murus', 1)]",3
+sirin,"[('sirie', 1), ('siria', 1), ('siri', 1), ('siris', 1)]",4
+uinetis,"[('uineis', 1)]",1
+abarac,"[('barac', 1)]",1
+acaron,"[('aaron', 1)]",1
+scire,"[('sciri', 1), ('sciret', 1)]",2
+latum,"[('latus', 1), ('lutum', 1), ('natum', 1)]",3
+cristianos,"[('cristianis', 1), ('cristianus', 1)]",2
+maritima,"[('maritime', 1), ('maritimam', 1)]",2
+statum,"[('statim', 1), ('stratum', 1), ('statu', 1), ('statua', 1)]",4
+defluit,"[('efluit', 1)]",1
+precedente,"[('precedenti', 1)]",1
+fines,"[('finem', 1), ('finis', 1), ('fine', 1)]",3
+ocorias,"[('ocosias', 1)]",1
+abarim,"[('abirim', 1)]",1
+uates,"[('uales', 1)]",1
+preside,"[('presides', 1)]",1
+meliores,"[('meliorem', 1)]",1
+aquam,"[('aqua', 1), ('quam', 1), ('aquas', 1)]",3
+terminos,"[('terminis', 1), ('terminus', 1)]",2
+stantes,"[('stante', 1)]",1
+caipan,"[('caipa', 1), ('caipam', 1), ('caipas', 1)]",3
+repleta,"[('replet', 1)]",1
+baptitsauit,"[('baptisauit', 1)]",1
+mortui,"[('mortus', 1), ('mortuo', 1), ('mortua', 1)]",3
+uenam,"[('penam', 1), ('unam', 1)]",2
+sidonie,"[('sidonia', 1), ('sidone', 1), ('sidonis', 1)]",3
+muro,"[('muros', 1), ('auro', 1), ('muri', 1)]",3
+acis,"[('acas', 1), ('acus', 1), ('lacis', 1)]",3
+responderint,"[('responderent', 1)]",1
+leuis,"[('leucis', 1), ('lesis', 1), ('leues', 1)]",3
+lapidis,"[('lapidi', 1), ('lapides', 1)]",2
+sarraceni,"[('sarraceno', 1), ('sarracenis', 1)]",2
+fuerant,"[('fuerat', 1), ('fuerunt', 1), ('fuerint', 1)]",3
+sixtum,"[('situm', 1)]",1
+talem,"[('ualem', 1), ('salem', 1), ('tales', 1), ('tale', 1), ('tamem', 1)]",5
+istos,"[('istis', 1), ('istas', 1), ('isto', 1)]",3
+inuenio,"[('inueni', 1), ('inuentio', 1), ('inuenit', 1)]",3
+sicud,"[('sicut', 1)]",1
+gasarim,"[('gasaris', 1)]",1
+modan,"[('modin', 1)]",1
+fumum,"[('sumum', 1), ('fumus', 1)]",2
+secunde,"[('secunda', 1), ('secundo', 1)]",2
+primum,"[('primus', 1), ('primam', 1)]",2
+sinistra,"[('sinistro', 1), ('sinistram', 1)]",2
+parui,"[('parum', 1), ('parti', 1), ('paruo', 1)]",3
+portat,"[('portam', 1), ('porta', 1), ('portant', 1)]",3
+appelata,"[('appelatam', 1), ('appelat', 1)]",2
+molendina,"[('molendini', 1)]",1
+suos,"[('suis', 1), ('tuos', 1), ('quos', 1), ('duos', 1), ('suas', 1), ('uos', 1), ('suo', 1)]",7
+montibus,"[('fontibus', 1)]",1
+calide,"[('ualide', 1), ('calido', 1)]",2
+autit,"[('autet', 1)]",1
+plus,"[('ulus', 1)]",1
+topet,"[('tepet', 1)]",1
+longos,"[('longo', 1), ('longus', 1)]",2
+plurimum,"[('plurium', 1)]",1
+betulie,"[('betulia', 1)]",1
+iosepus,"[('iosepum', 1)]",1
+diospolim,"[('diospolis', 1), ('diospoli', 1)]",2
+pinguis,"[('pingwis', 1), ('linguis', 1), ('pingui', 1)]",3
+tripolis,"[('tripoli', 1), ('tripolin', 1), ('tripolim', 1)]",3
+prelatis,"[('prelatos', 1), ('prelati', 1), ('prelatus', 1)]",3
+lutum,"[('latum', 1)]",1
+predicat,"[('predicant', 1)]",1
+testatus,"[('testatur', 1)]",1
+castelo,"[('casteli', 1)]",1
+nauigare,"[('nauigarem', 1), ('nauigari', 1)]",2
+maon,"[('maron', 1)]",1
+iesu,"[('iesum', 1), ('ieu', 1), ('iesus', 1)]",3
+procedens,"[('precedens', 1)]",1
+hostia,"[('hostias', 1), ('hostio', 1)]",2
+planiciem,"[('planicies', 1), ('planicie', 1), ('planiciei', 1)]",3
+penice,"[('penicie', 1), ('penicea', 1)]",2
+complanato,"[('complanata', 1)]",1
+predicte,"[('predicto', 1), ('predicta', 1)]",2
+deum,"[('deus', 1), ('eum', 1), ('dum', 1)]",3
+lapidi,"[('lapidis', 1), ('lapide', 1)]",2
+macabeis,"[('macabei', 1)]",1
+pulcerrimo,"[('pulcerrimi', 1)]",1
+copini,"[('copinis', 1)]",1
+uisus,"[('uisis', 1), ('uisum', 1), ('uisu', 1)]",3
+absorbitur,"[('absorbetur', 1)]",1
+dispositione,"[('dispositionem', 1)]",1
+oleum,"[('olerum', 1)]",1
+habebant,"[('habebat', 1), ('habeant', 1)]",2
+campo,"[('campi', 1), ('campos', 1)]",2
+procedat,"[('procedit', 1)]",1
+lata,"[('lana', 1), ('data', 1)]",2
+indie,"[('indi', 1), ('india', 1), ('inde', 1)]",3
+filios,"[('filius', 1), ('filio', 1), ('filiis', 1)]",3
+infinitis,"[('infinitos', 1), ('infinitas', 1), ('infiniti', 1)]",3
+uentum,"[('mentum', 1)]",1
+antequam,"[('antiquam', 1)]",1
+persida,"[('persia', 1), ('perside', 1)]",2
+ista,"[('isa', 1), ('isti', 1), ('istam', 1), ('istas', 1), ('iste', 1), ('ita', 1), ('isto', 1)]",7
+iminebat,"[('inminebat', 1)]",1
+parietes,"[('pariete', 1), ('arietes', 1), ('parietem', 1)]",3
+penitentiam,"[('penitentia', 1)]",1
+regionum,"[('regionem', 1)]",1
+tumolos,"[('tumulos', 1)]",1
+sanguine,"[('sanguinem', 1), ('sanguineo', 1)]",2
+muris,"[('maris', 1), ('muros', 1), ('murus', 1), ('muri', 1)]",4
+adultera,"[('adulteria', 1)]",1
+saule,"[('sauli', 1), ('saul', 1), ('paule', 1)]",3
+episcopalis,"[('episcopales', 1)]",1
+ultimo,"[('ultima', 1)]",1
+lapidum,"[('lapidem', 1)]",1
+signum,"[('sinum', 1), ('lignum', 1)]",2
+marmorea,"[('marmore', 1), ('marmoream', 1), ('marmoree', 1)]",3
+potui,"[('posui', 1), ('potuit', 1), ('potum', 1)]",3
+profunda,"[('profundam', 1)]",1
+colationem,"[('colatione', 1)]",1
+sedes,"[('cedes', 1), ('pedes', 1), ('sedens', 1), ('sedem', 1), ('senes', 1), ('sedis', 1)]",6
+debet,"[('debeat', 1), ('decet', 1)]",2
+baptista,"[('baptiste', 1)]",1
+lignea,"[('linea', 1), ('ligna', 1)]",2
+dormiuit,"[('dormiunt', 1)]",1
+distent,"[('distet', 1), ('distant', 1)]",2
+mirabilem,"[('mirabile', 1), ('mirabiles', 1)]",2
+fenicis,"[('penicis', 1)]",1
+uitree,"[('uitrea', 1)]",1
+samaria,"[('samarie', 1), ('samariam', 1)]",2
+nauim,"[('nauis', 1), ('naim', 1), ('naui', 1), ('nauem', 1)]",4
+albo,"[('alto', 1), ('alio', 1), ('ambo', 1)]",3
+plumbi,"[('plumbo', 1)]",1
+furta,"[('furto', 1)]",1
+orare,"[('orate', 1)]",1
+potum,"[('botum', 1), ('pomum', 1), ('totum', 1), ('portum', 1), ('notum', 1), ('potui', 1), ('motum', 1), ('uotum', 1)]",8
+interius,"[('inferius', 1)]",1
+artis,"[('altis', 1), ('armis', 1), ('partis', 1), ('ortis', 1)]",4
+betlehem,"[('betleem', 1)]",1
+regum,"[('regem', 1), ('regnum', 1), ('rerum', 1), ('regium', 1)]",4
+caldea,"[('caldei', 1)]",1
+corrosaim,"[('corosaim', 1)]",1
+fore,"[('foro', 1), ('fere', 1), ('forte', 1), ('rore', 1), ('ore', 1)]",5
+preruptum,"[('preruptus', 1), ('preruptam', 1)]",2
+aliquid,"[('aliqui', 1), ('aliquod', 1), ('aliquis', 1)]",3
+diuisi,"[('diuisio', 1), ('dimisi', 1)]",2
+diei,"[('dies', 1), ('dei', 1), ('die', 1), ('dici', 1), ('dixi', 1), ('diem', 1), ('dii', 1)]",7
+fratris,"[('fratres', 1)]",1
+ueritate,"[('ueritatem', 1), ('ueritates', 1)]",2
+australe,"[('australi', 1), ('australes', 1)]",2
+uolebant,"[('uolebat', 1), ('ualebant', 1)]",2
+nationes,"[('natione', 1), ('nationis', 1)]",2
+filium,"[('filius', 1), ('folium', 1), ('filiam', 1)]",3
+ameno,"[('amena', 1), ('amenos', 1)]",2
+ramasses,"[('ramesses', 1), ('ramases', 1)]",2
+bostroc,"[('bostron', 1)]",1
+ofitia,"[('ofitio', 1)]",1
+sacerdotis,"[('sacerdotes', 1)]",1
+iabeni,"[('iabenia', 1)]",1
+distalat,"[('distabat', 1)]",1
+annis,"[('annos', 1), ('cannis', 1), ('pannis', 1)]",3
+diospolis,"[('diospolim', 1), ('diospoli', 1)]",2
+sequi,"[('sexui', 1)]",1
+tres,"[('res', 1)]",1
+magnis,"[('magnos', 1), ('magnus', 1), ('magis', 1), ('magnas', 1), ('magni', 1)]",5
+caimot,"[('cainmot', 1)]",1
+nodum,"[('notum', 1), ('nouum', 1), ('rodum', 1), ('modum', 1)]",4
+mesopotamie,"[('mesopotamia', 1)]",1
+dixit,"[('dixi', 1), ('dicit', 1), ('duxit', 1)]",3
+stratam,"[('strata', 1), ('stratum', 1)]",2
+gemnin,"[('gemnim', 1)]",1
+eorumdem,"[('eorundem', 1)]",1
+interioris,"[('interiori', 1)]",1
+maris,"[('maria', 1), ('magis', 1), ('laris', 1), ('muris', 1), ('marie', 1), ('malis', 1), ('matris', 1), ('mari', 1)]",8
+glossa,"[('glosa', 1), ('grossa', 1)]",2
+ciparum,"[('ciprum', 1)]",1
+regni,"[('regno', 1), ('regi', 1), ('regna', 1), ('regnis', 1)]",4
+saron,"[('maron', 1), ('aaron', 1), ('aron', 1)]",3
+partim,"[('partia', 1), ('partem', 1), ('parti', 1), ('partis', 1)]",4
+stefani,"[('stepani', 1)]",1
+eundi,"[('eundo', 1), ('mundi', 1)]",2
+dulcem,"[('dulces', 1)]",1
+estatis,"[('etatis', 1)]",1
+cripta,"[('scripta', 1)]",1
+odio,"[('dio', 1)]",1
+memoria,"[('memoriam', 1)]",1
+iesraheli,"[('iesrahel', 1)]",1
+possum,"[('possem', 1), ('passum', 1), ('possim', 1)]",3
+traconitidem,"[('traconitide', 1)]",1
+omni,"[('omnis', 1), ('omnia', 1)]",2
+holofernem,"[('holofernes', 1)]",1
+plene,"[('plena', 1), ('plane', 1)]",2
+loca,"[('loci', 1), ('loco', 1)]",2
+dissensionem,"[('dissensiones', 1)]",1
+sicut,"[('sicud', 1)]",1
+maximo,"[('maxim', 1), ('maxime', 1), ('maxima', 1)]",3
+cetera,"[('cetero', 1), ('cetere', 1)]",2
+uiri,"[('uici', 1), ('uir', 1), ('uidi', 1), ('uiris', 1), ('siri', 1), ('uini', 1), ('ueri', 1), ('uiui', 1), ('tiri', 1)]",9
+translate,"[('translata', 1)]",1
+etatis,"[('etati', 1), ('estatis', 1)]",2
+incisa,"[('incisam', 1)]",1
+quemdam,"[('quamdam', 1), ('quedam', 1)]",2
+naui,"[('aui', 1), ('nauis', 1), ('noui', 1), ('nauim', 1)]",4
+dispositi,"[('disposita', 1), ('dispositio', 1)]",2
+precedenti,"[('recedenti', 1), ('precedente', 1)]",2
+aron,"[('maron', 1), ('akon', 1), ('aran', 1), ('amon', 1), ('aaron', 1), ('saron', 1), ('acon', 1), ('arnon', 1)]",8
+piramides,"[('piramidem', 1)]",1
+nomine,"[('domine', 1), ('nomina', 1), ('nemine', 1)]",3
+rodum,"[('rodus', 1), ('nodum', 1), ('modum', 1)]",3
+silitia,"[('militia', 1)]",1
+nestorianos,"[('nestorianus', 1)]",1
+uocantur,"[('uocatur', 1)]",1
+semicirculus,"[('semicirculum', 1)]",1
+dicunt,"[('ducunt', 1), ('dicant', 1)]",2
+faba,"[('gaba', 1), ('fabe', 1)]",2
+ministrantes,"[('ministrante', 1)]",1
+episcopos,"[('episcopus', 1), ('episcopis', 1)]",2
+essent,"[('esset', 1)]",1
+maxime,"[('maxim', 1), ('maximo', 1), ('maxima', 1)]",3
+antipatrida,"[('antipatridam', 1)]",1
+predicto,"[('predicte', 1), ('predicta', 1)]",2
+altissimus,"[('altissimos', 1), ('altissimis', 1)]",2
+captam,"[('capta', 1), ('captum', 1)]",2
+flagelatus,"[('flagelatur', 1)]",1
+poni,"[('proni', 1), ('pona', 1)]",2
+suas,"[('quas', 1), ('suis', 1), ('duas', 1), ('suam', 1), ('suos', 1), ('sua', 1)]",6
+ursi,"[('urbi', 1)]",1
+sidonem,"[('sidone', 1), ('simonem', 1)]",2
+anteradi,"[('anterado', 1)]",1
+insule,"[('insula', 1)]",1
+nobiles,"[('nobilis', 1)]",1
+ignem,"[('igne', 1)]",1
+regnum,"[('regum', 1), ('regium', 1)]",2
+nilus,"[('nidus', 1), ('nilum', 1), ('nulus', 1)]",3
+babiloniam,"[('babilonia', 1)]",1
+nocte,"[('noctem', 1), ('note', 1)]",2
+omnes,"[('omnem', 1), ('omnis', 1)]",2
+omnem,"[('omnes', 1)]",1
+procedit,"[('procedat', 1)]",1
+siccatur,"[('siccatum', 1)]",1
+plano,"[('plana', 1), ('plane', 1), ('plato', 1)]",3
+alexandriam,"[('alexandria', 1)]",1
+separatas,"[('separata', 1)]",1
+marmoream,"[('marmorea', 1)]",1
+siria,"[('sirie', 1), ('siriam', 1), ('sirin', 1), ('siri', 1), ('siris', 1)]",5
+scriptura,"[('scripture', 1), ('scripturam', 1)]",2
+esecie,"[('eseciel', 1)]",1
+ieremia,"[('ieremias', 1), ('ieremie', 1)]",2
+mensis,"[('menses', 1), ('mentis', 1)]",2
+iardini,"[('giardini', 1)]",1
+iohann,"[('iohanni', 1), ('iohanne', 1)]",2
+uolentes,"[('uolantes', 1), ('nolentes', 1)]",2
+possem,"[('posse', 1), ('possum', 1), ('posset', 1), ('possim', 1)]",4
+debeat,"[('debet', 1)]",1
+semei,"[('semel', 1), ('semen', 1)]",2
+ostendant,"[('ostendunt', 1)]",1
+gesta,"[('gestu', 1)]",1
+decolare,"[('decorare', 1)]",1
+baptisauit,"[('baptitsauit', 1)]",1
+diocletiano,"[('diocletiani', 1)]",1
+pedem,"[('pede', 1), ('pedes', 1), ('sedem', 1), ('pelem', 1), ('pedum', 1)]",5
+uicos,"[('uico', 1), ('uiros', 1)]",2
+piscinam,"[('piscinas', 1), ('piscina', 1)]",2
+eurum,"[('eorum', 1), ('murum', 1), ('eueum', 1), ('earum', 1)]",4
+circumdant,"[('circumdat', 1)]",1
+sorte,"[('porte', 1), ('sortem', 1), ('forte', 1), ('morte', 1)]",4
+fertilitatem,"[('fertilitate', 1)]",1
+medio,"[('medi', 1), ('media', 1)]",2
+certum,"[('certam', 1)]",1
+ierico,"[('serico', 1)]",1
+rute,"[('rupe', 1), ('aute', 1), ('ruta', 1)]",3
+siri,"[('sirie', 1), ('sibi', 1), ('sirin', 1), ('uiri', 1), ('siria', 1), ('siris', 1), ('sciri', 1), ('tiri', 1)]",8
+palium,"[('alium', 1)]",1
+assinini,"[('assisini', 1)]",1
+anne,"[('anno', 1), ('canne', 1), ('ante', 1)]",3
+eleuterus,"[('euleuterus', 1)]",1
+gion,"[('sion', 1)]",1
+lemones,"[('leones', 1)]",1
+iudee,"[('iudei', 1), ('iude', 1), ('iudea', 1)]",3
+essem,"[('esse', 1), ('esset', 1)]",2
+iuditiariam,"[('iuditiaria', 1)]",1
+canalem,"[('canales', 1)]",1
+diospoli,"[('diospolim', 1), ('diospolis', 1)]",2
+anterado,"[('anteradi', 1)]",1
+dulcis,"[('dulces', 1)]",1
+imolandi,"[('inmolandi', 1)]",1
+cedrona,"[('cedronam', 1), ('cedrina', 1), ('cedron', 1)]",3
+mare,"[('mire', 1), ('marte', 1), ('mane', 1), ('marie', 1), ('mari', 1)]",5
+asino,"[('asimo', 1)]",1
+edon,"[('edom', 1)]",1
+enim,"[('emim', 1)]",1
+capite,"[('capiti', 1), ('capita', 1)]",2
+estimare,"[('estimari', 1)]",1
+colectus,"[('colectis', 1)]",1
+peiores,"[('priores', 1)]",1
+turres,"[('turris', 1), ('turre', 1), ('turrem', 1)]",3
+sita,"[('uita', 1), ('sitas', 1), ('situ', 1), ('sit', 1), ('ita', 1), ('swita', 1), ('site', 1)]",7
+gulfus,"[('gulfum', 1)]",1
+cereis,"[('ereis', 1)]",1
+utique,"[('ubique', 1)]",1
+modum,"[('nodum', 1), ('rodum', 1), ('motum', 1)]",3
+salutem,"[('saltem', 1)]",1
+perdet,"[('pendet', 1)]",1
+locata,"[('locati', 1)]",1
+ipsius,"[('ipsis', 1)]",1
+delte,"[('delta', 1)]",1
+bostron,"[('bostroc', 1)]",1
+linguis,"[('pinguis', 1)]",1
+romane,"[('romani', 1), ('romana', 1)]",2
+ecce,"[('ecc', 1)]",1
+honorem,"[('honore', 1)]",1
+tafnis,"[('tapnis', 1)]",1
+lignis,"[('ignis', 1)]",1
+grece,"[('greci', 1)]",1
+ioram,"[('oram', 1), ('doram', 1), ('coram', 1), ('horam', 1)]",4
+iturea,"[('ituream', 1)]",1
+orientale,"[('orientalem', 1), ('orientali', 1)]",2
+sterquilini,"[('sterquilinii', 1)]",1
+opido,"[('opidi', 1)]",1
+miserat,"[('miserant', 1)]",1
+duces,"[('dulces', 1), ('ducet', 1), ('nuces', 1)]",3
+uuis,"[('suis', 1), ('quis', 1)]",2
+sepore,"[('iepore', 1)]",1
+firmo,"[('firma', 1)]",1
+lapidem,"[('lapideam', 1), ('lapidum', 1), ('lapide', 1), ('lapides', 1)]",4
+aquarum,"[('quarum', 1)]",1
+kariatiarim,"[('cariatiarim', 1)]",1
+aliquos,"[('aliquod', 1), ('aliquo', 1), ('aliquis', 1)]",3
+columpne,"[('columpna', 1)]",1
+impressio,"[('inpressio', 1)]",1
+plures,"[('pluries', 1)]",1
+nuces,"[('duces', 1)]",1
+plurime,"[('plurimi', 1)]",1
+concaue,"[('concaua', 1)]",1
+mansione,"[('mansionem', 1)]",1
+sumptuosi,"[('sumptuosa', 1)]",1
+betsamis,"[('betsames', 1)]",1
+dimidium,"[('dimidiam', 1), ('dimidius', 1)]",2
+inminebat,"[('iminebat', 1)]",1
+furto,"[('furta', 1)]",1
+introitum,"[('introitus', 1)]",1
+continebant,"[('continebat', 1)]",1
+tigrim,"[('tigri', 1)]",1
+petrus,"[('petrum', 1)]",1
+peniceam,"[('piniceam', 1), ('penicea', 1)]",2
+nota,"[('nona', 1), ('noua', 1), ('notam', 1), ('tota', 1), ('note', 1)]",5
+regna,"[('regno', 1), ('regia', 1), ('regina', 1), ('regni', 1), ('rengna', 1)]",5
+lignum,"[('signum', 1)]",1
+morabatur,"[('morabantur', 1)]",1
+totus,"[('totum', 1), ('notus', 1)]",2
+seorsum,"[('deorsum', 1)]",1
+mala,"[('mali', 1)]",1
+rages,"[('reges', 1)]",1
+uico,"[('uici', 1), ('uicos', 1), ('uice', 1), ('uino', 1), ('dico', 1)]",5
+recipiens,"[('precipiens', 1)]",1
+aliquod,"[('aliquid', 1), ('aliquos', 1), ('aliquo', 1)]",3
+iacobi,"[('iacob', 1)]",1
+iuda,"[('iudas', 1), ('iura', 1), ('iude', 1), ('iudea', 1), ('nuda', 1)]",5
+uini,"[('ueni', 1), ('uici', 1), ('uidi', 1), ('uina', 1), ('uiri', 1), ('uiui', 1), ('uino', 1)]",7
+planicie,"[('planicies', 1), ('planiciem', 1), ('planiciei', 1)]",3
+quarum,"[('aquarum', 1), ('duarum', 1), ('quartum', 1), ('quorum', 1)]",4
+regis,"[('regia', 1), ('regio', 1), ('gregis', 1), ('regi', 1), ('regnis', 1), ('regie', 1), ('reges', 1)]",7
+colunt,"[('uolunt', 1)]",1
+marie,"[('maria', 1), ('marte', 1), ('maris', 1), ('mare', 1), ('mari', 1)]",5
+fortissime,"[('fortissima', 1), ('fortissimi', 1)]",2
+eicit,"[('dicit', 1)]",1
+capela,"[('capelam', 1), ('capele', 1)]",2
+arabice,"[('arabie', 1)]",1
+eueum,"[('eurum', 1), ('eteum', 1), ('eneum', 1)]",3
+ascensa,"[('ascensu', 1)]",1
+araceus,"[('aracus', 1), ('araceum', 1)]",2
+solitudine,"[('solitudines', 1)]",1
+terminum,"[('terminus', 1)]",1
+regnis,"[('regni', 1), ('regis', 1)]",2
+accon,"[('akcon', 1), ('acon', 1)]",2
+ceserea,"[('cesarea', 1)]",1
+mecum,"[('secum', 1)]",1
+deuotionem,"[('deuotione', 1)]",1
+orientali,"[('origentali', 1), ('orientalis', 1), ('orientale', 1)]",3
+acor,"[('asor', 1), ('acon', 1)]",2
+margant,"[('margat', 1)]",1
+talis,"[('salis', 1), ('talia', 1), ('ualis', 1), ('tales', 1), ('malis', 1)]",5
+possunt,"[('possent', 1)]",1
+prouintias,"[('prouintia', 1)]",1
+lauit,"[('lacuit', 1), ('latuit', 1), ('pauit', 1)]",3
+intraui,"[('intrauit', 1)]",1
+eteum,"[('eueum', 1), ('eneum', 1)]",2
+cede,"[('pede', 1), ('cedes', 1), ('cene', 1), ('cepe', 1)]",4
+hominis,"[('dominis', 1), ('nominis', 1), ('homines', 1)]",3
+palmas,"[('palma', 1), ('paleas', 1), ('palmam', 1), ('palmis', 1)]",4
+ackonensi,"[('aconensi', 1)]",1
+eufratem,"[('eufraten', 1), ('eufrate', 1)]",2
+adulteria,"[('adultera', 1)]",1
+campum,"[('campus', 1)]",1
+siros,"[('uiros', 1), ('siris', 1)]",2
+puto,"[('puteo', 1), ('luto', 1)]",2
+bonas,"[('bona', 1), ('ionas', 1), ('bonam', 1), ('bonus', 1), ('bonis', 1)]",5
+sisaram,"[('sisara', 1)]",1
+rarum,"[('parum', 1), ('karum', 1), ('rerum', 1), ('earum', 1)]",4
+uice,"[('uite', 1), ('uici', 1), ('uile', 1), ('uie', 1), ('uico', 1), ('uicem', 1)]",6
+ouum,"[('nouum', 1), ('suum', 1)]",2
+ergo,"[('ego', 1)]",1
+homines,"[('hominis', 1), ('hominem', 1)]",2
+nulomodo,"[('ulomodo', 1)]",1
+separant,"[('separans', 1)]",1
+quidem,"[('quidam', 1)]",1
+alios,"[('aliis', 1), ('altos', 1), ('alius', 1), ('alias', 1), ('alio', 1)]",5
+iapet,"[('apet', 1)]",1
+sacerdote,"[('sacerdotem', 1), ('sacerdotes', 1)]",2
+ualem,"[('uale', 1), ('uales', 1), ('talem', 1), ('salem', 1), ('ualeo', 1)]",5
+palam,"[('pialam', 1), ('palmam', 1)]",2
+terremotus,"[('terremotu', 1)]",1
+gens,"[('agens', 1)]",1
+radium,"[('aradium', 1)]",1
+armenia,"[('armeniam', 1), ('armenie', 1), ('armeni', 1)]",3
+fontes,"[('fontem', 1), ('fonte', 1), ('montes', 1), ('fontis', 1)]",4
+quodam,"[('quadam', 1), ('quedam', 1), ('quosdam', 1), ('quoddam', 1), ('quidam', 1), ('quondam', 1)]",6
+bail,"[('baal', 1), ('bais', 1)]",2
+circuitum,"[('circuitu', 1), ('circuitus', 1)]",2
+cadit,"[('carit', 1), ('uadit', 1)]",2
+perside,"[('persida', 1)]",1
+frumenti,"[('frumento', 1)]",1
+benimin,"[('beniamin', 1)]",1
+deuteronomium,"[('deuteronomius', 1)]",1
+intrauit,"[('intraui', 1)]",1
+habitabant,"[('habitabat', 1)]",1
+quibus,"[('auibus', 1), ('ouibus', 1)]",2
+ueri,"[('ueni', 1), ('uera', 1), ('pueri', 1), ('uero', 1), ('uiri', 1), ('uere', 1)]",6
+cibi,"[('sibi', 1), ('ibi', 1)]",2
+dimidiam,"[('dimidia', 1), ('dimidium', 1)]",2
+cepe,"[('cene', 1), ('sepe', 1), ('cede', 1)]",3
+genere,"[('genero', 1), ('genera', 1), ('tenere', 1)]",3
+deorsum,"[('seorsum', 1)]",1
+altari,"[('altare', 1), ('altaris', 1)]",2
+horma,"[('hora', 1)]",1
+sano,"[('sana', 1)]",1
+hiis,"[('his', 1)]",1
+medea,"[('media', 1)]",1
+multis,"[('multos', 1), ('multi', 1), ('multas', 1), ('multus', 1)]",4
+crucem,"[('cruce', 1)]",1
+coltores,"[('cultores', 1)]",1
+uineta,"[('uinea', 1)]",1
+pauci,"[('pauli', 1)]",1
+amenitates,"[('amenitatem', 1), ('amenitate', 1)]",2
+intra,"[('infra', 1), ('intrat', 1)]",2
+regie,"[('regine', 1), ('regia', 1), ('regio', 1), ('rege', 1), ('regi', 1), ('regis', 1)]",6
+paleas,"[('palmas', 1)]",1
+ipsum,"[('iesum', 1), ('ipsam', 1)]",2
+messana,"[('messanam', 1)]",1
+mirabilia,"[('mirabili', 1), ('mirabilis', 1)]",2
+alteram,"[('altera', 1)]",1
+ambe,"[('ambo', 1)]",1
+betleem,"[('betlehem', 1)]",1
+selim,"[('salim', 1)]",1
+tantam,"[('tantum', 1), ('tanta', 1)]",2
+tribum,"[('tribu', 1), ('tribuum', 1), ('tribui', 1), ('tribus', 1)]",4
+tire,"[('mire', 1), ('ire', 1), ('tiro', 1), ('tiri', 1)]",4
+eidem,"[('idem', 1), ('fidem', 1), ('eadem', 1), ('eodem', 1), ('eisdem', 1)]",5
+piscine,"[('piscina', 1)]",1
+ioser,"[('iosep', 1)]",1
+ferro,"[('ferri', 1)]",1
+sicen,"[('sicem', 1)]",1
+regione,"[('regionem', 1), ('regine', 1), ('regiones', 1)]",3
+uidentur,"[('uidetur', 1), ('uideatur', 1)]",2
+magni,"[('magi', 1), ('magna', 1), ('magno', 1), ('magnis', 1), ('magne', 1)]",5
+eisdem,"[('eiusdem', 1), ('easdem', 1), ('eidem', 1), ('eosdem', 1)]",4
+galad,"[('galaad', 1)]",1
+celo,"[('cela', 1), ('melo', 1), ('colo', 1), ('celos', 1), ('celi', 1), ('belo', 1)]",6
+diridie,"[('dimidie', 1), ('diricie', 1)]",2
+sarraceno,"[('sarraceni', 1), ('sarracenos', 1)]",2
+tartaris,"[('tartari', 1)]",1
+anatot,"[('anacot', 1)]",1
+cause,"[('causa', 1)]",1
+alio,"[('alia', 1), ('alto', 1), ('alie', 1), ('alii', 1), ('albo', 1), ('alios', 1)]",6
+stetit,"[('steti', 1)]",1
+eneum,"[('eneam', 1), ('eueum', 1), ('eteum', 1)]",3
+tabernaculis,"[('tabernaculi', 1)]",1
+presentem,"[('presente', 1)]",1
+aquis,"[('equis', 1), ('aquas', 1), ('quis', 1)]",3
+helisei,"[('elisei', 1)]",1
+antirodus,"[('antirodum', 1)]",1
+confluxerant,"[('confluxerunt', 1)]",1
+confracta,"[('contracta', 1)]",1
+castellum,"[('castelum', 1)]",1
+prebens,"[('presens', 1)]",1
+tertia,"[('tertio', 1), ('tertiam', 1)]",2
+columpnam,"[('columpnas', 1), ('columpna', 1)]",2
+reges,"[('regem', 1), ('rege', 1), ('greges', 1), ('leges', 1), ('rages', 1), ('regis', 1)]",6
+cetere,"[('cetero', 1), ('cetera', 1)]",2
+nego,"[('nebo', 1), ('ego', 1)]",2
+situs,"[('sitis', 1), ('situm', 1), ('litus', 1), ('sitas', 1), ('sinus', 1), ('situ', 1)]",6
+miliaria,"[('miliari', 1)]",1
+sinus,"[('sinum', 1), ('sanus', 1), ('situs', 1), ('minus', 1)]",4
+posset,"[('posse', 1), ('possit', 1), ('possent', 1), ('possem', 1)]",4
+erem,"[('ere', 1), ('eram', 1), ('rem', 1), ('efrem', 1)]",4
+accessum,"[('accessus', 1)]",1
+anteradum,"[('antaradum', 1)]",1
+tantumdem,"[('tantundem', 1)]",1
+occidente,"[('occidentem', 1)]",1
+sumum,"[('fumum', 1), ('suum', 1), ('sumus', 1)]",3
+generant,"[('uenerant', 1), ('generent', 1)]",2
+magnitudinem,"[('magnitudine', 1)]",1
+stultum,"[('stultus', 1)]",1
+descendit,"[('destendit', 1)]",1
+pascuosam,"[('pascuosa', 1)]",1
+habiti,"[('habitu', 1)]",1
+fateantur,"[('fatentur', 1), ('fatebantur', 1)]",2
+tirum,"[('tirus', 1), ('mirum', 1), ('girum', 1), ('titum', 1)]",4
+distat,"[('distet', 1), ('distant', 1)]",2
+concaua,"[('concaue', 1), ('concauam', 1)]",2
+dextera,"[('dexteram', 1)]",1
+etiopiam,"[('etiopia', 1)]",1
+episcopis,"[('episcopus', 1), ('episcopos', 1), ('episcopi', 1)]",3
+nauem,"[('nauim', 1), ('naues', 1)]",2
+solatia,"[('solatio', 1)]",1
+piscinis,"[('piscinas', 1)]",1
+strongoli,"[('strangoli', 1)]",1
+cedrina,"[('cedrona', 1)]",1
+fons,"[('mons', 1)]",1
+alter,"[('altera', 1), ('aliter', 1), ('alte', 1)]",3
+omnis,"[('omni', 1), ('omnes', 1), ('omnia', 1)]",3
+terminus,"[('terminis', 1), ('terminos', 1), ('terminum', 1)]",3
+motum,"[('botum', 1), ('totum', 1), ('notum', 1), ('potum', 1), ('modum', 1), ('uotum', 1)]",6
+isaia,"[('isaias', 1), ('isaie', 1)]",2
+dominio,"[('dominis', 1), ('domino', 1), ('domini', 1)]",3
+sepulcro,"[('supulcro', 1), ('sepulcra', 1), ('sepulcri', 1)]",3
+naues,"[('nauis', 1), ('nauem', 1)]",2
+negociumo,"[('negocium', 1)]",1
+coquitur,"[('loquitur', 1)]",1
+fortissimos,"[('fortissimis', 1)]",1
+nubia,"[('nubie', 1), ('nubiam', 1)]",2
+secundum,"[('secundam', 1), ('secundus', 1)]",2
+crescit,"[('arescit', 1)]",1
+introitus,"[('introitum', 1)]",1
+efluens,"[('fluens', 1)]",1
+missus,"[('missas', 1)]",1
+assur,"[('asser', 1)]",1
+castro,"[('castra', 1), ('castri', 1)]",2
+riuo,"[('diuo', 1), ('riuos', 1)]",2
+accolitis,"[('accoliti', 1)]",1
+exempli,"[('exempla', 1)]",1
+comuni,"[('comunis', 1)]",1
+nulum,"[('nulam', 1), ('nilum', 1), ('nulus', 1)]",3
+ascendit,"[('ascendi', 1)]",1
+occurrat,"[('occurrit', 1)]",1
+petre,"[('petra', 1), ('patre', 1), ('petri', 1)]",3
+ponere,"[('pondere', 1)]",1
+sisara,"[('sisaram', 1)]",1
+errant,"[('erant', 1)]",1
+litore,"[('litere', 1), ('litora', 1)]",2
+cristus,"[('cristum', 1)]",1
+circumdati,"[('circumdata', 1), ('circumdat', 1)]",2
+uirorum,"[('sirorum', 1)]",1
+solum,"[('colum', 1), ('solus', 1)]",2
+passis,"[('passim', 1), ('passus', 1)]",2
+mesopotamia,"[('mesopotamiam', 1), ('mesopotamie', 1)]",2
+munitus,"[('munitum', 1)]",1
+utroque,"[('utraque', 1)]",1
+stante,"[('astante', 1), ('stant', 1), ('tante', 1), ('stantes', 1)]",4
+rama,"[('roma', 1), ('rara', 1)]",2
+sicem,"[('sicen', 1), ('uicem', 1)]",2
+duarum,"[('quarum', 1)]",1
+iste,"[('isti', 1), ('ista', 1), ('isto', 1)]",3
+terribile,"[('terribiles', 1)]",1
+neptalin,"[('neptalim', 1)]",1
+hunc,"[('huic', 1), ('tunc', 1), ('hinc', 1), ('hanc', 1), ('nunc', 1)]",5
+funus,"[('unus', 1), ('fumus', 1)]",2
+arciepiscopis,"[('arciepiscopi', 1), ('arciepiscopos', 1)]",2
+fertilem,"[('fertiles', 1)]",1
+fronte,"[('fonte', 1)]",1
+plura,"[('pluria', 1)]",1
+tribuum,"[('tribum', 1)]",1
+foliis,"[('filiis', 1)]",1
+salem,"[('salim', 1), ('saltem', 1), ('talem', 1), ('ualem', 1)]",4
+capita,"[('capta', 1), ('capiti', 1), ('capite', 1)]",3
+apet,"[('iapet', 1)]",1
+iohannes,"[('iohannem', 1), ('iohannis', 1), ('iohanne', 1)]",3
+sunam,"[('suam', 1), ('unam', 1), ('sunan', 1)]",3
+pluuie,"[('pluuia', 1)]",1
+triangulam,"[('triangula', 1)]",1
+bericum,"[('beritum', 1), ('bericus', 1), ('berictum', 1), ('biricum', 1)]",4
+legem,"[('lege', 1), ('regem', 1), ('leges', 1)]",3
+puero,"[('pueri', 1), ('uero', 1), ('puer', 1)]",3
+betania,"[('betaniam', 1)]",1
+helena,"[('helene', 1)]",1
+prelatus,"[('prelatos', 1), ('prelatis', 1)]",2
+oppositi,"[('opposita', 1)]",1
+cainmot,"[('caimot', 1)]",1
+interiori,"[('interior', 1), ('interioris', 1), ('inferiori', 1)]",3
+ueniat,"[('uenit', 1), ('ueniant', 1)]",2
+transito,"[('transit', 1)]",1
+assisinorum,"[('assininorum', 1)]",1
+situ,"[('ritu', 1), ('situm', 1), ('sita', 1), ('situs', 1), ('sit', 1), ('site', 1)]",6
+fumus,"[('humus', 1), ('fumum', 1), ('funus', 1), ('sumus', 1)]",4
+autet,"[('aute', 1), ('autent', 1), ('autit', 1), ('autem', 1)]",4
+certam,"[('certum', 1), ('ceram', 1)]",2
+cedron,"[('cedrona', 1)]",1
+ceteris,"[('ueteris', 1), ('ceteros', 1)]",2
+aradium,"[('aradum', 1), ('radium', 1), ('aradius', 1)]",3
+linea,"[('pinea', 1), ('lignea', 1), ('uinea', 1), ('lineam', 1)]",4
+rerum,"[('uerum', 1), ('regum', 1), ('rarum', 1)]",3
+natatoriam,"[('natatoria', 1)]",1
+profert,"[('proferat', 1)]",1
+semel,"[('semei', 1), ('semen', 1)]",2
+scopuli,"[('stopuli', 1)]",1
+deserti,"[('deserta', 1), ('deserto', 1)]",2
+tales,"[('uales', 1), ('talem', 1), ('talis', 1), ('tale', 1)]",4
+domum,"[('pomum', 1), ('domus', 1)]",2
+preruptus,"[('preruptum', 1)]",1
+celos,"[('celes', 1), ('celo', 1), ('cenos', 1)]",3
+lapide,"[('lapidi', 1), ('lapidem', 1), ('lapides', 1)]",3
+aliquo,"[('aliqui', 1), ('aliquos', 1), ('aliquod', 1), ('aliqua', 1)]",4
+quicumque,"[('quacumque', 1)]",1
+canon,"[('ianon', 1), ('canan', 1)]",2
+reliqui,"[('reliquo', 1), ('reliquie', 1)]",2
+dicebantur,"[('dicebatur', 1)]",1
+dicte,"[('dicti', 1), ('diete', 1), ('dicta', 1)]",3
+bobus,"[('bonus', 1), ('bubus', 1)]",2
+beniamin,"[('benimin', 1)]",1
+modin,"[('modan', 1), ('modis', 1)]",2
+diuersi,"[('diuersis', 1), ('diuersa', 1)]",2
+canis,"[('panis', 1), ('cannis', 1)]",2
+iohannis,"[('iohanni', 1), ('iohannes', 1)]",2
+dominici,"[('dominica', 1), ('dominice', 1)]",2
+sextus,"[('sectus', 1), ('textus', 1)]",2
+ueterem,"[('ueteres', 1)]",1
+uenerat,"[('uenerant', 1)]",1
+gloriosa,"[('gloriose', 1), ('gloriosam', 1)]",2
+heliseus,"[('heliseum', 1), ('eliseus', 1)]",2
+oscium,"[('hoscium', 1)]",1
+curia,"[('curiam', 1)]",1
+paramiam,"[('paramia', 1)]",1
+uiuentes,"[('uidentes', 1), ('uiuente', 1)]",2
+annotauit,"[('annotaui', 1)]",1
+uiui,"[('uici', 1), ('uidi', 1), ('uiri', 1), ('uini', 1), ('uiuit', 1)]",5
+spiritu,"[('spiritus', 1)]",1
+swita,"[('sweta', 1), ('sita', 1)]",2
+iohanne,"[('iohannem', 1), ('iohanni', 1), ('iohann', 1), ('iohannes', 1)]",4
+contracta,"[('confracta', 1)]",1
+facie,"[('faciem', 1), ('facit', 1), ('facte', 1), ('facile', 1)]",4
+aptum,"[('aptus', 1), ('captum', 1), ('altum', 1)]",3
+meridie,"[('meridiem', 1)]",1
+uotum,"[('botum', 1), ('totum', 1), ('notum', 1), ('potum', 1), ('motum', 1)]",5
+uicem,"[('uice', 1), ('sicem', 1), ('uocem', 1)]",3
+edifitio,"[('edifitia', 1)]",1
+episcopi,"[('episcopis', 1)]",1
+destructum,"[('destructam', 1)]",1
+siloem,"[('siloe', 1)]",1
+olim,"[('olam', 1)]",1
+riuos,"[('riuus', 1), ('riuo', 1), ('riuis', 1)]",3
+existente,"[('existenti', 1)]",1
+betil,"[('betel', 1)]",1
+recepit,"[('recedit', 1), ('decepit', 1), ('recipit', 1)]",3
+uenerabilius,"[('uenerabilis', 1)]",1
+tecue,"[('tecua', 1)]",1
+plane,"[('plana', 1), ('plene', 1), ('plano', 1), ('pane', 1)]",4
+auri,"[('tauri', 1), ('aui', 1), ('auro', 1), ('muri', 1)]",4
+saxoniam,"[('saxonia', 1)]",1
+stultis,"[('stulti', 1), ('stultus', 1)]",2
+elisei,"[('elisii', 1), ('helisei', 1)]",2
+gratiam,"[('gratias', 1)]",1
+populum,"[('populus', 1)]",1
+leuca,"[('leucas', 1), ('leuce', 1), ('leucam', 1)]",3
+sedisse,"[('dedisse', 1)]",1
+libano,"[('libani', 1)]",1
+afec,"[('afel', 1)]",1
+loco,"[('loci', 1), ('loca', 1)]",2
+redii,"[('rediit', 1)]",1
+amenissimo,"[('amenissima', 1)]",1
+heretici,"[('hereticis', 1)]",1
+terribiles,"[('terribile', 1)]",1
+partos,"[('paruos', 1), ('partis', 1), ('partes', 1)]",3
+maiori,"[('maior', 1), ('maiore', 1), ('maioris', 1), ('maiora', 1)]",4
+munite,"[('muniti', 1), ('munita', 1)]",2
+altissimos,"[('altissimus', 1), ('altissimis', 1)]",2
+uideram,"[('uiderem', 1), ('uiderim', 1)]",2
+fluuium,"[('fluuius', 1)]",1
+mense,"[('mensa', 1), ('menses', 1)]",2
+uirgine,"[('uirginem', 1)]",1
+captus,"[('aptus', 1), ('captum', 1)]",2
+aliqua,"[('aliquam', 1), ('aliqui', 1), ('aliquo', 1)]",3
+tale,"[('uale', 1), ('talem', 1), ('tales', 1)]",3
+terre,"[('turre', 1), ('terra', 1), ('terret', 1)]",3
+cenos,"[('celos', 1)]",1
+irrigari,"[('irrigare', 1)]",1
+boduini,"[('bodwini', 1)]",1
+monstrantur,"[('monstratur', 1)]",1
+noue,"[('niue', 1), ('nouo', 1), ('noua', 1), ('noui', 1), ('noe', 1), ('nobe', 1), ('boue', 1), ('note', 1)]",8
+piramidem,"[('piramides', 1)]",1
+muros,"[('muro', 1), ('muris', 1), ('murus', 1)]",3
+tulerant,"[('tulerunt', 1)]",1
+agris,"[('agros', 1)]",1
+ierosolimitani,"[('ierosolimitanis', 1)]",1
+uiros,"[('uiris', 1), ('uicos', 1), ('siros', 1)]",3
+modis,"[('modin', 1)]",1
+unde,"[('inde', 1)]",1
+isto,"[('isti', 1), ('istos', 1), ('ista', 1), ('iste', 1)]",4
+ruinas,"[('ruina', 1), ('ruinis', 1)]",2
+sedentes,"[('sedentem', 1)]",1
+superiorem,"[('superiores', 1)]",1
+transierunt,"[('transferunt', 1)]",1
+pane,"[('mane', 1), ('pape', 1), ('plane', 1), ('panem', 1)]",4
+celi,"[('coli', 1), ('cela', 1), ('celo', 1), ('peli', 1)]",4
+multas,"[('multa', 1), ('multos', 1), ('multam', 1), ('multis', 1), ('multus', 1)]",5
+imagine,"[('imagini', 1)]",1
+lectus,"[('pectus', 1), ('sectus', 1)]",2
+plenius,"[('plenus', 1)]",1
+flagelatur,"[('flagelatus', 1)]",1
+decepit,"[('recepit', 1)]",1
+maioris,"[('maiori', 1), ('maiores', 1)]",2
+continua,"[('contigua', 1), ('continue', 1), ('continuo', 1)]",3
+sirorum,"[('uirorum', 1)]",1
+folia,"[('filia', 1), ('folio', 1)]",2
+lumen,"[('flumen', 1)]",1
+rediret,"[('redire', 1)]",1
+negocium,"[('negociumo', 1)]",1
+lucas,"[('leucas', 1), ('lucam', 1)]",2
+suum,"[('suam', 1), ('ouum', 1), ('sumum', 1), ('sum', 1)]",4
+ambitu,"[('ambitus', 1), ('ambitum', 1)]",2
+doctores,"[('ductores', 1)]",1
+quartum,"[('quartam', 1), ('quarum', 1), ('quartus', 1), ('quantum', 1)]",4
+preruptam,"[('prerupta', 1), ('preruptum', 1)]",2
+atria,"[('atrio', 1), ('tria', 1)]",2
+diuersa,"[('diuersas', 1), ('diuersi', 1)]",2
+siris,"[('sitis', 1), ('sirie', 1), ('uiris', 1), ('sirin', 1), ('siria', 1), ('siri', 1), ('siros', 1)]",7
+munitionem,"[('munitione', 1)]",1
+damiata,"[('damiatam', 1)]",1
+abel,"[('iabel', 1), ('afel', 1)]",2
+stio,"[('sotio', 1), ('sti', 1), ('ostio', 1)]",3
+uinee,"[('uinea', 1)]",1
+nebo,"[('nego', 1)]",1
+palestine,"[('palestina', 1)]",1
+latinis,"[('latinos', 1), ('latini', 1)]",2
+mori,"[('cori', 1), ('muri', 1), ('moria', 1), ('mari', 1)]",4
+iura,"[('iuda', 1)]",1
+alexandri,"[('alexandria', 1)]",1
+cubitos,"[('cubitis', 1)]",1
+terminantur,"[('terminatur', 1)]",1
+aradius,"[('aradium', 1)]",1
+rabac,"[('rabat', 1)]",1
+coram,"[('oram', 1), ('doram', 1), ('ioram', 1), ('horam', 1), ('ceram', 1)]",5
+uidendo,"[('uidenda', 1)]",1
+rupes,"[('rupis', 1), ('rupe', 1), ('rupem', 1)]",3
+sine,"[('sint', 1), ('fine', 1), ('sin', 1), ('site', 1), ('siue', 1), ('siene', 1)]",6
+opposita,"[('oppositi', 1)]",1
+ibique,"[('ubique', 1)]",1
+missam,"[('missas', 1), ('missa', 1)]",2
+portandum,"[('potandum', 1)]",1
+plenus,"[('plenius', 1)]",1
+statu,"[('statum', 1), ('stat', 1), ('statua', 1)]",3
+aconense,"[('aconensi', 1), ('aconensem', 1)]",2
+uapore,"[('uapor', 1)]",1
+horam,"[('horum', 1), ('oram', 1), ('doram', 1), ('ioram', 1), ('coram', 1), ('horas', 1), ('hora', 1)]",7
+orant,"[('erant', 1)]",1
+mortua,"[('mortus', 1), ('mortuo', 1), ('mortui', 1)]",3
+cannis,"[('cannas', 1), ('annis', 1), ('canis', 1), ('pannis', 1)]",4
+spetiosa,"[('spatiosa', 1)]",1
+nili,"[('nuli', 1), ('nisi', 1), ('ili', 1)]",3
+scalam,"[('scaleam', 1)]",1
+romanam,"[('romana', 1)]",1
+emac,"[('emat', 1)]",1
+concauam,"[('concaua', 1)]",1
+durant,"[('durat', 1)]",1
+onus,"[('unus', 1), ('bonus', 1)]",2
+uiuit,"[('uidit', 1), ('uiui', 1)]",2
+lesis,"[('leuis', 1)]",1
+pistibus,"[('piscibus', 1)]",1
+logitudine,"[('longitudine', 1)]",1
+fructum,"[('fructu', 1), ('fructus', 1)]",2
+istum,"[('istud', 1), ('istam', 1)]",2
+acon,"[('akcon', 1), ('akon', 1), ('amon', 1), ('aron', 1), ('accon', 1), ('acor', 1)]",6
+iacob,"[('iacobi', 1)]",1
+aracas,"[('aracos', 1), ('aracus', 1), ('aracis', 1)]",3
+mediam,"[('medium', 1), ('media', 1)]",2
+acus,"[('acas', 1), ('arcus', 1), ('lacus', 1), ('acis', 1)]",4
+fuerint,"[('fuerunt', 1), ('fuerant', 1), ('fuerit', 1)]",3
+karo,"[('kaco', 1), ('raro', 1), ('kairo', 1)]",3
+sciri,"[('scire', 1), ('siri', 1)]",2
+precipua,"[('precipui', 1)]",1
+uidenda,"[('uidendo', 1)]",1
+malis,"[('salis', 1), ('magis', 1), ('mali', 1), ('ualis', 1), ('melis', 1), ('maris', 1), ('talis', 1)]",7
+damiatam,"[('damiata', 1)]",1
+sidone,"[('sindone', 1), ('sidon', 1), ('sidonie', 1), ('sidonem', 1)]",4
+uolebat,"[('solebat', 1), ('uolebant', 1)]",2
+dixerit,"[('dixerim', 1)]",1
+tiro,"[('tire', 1), ('giro', 1), ('tiri', 1)]",3
+puer,"[('pueri', 1), ('per', 1), ('puero', 1)]",3
+murus,"[('murum', 1), ('muris', 1), ('muros', 1)]",3
+orientem,"[('oriente', 1)]",1
+tantundem,"[('tantumdem', 1)]",1
+galilea,"[('galilee', 1), ('galileam', 1)]",2
+uiderunt,"[('uiderent', 1)]",1
+mele,"[('melo', 1), ('mel', 1), ('mole', 1), ('mee', 1)]",4
+passum,"[('passuum', 1), ('passim', 1), ('possum', 1), ('passus', 1)]",4
+afel,"[('afec', 1), ('abel', 1)]",2
+eundo,"[('fundo', 1), ('mundo', 1), ('eundi', 1)]",3
+parte,"[('porte', 1), ('partem', 1), ('marte', 1), ('parti', 1), ('aparte', 1), ('partes', 1)]",6
+uidentes,"[('uiuentes', 1), ('uidente', 1)]",2
+solos,"[('solis', 1), ('solus', 1)]",2
+inpleant,"[('impleant', 1)]",1
+steti,"[('stetit', 1)]",1
+tiberii,"[('tiberim', 1)]",1
+tribui,"[('tribu', 1), ('tribum', 1), ('tribus', 1)]",3
+quemlibet,"[('quamlibet', 1)]",1
+magne,"[('magna', 1), ('mane', 1), ('magno', 1), ('magni', 1)]",4
+haberet,"[('haberent', 1), ('habere', 1)]",2
+gloriosam,"[('gloriosum', 1), ('gloriosa', 1)]",2
+palme,"[('palma', 1)]",1
+maiora,"[('maior', 1), ('maiore', 1), ('maiori', 1)]",3
+ualebant,"[('uolebant', 1)]",1
+porosa,"[('porosi', 1)]",1
+iude,"[('iudei', 1), ('inde', 1), ('iudee', 1), ('iuda', 1), ('iudea', 1)]",5
+antea,"[('ante', 1)]",1
+strangoli,"[('strongoli', 1)]",1
+damasco,"[('damasci', 1)]",1
+rabat,"[('rabac', 1)]",1
+latitudine,"[('latitudinem', 1)]",1
+pilato,"[('plato', 1), ('pilati', 1)]",2
+stat,"[('stant', 1), ('statu', 1)]",2
+uinea,"[('uineas', 1), ('pinea', 1), ('uina', 1), ('uineta', 1), ('linea', 1), ('uinee', 1)]",6
+saul,"[('sal', 1), ('sauli', 1), ('saule', 1)]",3
+proferat,"[('profert', 1)]",1
+infecti,"[('infesti', 1)]",1
+iussi,"[('iussit', 1)]",1
+numerum,"[('numerus', 1)]",1
+multo,"[('multa', 1), ('multos', 1), ('multi', 1), ('multe', 1)]",4
+cupri,"[('cipri', 1)]",1
+adherens,"[('adherent', 1)]",1
+portant,"[('portat', 1)]",1
+antirodum,"[('antirodus', 1)]",1
+tuta,"[('guta', 1), ('ruta', 1), ('tota', 1), ('auta', 1), ('tuti', 1)]",5
+hanc,"[('hac', 1), ('hinc', 1), ('hunc', 1)]",3
+semen,"[('senen', 1), ('semei', 1), ('semel', 1)]",3
+paulum,"[('paulus', 1)]",1
+pialam,"[('piala', 1), ('palam', 1)]",2
+ueniunt,"[('ueniant', 1), ('uendunt', 1)]",2
+omnia,"[('omni', 1), ('omnis', 1)]",2
+teutonia,"[('teutoniam', 1), ('teutonie', 1), ('teutonica', 1)]",3
+foris,"[('fortis', 1)]",1
+regiones,"[('regionem', 1), ('regionis', 1), ('regione', 1)]",3
+balsamus,"[('balsamum', 1)]",1
+deuote,"[('deuoti', 1)]",1
+carmelam,"[('camelam', 1), ('carmelum', 1)]",2
+multitudine,"[('multitudinem', 1)]",1
+cesaream,"[('cesarea', 1)]",1
+historia,"[('historias', 1)]",1
+manet,"[('mane', 1), ('manent', 1)]",2
+munitissimam,"[('munitissima', 1), ('munitissimum', 1)]",2
+malum,"[('manum', 1)]",1
+duplicem,"[('duplices', 1)]",1
+uerbis,"[('urbis', 1)]",1
+secum,"[('secus', 1), ('mecum', 1)]",2
+emat,"[('emac', 1), ('erat', 1)]",2
+scribi,"[('scribit', 1), ('scribo', 1)]",2
+antaradum,"[('anteradum', 1)]",1
+particula,"[('particule', 1)]",1
+exteriori,"[('exterior', 1)]",1
+dormiunt,"[('dormiuit', 1)]",1
+tripolim,"[('tripoli', 1), ('tripolin', 1), ('tripolis', 1)]",3
+incisam,"[('incisa', 1)]",1
+pira,"[('mira', 1)]",1
+canales,"[('canalem', 1)]",1
+cori,"[('coli', 1), ('corui', 1), ('mori', 1)]",3
+clibani,"[('libani', 1)]",1
+bodowini,"[('bodwini', 1)]",1
+uino,"[('uina', 1), ('uico', 1), ('uini', 1), ('uno', 1)]",4
+uidente,"[('uidentes', 1), ('uiuente', 1)]",2
+colatione,"[('colationem', 1)]",1
+fraudantur,"[('fraundantur', 1)]",1
+ualeo,"[('uale', 1), ('uales', 1), ('maleo', 1), ('ualem', 1)]",4
+eclesie,"[('ecclesie', 1)]",1
+arabia,"[('arabiam', 1), ('arabie', 1)]",2
+peregrinos,"[('peregrino', 1), ('peregrinis', 1)]",2
+erant,"[('errant', 1), ('orant', 1), ('erat', 1)]",3
+unum,"[('unus', 1), ('uinum', 1), ('unam', 1)]",3
+dicta,"[('dicti', 1), ('dieta', 1), ('dicte', 1), ('dictam', 1)]",4
+urbis,"[('urbs', 1), ('urbi', 1), ('uerbis', 1)]",3
+deuotum,"[('deuotam', 1), ('deuotus', 1)]",2
+eius,"[('eis', 1)]",1
+arietes,"[('parietes', 1)]",1
+genesis,"[('generis', 1), ('genesim', 1)]",2
+capitis,"[('capiti', 1)]",1
+moab,"[('ioab', 1)]",1
+leuam,"[('leucam', 1), ('leuat', 1)]",2
+senex,"[('senen', 1), ('senes', 1)]",2
+assim,"[('passim', 1)]",1
+uere,"[('uera', 1), ('ere', 1), ('fere', 1), ('uero', 1), ('ueri', 1), ('iere', 1), ('ubere', 1)]",7
+filii,"[('filia', 1), ('filie', 1), ('filio', 1), ('filiis', 1)]",4
+montesque,"[('montemque', 1)]",1
+irrigantur,"[('irrigatur', 1)]",1
+nulius,"[('nulus', 1)]",1
+bubus,"[('bobus', 1)]",1
+particule,"[('particula', 1)]",1
+rengna,"[('regna', 1)]",1
+passus,"[('passis', 1), ('passum', 1)]",2
+maritime,"[('maritima', 1)]",1
+cristianis,"[('cristianos', 1), ('cristiani', 1), ('cristianus', 1)]",3
+camelo,"[('carmelo', 1), ('cameli', 1), ('camelos', 1)]",3
+infiniti,"[('infinitis', 1)]",1
+quin,"[('quid', 1), ('quis', 1), ('qui', 1), ('quia', 1)]",4
+pretiosa,"[('pretioso', 1), ('pretiosas', 1)]",2
+nulus,"[('ulus', 1), ('nilus', 1), ('nulum', 1), ('nulius', 1)]",4
+iesrahel,"[('israhel', 1), ('iesraheli', 1)]",2
+hominibus,"[('nominibus', 1)]",1
+edificatus,"[('edificatum', 1)]",1
+coloris,"[('caloris', 1)]",1
+lineam,"[('laneam', 1), ('lineum', 1), ('linea', 1)]",3
+armenie,"[('armenia', 1), ('armeni', 1)]",2
+curkum,"[('cursum', 1)]",1
+porosi,"[('porosa', 1)]",1
+fabe,"[('faba', 1), ('sabe', 1)]",2
+angelum,"[('angulum', 1), ('angelus', 1)]",2
+botrim,"[('botri', 1), ('botris', 1), ('botrum', 1)]",3
+uerno,"[('uero', 1), ('uerbo', 1)]",2
+diues,"[('dies', 1), ('ciues', 1)]",2
+annum,"[('pannum', 1)]",1
+ualaniam,"[('ualania', 1)]",1
+cristiani,"[('cristiane', 1), ('cristiana', 1), ('cristianis', 1)]",3
+penicea,"[('penice', 1), ('peniceam', 1)]",2
+extendat,"[('extendit', 1)]",1
+morabantur,"[('morabatur', 1)]",1
+leones,"[('lemones', 1)]",1
+sicilia,"[('similia', 1), ('sicilie', 1), ('siciliam', 1)]",3
+enucum,"[('eunucum', 1)]",1
+secutus,"[('sectus', 1)]",1
+facti,"[('factis', 1), ('facto', 1), ('facte', 1), ('facta', 1)]",4
+fluxit,"[('fluit', 1)]",1
+tamen,"[('atamen', 1), ('tamem', 1)]",2
+ilex,"[('ile', 1)]",1
+iere,"[('ere', 1), ('fere', 1), ('ire', 1), ('uere', 1)]",4
+sanctum,"[('sanctam', 1), ('sanctus', 1)]",2
+aque,"[('aqua', 1), ('que', 1)]",2
+idumee,"[('idumea', 1)]",1
+lucam,"[('lusam', 1), ('lucas', 1), ('leucam', 1)]",3
+oleo,"[('olei', 1)]",1
+autem,"[('artem', 1), ('aute', 1), ('autet', 1)]",3
+nationis,"[('nationes', 1)]",1
+palmiram,"[('palmira', 1)]",1
+oliueta,"[('oliueti', 1)]",1
+maiores,"[('maiorem', 1), ('maiore', 1), ('maioris', 1)]",3
+rubeum,"[('rubeam', 1), ('rubrum', 1)]",2
+auta,"[('aut', 1), ('apta', 1), ('guta', 1), ('alta', 1), ('aute', 1), ('ruta', 1), ('tuta', 1)]",7
+aliarum,"[('aliorum', 1)]",1
+uxoris,"[('uxores', 1)]",1
+ductam,"[('dictam', 1)]",1
+altitudine,"[('altitudinem', 1)]",1
+ecclesie,"[('ecclesia', 1), ('eclesie', 1)]",2
+earum,"[('parum', 1), ('karum', 1), ('eorum', 1), ('eurum', 1), ('rarum', 1)]",5
+uiuente,"[('uiuentes', 1), ('uidente', 1)]",2
+triangula,"[('triangule', 1), ('trianguli', 1), ('triangulam', 1)]",3
+utraque,"[('utroque', 1)]",1
+parietem,"[('pariete', 1), ('parietes', 1), ('parientem', 1), ('parietum', 1)]",4
+parientem,"[('parietem', 1)]",1
+sacerdotes,"[('sacerdotem', 1), ('sacerdotis', 1), ('sacerdote', 1)]",3
+fuisset,"[('fuisse', 1)]",1
+teneat,"[('tenebat', 1)]",1
+decet,"[('ducet', 1), ('debet', 1)]",2
+habebat,"[('habebant', 1), ('habeat', 1)]",2
+habeant,"[('habent', 1), ('habebant', 1), ('habeat', 1)]",3
+inmolandi,"[('imolandi', 1)]",1
+adhoc,"[('adhuc', 1)]",1
+giro,"[('tiro', 1)]",1
+frequentes,"[('frequenter', 1)]",1
+grosso,"[('grossi', 1), ('grossa', 1)]",2
+horas,"[('horam', 1), ('hora', 1)]",2
+angeli,"[('anguli', 1)]",1
+fuisse,"[('fuisset', 1)]",1
+punica,"[('tunica', 1)]",1
+ascensu,"[('ascensus', 1), ('ascensa', 1), ('ascensum', 1)]",3
+abiit,"[('adiit', 1)]",1
+principatum,"[('principatu', 1), ('principatus', 1)]",2
+meroen,"[('miroen', 1)]",1
+maximum,"[('maximus', 1)]",1
+credo,"[('credi', 1)]",1
+conditus,"[('consitus', 1)]",1
+ilum,"[('ilud', 1), ('ilam', 1), ('iluc', 1), ('nilum', 1)]",4
+iesrel,"[('isrel', 1)]",1
+sancto,"[('sancte', 1), ('sancti', 1), ('sancta', 1)]",3
+campos,"[('campis', 1), ('campus', 1), ('camos', 1), ('campo', 1)]",4
+legende,"[('legendo', 1)]",1
+uidet,"[('uidit', 1), ('uides', 1), ('uideo', 1), ('uideat', 1)]",4
+paucas,"[('paucos', 1)]",1
+dedisse,"[('sedisse', 1)]",1
+heliseum,"[('heliseus', 1)]",1
+marmoree,"[('marmore', 1), ('marmorea', 1)]",2
+auertit,"[('uertit', 1), ('auertat', 1)]",2
+constructa,"[('constructas', 1)]",1
+tabulas,"[('tabulis', 1), ('tabulam', 1), ('tabula', 1), ('fabulas', 1)]",4
+abates,"[('abbates', 1)]",1
+panno,"[('pannos', 1), ('anno', 1), ('panni', 1)]",3
+turpe,"[('turre', 1)]",1
+leucam,"[('leucas', 1), ('leuca', 1), ('leuam', 1), ('lucam', 1)]",4
+retibus,"[('regibus', 1)]",1
+apti,"[('apta', 1)]",1
+locum,"[('locus', 1)]",1
+aquilonis,"[('aquiloni', 1)]",1
+sumptuosa,"[('sumptuosi', 1)]",1
+colitur,"[('tolitur', 1)]",1
+karac,"[('krac', 1), ('marac', 1), ('barac', 1)]",3
+digni,"[('igni', 1)]",1
+aconensi,"[('aconensis', 1), ('ackonensi', 1), ('aconense', 1)]",3
+similia,"[('simili', 1), ('similis', 1), ('sicilia', 1)]",3
+plurimi,"[('plurime', 1)]",1
+liniamenta,"[('lineamenta', 1)]",1
+equales,"[('quales', 1)]",1
+caldei,"[('caldea', 1)]",1
+esecielem,"[('eseciele', 1)]",1
+arnon,"[('aron', 1)]",1
+orbe,"[('ore', 1)]",1
+camelis,"[('camelus', 1), ('cameli', 1), ('camelos', 1)]",3
+tamem,"[('talem', 1), ('tamen', 1)]",2
+fuerit,"[('fuerat', 1), ('fuerint', 1)]",2
+prima,"[('prime', 1), ('primam', 1), ('primo', 1)]",3
+factos,"[('factus', 1), ('factis', 1), ('facto', 1)]",3
+gasam,"[('gasa', 1)]",1
+tribus,"[('tribu', 1), ('tribum', 1), ('tribui', 1)]",3
+lacis,"[('locis', 1), ('lapis', 1), ('lacus', 1), ('laris', 1), ('acis', 1), ('lactis', 1), ('lacius', 1)]",7
+morte,"[('porte', 1), ('marte', 1), ('mortem', 1), ('forte', 1), ('sorte', 1), ('monte', 1)]",6
+monte,"[('fonte', 1), ('montes', 1), ('morte', 1), ('montem', 1)]",4
+raro,"[('karo', 1), ('rara', 1)]",2
+historiis,"[('historias', 1)]",1
+fecere,"[('facere', 1)]",1
+rubrum,"[('rubeum', 1)]",1
+adheret,"[('adherent', 1)]",1
+ofitio,"[('ofitia', 1)]",1
+genesim,"[('genesis', 1)]",1
+ignis,"[('igni', 1), ('lignis', 1)]",2
+habitu,"[('habitum', 1), ('habiti', 1)]",2
+siccatum,"[('siccatur', 1)]",1
+proiecti,"[('proiecta', 1)]",1
+aliquis,"[('aliqui', 1), ('aliquid', 1), ('aliquos', 1)]",3
+sabe,"[('fabe', 1)]",1
+luto,"[('puto', 1)]",1
+separata,"[('separatas', 1)]",1
+leuat,"[('leuam', 1)]",1
+captum,"[('captam', 1), ('aptum', 1), ('captus', 1)]",3
+piscina,"[('piscinas', 1), ('piscinam', 1), ('piscine', 1)]",3
+facte,"[('facto', 1), ('facie', 1), ('facti', 1), ('facta', 1)]",4
+nusquam,"[('numquam', 1), ('usquam', 1), ('nunquam', 1)]",3
+tertio,"[('tertia', 1)]",1
+quorum,"[('suorum', 1), ('quarum', 1)]",2
+natus,"[('latus', 1), ('notus', 1), ('natum', 1)]",3
+paran,"[('aran', 1)]",1
+engaddi,"[('engadi', 1)]",1
+bais,"[('baas', 1), ('baias', 1), ('bis', 1), ('bail', 1)]",4
+tobia,"[('tobias', 1), ('tobie', 1)]",2
+nolentes,"[('uolentes', 1)]",1
+contigua,"[('continua', 1)]",1
+uiam,"[('uilam', 1), ('iam', 1), ('uitam', 1), ('uia', 1), ('unam', 1)]",5
+area,"[('aream', 1), ('arena', 1), ('aurea', 1), ('ara', 1), ('arca', 1)]",5
+munitum,"[('munitam', 1), ('munitus', 1), ('imunitum', 1)]",3
+habet,"[('habes', 1), ('habent', 1), ('habeat', 1)]",3
+hermonin,"[('hermonim', 1)]",1
+paramia,"[('paramiam', 1)]",1
+dotain,"[('dotaim', 1)]",1
+nabot,"[('iabot', 1)]",1
+meridiem,"[('meridie', 1)]",1
+spetialem,"[('spetiale', 1)]",1
+castris,"[('castri', 1)]",1
+acile,"[('facile', 1)]",1
+sicilie,"[('sicilia', 1)]",1
+mansionem,"[('mansione', 1)]",1
+inuolutum,"[('inuolutus', 1)]",1
+efrem,"[('erem', 1)]",1
+horrea,"[('horrei', 1)]",1
+ponita,"[('monita', 1), ('polita', 1)]",2
+demissum,"[('dimissum', 1)]",1
+quartus,"[('quartum', 1), ('quartis', 1)]",2
+cultores,"[('coltores', 1)]",1
+uiderent,"[('uiderunt', 1), ('uideret', 1)]",2
+tapnim,"[('tapnis', 1)]",1
+altus,"[('altos', 1), ('altis', 1), ('alius', 1), ('aptus', 1), ('saltus', 1), ('altum', 1)]",6
+apparent,"[('apparet', 1)]",1
+culte,"[('multe', 1)]",1
+peli,"[('celi', 1), ('pelis', 1)]",2
+sarracenos,"[('sarracenus', 1), ('sarraceno', 1), ('sarracenis', 1)]",3
+destructiones,"[('destructionem', 1)]",1
+frumento,"[('frumenti', 1)]",1
+florum,"[('forum', 1), ('ilorum', 1)]",2
+sanguineo,"[('sanguinem', 1), ('sanguine', 1)]",2
+descendebat,"[('descendebant', 1)]",1
+ilius,"[('filius', 1), ('alius', 1), ('ilis', 1)]",3
+diricie,"[('diridie', 1)]",1
+monaci,"[('monacis', 1), ('monaco', 1)]",2
+pascuosa,"[('pascuosam', 1)]",1
+helias,"[('helius', 1)]",1
+pluries,"[('plures', 1)]",1
+primam,"[('primum', 1), ('prima', 1)]",2
+possim,"[('possit', 1), ('passim', 1), ('possum', 1), ('possem', 1)]",4
+nobe,"[('noe', 1), ('noue', 1), ('note', 1)]",3
+uideo,"[('uides', 1), ('ideo', 1), ('uidet', 1)]",3
+tiberiade,"[('tiberiadem', 1)]",1
+romani,"[('romane', 1), ('romana', 1)]",2
+appelat,"[('appelata', 1)]",1
+maumeriam,"[('maumeria', 1)]",1
+montemque,"[('montesque', 1)]",1
+ferri,"[('ferro', 1)]",1
+cristianus,"[('cristianos', 1), ('cristianis', 1)]",2
+dictum,"[('dictus', 1), ('dictam', 1)]",2
+necessarie,"[('necessaria', 1)]",1
+pannis,"[('panis', 1), ('pannos', 1), ('annis', 1), ('cannis', 1), ('panni', 1)]",5
+bonis,"[('bonus', 1), ('bonas', 1)]",2
+niuibus,"[('nauibus', 1)]",1
+betel,"[('becel', 1), ('betil', 1)]",2
+damascum,"[('damascus', 1)]",1
+placuit,"[('lacuit', 1)]",1
+orate,"[('orare', 1)]",1
+atulerunt,"[('tulerunt', 1)]",1
+quartis,"[('quartus', 1)]",1
+canna,"[('canne', 1), ('cannas', 1), ('manna', 1), ('cana', 1)]",4
+testitudinem,"[('testitudines', 1), ('testitudine', 1)]",2
+dietam,"[('dieta', 1), ('dietas', 1), ('dictam', 1)]",3
+iocapata,"[('iotapata', 1)]",1
+herodis,"[('herodes', 1)]",1
+boue,"[('bone', 1), ('boues', 1), ('noue', 1)]",3
+eosdem,"[('easdem', 1), ('eodem', 1), ('eisdem', 1)]",3
+rupi,"[('rupis', 1), ('rupe', 1)]",2
+continebit,"[('continebat', 1)]",1
+habere,"[('haberet', 1)]",1
+ituream,"[('iturea', 1)]",1
+armeni,"[('armenia', 1), ('armenie', 1)]",2
+pauit,"[('lauit', 1)]",1
+uapor,"[('uapore', 1), ('sapor', 1)]",2
+inueniuntur,"[('inueniantur', 1)]",1
+sedis,"[('sedi', 1), ('sedes', 1), ('sedit', 1)]",3
+spissos,"[('spisso', 1)]",1
+nestorianus,"[('nestorianos', 1)]",1
+comedi,"[('comedit', 1)]",1
+orti,"[('ortu', 1), ('forti', 1), ('orta', 1), ('ortis', 1)]",4
+paule,"[('pauli', 1), ('paulo', 1), ('saule', 1)]",3
+tobie,"[('tobia', 1)]",1
+circuitus,"[('circuitu', 1), ('circuitum', 1)]",2
+matris,"[('matri', 1), ('patris', 1), ('matrim', 1), ('maris', 1)]",4
+longo,"[('longe', 1), ('longa', 1), ('longos', 1)]",3
+deuteronomius,"[('deuteronomium', 1)]",1
+prona,"[('proni', 1), ('pona', 1)]",2
+nostris,"[('nostri', 1)]",1
+habuerant,"[('habuerunt', 1)]",1
+dispositio,"[('dispositi', 1)]",1
+tabernaculi,"[('tabernaculis', 1), ('tabernacula', 1)]",2
+sermonem,"[('sermone', 1)]",1
+site,"[('uite', 1), ('sita', 1), ('situ', 1), ('sit', 1), ('sine', 1), ('siue', 1)]",6
+flumen,"[('lumen', 1)]",1
+asotum,"[('asotus', 1)]",1
+licet,"[('libet', 1)]",1
+mentis,"[('gentis', 1), ('mentio', 1), ('mensis', 1), ('uentis', 1), ('montis', 1)]",5
+penicis,"[('penicie', 1), ('fenicis', 1)]",2
+maritimam,"[('maritima', 1)]",1
+torrente,"[('torrentem', 1), ('torrentes', 1), ('torrenti', 1)]",3
+sancta,"[('sanctam', 1), ('sancte', 1), ('sancti', 1), ('sancto', 1)]",4
+uenientem,"[('uenientes', 1)]",1
+tecti,"[('lecti', 1), ('tecto', 1), ('tecta', 1)]",3
+latitudinem,"[('latitudine', 1)]",1
+sedentem,"[('sedentes', 1)]",1
+eliseus,"[('heliseus', 1)]",1
+sodomorum,"[('sidomorum', 1)]",1
+ligna,"[('ligno', 1), ('lignea', 1)]",2
+fugeret,"[('fugere', 1)]",1
+altissimis,"[('altissimus', 1), ('altissimos', 1)]",2
+arabie,"[('arabice', 1), ('arabia', 1)]",2
+riuis,"[('riuus', 1), ('riuos', 1)]",2
+longus,"[('longum', 1), ('longos', 1)]",2
+continue,"[('continua', 1), ('continuo', 1)]",2
+uocem,"[('uicem', 1)]",1
+uxores,"[('uxorem', 1), ('uxoris', 1), ('uxore', 1)]",3
+anandel,"[('ananeel', 1)]",1
+qualibet,"[('quilibet', 1), ('quamlibet', 1)]",2
+lactis,"[('factis', 1), ('lacis', 1)]",2
+esecieli,"[('esecielis', 1), ('eseciele', 1), ('eseciel', 1)]",3
+sciret,"[('scire', 1)]",1
+pegor,"[('segor', 1)]",1
+tuti,"[('tuli', 1), ('tui', 1), ('tuta', 1)]",3
+miserunt,"[('miserant', 1)]",1
+gasa,"[('gaba', 1), ('gasam', 1)]",2
+pulcro,"[('pulcra', 1), ('pulcre', 1)]",2
+iudea,"[('iudeam', 1), ('iudei', 1), ('iudee', 1), ('iuda', 1), ('iude', 1)]",5
+orta,"[('ortu', 1), ('porta', 1), ('ora', 1), ('orti', 1)]",4
+grossa,"[('grossi', 1), ('glossa', 1), ('grosso', 1)]",3
+manente,"[('manent', 1)]",1
+tecuam,"[('tecua', 1)]",1
+lacius,"[('lacus', 1), ('lacis', 1)]",2
+calido,"[('ualido', 1), ('calide', 1)]",2
+edificauit,"[('edificauat', 1)]",1
+sumus,"[('humus', 1), ('sumum', 1), ('fumus', 1)]",3
+corosaim,"[('corrosaim', 1)]",1
+folium,"[('filium', 1)]",1
+assininorum,"[('assisinorum', 1)]",1
+iosepi,"[('iosep', 1)]",1
+panni,"[('panno', 1), ('pannis', 1)]",2
+leues,"[('leges', 1), ('leuis', 1)]",2
+plato,"[('plano', 1), ('pilato', 1)]",2
+nimiam,"[('nimia', 1)]",1
+imunitum,"[('munitum', 1)]",1
+primo,"[('prime', 1), ('prima', 1)]",2
+ascendi,"[('ascendit', 1)]",1
+superificie,"[('superficie', 1)]",1
+auertat,"[('auertit', 1)]",1
+columpnis,"[('columpnas', 1)]",1
+ueteri,"[('ueteris', 1)]",1
+quacumque,"[('quicumque', 1)]",1
+engadi,"[('engaddi', 1)]",1
+pluria,"[('pluuia', 1), ('plura', 1)]",2
+gregorium,"[('gregorius', 1)]",1
+uirilis,"[('uiridis', 1)]",1
+solitudines,"[('solitudinis', 1), ('solitudine', 1)]",2
+rubeo,"[('rubro', 1)]",1
+minus,"[('sinus', 1)]",1
+supradicto,"[('supradicte', 1)]",1
+uirginem,"[('uirgine', 1)]",1
+castelum,"[('castellum', 1)]",1
+uxore,"[('uxorem', 1), ('uxores', 1), ('uxor', 1)]",3
+discipulos,"[('discipulis', 1)]",1
+pingui,"[('pinguis', 1)]",1
+quadragesimam,"[('quadragesima', 1)]",1
+antiqua,"[('antiqui', 1), ('antiquam', 1), ('antiquo', 1)]",3
+estimari,"[('estimare', 1)]",1
+pendunt,"[('uendunt', 1)]",1
+romana,"[('romane', 1), ('romanam', 1), ('romani', 1)]",3
+profundam,"[('profundum', 1), ('profunda', 1)]",2
+iabenia,"[('iabeni', 1)]",1
+turcis,"[('turci', 1), ('turris', 1)]",2
+regium,"[('regum', 1), ('regnum', 1)]",2
+gente,"[('gentes', 1)]",1
+sepulture,"[('sepultura', 1)]",1
+messanam,"[('messana', 1)]",1
+iabot,"[('nabot', 1)]",1
+tabernacula,"[('tabernaculi', 1)]",1
+pulcram,"[('pulcra', 1), ('pulcrum', 1)]",2
+latini,"[('latinis', 1)]",1
+habeat,"[('habent', 1), ('habebat', 1), ('habeant', 1), ('habet', 1)]",4
+dixerim,"[('dixerit', 1)]",1
+uideat,"[('uidet', 1)]",1
+medium,"[('mediam', 1)]",1
+idumeam,"[('idumea', 1)]",1
+pelis,"[('melis', 1), ('peli', 1)]",2
+tanti,"[('tanta', 1), ('tante', 1)]",2
+rara,"[('rama', 1), ('raro', 1), ('ara', 1)]",3
+dimidius,"[('dimidium', 1)]",1
+diuina,"[('diuino', 1)]",1
+iesus,"[('iesum', 1), ('iesu', 1)]",2
+ipsam,"[('ipsa', 1), ('ipsas', 1), ('ipsum', 1)]",3
+occidentalis,"[('occidentali', 1)]",1
+ambo,"[('albo', 1), ('ambe', 1)]",2
+inueniantur,"[('inueniuntur', 1)]",1
+asser,"[('assero', 1), ('assur', 1)]",2
+timent,"[('timet', 1)]",1
+quidam,"[('quadam', 1), ('quedam', 1), ('cuidam', 1), ('quidem', 1), ('quodam', 1)]",5
+intrat,"[('intra', 1)]",1
+spetiosis,"[('spatiosis', 1)]",1
+abirim,"[('abarim', 1)]",1
+montem,"[('fontem', 1), ('mortem', 1), ('montes', 1), ('monte', 1)]",4
+delicatum,"[('delicatus', 1)]",1
+libanum,"[('libanus', 1)]",1
+uinum,"[('sinum', 1), ('uisum', 1), ('unum', 1)]",3
+cana,"[('canan', 1), ('can', 1), ('cena', 1), ('sana', 1), ('lana', 1), ('canna', 1)]",6
+continuo,"[('continua', 1), ('continue', 1)]",2
+ostendunt,"[('ostendant', 1)]",1
+sidonis,"[('simonis', 1), ('sidonia', 1), ('sidonie', 1)]",3
+uentis,"[('uenti', 1), ('gentis', 1), ('mentis', 1)]",3
+noluit,"[('uoluit', 1), ('nouit', 1)]",2
+barac,"[('marac', 1), ('abarac', 1), ('karac', 1)]",3
+edificauat,"[('edificauit', 1)]",1
+media,"[('medi', 1), ('menia', 1), ('medio', 1), ('medea', 1), ('mediam', 1)]",5
+baptiste,"[('baptista', 1)]",1
+beatam,"[('beata', 1)]",1
+ortis,"[('ortus', 1), ('sortis', 1), ('fortis', 1), ('ortos', 1), ('portis', 1), ('artis', 1), ('orti', 1)]",7
+ecclesiastica,"[('ecclesiatica', 1)]",1
+facile,"[('facili', 1), ('facie', 1), ('acile', 1)]",3
+incipit,"[('incidit', 1)]",1
+descriptionem,"[('descriptione', 1)]",1
+palmam,"[('palma', 1), ('palmas', 1), ('palam', 1)]",3
+arborem,"[('arborum', 1), ('arbore', 1)]",2
+arca,"[('aroca', 1), ('arcam', 1), ('area', 1), ('ara', 1)]",4
+modicus,"[('modicum', 1), ('modicis', 1)]",2
+lapides,"[('lapidis', 1), ('lapidem', 1), ('lapide', 1)]",3
+pulcrum,"[('pulcram', 1)]",1
+cariaciarim,"[('cariatiarim', 1)]",1
+siue,"[('niue', 1), ('sue', 1), ('sine', 1), ('site', 1)]",4
+noctem,"[('nocte', 1)]",1
+legit,"[('legi', 1), ('legio', 1)]",2
+helene,"[('helena', 1)]",1
+traconem,"[('tracones', 1)]",1
+uidens,"[('uadens', 1), ('uides', 1)]",2
+asotus,"[('asotum', 1)]",1
+inferiori,"[('inferior', 1), ('interiori', 1)]",2
+potandum,"[('portandum', 1)]",1
+betuliam,"[('betulia', 1)]",1
+scripta,"[('cripta', 1)]",1
+diuersarum,"[('diuersorum', 1)]",1
+ministris,"[('sinistris', 1)]",1
+uideatur,"[('uidetur', 1), ('uidebatur', 1), ('uidentur', 1)]",3
+semicirculum,"[('semicirculus', 1)]",1
+auro,"[('agro', 1), ('muro', 1), ('auri', 1)]",3
+dora,"[('doram', 1), ('ora', 1), ('dor', 1), ('hora', 1)]",4
+nunc,"[('tunc', 1), ('hunc', 1)]",2
+constitutas,"[('constituta', 1)]",1
+assumpti,"[('assumptis', 1)]",1
+camelos,"[('camelus', 1), ('camelo', 1), ('camelis', 1), ('capelos', 1)]",4
+pilippo,"[('pilippi', 1)]",1
+terret,"[('terre', 1)]",1
+galgale,"[('galgala', 1)]",1
+distabat,"[('distalat', 1)]",1
+ostio,"[('hostio', 1), ('stio', 1)]",2
+uadunt,"[('cadunt', 1)]",1
+spetiali,"[('spetialis', 1), ('spetiale', 1)]",2
+biricum,"[('bericum', 1)]",1
+uendunt,"[('ueniunt', 1), ('pendunt', 1)]",2
+sabati,"[('sabatis', 1)]",1
+uxor,"[('uxore', 1)]",1
+erat,"[('era', 1), ('eram', 1), ('emat', 1), ('erant', 1)]",4
+ieremie,"[('ieremia', 1)]",1
+asimo,"[('asino', 1)]",1
+quoniam,"[('quondam', 1)]",1
+armeniorum,"[('armenorum', 1)]",1
+saltus,"[('altus', 1)]",1
+sacerdotum,"[('sacerdotem', 1)]",1
+decolatum,"[('decoratum', 1), ('decolatus', 1)]",2
+columpna,"[('columpnas', 1), ('columpne', 1), ('columpnam', 1)]",3
+reliquie,"[('reliqui', 1)]",1
+locati,"[('elocati', 1), ('locata', 1)]",2
+signo,"[('ligno', 1)]",1
+iacere,"[('facere', 1)]",1
+minor,"[('minora', 1), ('minore', 1), ('miror', 1)]",3
+ulomodo,"[('nulomodo', 1)]",1
+carmelum,"[('carmeleum', 1), ('carmelus', 1), ('carmelam', 1)]",3
+portem,"[('porte', 1), ('partem', 1), ('mortem', 1), ('portum', 1), ('portam', 1), ('sortem', 1)]",6
+uenerabilis,"[('uenerabilius', 1)]",1
+inuenit,"[('inueni', 1), ('inuenio', 1)]",2
+unam,"[('nam', 1), ('uenam', 1), ('una', 1), ('sunam', 1), ('unum', 1), ('uiam', 1)]",6
+homicida,"[('homicidia', 1)]",1
+damasci,"[('damasco', 1)]",1
+dubio,"[('dubios', 1)]",1
+ruinis,"[('ruinas', 1)]",1
+muri,"[('muro', 1), ('muris', 1), ('auri', 1), ('mori', 1), ('mari', 1)]",5
+nimis,"[('nimia', 1)]",1
+recedens,"[('precedens', 1)]",1
+rapin,"[('rapan', 1)]",1
+amos,"[('amon', 1), ('camos', 1)]",2
+tiri,"[('tigri', 1), ('uiri', 1), ('siri', 1), ('tire', 1), ('tiro', 1)]",5
+note,"[('noe', 1), ('nocte', 1), ('nota', 1), ('noue', 1), ('nobe', 1)]",5
+deuoti,"[('deuote', 1)]",1
+segor,"[('pegor', 1)]",1
+ambitum,"[('ambitus', 1), ('ambitu', 1)]",2
+uideret,"[('uiderem', 1), ('uiderent', 1), ('uidere', 1)]",3
+dotaim,"[('dotain', 1)]",1
+semnim,"[('gemnim', 1)]",1
+celum,"[('colum', 1)]",1
+sepulcri,"[('sepulcra', 1), ('sepulcro', 1)]",2
+siciliam,"[('sicilia', 1)]",1
+sermone,"[('sermonem', 1)]",1
+lune,"[('luce', 1)]",1
+preter,"[('pretea', 1)]",1
+riuum,"[('riuus', 1), ('ritum', 1)]",2
+dimisi,"[('diuisi', 1)]",1
+querentene,"[('quarentene', 1)]",1
+titum,"[('situm', 1), ('totum', 1), ('ritum', 1), ('tirum', 1)]",4
+docent,"[('docenti', 1)]",1
+uersui,"[('uersus', 1)]",1
+constituto,"[('constituta', 1)]",1
+hora,"[('horma', 1), ('ora', 1), ('horam', 1), ('horas', 1), ('dora', 1)]",5
+quondam,"[('quosdam', 1), ('quoddam', 1), ('quodam', 1), ('quoniam', 1), ('quandam', 1)]",5
+duxit,"[('dixit', 1), ('ducit', 1)]",2
+edificato,"[('edificate', 1), ('edificata', 1)]",2
+quandam,"[('quadam', 1), ('quamdam', 1), ('quondam', 1)]",3
+fortissimis,"[('fortissimi', 1), ('fortissimos', 1)]",2
+sterilis,"[('steriles', 1)]",1
+scripturam,"[('scriptura', 1)]",1
+palmis,"[('palmas', 1)]",1
+sapor,"[('uapor', 1)]",1
+kabul,"[('cabul', 1)]",1
+multe,"[('multa', 1), ('multi', 1), ('multo', 1), ('culte', 1)]",4
+bestiam,"[('bestias', 1)]",1
+panem,"[('pacem', 1), ('panum', 1), ('pane', 1)]",3
+recipit,"[('recepit', 1)]",1
+uocauerunt,"[('locauerunt', 1)]",1
+facta,"[('factam', 1), ('facto', 1), ('facti', 1), ('facte', 1)]",4
+montis,"[('montes', 1), ('fontis', 1), ('mentis', 1)]",3
+siene,"[('sienen', 1), ('sine', 1)]",2
+altum,"[('album', 1), ('altam', 1), ('alium', 1), ('aptum', 1), ('altus', 1)]",5
+planiciei,"[('planicies', 1), ('planiciem', 1), ('planicie', 1)]",3
+rubro,"[('rubri', 1), ('rubeo', 1)]",2
+loge,"[('longe', 1), ('lege', 1)]",2
+turingia,"[('turingiam', 1)]",1
+moria,"[('maria', 1), ('mori', 1)]",2
+ubere,"[('uere', 1)]",1
+belo,"[('melo', 1), ('celo', 1)]",2
+pannum,"[('panum', 1), ('annum', 1)]",2
+campestri,"[('campestria', 1)]",1
+unius,"[('unus', 1)]",1
+sarracenis,"[('sarracenus', 1), ('sarraceni', 1), ('sarracenos', 1)]",3
+petrum,"[('petram', 1), ('patrum', 1), ('petrus', 1)]",3
+manasse,"[('manassen', 1)]",1
+fecit,"[('facit', 1)]",1
+contigit,"[('contingit', 1)]",1
+edificata,"[('edificate', 1), ('edificato', 1)]",2
+magdalena,"[('magdalene', 1)]",1
+spissa,"[('spisso', 1)]",1
+mansit,"[('mansio', 1), ('mansi', 1)]",2
+transiui,"[('transiuit', 1)]",1
+dico,"[('dio', 1), ('diuo', 1), ('dici', 1), ('uico', 1)]",4
+speluncam,"[('spelunca', 1)]",1
+salomone,"[('salomon', 1), ('salomine', 1)]",2
+tecta,"[('tecua', 1), ('tecto', 1), ('tecti', 1)]",3
+parietum,"[('parietem', 1)]",1
+uterum,"[('uerum', 1), ('iterum', 1)]",2
+paruus,"[('paruos', 1)]",1
+fraundantur,"[('fraudantur', 1)]",1
+multus,"[('multum', 1), ('multos', 1), ('multis', 1), ('multas', 1)]",4
+pasca,"[('pasga', 1), ('pasta', 1), ('pascua', 1)]",3
+statua,"[('statum', 1), ('statu', 1)]",2
+solatio,"[('colatio', 1), ('solatia', 1)]",2
+uidere,"[('uideri', 1), ('ridere', 1), ('uiderem', 1), ('uideret', 1)]",4
+totam,"[('totum', 1), ('rotam', 1), ('notam', 1), ('tota', 1)]",4
+pedum,"[('pedem', 1)]",1
+quod,"[('quos', 1), ('quid', 1), ('quo', 1)]",3
+fertilis,"[('fertiles', 1), ('fertili', 1)]",2
+capud,"[('caput', 1), ('apud', 1)]",2
+itur,"[('iter', 1)]",1
+diuersorum,"[('diuersarum', 1)]",1
+domina,"[('domino', 1), ('domine', 1), ('nomina', 1), ('domini', 1)]",4
+sepultura,"[('sepulture', 1)]",1
+sunan,"[('susan', 1), ('sunam', 1)]",2
+pulcre,"[('pulcra', 1), ('pulcro', 1)]",2
+saulis,"[('salis', 1), ('sauli', 1)]",2
+religiosi,"[('religiosis', 1), ('religiosa', 1)]",2
+panibus,"[('manibus', 1), ('canibus', 1)]",2
+diocletiani,"[('diocletiano', 1)]",1
+puteus,"[('puteum', 1)]",1
+ceram,"[('eram', 1), ('certam', 1), ('coram', 1)]",3
+galaad,"[('galaat', 1), ('galad', 1)]",2
+presenti,"[('preuenti', 1), ('presente', 1)]",2
+cauda,"[('causa', 1), ('caudas', 1)]",2
+occidentale,"[('occidentalem', 1), ('occidentali', 1)]",2
+dominica,"[('dominici', 1), ('dominice', 1)]",2
+superior,"[('superiori', 1)]",1
+ducit,"[('ducet', 1), ('duci', 1), ('dicit', 1), ('duxit', 1)]",4
+patres,"[('patrem', 1), ('patre', 1), ('patris', 1), ('patures', 1)]",4
+indiam,"[('india', 1)]",1
+maxima,"[('maxim', 1), ('maximas', 1), ('maximo', 1), ('maxime', 1)]",4
+nulo,"[('nuli', 1), ('nula', 1), ('ulo', 1)]",3
+aquilonalis,"[('aquilonali', 1)]",1
+ierosolimitanis,"[('ierosolimitanus', 1), ('ierosolimitani', 1)]",2
+kairo,"[('karo', 1)]",1
+liber,"[('libet', 1)]",1
+fabulas,"[('tabulas', 1)]",1
+amenam,"[('adenam', 1), ('amenum', 1), ('amena', 1)]",3
+confitetur,"[('confitentur', 1)]",1
+dictam,"[('dicam', 1), ('dicta', 1), ('ductam', 1), ('dictum', 1), ('dietam', 1)]",5
+uerba,"[('uersa', 1), ('uera', 1), ('uerbo', 1)]",3
+armenorum,"[('armeniorum', 1)]",1
+ascensum,"[('ascensus', 1), ('ascensu', 1)]",2
+filiam,"[('filia', 1), ('filium', 1)]",2
+uento,"[('uenti', 1)]",1
+nuda,"[('nudam', 1), ('nula', 1), ('iuda', 1)]",3
+nouit,"[('noui', 1), ('noluit', 1)]",2
+ciuitatem,"[('ciuitate', 1), ('ciuitates', 1), ('ciuitatum', 1)]",3
+predicta,"[('predicte', 1), ('predicto', 1), ('predictam', 1)]",3
+dubios,"[('dubio', 1)]",1
+quem,"[('queo', 1), ('quam', 1), ('que', 1)]",3
+mirabilis,"[('mirabiles', 1), ('mirabili', 1), ('mirabilia', 1)]",3
+quantum,"[('quartum', 1)]",1
+canaan,"[('canan', 1), ('canaam', 1)]",2
+pilati,"[('pilato', 1)]",1
+simonem,"[('sidonem', 1)]",1
+nunquam,"[('numquam', 1), ('unquam', 1), ('nusquam', 1)]",3
+descendens,"[('descendes', 1)]",1
+canaam,"[('canaan', 1)]",1
+clausa,"[('causa', 1)]",1
+data,"[('lata', 1)]",1
+mundi,"[('imundi', 1), ('mundo', 1), ('eundi', 1)]",3
+sedit,"[('dedit', 1), ('sedi', 1), ('sedis', 1)]",3
+ante,"[('tante', 1), ('aute', 1), ('alte', 1), ('anne', 1), ('antea', 1)]",5
+quia,"[('quid', 1), ('qua', 1), ('quis', 1), ('uia', 1), ('qui', 1), ('quin', 1)]",6
+sinistram,"[('sinistra', 1)]",1
+tertiam,"[('tertia', 1)]",1
+aquilonali,"[('aquilonale', 1), ('aquilonalis', 1)]",2
+natum,"[('notum', 1), ('nasum', 1), ('latum', 1), ('natus', 1)]",4
+hominem,"[('hominum', 1), ('homines', 1)]",2
+capelos,"[('camelos', 1)]",1
+torrenti,"[('torrente', 1)]",1
+aconensem,"[('aconense', 1)]",1
+altitudinem,"[('altitudine', 1)]",1
+mariam,"[('maria', 1)]",1
+occurrit,"[('occurri', 1), ('occurrat', 1)]",2
+mari,"[('matri', 1), ('magi', 1), ('maria', 1), ('mali', 1), ('maris', 1), ('mare', 1), ('marie', 1), ('mori', 1), ('muri', 1)]",9
+dominice,"[('dominici', 1), ('dominica', 1)]",2
+egipciis,"[('egipcii', 1)]",1
+predictam,"[('predicta', 1)]",1
+dextrum,"[('dextram', 1)]",1
