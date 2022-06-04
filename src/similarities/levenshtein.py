@@ -140,3 +140,11 @@ def get_p_score(corpus, corpus_error_mapping):
     result.append(score)
   
   return result
+
+def get_non_empty_alternatives(alternatives):
+  result = {}
+  for i in alternatives:
+    if len(alternatives[i]) > 0:
+      result[i] = alternatives[i]
+  
+  return result

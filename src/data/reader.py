@@ -156,6 +156,50 @@ def get_burchard_candidate_version_based_on_p_aligment_london_base():
 
   return result
 
+def get_burchard_candidate_version_based_on_strongly_similar_london_base():
+  london_zwickau_breslau_p_aligment_df = pd.read_csv('../computed_data/p_aligment/by_new_line/strongly_similar/london_zwickau_breslau.csv').drop(['Unnamed: 0'], axis=1)
+  result = []
+
+  for index, row in london_zwickau_breslau_p_aligment_df.iterrows():
+    london_p = row['london text']
+    zwickau_p = row['zwickau text']
+
+    shared_words = []
+
+    # TODO: interesting if it is matter which version to split and run the same function but split zwickau will provide different result
+    for word in london_p.split():
+      match_in_london = re.search(r'\b' + word + r'\b', london_p)
+      match_in_zwickau = re.search(r'\b' + word + r'\b', zwickau_p)
+
+      if match_in_london and match_in_zwickau:
+        shared_words.append(word)
+
+    result.append(' '.join(shared_words))
+
+  return result
+
+def get_burchard_candidate_version_based_on_strongly_similar_zwickau_base():
+  london_zwickau_breslau_p_aligment_df = pd.read_csv('../computed_data/p_aligment/by_new_line/strongly_similar/zwickau_london_breslau.csv').drop(['Unnamed: 0'], axis=1)
+  result = []
+
+  for index, row in london_zwickau_breslau_p_aligment_df.iterrows():
+    london_p = row['london text']
+    zwickau_p = row['zwickau text']
+
+    shared_words = []
+
+    # TODO: interesting if it is matter which version to split and run the same function but split zwickau will provide different result
+    for word in zwickau_p.split():
+      match_in_london = re.search(r'\b' + word + r'\b', london_p)
+      match_in_zwickau = re.search(r'\b' + word + r'\b', zwickau_p)
+
+      if match_in_london and match_in_zwickau:
+        shared_words.append(word)
+
+    result.append(' '.join(shared_words))
+
+  return result
+
 def get_burchard_candidate_version_based_on_p_aligment_zwickau_base():
   london_zwickau_breslau_p_aligment_df = pd.read_csv('../computed_data/p_aligment/by_new_line/zwickau_london_breslau.csv').drop(['Unnamed: 0'], axis=1)
 
