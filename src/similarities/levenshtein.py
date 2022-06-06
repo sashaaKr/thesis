@@ -148,3 +148,16 @@ def get_non_empty_alternatives(alternatives):
       result[i] = alternatives[i]
   
   return result
+
+def get_shared_unique_possible_errors(possible_errors_1, possible_errors_2):
+  possible_errors_1_non_empty = get_non_empty_alternatives(possible_errors_1)
+  possible_errors_2_non_empty = get_non_empty_alternatives(possible_errors_2)
+
+  shared = []
+  unique = []
+
+  for word in possible_errors_1_non_empty:
+    if word in possible_errors_2_non_empty: shared.append(word)
+    else: unique.append(word)
+  
+  return shared, unique
