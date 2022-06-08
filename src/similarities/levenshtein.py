@@ -1,6 +1,7 @@
 from cgitb import reset
 import sys
 import math
+import difflib as dl
 
 from urllib3 import Retry
 from leven import levenshtein
@@ -9,6 +10,9 @@ import numpy as np
 def get_edit_distance(word_1, word_2):
   lev_dist = levenshtein(word_1, word_2)
   return lev_dist
+
+def get_normalized_edit_distance(word_1, word_2):
+  return get_edit_distance(word_1, word_2) / max(len(word_1), len(word_2))
 
 def get_similarity_tupels(words_1, words_2):
     """
@@ -122,7 +126,7 @@ def create_version_possible_errors_mapping(corpus_1, corpus_2, error_threshold):
       if lev_distance >= math.trunc(len(w_1) / 2): continue
 
       if lev_distance <= error_threshold:
-        result[w_1].append((w_2, lev_distance))
+        result[w_1].append((w_2, lev_distance, get_normalized_edit_distance(w_1, w_2)))
 
   return result
 
@@ -131,11 +135,25 @@ def get_p_score(corpus, corpus_error_mapping):
 
   for index, p in enumerate(corpus):
     score = 0
-    for word in p.split():
+    for word in set(p.split()):
       if word in corpus_error_mapping and len(corpus_error_mapping[word]) > 0:
         for possible_error in corpus_error_mapping[word]:
           # print(possible_error)
           score += possible_error[1]
+    
+    result.append(score)
+  
+  return result
+
+def get_p_normalized_score(corpus, corpus_error_mapping):
+  result = []
+
+  for index, p in enumerate(corpus):
+    score = 0
+    for word in set(p.split()):
+      if word in corpus_error_mapping and len(corpus_error_mapping[word]) > 0:
+        for possible_error in corpus_error_mapping[word]:
+          score += possible_error[2]
     
     result.append(score)
   
@@ -161,3 +179,22 @@ def get_shared_unique_possible_errors(possible_errors_1, possible_errors_2):
     else: unique.append(word)
   
   return shared, unique
+
+def count_categorized_errors(possible_errors):
+  possible_errors = get_non_empty_alternatives(possible_errors)
+  result = {}
+  
+  # TODO: cound change in middle and at the end differently
+  for s1 in possible_errors:
+    for posobility in possible_errors[s1]:
+      alternative = posobility[0]
+      seq_matcher = dl.SequenceMatcher(None, s1, alternative)
+      for tag, i1, i2, j1, j2 in seq_matcher.get_opcodes():
+        if tag == 'equal': continue
+
+        key = f'{tag} {s1[i1:i2]!r:>6} --> {alternative[j1:j2]!r}'
+
+        if key in result: result[key] += 1
+        else: result[key] = 1
+  
+  return { k: v for k, v in sorted(result.items(), key=lambda item: item[1], reverse = True) }

@@ -222,3 +222,11 @@ def get_burchard_candidate_version_based_on_p_aligment_zwickau_base():
     result.append(' '.join(shared_words))
 
   return result
+
+def get_london_zwickau_breslau_strongly_similar_p_aligment_df():
+  return pd.read_csv('../computed_data/p_aligment/by_new_line/strongly_similar/london_zwickau_breslau.csv').drop(['Unnamed: 0'], axis=1)
+
+def get_london_zwickau_chop_from_strongly_similar():
+  london_zwickau_breslau_strongly_similar_df = get_london_zwickau_breslau_strongly_similar_p_aligment_df()
+
+  result = []

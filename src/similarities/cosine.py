@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import data.reader as thesisDataReader
 import features.tf_idf.n_gram as thesisTfIdfNgramFeatures
+import utils.utils as thesisUtils
 import features.count_vectorizer.n_gram as thesisCountVectorizerNgramFeatures
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -303,13 +304,26 @@ def create_statistics_df(version_1, version_2, version_1_name):
     return pd.DataFrame(all_data, columns=columns)
 
 def cross_version_similarity(version_1_corpus, version_2_corpus, get_features):
-    res = []
-    for i, p in enumerate(version_1_corpus):
-        temp_corpus = [p] + version_2_corpus
-        df_features = get_features(temp_corpus)
-        temp_similarities = cosine_similarity(df_features, df_features)
-        res.append(temp_similarities[0])
-    return res
+  res = []
+
+  for i, p in enumerate(version_1_corpus):
+    temp_corpus = [p] + version_2_corpus
+    df_features = get_features(temp_corpus)
+    temp_similarities = cosine_similarity(df_features, df_features)
+    res.append(temp_similarities[0])
+
+  return res
 
 def cross_version_similarity_5_gram(version_1_corpus, version_2_corpus):
-    return cross_version_similarity(version_1_corpus, version_2_corpus, thesisTfIdfNgramFeatures.create_5_gram)
+  return cross_version_similarity(version_1_corpus, version_2_corpus, thesisTfIdfNgramFeatures.create_5_gram)
+
+def get_max_similarity_per_p(similarities):
+  res = []
+
+  for index, value in enumerate(similarities):
+    max_indices = thesisUtils.get_n_indexes_of_max_values(value, 6)
+    max_indices_without_self = max_indices[:-1]
+    max_similarity = value[max_indices_without_self[-1]]
+    res.append(max_similarity)
+
+  return res
