@@ -192,9 +192,28 @@ def count_categorized_errors(possible_errors):
       for tag, i1, i2, j1, j2 in seq_matcher.get_opcodes():
         if tag == 'equal': continue
 
-        key = f'{tag} {s1[i1:i2]!r:>6} --> {alternative[j1:j2]!r}'
+        change_postion = 'middle'
+
+        if i1 == 0: change_postion = 'start'
+        if i2 == len(s1): change_postion = 'end'
+
+        key = f'{tag} {change_postion} {s1[i1:i2]!r:>6} --> {alternative[j1:j2]!r}'
 
         if key in result: result[key] += 1
         else: result[key] = 1
+
+        keys_to_investigate = {
+          "replace middle    'w' --> 'u'",
+          "replace start    'r' --> 'k'",
+          "replace end    'l' --> 's'",
+          "replace middle    'f' --> 'p'",
+          "replace start    'k' --> 'r'",
+          "replace end    's' --> 'l'",
+          "replace middle    'p' --> 'f'",
+          "replace middle    'u' --> 'w'"
+        }
+
+        if key in keys_to_investigate:
+          print(f's1: {s1}, alternative: {alternative}')
   
   return { k: v for k, v in sorted(result.items(), key=lambda item: item[1], reverse = True) }
