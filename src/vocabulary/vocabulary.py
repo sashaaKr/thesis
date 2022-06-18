@@ -1,5 +1,7 @@
 import utils.utils as thesisUtils
 import data.reader as thesisDataReader
+import text_cleanup.text_cleanup as thesisTextCleanUp
+import text_cleanup.text_cleanup as thesisCleanUp
 import pandas as pd
 
 from collections import Counter
@@ -33,7 +35,7 @@ def get_version_shared_words(version_a_dictionary, version_a_name, version_b_dic
             }
     return shared_words
 
-# Create vocabulary that shared in vesion a and b, but not in c - for all permutations
+# Create vocabulary that shared in version a and b, but not in c - for all permutations
 def get_shared_vocabulary_for_2_versions(
     corpus_a, 
     corpus_a_name,
@@ -90,3 +92,15 @@ def get_3_versions_shared_words(version_a_dictionary, version_a_name, version_b_
                 version_c_name: version_c_dictionary[word],
             }
     return shared_words
+
+def create_pre_post_processing_map(raw_text):    
+  data = []
+  counts = Counter(''.join(raw_text.split('\n')).split(' '))
+
+  for word in counts:
+    resp = thesisTextCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(word))
+    # print(f'{word} - {resp}')
+    if len(resp) == 0: continue
+    data.append([word, resp[0]])
+
+  return pd.DataFrame(data, columns=['before', 'after'])

@@ -138,13 +138,26 @@ original_vs_expexted = [
     ]
 ]
 
+original_vs_expected_for_without_jvtext_and_word_replacement = [
+  [
+    # remove vii
+    "Excrescit autem mare illud interdum de resolutione nivium de Lybano et aliis montanis, de inundatione Iordanis et torrentis Iaboth et Armon et Zareth et de pluviis cadentibus in Galilea, monte Galaad, terra Moab et Amon et Seyr de quibus omnibus aque descendunt per Jordanem ad mare istud reliquos autem vii viii vi",
+    "Excrescit autem mare illud interdum de resolutione nivium de Lybano et aliis montanis de inundatione Iordanis et torrentis Iaboth et Armon et Zareth et de pluviis cadentibus in Galilea monte Galaad terra Moab et Amon et Seyr de quibus omnibus aque descendunt per Jordanem ad mare istud reliquos autem"
+  ]
+]
 class TestTextCleanupMethods(unittest.TestCase):
 
-    def test_cleanup(self):
-        self.maxDiff = None
-        for original, expected in original_vs_expexted:
-            result = text_cleanup.create_corpus_by_line(text_cleanup.jvtext(original))
-            self.assertEqual(result, [expected])
+  def test_cleanup(self):
+    self.maxDiff = None
+    for original, expected in original_vs_expexted:
+      result = text_cleanup.create_corpus_by_line(text_cleanup.jvtext(original))
+      self.assertEqual(result, [expected])
+
+  def test_cleanup_without_jvtext_and_word_replacement(self):  
+    self.maxDiff = None
+    for original, expected in original_vs_expected_for_without_jvtext_and_word_replacement:
+      result = text_cleanup.cleanup(original, False)
+      self.assertEqual(result, expected)
 
 if __name__ == '__main__':
     unittest.main()

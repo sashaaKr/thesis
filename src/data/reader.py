@@ -47,25 +47,38 @@ def read_london_with_section_separation():
     return read_file(get_data_file_path(B_LONDON_WITH_SECTION_SEPARATION_FILE_NAME))
 
 def get_london_corpus():
-    london_text = read_london()
-    london_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(london_text))
-    return london_corpus
+  london_text = read_london()
+  london_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(london_text))
+  return london_corpus
+
 def get_london_by_new_line():
-    return get_london_corpus()
+  return get_london_corpus()
+
+def get_london_by_new_line_without_words_processing():
+  london_text = read_london()
+  london_corpus = thesisCleanUp.create_corpus_by_line_without_word_replacements(london_text)
+  return london_corpus
+
+def get_zwickau_by_new_line_without_words_processing():
+  zwickau_text = read_zwickau()
+  zwickau_corpus = thesisCleanUp.create_corpus_by_line_without_word_replacements(zwickau_text)
+  return zwickau_corpus
 
 def get_zwickau_corpus():
-    zwickau_text = read_zwickau()
-    zwickau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(zwickau_text))
-    return zwickau_corpus
+  zwickau_text = read_zwickau()
+  zwickau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(zwickau_text))
+  return zwickau_corpus
+
 def get_zwickau_by_new_line():
-    return get_zwickau_corpus()
+  return get_zwickau_corpus()
 
 def get_breslau_corpus():
-    breslau_text = read_breslau()
-    breslau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(breslau_text))
-    return breslau_corpus
+  breslau_text = read_breslau()
+  breslau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(breslau_text))
+  return breslau_corpus
+
 def get_breslau_by_new_line():
-    return get_breslau_corpus()
+  return get_breslau_corpus()
 
 
 ###  CORPUSES BY 3 SENTENCES  ###
@@ -133,28 +146,29 @@ def get_london_section_indexes():
     return london_sections_indexes
 
 
-def get_burchard_candidate_version_based_on_p_aligment_london_base():
-  london_zwickau_breslau_p_aligment_df = pd.read_csv('../computed_data/p_aligment/by_new_line/london_zwickau_breslau.csv').drop(['Unnamed: 0'], axis=1)
+# it seems that this function is redundant cause for burchard version we should use only strongly similar paragraphs
+# def get_burchard_candidate_version_based_on_p_aligment_london_base():
+#   london_zwickau_breslau_p_aligment_df = pd.read_csv('../computed_data/p_aligment/by_new_line/london_zwickau_breslau.csv').drop(['Unnamed: 0'], axis=1)
 
-  result = []
+#   result = []
 
-  for index, row in london_zwickau_breslau_p_aligment_df.iterrows():
-    london_p = row['london text']
-    zwickau_p = row['zwickau text']
+#   for index, row in london_zwickau_breslau_p_aligment_df.iterrows():
+#     london_p = row['london text']
+#     zwickau_p = row['zwickau text']
 
-    shared_words = []
+#     shared_words = []
 
-    # TODO: interesting if it is matter which version to split and run the same function but split zwickau will provide different result
-    for word in london_p.split():
-      match_in_london = re.search(r'\b' + word + r'\b', london_p)
-      match_in_zwickau = re.search(r'\b' + word + r'\b', zwickau_p)
+#     # TODO: interesting if it is matter which version to split and run the same function but split zwickau will provide different result
+#     for word in london_p.split():
+#       match_in_london = re.search(r'\b' + word + r'\b', london_p)
+#       match_in_zwickau = re.search(r'\b' + word + r'\b', zwickau_p)
 
-      if match_in_london and match_in_zwickau:
-        shared_words.append(word)
+#       if match_in_london and match_in_zwickau:
+#         shared_words.append(word)
 
-    result.append(' '.join(shared_words))
+#     result.append(' '.join(shared_words))
 
-  return result
+#   return result
 
 def get_burchard_candidate_version_based_on_strongly_similar_london_base():
   london_zwickau_breslau_p_aligment_df = pd.read_csv('../computed_data/p_aligment/by_new_line/strongly_similar/london_zwickau_breslau.csv').drop(['Unnamed: 0'], axis=1)
@@ -226,7 +240,7 @@ def get_burchard_candidate_version_based_on_p_aligment_zwickau_base():
 def get_london_zwickau_breslau_strongly_similar_p_aligment_df():
   return pd.read_csv('../computed_data/p_aligment/by_new_line/strongly_similar/london_zwickau_breslau.csv').drop(['Unnamed: 0'], axis=1)
 
-def get_london_zwickau_chop_from_strongly_similar():
-  london_zwickau_breslau_strongly_similar_df = get_london_zwickau_breslau_strongly_similar_p_aligment_df()
+# def get_london_zwickau_chop_from_strongly_similar():
+#   london_zwickau_breslau_strongly_similar_df = get_london_zwickau_breslau_strongly_similar_p_aligment_df()
 
-  result = []
+#   result = []

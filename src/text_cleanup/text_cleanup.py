@@ -8,56 +8,81 @@ from cltk.tokenizers.line import LineTokenizer
 
 
 # TODO: there is also remove_non_latin in cltk
-def cleanup(t):
-    # some english marks from breslau version, 236u in original is 236v
-    clean_data = re.sub("\(236u is empty, 237r\)", '', t)
-    clean_data = re.sub("\(237u is empty, 238r\)", '', clean_data)
-    clean_data = re.sub("<q>", '', clean_data)
-    clean_data = re.sub("<n>", '', clean_data)
-    clean_data = re.sub("\[n\]", '', clean_data)
+def cleanup(t, word_replacements = True):
+  # some english marks from breslau version, 236u in original is 236v
+  clean_data = re.sub("\(236u is empty, 237r\)", '', t)
+  clean_data = re.sub("\(237u is empty, 238r\)", '', clean_data)
+  clean_data = re.sub("<q>", '', clean_data)
+  clean_data = re.sub("<n>", '', clean_data)
+  clean_data = re.sub("\[n\]", '', clean_data)
     
-    # this regex handle (1r) and (49r) references that appear in b_london version
-    # and (112vb) and (117r) that appear in a_zwickau version
-    clean_data = re.sub(r'\([1-9][0-9]?[0-9]?[a-z][a-z]?\)', '', clean_data)
+  # this regex handle (1r) and (49r) references that appear in b_london version
+  # and (112vb) and (117r) that appear in a_zwickau version
+  clean_data = re.sub(r'\([1-9][0-9]?[0-9]?[a-z][a-z]?\)', '', clean_data)
 
-    # this regex handle 33o, 3o, 1283o in zwickau version
-    clean_data = re.sub(r'[1-9][0-9]?[0-9]?[0-9]?o', '', clean_data)
+  # this regex handle 33o, 3o, 1283o in zwickau version
+  clean_data = re.sub(r'[1-9][0-9]?[0-9]?[0-9]?o', '', clean_data)
 
-    # in oritinal it is vii but because we are running uv replaces first it is uii
-    clean_data = re.sub(r'\bix\b', '', clean_data)
-    clean_data = re.sub(r'\bui?i?i\b', '', clean_data)
-    clean_data = re.sub(r'\bii?i?i\b', '', clean_data)
-    clean_data = re.sub(r'\bu\b', '', clean_data)
+  # in original it is vii but because we are running uv replaces first it is uii
+  clean_data = re.sub(r'\bix\b', '', clean_data)
+  clean_data = re.sub(r'\b(u|v)i?i?i\b', '', clean_data)
+  clean_data = re.sub(r'\bii?i?i\b', '', clean_data)
+  clean_data = re.sub(r'\bu\b', '', clean_data)
 
     
-    # remove numbers
-    clean_data = re.sub(r'[0-9]+', '', clean_data)
+  # remove numbers
+  clean_data = re.sub(r'[0-9]+', '', clean_data)
 
-    clean_data = (clean_data
-        .replace("„", "")
-        .replace("“", "")
-        .replace(".", "")
-        .replace("!", "")
-        .replace("[xxx]", "")
-        .replace("[?]", "")
-        .replace("[???]", "")
-        .replace("[", "")
-        .replace("]", "")
-        .replace('****', '')
-        .replace('***', '')
-        .replace('*', '')
-        .replace("?", "")
-        .replace("‘","")
-        .replace("’", "") 
-        .replace("½", "")
-        .replace(":", "")
-        .replace(";", "")
-        .replace(",", "")
-        .replace("<", "")
-        .replace(">", "")
-        .replace("”", "")
-        .replace("(", "")
-        .replace(")", "")
+  clean_data = (clean_data
+    .replace("„", "")
+    .replace("“", "")
+    .replace(".", "")
+    .replace("!", "")
+    .replace("[xxx]", "")
+    .replace("[?]", "")
+    .replace("[???]", "")
+    .replace("[", "")
+    .replace("]", "")
+    .replace('****', '')
+    .replace('***', '')
+    .replace('*', '')
+    .replace("?", "")
+    .replace("‘","")
+    .replace("’", "") 
+    .replace("½", "")
+    .replace(":", "")
+    .replace(";", "")
+    .replace(",", "")
+    .replace("<", "")
+    .replace(">", "")
+    .replace("”", "")
+    .replace("(", "")
+    .replace(")", "")
+    # .replace('y' , 'i') # from Yoni table
+    # .replace("ff", "f") # from Yoni table
+    # .replace("ll", "l") # from Yoni table
+    # .replace("mm", "m") # from Yoni table
+    # .replace('th', 't') # from Yoni table
+    # .replace("tt", "t") # from Yoni table, MUST be be after th -> t
+    # .replace("z", "s") # from Yoni table
+    # .replace("ih", "i") # from Yoni table
+    # .replace("Ih", "i") # from Yoni table
+    # .replace("ph", "p") # from Yoni table
+    # .replace("Ph", "p") # from Yoni table
+    # .replace("ae", "e") # from Yoni table
+    # .replace("cio", "tio") # from Yoni table
+    # .replace("cia", "tia") # from Yoni table
+    # .replace("ch", "c") # from Yoni table, MUST be after cia -> tia
+    # .replace("tiu", "ciu") # from Yoni table
+    # .replace("atque", "et") # from Yoni table
+    # .replace("uel", "aut") # from Yoni table vel-->aut, cause of jv replacer it is changed
+        
+    # .replace("  ", " ")
+    # .strip()
+  )
+
+  if word_replacements:
+      clean_data = (clean_data
         .replace('y' , 'i') # from Yoni table
         .replace("ff", "f") # from Yoni table
         .replace("ll", "l") # from Yoni table
@@ -77,11 +102,12 @@ def cleanup(t):
         .replace("atque", "et") # from Yoni table
         .replace("uel", "aut") # from Yoni table vel-->aut, cause of jv replacer it is changed
         
-        .replace("  ", " ")
-        .strip()
-    )
+    # .replace("  ", " ")
+    # .strip()
+  )
 
-    return clean_data
+  clean_data = clean_data.replace("  ", " ").strip()
+  return clean_data
 
 
 def tokenize_text(raw_text):
@@ -95,7 +121,10 @@ def tokenize_text(raw_text):
     return tokenizer.tokenize(lowered_text)
 
 def create_corpus_by_line(raw_text):
-    return [ cleanup(t) for t in tokenize_text(raw_text) ]
+  return [ cleanup(t) for t in tokenize_text(raw_text) ]
+
+def create_corpus_by_line_without_word_replacements(raw_text):
+  return [ cleanup(t, word_replacements = False) for t in tokenize_text(raw_text) ]
 
 def create_corpus_by_2_sentences(raw_text):
     return create_corpus_by_n_sentences(raw_text, 2)
