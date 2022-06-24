@@ -26,7 +26,8 @@ def get_similarity_tupels(words_1, words_2):
       most_similar = ''
 
       for j in words_2:
-        lev_dist = levenshtein(w, j)
+        # lev_dist = levenshtein(w, j)
+        lev_dist = get_normalized_edit_distance(w, j)
         if lev_dist < minimal_score:
           minimal_score = lev_dist
           most_similar = j
