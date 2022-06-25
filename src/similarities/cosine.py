@@ -18,9 +18,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 FEATURES = [
     # ['2_gram', thesisTfIdfNgramFeatures.create_2_gram],
-    # ['3_gram', thesisTfIdfNgramFeatures.create_3_gram],
-    # ['4_gram', thesisTfIdfNgramFeatures.create_4_gram],
+    ['3_gram', thesisTfIdfNgramFeatures.create_3_gram],
+    ['4_gram', thesisTfIdfNgramFeatures.create_4_gram],
     ['5_gram', thesisTfIdfNgramFeatures.create_5_gram],
+    ['6_gram', thesisTfIdfNgramFeatures.create_6_gram],
+    ['7_gram', thesisTfIdfNgramFeatures.create_7_gram],
+    ['8_gram', thesisTfIdfNgramFeatures.create_8_gram],
 
     # count_vectorizer_features
     # ['count_vectorizer_5_gram', thesisCountVectorizerNgramFeatures.create_5_gram]

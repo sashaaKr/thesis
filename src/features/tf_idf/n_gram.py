@@ -22,6 +22,15 @@ def create_4_gram(corpus):
 def create_5_gram(corpus):
     return get_features(corpus, 5)
 
+def create_6_gram(corpus):
+    return get_features(corpus, 6)
+
+def create_7_gram(corpus):
+    return get_features(corpus, 7)
+
+def create_8_gram(corpus):
+    return get_features(corpus, 8)
+
 def create_zwickau_5_gram():
     corpus = thesisDataReader.get_zwickau_corpus()
     return create_5_gram(corpus)
