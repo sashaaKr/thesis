@@ -164,12 +164,12 @@ def run_grid_search_cv(features_df):
     #   'weights': ['uniform', 'distance'],
     #   'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']
     # } ),
-    ( AdaBoostClassifier(), 'AdaBoostClassifier', { 'n_estimators':[5, 10, 30, 50, 100, 300, 500,1000,2000], 'learning_rate':[.001,0.01,.1, .5, 1, 2] } ),
-    # ( QuadraticDiscriminantAnalysis(), 'QuadraticDiscriminantAnalysis', { 
-    #   'reg_param': [0.00001, 0.0001, 0.001,0.01, 0.1, 0.2, 0.3, 0.4, 0.5], 
-    #   'store_covariance': [True, False],
-    #   'tol': (0.0001, 0.001,0.01, 0.1)
-    #   })
+    # ( AdaBoostClassifier(), 'AdaBoostClassifier', { 'n_estimators':[5, 10, 30, 50, 100, 300, 500,1000,2000], 'learning_rate':[.001,0.01,.1, .5, 1, 2] } ),
+    ( QuadraticDiscriminantAnalysis(), 'QuadraticDiscriminantAnalysis', { 
+      'reg_param': [0.00001, 0.0001, 0.001,0.01, 0.1, 0.2, 0.3, 0.4, 0.5], 
+      'store_covariance': [True, False],
+      'tol': (0.0001, 0.001,0.01, 0.1)
+      })
   ]
 
   scores_df = pd.DataFrame(dtype=float)
