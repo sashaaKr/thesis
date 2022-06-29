@@ -56,7 +56,6 @@ def get_sentence_score(sentence_1, sentence_2):
     return score
 
 def get_2_corpus_best_similarities(corpus_1, corpus_2):
-  # result = np.zeros(len(corpus_1))
   result = []
 
   for index_corpus_1, p_corpus_1 in enumerate(corpus_1):
@@ -69,7 +68,6 @@ def get_2_corpus_best_similarities(corpus_1, corpus_2):
       if score < most_similar_score:
         most_similar_score = score
         best_match_index = index_corpus_2
-        # result[index_corpus_1] = (index_corpus_2, score)
   
     result.append((best_match_index, most_similar_score))
   return result
@@ -139,7 +137,6 @@ def get_p_score(corpus, corpus_error_mapping):
     for word in set(p.split()):
       if word in corpus_error_mapping and len(corpus_error_mapping[word]) > 0:
         for possible_error in corpus_error_mapping[word]:
-          # print(possible_error)
           score += possible_error[1]
     
     result.append(score)
@@ -187,18 +184,18 @@ def count_categorized_errors(possible_errors):
   
   # TODO: cound change in middle and at the end differently
   for s1 in possible_errors:
-    for posobility in possible_errors[s1]:
-      alternative = posobility[0]
+    for possibility in possible_errors[s1]:
+      alternative = possibility[0]
       seq_matcher = dl.SequenceMatcher(None, s1, alternative)
       for tag, i1, i2, j1, j2 in seq_matcher.get_opcodes():
         if tag == 'equal': continue
 
-        change_postion = 'middle'
+        change_position = 'middle'
 
-        if i1 == 0: change_postion = 'start'
-        if i2 == len(s1): change_postion = 'end'
+        if i1 == 0: change_position = 'start'
+        if i2 == len(s1): change_position = 'end'
 
-        key = f'{tag} {change_postion} {s1[i1:i2]!r:>6} --> {alternative[j1:j2]!r}'
+        key = f'{tag} {change_position} {s1[i1:i2]!r:>6} --> {alternative[j1:j2]!r}'
 
         if key in result: result[key] += 1
         else: result[key] = 1
