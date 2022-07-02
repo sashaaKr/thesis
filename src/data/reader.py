@@ -34,6 +34,22 @@ def read_file(file_path):
 def read_zwickau():
     return read_file(a_zwickau_file_path)
 
+def read_zwickau_poorly_similar_with_chops():
+  file_path = os.path.join(ROOT, 'computed_data', 'corpus', 'zwickau', 'zwickau_poorly_similar_with_chops.txt')
+  return read_file(file_path)
+
+def read_london_poorly_similar_with_chops():
+  file_path = os.path.join(ROOT, 'computed_data', 'corpus', 'london', 'london_poorly_similar_with_chops.txt')
+  return read_file(file_path)
+
+def get_zwickau_poorly_similar_with_chops_corpus():
+  raw_text = read_zwickau_poorly_similar_with_chops()
+  return thesisCleanUp.tokenize_text(raw_text)
+
+def get_london_poorly_similar_with_chops_corpus():
+  raw_text = read_london_poorly_similar_with_chops()
+  return thesisCleanUp.tokenize_text(raw_text)
+
 def read_zwickau_with_section_separation():
     return read_file(get_data_file_path(A_ZWICKAU_WITH_SECTION_SEPARATION_FILE_NAME))
 

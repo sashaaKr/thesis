@@ -120,6 +120,7 @@ def run_models(features_df):
   ]
 
   for classifier, classifier_name in classifiers:
+    print(f'running: {classifier_name}')
     classifier_cross_validate_score = cross_validate(
       classifier,
       X_train,
@@ -150,14 +151,15 @@ def run_grid_search_cv(features_df):
     #   'random_state': [0], 
     #   'max_features': ['auto', 'sqrt', 'log2'] 
     #   } ),
-    # ( MLPClassifier(), 'MLPClassifier', { 
-    #   'solver': ['lbfgs', 'sgd', 'adam'], 
-    #   'alpha': 10.0 ** -np.arange(1, 10), 
-    #   'max_iter': [1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,10000],
-    #   'learning_rate': ['constant', 'invscaling', 'adaptive'],
-    #   'activation': ['identity', 'logistic', 'tanh', 'relu'],
-    #   'hidden_layer_sizes': [(10,), (20,), (40,), (60,), (80,), (100,), (150,), (200,), (300,), (500,), (700,), (900,), (1500,), (2000,), (50,50,50), (50,100,50)] 
-    #   } ), TODO: didn't work
+    # TODO: MLPClassifier didn't work
+    ( MLPClassifier(), 'MLPClassifier', { 
+      'solver': ['lbfgs', 'sgd', 'adam'], 
+      'alpha': 10.0 ** -np.arange(1, 10), 
+      'max_iter': [1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,10000],
+      'learning_rate': ['constant', 'invscaling', 'adaptive'],
+      'activation': ['identity', 'logistic', 'tanh', 'relu'],
+      'hidden_layer_sizes': [(10,), (20,), (40,), (60,), (80,), (100,), (150,), (200,), (300,), (500,), (700,), (900,), (1500,), (2000,), (50,50,50), (50,100,50)] 
+      } ), 
     # ( GaussianNB(), 'GaussianNB', { 'var_smoothing': np.logspace(0,-9, num=100) } ),
     # ( KNeighborsClassifier(), 'KNeighborsClassifier', {
     #   'n_neighbors': [3,5,11,19],
@@ -165,11 +167,11 @@ def run_grid_search_cv(features_df):
     #   'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']
     # } ),
     # ( AdaBoostClassifier(), 'AdaBoostClassifier', { 'n_estimators':[5, 10, 30, 50, 100, 300, 500,1000,2000], 'learning_rate':[.001,0.01,.1, .5, 1, 2] } ),
-    ( QuadraticDiscriminantAnalysis(), 'QuadraticDiscriminantAnalysis', { 
-      'reg_param': [0.00001, 0.0001, 0.001,0.01, 0.1, 0.2, 0.3, 0.4, 0.5], 
-      'store_covariance': [True, False],
-      'tol': (0.0001, 0.001,0.01, 0.1)
-      })
+    # ( QuadraticDiscriminantAnalysis(), 'QuadraticDiscriminantAnalysis', { 
+    #   'reg_param': [0.00001, 0.0001, 0.001,0.01, 0.1, 0.2, 0.3, 0.4, 0.5], 
+    #   'store_covariance': [True, False],
+    #   'tol': (0.0001, 0.001,0.01, 0.1)
+    #   })
   ]
 
   scores_df = pd.DataFrame(dtype=float)

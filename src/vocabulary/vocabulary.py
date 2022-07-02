@@ -104,3 +104,23 @@ def create_pre_post_processing_map(raw_text):
     data.append([word, resp[0]])
 
   return pd.DataFrame(data, columns=['before', 'after'])
+
+def create_london_pre_post_processing_map():
+  return create_pre_post_processing_map(' \n'.join(thesisDataReader.get_london_by_new_line_without_words_processing()))
+
+def create_zwickau_pre_post_processing_map():
+  return create_pre_post_processing_map(' \n'.join(thesisDataReader.get_zwickau_by_new_line_without_words_processing()))
+
+def create_pre_proceed_corpus_from_processed_corpus(processed_corpus, pre_post_processing_map):
+  result = []
+
+  for p in processed_corpus:
+    new_p = ''
+
+    for word in p.split():
+      original_word = pre_post_processing_map[pre_post_processing_map['after'] == word]['before'].values[0]
+      new_p = f'{new_p} {original_word}' if len(new_p) > 0 else original_word
+
+    result.append(new_p)
+  
+  return result
