@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import similarities.cosine as thesisCosineSimilarity
+import features.tf_idf.n_gram as thesisNgram
 from sklearn.model_selection import train_test_split, cross_val_score, cross_validate
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
@@ -47,7 +48,9 @@ def create_p_features(vectorizer, inner_cosine_similarities, corpus, p, p_index,
 def create_corpus_features(vectorizer, corpus, n_gram, corpus_label, features):
   data = []
 
-  inner_cosine_similarities = thesisCosineSimilarity.get_inner_version_all_similarities(corpus)[f'{n_gram}_gram'] if INNER_MEAN_COSINE_SIMILARITY_SCORE in features else None
+  n_gram_feature_name = f'{n_gram}_gram' if type(n_gram) is int else f'{n_gram[0]}_{n_gram[1]}_gram'
+  print(f'n_gram_feature_name: {n_gram_feature_name}')
+  inner_cosine_similarities = thesisCosineSimilarity.get_inner_version_all_similarities(corpus)[n_gram_feature_name] if INNER_MEAN_COSINE_SIMILARITY_SCORE in features else None
 
   for index, p in enumerate(corpus):
     p_features = create_p_features(vectorizer, inner_cosine_similarities, corpus, p, index, corpus_label, features)
@@ -56,7 +59,7 @@ def create_corpus_features(vectorizer, corpus, n_gram, corpus_label, features):
   return data
 
 def create_tf_idf_vectorizer(corpus, n_gram = 5, analyzer='char'):
-  vectorizer = TfidfVectorizer(ngram_range=(n_gram, n_gram), analyzer=analyzer)
+  vectorizer = TfidfVectorizer(ngram_range=thesisNgram.get_n_gram_range(n_gram), analyzer=analyzer)
   vectorizer.fit(corpus)
   return vectorizer
 
@@ -66,11 +69,12 @@ def create_features_df(
   burchard_corpus, 
   n_gram,
   features = { TFIDF_FEATURE_NAME },
+  analyzer = 'char'
   ):
   # TODO: handle case than corpus is undefined
   combined_corpus = london_corpus + zwickau_corpus # + burchard_corpus
 
-  vectorizer = create_tf_idf_vectorizer(combined_corpus, n_gram) if TFIDF_FEATURE_NAME in features else None
+  vectorizer = create_tf_idf_vectorizer(combined_corpus, n_gram, analyzer) if TFIDF_FEATURE_NAME in features else None
 
   corpuses = []
   if london_corpus is not None: corpuses.append((london_corpus, LONDON_VERSION_LABEL))

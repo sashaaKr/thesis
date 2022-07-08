@@ -25,6 +25,9 @@ FEATURES = [
     ['7_gram', thesisTfIdfNgramFeatures.create_7_gram],
     ['8_gram', thesisTfIdfNgramFeatures.create_8_gram],
 
+    ['2_5_gram', thesisTfIdfNgramFeatures.create_2_5_gram],
+    ['3_5_gram', thesisTfIdfNgramFeatures.create_3_5_gram],
+
     # count_vectorizer_features
     # ['count_vectorizer_5_gram', thesisCountVectorizerNgramFeatures.create_5_gram]
 ]
