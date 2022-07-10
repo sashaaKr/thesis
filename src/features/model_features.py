@@ -71,26 +71,25 @@ def create_features_df(
   features = { TFIDF_FEATURE_NAME },
   analyzer = 'char'
   ):
-  # TODO: handle case than corpus is undefined
-  combined_corpus = london_corpus + zwickau_corpus # + burchard_corpus
+  combined_corpus = []
+  corpuses = []
+
+  if london_corpus is not None: 
+    corpuses.append((london_corpus, LONDON_VERSION_LABEL))
+    combined_corpus = combined_corpus + london_corpus
+  if zwickau_corpus is not None: 
+    corpuses.append((zwickau_corpus, ZWICKAU_VERSION_LABEL))
+    combined_corpus = combined_corpus + zwickau_corpus
+  if burchard_corpus is not None: 
+    corpuses.append((burchard_corpus, BURCHARD_VERSION_LABEL))
+    combined_corpus = combined_corpus + burchard_corpus
 
   vectorizer = create_tf_idf_vectorizer(combined_corpus, n_gram, analyzer) if TFIDF_FEATURE_NAME in features else None
-
-  corpuses = []
-  if london_corpus is not None: corpuses.append((london_corpus, LONDON_VERSION_LABEL))
-  if zwickau_corpus is not None: corpuses.append((zwickau_corpus, ZWICKAU_VERSION_LABEL))
-  if burchard_corpus is not None: corpuses.append((burchard_corpus, BURCHARD_VERSION_LABEL))
 
   all_features = []
   for corpus, corpus_label in corpuses:
     corpus_features = create_corpus_features(vectorizer, corpus, n_gram, corpus_label, features) 
     all_features = all_features + corpus_features
-
-  # london_features = [] if london_corpus is None else create_corpus_features(vectorizer, london_corpus, n_gram, LONDON_VERSION_LABEL, features) 
-  # zwickau_features = [] if zwickau_corpus is None else create_corpus_features(vectorizer, zwickau_corpus, n_gram, ZWICKAU_VERSION_LABEL, features)
-  # burchard_features = [] if burchard_corpus is None else create_corpus_features(vectorizer, burchard_corpus, n_gram, BURCHARD_VERSION_LABEL, features)
-
-  # all_features = london_features + zwickau_features + burchard_features
 
   columns = METADATA_COLUMN_NAMES 
   if TFIDF_FEATURE_NAME in features: columns = columns + vectorizer.get_feature_names()
