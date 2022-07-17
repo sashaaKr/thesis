@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import similarities.cosine as thesisCosineSimilarity
 import features.tf_idf.n_gram as thesisNgram
-from sklearn.model_selection import train_test_split, cross_val_score, cross_validate
+from sklearn.model_selection import train_test_split, cross_val_score, cross_validate, KFold, StratifiedKFold, GridSearchCV
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
@@ -14,7 +14,6 @@ from sklearn.gaussian_process import GaussianProcessClassifier
 from sklearn.gaussian_process.kernels import RBF, DotProduct, Matern, RationalQuadratic, WhiteKernel
 from sklearn.neural_network import MLPClassifier
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
-from sklearn.model_selection import GridSearchCV
 
 
 LONDON_VERSION_LABEL = 0
@@ -109,6 +108,7 @@ def run_models(features_df):
   scores_df = pd.DataFrame(dtype=float)
   scoring = ('precision_macro', 'recall_macro', 'f1_macro', 'f1_micro', 'f1_weighted', 'accuracy')
 
+  # TODO: add LinearRegression model
   classifiers = [
     ( SVC(kernel="linear", C=0.025), 'SVM_linear' ),
     ( SVC(gamma=2, C=1), 'SVM_RBF' ),
@@ -122,25 +122,29 @@ def run_models(features_df):
     ( QuadraticDiscriminantAnalysis(), 'QuadraticDiscriminantAnalysis')
   ]
 
+  cross_validate_results = []
   for classifier, classifier_name in classifiers:
     print(f'running: {classifier_name}')
     classifier_cross_validate_score = cross_validate(
       classifier,
-      X_train,
-      y_train,
+      # X_train,
+      X,
+      # y_train,
+      y,
       cv=10,
       scoring=scoring
       # n_jobs = -1
     )
 
+    cross_validate_results.append(classifier_cross_validate_score)
     for s in scoring:
       scores_df.loc[classifier_name, s] = classifier_cross_validate_score[f'test_{s}'].mean()
   
-  return scores_df
+  return scores_df, cross_validate_results
 
 def run_grid_search_cv(features_df, classifiers_to_test):
   X, y = create_X_y(features_df)
-  X_train, X_test, y_train, y_test = train_test_split(X, y,random_state=101,stratify=y)
+  # X_train, X_test, y_train, y_test = train_test_split(X, y,random_state=101,stratify=y)
 
   # classifiers = [
     
@@ -158,7 +162,7 @@ def run_grid_search_cv(features_df, classifiers_to_test):
   
 
   classifiers = {
-    'SVC': ( SVC(), { 'C': np.logspace(-3, 2, 6), 'gamma': np.logspace(-3, 2, 6) / X_train.shape[0], 'kernel': ['linear', 'poly', 'rbf', 'sigmoid'] } ),
+    'SVC': ( SVC(), { 'C': np.logspace(-3, 2, 6), 'gamma': np.logspace(-3, 2, 6) / X.shape[0], 'kernel': ['linear', 'poly', 'rbf', 'sigmoid'] } ),
     'DecisionTreeClassifier': (DecisionTreeClassifier(), { 'criterion': ['gini', 'entropy'], 'max_depth': [None,4,5,6,7,8,9,10,11,12,15,20,30,40,50,70,90,120,150]} ),
     'GaussianProcessClassifier': ( GaussianProcessClassifier(),  { 'kernel': [1*RBF(), 1*DotProduct(), 1*Matern(),  1*RationalQuadratic(), 1*WhiteKernel()] } ),
     'RandomForestClassifier': ( RandomForestClassifier(),  { 
@@ -199,7 +203,7 @@ def run_grid_search_cv(features_df, classifiers_to_test):
       cv = 10, 
       n_jobs = -1,
     )
-    param_grid.fit(X_train, y_train)
+    param_grid.fit(X, y)
     grid_results.append(param_grid)
 
   # for classifier, classifier_name, classifiers_grid_search_params in classifiers:
@@ -218,3 +222,29 @@ def run_grid_search_cv(features_df, classifiers_to_test):
     # scores_df.loc[classifier_name, 'best_estimator_'] = param_grid.best_estimator_
   
   return scores_df, grid_results
+
+def get_model_wrong_prediction(features_df):
+  results = []
+  X, y = create_X_y(features_df)
+
+  # TODO: test with shuffle
+  skf = StratifiedKFold(n_splits = 10)
+
+  for train_indexes, test_indexes in skf.split(X, y):
+    result = []
+
+    X_train, X_test = X.iloc[train_indexes], X.iloc[test_indexes]
+    y_train, y_test = y[train_indexes], y[test_indexes]
+
+    clfs = MLPClassifier(alpha=1, max_iter=1000).fit(X_train, y_train)
+    predicted = clfs.predict(X_test)
+
+    for (prediction, label, index) in zip(predicted, y_test, test_indexes):
+      if prediction != label:
+        print('Row', index, 'has been classified as ', prediction, 'and should be ', label)
+        result.append((prediction, label, index))
+    
+    results.append(result)
+    print(f'score is: {clfs.score(X_test, y_test)}')
+  
+  return results
