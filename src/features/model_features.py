@@ -119,7 +119,7 @@ def run_models(features_df):
     ( GaussianNB(), 'GaussianNB' ),
     ( KNeighborsClassifier(), 'KNeighborsClassifier' ),
     ( AdaBoostClassifier(), 'AdaBoostClassifier' ),
-    ( QuadraticDiscriminantAnalysis(), 'QuadraticDiscriminantAnalysis')
+    # ( QuadraticDiscriminantAnalysis(), 'QuadraticDiscriminantAnalysis')
   ]
 
   cross_validate_results = []
