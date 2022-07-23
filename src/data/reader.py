@@ -316,8 +316,33 @@ def get_burchard_candidate_version_based_on_strongly_similar_london_base_long_p(
     get_burchard_candidate_version_based_on_strongly_similar_london_base(),
     thesisVocabulary.create_london_pre_post_processing_map()
   )
+
   print(f'Original corpus length: {len(burchard_candidate_version_based_london_without_word_processing)}')
   burchard_candidate_version_based_london_without_word_processing_long_p = list(filter(lambda x: len(x.split()) > LONG_P_THRESHOLD, burchard_candidate_version_based_london_without_word_processing))
   print(f'Long p corpus length: {len(burchard_candidate_version_based_london_without_word_processing_long_p)}')
-  
+
   return burchard_candidate_version_based_london_without_word_processing_long_p
+
+def get_london_poorly_similar_with_chops_corpus_without_word_processing_long_p():
+  london_poorly_similar_with_chops_corpus_without_word_processing = thesisVocabulary.create_pre_proceed_corpus_from_processed_corpus(
+    get_london_poorly_similar_with_chops_corpus(),
+    thesisVocabulary.create_london_pre_post_processing_map()
+  )
+
+  print(f'Original corpus length: {len(london_poorly_similar_with_chops_corpus_without_word_processing)}')
+  london_poorly_similar_with_chops_corpus_without_word_processing_long_p = list(filter(lambda x: len(x.split()) > LONG_P_THRESHOLD, london_poorly_similar_with_chops_corpus_without_word_processing))
+  print(f'Long p corpus length: {len(london_poorly_similar_with_chops_corpus_without_word_processing_long_p)}')
+
+  return london_poorly_similar_with_chops_corpus_without_word_processing_long_p
+
+def get_zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p():
+  zwickau_poorly_similar_with_chops_corpus_without_word_processing = thesisVocabulary.create_pre_proceed_corpus_from_processed_corpus(
+    get_zwickau_poorly_similar_with_chops_corpus(),
+    thesisVocabulary.create_zwickau_pre_post_processing_map()
+  )
+
+  print(f'Original corpus length: {len(zwickau_poorly_similar_with_chops_corpus_without_word_processing)}')
+  zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p = list(filter(lambda x: len(x.split()) > LONG_P_THRESHOLD, zwickau_poorly_similar_with_chops_corpus_without_word_processing))
+  print(f'Long p corpus length: {len(zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p)}')
+
+  return zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p 

@@ -71,8 +71,30 @@ def create_and_save_london_zwickau_vectorizer(*, london_corpus, zwickau_corpus, 
   with open(f'../computed_data/models/london_vs_zwickau/vectorizers/{name}.pk','wb') as f:
     pickle.dump(vectorizer, f)
 
+def create_and_save_london_burchard_vectorizer(*, london_corpus, burchard_corpus, name, n_gram = (2,5), analyzer = 'char'):
+  combined_corpus = london_corpus + burchard_corpus
+  vectorizer = create_tf_idf_vectorizer(combined_corpus, n_gram, analyzer)
+  
+  with open(f'../computed_data/models/london_vs_burchard/vectorizers/{name}.pk','wb') as f:
+    pickle.dump(vectorizer, f)
+
+def create_and_save_zwickau_burchard_vectorizer(*, zwickau_corpus, burchard_corpus, name, n_gram = (2,5), analyzer = 'char'):
+  combined_corpus = zwickau_corpus + burchard_corpus
+  vectorizer = create_tf_idf_vectorizer(combined_corpus, n_gram, analyzer)
+  
+  with open(f'../computed_data/models/zwickau_vs_burchard/vectorizers/{name}.pk','wb') as f:
+    pickle.dump(vectorizer, f)
+
 def load_london_zwickau_vectorizer(name):
   with open(f'../computed_data/models/london_vs_zwickau/vectorizers/{name}.pk','rb') as f:
+    return pickle.load(f)
+
+def load_london_burchard_vectorizer(name):
+  with open(f'../computed_data/models/london_vs_burchard/vectorizers/{name}.pk','rb') as f:
+    return pickle.load(f)
+
+def load_zwickau_burchard_vectorizer(name):
+  with open(f'../computed_data/models/zwickau_vs_burchard/vectorizers/{name}.pk','rb') as f:
     return pickle.load(f)
 
 def create_features_df(
@@ -235,7 +257,7 @@ def run_grid_search_cv(features_df, classifiers_to_test):
   
   return scores_df, grid_results
 
-def get_model_wrong_prediction(features_df, splits = 10):
+def get_model_wrong_prediction(*, features_df, classifier,  splits = 10):
   results = []
   X, y = create_X_y(features_df)
 
@@ -248,19 +270,20 @@ def get_model_wrong_prediction(features_df, splits = 10):
     X_train, X_test = X.iloc[train_indexes], X.iloc[test_indexes]
     y_train, y_test = y[train_indexes], y[test_indexes]
 
-    clfs = MLPClassifier(alpha=1, max_iter=1000).fit(X_train, y_train)
-    predicted = clfs.predict(X_test)
+    # clfs = MLPClassifier(alpha=1, max_iter=1000).fit(X_train, y_train)
+    # predicted = clfs.predict(X_test)
+
+    classifier.fit(X_train, y_train)
+    predicted = classifier.predict(X_test)
 
     for (prediction, label, index) in zip(predicted, y_test, test_indexes):
       if prediction != label:
         index_in_text =  features_df.loc[index, 'index']
         print('Row', index_in_text, 'has been classified as ', prediction, 'and should be ', label)
-        # print('Row', index, 'has been classified as ', prediction, 'and should be ', label)
-        # result.append((prediction, label, index))
         result.append((prediction, label, index_in_text))
     
     results.append(result)
-    print(f'score is: {clfs.score(X_test, y_test)}')
+    print(f'score is: {classifier.score(X_test, y_test)}')
   
   return results
 
@@ -270,8 +293,26 @@ def get_london_vs_zwickau_best_model():
   
   return clf
 
-def safe_london_vs_zwickau_best_model(clf, name):
+def get_london_vs_burchard_best_model():
+  with open('../computed_data/models/london_vs_burchard/best_models/RandomForestClassifier(max_depth=9, n_estimators=200, random_state=0)_0_781_tfidf_2_5_gram_cosine_similarity_long_p.pkl', 'rb') as f:
+    clf = pickle.load(f)
+  
+  return clf
+
+def get_zwickau_vs_burchard_best_model():
+  with open('../computed_data/models/zwickau_vs_burchard/best_models/AdaBoostClassifier(learning_rate=1, n_estimators=2000)_0_912_tfidf_2_5_gram_cosine_similarity_long_p.pkl', 'rb') as f:
+    return pickle.load(f)
+
+def save_london_vs_zwickau_best_model(clf, name):
   with open(f'../computed_data/models/best_models/london_vs_zwickau/{name}','wb') as f:
+    pickle.dump(clf, f)
+
+def save_zwickau_vs_burchard_best_model(clf, name):
+  with open(f'../computed_data/models/zwickau_vs_burchard/best_models/{name}.pkl','wb') as f:
+    pickle.dump(clf, f)
+
+def save_london_vs_burchard_best_model(clf, name):
+  with open(f'../computed_data/models/london_vs_burchard/best_models/{name}.pkl','wb') as f:
     pickle.dump(clf, f)
 
 def create_burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df(vectorizer = None):
@@ -284,15 +325,106 @@ def create_burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df(vectoriz
     vectorizer = vectorizer
   )
 
+def create_london_features_tfidf_2_5_gram_cosine_similarity_long_p_df(vectorizer = None):
+  return create_features_df(
+    thesisDataReader.get_london_poorly_similar_with_chops_corpus_without_word_processing_long_p(),
+    None,
+    None,
+    n_gram = (2,5),
+    features = { 'tfidf', 'inner_mean_cosine_similarity_score' },
+    vectorizer = vectorizer
+  )
+
+def create_zwickau_features_tfidf_2_5_gram_cosine_similarity_long_p_df(vectorizer = None):
+  return create_features_df(
+    None,
+    thesisDataReader.get_zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p(),
+    None,
+    n_gram = (2,5),
+    features = { 'tfidf', 'inner_mean_cosine_similarity_score' },
+    vectorizer = vectorizer
+  ) 
+
+def version_label_to_human_readable(version_label):
+  if version_label == LONDON_VERSION_LABEL:
+    return 'London'
+  
+  if version_label == ZWICKAU_VERSION_LABEL:
+    return 'Zwickau'
+
 def run_london_zwickau_best_model_on_burchard_wrong_predictions(wrong_predictions):
+  __wrong_prediction = wrong_predictions.copy()
+
   london_vs_zwickau_vectorizer = load_london_zwickau_vectorizer('features_tfidf_2_5_gram_cosine_similarity_long_p')
-  burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df = create_burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df(london_vs_zwickau_vectorizer)
-  X, y = create_X_y(burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df)
   london_vs_zwickau_best_model = get_london_vs_zwickau_best_model()
 
-  for index, wrong_prediction in enumerate(wrong_predictions):
+  burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df = create_burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df(london_vs_zwickau_vectorizer)
+  X, y = create_X_y(burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df)
+
+  for index, wrong_prediction in enumerate(__wrong_prediction):
     is_wrong_burchard = wrong_prediction[3]
 
+    fixed_prediction = '--'
     if not is_wrong_burchard:
-      is_london_or_zwickau = london_vs_zwickau_best_model.predict([X.loc[index]])
-      print(f'predicted: {is_london_or_zwickau}')
+      is_london_or_zwickau = london_vs_zwickau_best_model.predict([X.loc[index]])[0]
+      print(f'predicted: {version_label_to_human_readable(is_london_or_zwickau)}')
+      fixed_prediction = version_label_to_human_readable(is_london_or_zwickau)
+    
+    __wrong_prediction[index].append(fixed_prediction)
+
+  for index, wrong_prediction in enumerate(__wrong_prediction):
+    is_wrong_burchard = wrong_prediction[4]
+
+    fixed_prediction = '--'
+    if not is_wrong_burchard:
+      is_london_or_zwickau = london_vs_zwickau_best_model.predict([X.loc[index]])[0]
+      print(f'predicted: {version_label_to_human_readable(is_london_or_zwickau)}')
+      fixed_prediction = version_label_to_human_readable(is_london_or_zwickau)
+    
+    __wrong_prediction[index].append(fixed_prediction)
+
+  return __wrong_prediction
+
+def run_london_burchard_best_model_on_london_wrong_predictions(wrong_predictions):
+  __wrong_prediction = wrong_predictions.copy()
+  
+  london_burchard_vectorizer = load_london_burchard_vectorizer('features_tfidf_2_5_gram_cosine_similarity_long_p')
+  london_burchard_best_model = get_london_vs_burchard_best_model()
+
+  london_features_tfidf_2_5_gram_cosine_similarity_long_p_df = create_london_features_tfidf_2_5_gram_cosine_similarity_long_p_df(london_burchard_vectorizer)
+  X, y = create_X_y(london_features_tfidf_2_5_gram_cosine_similarity_long_p_df)
+
+  for index, wrong_prediction in enumerate(__wrong_prediction):
+    is_wrong_london = wrong_prediction[1]
+
+    fixed_prediction = '--'
+    if not is_wrong_london:
+      is_london_or_burchard = london_burchard_best_model.predict([X.loc[index]])[0]
+      print(f'predicted: {version_label_to_human_readable(is_london_or_burchard)}')
+      fixed_prediction = version_label_to_human_readable(is_london_or_burchard)
+    
+    __wrong_prediction[index].append(fixed_prediction)
+  
+  return __wrong_prediction
+
+def run_zwickau_burchard_best_model_on_zwickau_wrong_predictions(wrong_predictions):
+  __wrong_prediction = wrong_predictions.copy()
+
+  zwickau_burchard_vectorizer = load_zwickau_burchard_vectorizer('features_tfidf_2_5_gram_cosine_similarity_long_p')
+  zwickau_burchard_best_model = get_zwickau_vs_burchard_best_model()
+
+  zwickau_features_tfidf_2_5_gram_cosine_similarity_long_p_df = create_zwickau_features_tfidf_2_5_gram_cosine_similarity_long_p_df(zwickau_burchard_vectorizer)
+  X, y = create_X_y(zwickau_features_tfidf_2_5_gram_cosine_similarity_long_p_df)
+
+  for index, wrong_prediction in enumerate(__wrong_prediction):
+    is_wrong_london = wrong_prediction[1]
+
+    fixed_prediction = '--'
+    if not is_wrong_london:
+      is_london_or_burchard = zwickau_burchard_best_model.predict([X.loc[index]])[0]
+      print(f'predicted: {version_label_to_human_readable(is_london_or_burchard)}')
+      fixed_prediction = version_label_to_human_readable(is_london_or_burchard)
+    
+    __wrong_prediction[index].append(fixed_prediction)
+
+  return __wrong_prediction
