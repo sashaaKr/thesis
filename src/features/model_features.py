@@ -1,9 +1,11 @@
+import pickle
 from statistics import mean
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import similarities.cosine as thesisCosineSimilarity
 import features.tf_idf.n_gram as thesisNgram
+import data.reader as thesisDataReader
 from sklearn.model_selection import train_test_split, cross_val_score, cross_validate, KFold, StratifiedKFold, GridSearchCV
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
@@ -62,13 +64,25 @@ def create_tf_idf_vectorizer(corpus, n_gram = 5, analyzer='char'):
   vectorizer.fit(corpus)
   return vectorizer
 
+def create_and_save_london_zwickau_vectorizer(*, london_corpus, zwickau_corpus, name, n_gram = (2,5), analyzer = 'char'):
+  combined_corpus = london_corpus + zwickau_corpus
+  vectorizer = create_tf_idf_vectorizer(combined_corpus, n_gram, analyzer)
+  
+  with open(f'../computed_data/models/london_vs_zwickau/vectorizers/{name}.pk','wb') as f:
+    pickle.dump(vectorizer, f)
+
+def load_london_zwickau_vectorizer(name):
+  with open(f'../computed_data/models/london_vs_zwickau/vectorizers/{name}.pk','rb') as f:
+    return pickle.load(f)
+
 def create_features_df(
   london_corpus, 
   zwickau_corpus, 
   burchard_corpus, 
   n_gram,
   features = { TFIDF_FEATURE_NAME },
-  analyzer = 'char'
+  analyzer = 'char',
+  vectorizer = None
   ):
   combined_corpus = []
   corpuses = []
@@ -83,7 +97,8 @@ def create_features_df(
     corpuses.append((burchard_corpus, BURCHARD_VERSION_LABEL))
     combined_corpus = combined_corpus + burchard_corpus
 
-  vectorizer = create_tf_idf_vectorizer(combined_corpus, n_gram, analyzer) if TFIDF_FEATURE_NAME in features else None
+  if vectorizer is None:
+    vectorizer = create_tf_idf_vectorizer(combined_corpus, n_gram, analyzer) if TFIDF_FEATURE_NAME in features else None
 
   all_features = []
   for corpus, corpus_label in corpuses:
@@ -127,13 +142,10 @@ def run_models(features_df):
     print(f'running: {classifier_name}')
     classifier_cross_validate_score = cross_validate(
       classifier,
-      # X_train,
       X,
-      # y_train,
       y,
       cv=10,
       scoring=scoring
-      # n_jobs = -1
     )
 
     cross_validate_results.append(classifier_cross_validate_score)
@@ -223,12 +235,12 @@ def run_grid_search_cv(features_df, classifiers_to_test):
   
   return scores_df, grid_results
 
-def get_model_wrong_prediction(features_df):
+def get_model_wrong_prediction(features_df, splits = 10):
   results = []
   X, y = create_X_y(features_df)
 
   # TODO: test with shuffle
-  skf = StratifiedKFold(n_splits = 10)
+  skf = StratifiedKFold(n_splits = splits)
 
   for train_indexes, test_indexes in skf.split(X, y):
     result = []
@@ -241,10 +253,46 @@ def get_model_wrong_prediction(features_df):
 
     for (prediction, label, index) in zip(predicted, y_test, test_indexes):
       if prediction != label:
-        print('Row', index, 'has been classified as ', prediction, 'and should be ', label)
-        result.append((prediction, label, index))
+        index_in_text =  features_df.loc[index, 'index']
+        print('Row', index_in_text, 'has been classified as ', prediction, 'and should be ', label)
+        # print('Row', index, 'has been classified as ', prediction, 'and should be ', label)
+        # result.append((prediction, label, index))
+        result.append((prediction, label, index_in_text))
     
     results.append(result)
     print(f'score is: {clfs.score(X_test, y_test)}')
   
   return results
+
+def get_london_vs_zwickau_best_model():
+  with open('../computed_data/models/best_models/london_vs_zwickau/AdaBoostClassifier_0_799.pkl', 'rb') as f:
+    clf = pickle.load(f)
+  
+  return clf
+
+def safe_london_vs_zwickau_best_model(clf, name):
+  with open(f'../computed_data/models/best_models/london_vs_zwickau/{name}','wb') as f:
+    pickle.dump(clf, f)
+
+def create_burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df(vectorizer = None):
+  return create_features_df(
+    None,
+    None,
+    thesisDataReader.get_burchard_candidate_version_based_on_strongly_similar_london_base_long_p(),
+    n_gram = (2,5),
+    features = { 'tfidf', 'inner_mean_cosine_similarity_score' },
+    vectorizer = vectorizer
+  )
+
+def run_london_zwickau_best_model_on_burchard_wrong_predictions(wrong_predictions):
+  london_vs_zwickau_vectorizer = load_london_zwickau_vectorizer('features_tfidf_2_5_gram_cosine_similarity_long_p')
+  burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df = create_burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df(london_vs_zwickau_vectorizer)
+  X, y = create_X_y(burchard_features_tfidf_2_5_gram_cosine_similarity_long_p_df)
+  london_vs_zwickau_best_model = get_london_vs_zwickau_best_model()
+
+  for index, wrong_prediction in enumerate(wrong_predictions):
+    is_wrong_burchard = wrong_prediction[3]
+
+    if not is_wrong_burchard:
+      is_london_or_zwickau = london_vs_zwickau_best_model.predict([X.loc[index]])
+      print(f'predicted: {is_london_or_zwickau}')

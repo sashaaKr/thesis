@@ -1,8 +1,13 @@
+import enum
 import os
 import re
-import text_cleanup.text_cleanup as thesisCleanUp
+
 import numpy as np
 import pandas as pd
+
+import utils.utils as thesisUtils
+import text_cleanup.text_cleanup as thesisCleanUp
+import vocabulary.vocabulary as thesisVocabulary
 
 A_ZWICKAU_FILE_NAME = "A_Zwickau_RB_I_XII_5 (12).txt"
 A_ZWICKAU_WITH_SECTION_SEPARATION_FILE_NAME = "A_Zwickau_RB_I_XII_5 with section separation.txt"
@@ -18,6 +23,8 @@ SECTION_SEPARATOR = '*********** SECTION ***********'
 
 USER_HOME_DIR = os.path.expanduser('~')
 ROOT = os.path.join(USER_HOME_DIR, 'thesis',) 
+
+LONG_P_THRESHOLD = 20
 
 def get_data_file_path(file_name):
     return os.path.join(ROOT, 'full', file_name)
@@ -186,25 +193,29 @@ def get_london_section_indexes():
 
 #   return result
 
+def get_london_zwickau_strongly_similar_by_new_line_df():
+  return pd.read_csv('../computed_data/p_aligment/by_new_line/strongly_similar/london_zwickau_breslau.csv').drop(['Unnamed: 0'], axis=1)
+
 def get_burchard_candidate_version_based_on_strongly_similar_london_base():
-  london_zwickau_breslau_p_aligment_df = pd.read_csv('../computed_data/p_aligment/by_new_line/strongly_similar/london_zwickau_breslau.csv').drop(['Unnamed: 0'], axis=1)
+  london_zwickau_breslau_p_aligment_df = get_london_zwickau_strongly_similar_by_new_line_df()
   result = []
 
   for index, row in london_zwickau_breslau_p_aligment_df.iterrows():
     london_p = row['london text']
     zwickau_p = row['zwickau text']
+    result.append(' '.join(thesisUtils.get_shared_words(london_p, zwickau_p)))
 
-    shared_words = []
+    # shared_words = []
 
-    # TODO: interesting if it is matter which version to split and run the same function but split zwickau will provide different result
-    for word in london_p.split():
-      match_in_london = re.search(r'\b' + word + r'\b', london_p)
-      match_in_zwickau = re.search(r'\b' + word + r'\b', zwickau_p)
+    # # TODO: interesting if it is matter which version to split and run the same function but split zwickau will provide different result
+    # for word in london_p.split():
+    #   match_in_london = re.search(r'\b' + word + r'\b', london_p)
+    #   match_in_zwickau = re.search(r'\b' + word + r'\b', zwickau_p)
 
-      if match_in_london and match_in_zwickau:
-        shared_words.append(word)
+    #   if match_in_london and match_in_zwickau:
+    #     shared_words.append(word)
 
-    result.append(' '.join(shared_words))
+    # result.append(' '.join(shared_words))
 
   return result
 
@@ -260,3 +271,53 @@ def get_london_zwickau_breslau_strongly_similar_p_aligment_df():
 #   london_zwickau_breslau_strongly_similar_df = get_london_zwickau_breslau_strongly_similar_p_aligment_df()
 
 #   result = []
+
+def create_burchard_index_map_to_original_versions():
+  london_zwickau_breslau_p_aligment_df = get_london_zwickau_strongly_similar_by_new_line_df()
+  london_p_to_index_dict = thesisUtils.p_to_index_dictionary(get_london_by_new_line())
+  zwickau_p_to_index_dict = thesisUtils.p_to_index_dictionary(get_zwickau_by_new_line())
+
+  burchard_to_versions_dict = {}
+  for index, row in london_zwickau_breslau_p_aligment_df.iterrows():
+    london_p = row['london text']
+    zwickau_p = row['zwickau text']
+    
+    london_original_index = london_p_to_index_dict[london_p]
+    zwickau_original_index = zwickau_p_to_index_dict[zwickau_p]
+
+    burchard_to_versions_dict[index] = { 'london': london_original_index, 'zwickau': zwickau_original_index  }
+  
+  return burchard_to_versions_dict
+
+def create_burchard_to_versions_text_to_text_map():
+  london_corpus = get_london_by_new_line_without_words_processing()
+  zwickau_corpus = get_zwickau_by_new_line_without_words_processing()
+  burchard_candidate = thesisVocabulary.create_pre_proceed_corpus_from_processed_corpus(
+    get_burchard_candidate_version_based_on_strongly_similar_london_base(),
+    thesisVocabulary.create_london_pre_post_processing_map()
+  )
+  burchard_to_versions_index_map = create_burchard_index_map_to_original_versions()
+
+  result = []
+  for burchard_index, versions_indexes in burchard_to_versions_index_map.items():
+    london_index = versions_indexes['london']
+    zwickau_index = versions_indexes['zwickau']
+
+    burchard_text = burchard_candidate[burchard_index]
+    london_text = london_corpus[london_index]
+    zwickau_text = zwickau_corpus[zwickau_index]
+
+    result.append([burchard_text, london_text, zwickau_text]) 
+
+  return result
+
+def get_burchard_candidate_version_based_on_strongly_similar_london_base_long_p():
+  burchard_candidate_version_based_london_without_word_processing = thesisVocabulary.create_pre_proceed_corpus_from_processed_corpus(
+    get_burchard_candidate_version_based_on_strongly_similar_london_base(),
+    thesisVocabulary.create_london_pre_post_processing_map()
+  )
+  print(f'Original corpus length: {len(burchard_candidate_version_based_london_without_word_processing)}')
+  burchard_candidate_version_based_london_without_word_processing_long_p = list(filter(lambda x: len(x.split()) > LONG_P_THRESHOLD, burchard_candidate_version_based_london_without_word_processing))
+  print(f'Long p corpus length: {len(burchard_candidate_version_based_london_without_word_processing_long_p)}')
+  
+  return burchard_candidate_version_based_london_without_word_processing_long_p

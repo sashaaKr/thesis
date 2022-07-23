@@ -46,12 +46,16 @@ chunks_original_vs_expected = [
     ]
 ]
 
-class TestChunkMethod(unittest.TestCase):
+class TestUtils(unittest.TestCase):
+  def test_chunk(self):
+    for original, expected in chunks_original_vs_expected:
+      self.assertEqual(list(thesisUtils.chunks(original, 3)), expected)
 
-    def test_chunk(self):
-        for original, expected in chunks_original_vs_expected:
-            self.assertEqual(list(thesisUtils.chunks(original, 3)), expected)
-        
+  def test_get_shared_words(self):
+    self.assertEqual(
+      thesisUtils.get_shared_words('abs no cc yes', 'yes no2 cc2 abs'),
+      ['abs', 'yes']
+    )  
 
 if __name__ == '__main__':
     unittest.main()

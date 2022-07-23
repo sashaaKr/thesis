@@ -30,9 +30,22 @@ def chunks(lst, n):
         else: yield lst[i:i + n]
 
 def find_text_p_indexed_in_corpus(corpus, text_to_find):
-    found_indexes = []
-    for index, paragraph in enumerate(corpus):
-        match = re.search(r'\b' + text_to_find + r'\b', paragraph)
-        if match: found_indexes.append(index)
+  found_indexes = []
+  for index, paragraph in enumerate(corpus):
+    match = re.search(r'\b' + text_to_find + r'\b', paragraph)
+    if match: found_indexes.append(index)
     
-    return found_indexes
+  return found_indexes
+
+def p_to_index_dictionary(corpus):
+  return { p: i for i, p in enumerate(corpus) }
+
+def get_shared_words(text1, text2):
+  shared_words = []
+  for word in text1.split():
+    match_in_text1 = re.search(r'\b' + word + r'\b', text1)
+    match_in_text2 = re.search(r'\b' + word + r'\b', text2)
+    if match_in_text1 and match_in_text2:
+      shared_words.append(word)
+  
+  return shared_words
