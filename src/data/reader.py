@@ -36,10 +36,10 @@ breslau_file_path = get_data_file_path(BREALAU_FILE_NAME)
 stop_words_file_path = get_data_file_path(STOP_WORDS_FILE_NAME)
 
 def read_file(file_path):
-    return open(file_path, encoding='utf-8').read()
+  return open(file_path, encoding='utf-8').read()
 
 def read_zwickau():
-    return read_file(a_zwickau_file_path)
+  return read_file(a_zwickau_file_path)
 
 def read_zwickau_poorly_similar_with_chops():
   file_path = os.path.join(ROOT, 'computed_data', 'corpus', 'zwickau', 'zwickau_poorly_similar_with_chops.txt')
@@ -58,16 +58,16 @@ def get_london_poorly_similar_with_chops_corpus():
   return thesisCleanUp.tokenize_text(raw_text)
 
 def read_zwickau_with_section_separation():
-    return read_file(get_data_file_path(A_ZWICKAU_WITH_SECTION_SEPARATION_FILE_NAME))
+  return read_file(get_data_file_path(A_ZWICKAU_WITH_SECTION_SEPARATION_FILE_NAME))
 
 def read_london():
-    return read_file(b_london_file_path)
+  return read_file(b_london_file_path)
 
 def read_breslau():
-    return read_file(breslau_file_path)
+  return read_file(breslau_file_path)
 
 def read_london_with_section_separation():
-    return read_file(get_data_file_path(B_LONDON_WITH_SECTION_SEPARATION_FILE_NAME))
+  return read_file(get_data_file_path(B_LONDON_WITH_SECTION_SEPARATION_FILE_NAME))
 
 def get_london_corpus():
   london_text = read_london()
