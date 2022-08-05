@@ -262,7 +262,7 @@ def get_model_wrong_prediction(*, features_df, classifier,  splits = 10):
   X, y = create_X_y(features_df)
 
   # TODO: test with shuffle
-  skf = StratifiedKFold(n_splits = splits)
+  skf = StratifiedKFold(n_splits = splits) # TODO: add random_state
 
   for train_indexes, test_indexes in skf.split(X, y):
     result = []
@@ -348,6 +348,11 @@ def version_label_to_human_readable(version_label):
   
   if version_label == ZWICKAU_VERSION_LABEL:
     return 'Zwickau'
+
+  if version_label == BURCHARD_VERSION_LABEL:
+    return 'Burchard'
+  
+  raise 'Unknown version label'
 
 def run_london_zwickau_best_model_on_burchard_wrong_predictions(wrong_predictions):
   __wrong_prediction = wrong_predictions.copy()
