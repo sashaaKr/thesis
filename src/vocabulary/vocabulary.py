@@ -99,7 +99,6 @@ def create_pre_post_processing_map(raw_text):
 
   for word in counts:
     resp = thesisTextCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(word))
-    # print(f'{word} - {resp}')
     if len(resp) == 0: continue
     data.append([word, resp[0]])
 
@@ -124,3 +123,14 @@ def create_pre_proceed_corpus_from_processed_corpus(processed_corpus, pre_post_p
     result.append(new_p)
   
   return result
+
+def create_post_pre_map_for_london_poorly_similar_with_chops_with_placeholder_for_empty_sentences():
+  original_london_corpus = thesisDataReader.get_london_by_new_line_without_words_processing() 
+  poorly_with_chops_corpus = thesisDataReader.get_london_poorly_similar_with_chops_with_placeholder_for_empty_sentences()
+  return zip(poorly_with_chops_corpus, original_london_corpus) 
+
+def create_post_pre_map_for_zwickau_poorly_similar_with_chops_with_placeholder_for_empty_sentences():
+  original_zwickau_corpus = thesisDataReader.get_zwickau_by_new_line_without_words_processing() 
+  # in zwickau no empty sentences in poorly similar with chops corpus
+  poorly_with_chops_corpus = thesisDataReader.get_zwickau_poorly_similar_with_chops_corpus()
+  return zip(poorly_with_chops_corpus, original_zwickau_corpus) 

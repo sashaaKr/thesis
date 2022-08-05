@@ -57,6 +57,31 @@ def get_london_poorly_similar_with_chops_corpus():
   raw_text = read_london_poorly_similar_with_chops()
   return thesisCleanUp.tokenize_text(raw_text)
 
+def get_london_poorly_similar_with_chops_with_placeholder_for_empty_sentences():
+  raw_text = read_london_poorly_similar_with_chops()
+  result = []
+
+  for p in raw_text.split('\n'):
+    result.append('___EMPTY___PARAGRAPH___PLACEHOLDER' if p == '' else p)
+
+  return thesisCleanUp.tokenize_text('\n'.join(result))
+
+# def get_zwickau_poorly_similar_with_chops_with_placeholder_for_empty_sentences():
+#   raw_text = read_zwickau_poorly_similar_with_chops()
+#   corpus_with_placeholders = put_empty_placeholder(raw_text)
+#   return thesisCleanUp.tokenize_text('\n'.join(corpus_with_placeholders))
+
+#   # for p in raw_text.split('\n'):
+#   #   result.append('___EMPTY___PARAGRAPH___PLACEHOLDER' if p == '' else p)
+
+#   # return thesisCleanUp.tokenize_text('\n'.join(result))
+
+# def put_empty_placeholder(raw_text):
+#   result = []
+#   for p in raw_text.split('\n'):
+#     result.append('___EMPTY___PARAGRAPH___PLACEHOLDER' if p == '' else p)
+#   return result 
+
 def read_zwickau_with_section_separation():
   return read_file(get_data_file_path(A_ZWICKAU_WITH_SECTION_SEPARATION_FILE_NAME))
 

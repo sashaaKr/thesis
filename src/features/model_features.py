@@ -270,9 +270,6 @@ def get_model_wrong_prediction(*, features_df, classifier,  splits = 10):
     X_train, X_test = X.iloc[train_indexes], X.iloc[test_indexes]
     y_train, y_test = y[train_indexes], y[test_indexes]
 
-    # clfs = MLPClassifier(alpha=1, max_iter=1000).fit(X_train, y_train)
-    # predicted = clfs.predict(X_test)
-
     classifier.fit(X_train, y_train)
     predicted = classifier.predict(X_test)
 
