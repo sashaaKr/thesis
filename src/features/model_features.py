@@ -16,6 +16,8 @@ from sklearn.gaussian_process import GaussianProcessClassifier
 from sklearn.gaussian_process.kernels import RBF, DotProduct, Matern, RationalQuadratic, WhiteKernel
 from sklearn.neural_network import MLPClassifier
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+import xgboost as xgb
+from sklearn.preprocessing import LabelEncoder
 
 
 LONDON_VERSION_LABEL = 0
@@ -30,9 +32,6 @@ INNER_MEAN_COSINE_SIMILARITY_SCORE = 'inner_mean_cosine_similarity_score'
 def create_tfidf_features(vectorizer, p):
   p_features_vectorizer = vectorizer.transform([p]).toarray()[0]
   return p_features_vectorizer
-
-# def create_inner_similarity_score(corpus, p):
-
 
 def create_p_features(vectorizer, inner_cosine_similarities, corpus, p, p_index, corpus_label, features):
   all_features = np.array([p_index, corpus_label])
@@ -147,15 +146,17 @@ def run_models(features_df):
 
   # TODO: add LinearRegression model
   classifiers = [
-    ( SVC(kernel="linear", C=0.025), 'SVM_linear' ),
-    ( SVC(gamma=2, C=1), 'SVM_RBF' ),
-    ( DecisionTreeClassifier(), 'DecisionTreeClassifier' ),
-    ( GaussianProcessClassifier(1.0 * RBF(1.0)), 'GaussianProcessClassifier' ),
-    ( RandomForestClassifier(), 'RandomForestClassifier' ),
-    ( MLPClassifier(alpha=1, max_iter=1000), 'MLPClassifier' ),
-    ( GaussianNB(), 'GaussianNB' ),
-    ( KNeighborsClassifier(), 'KNeighborsClassifier' ),
-    ( AdaBoostClassifier(), 'AdaBoostClassifier' ),
+    # ( SVC(kernel="linear", C=0.025), 'SVM_linear' ),
+    # ( SVC(gamma=2, C=1), 'SVM_RBF' ),
+    # ( DecisionTreeClassifier(), 'DecisionTreeClassifier' ),
+    # ( GaussianProcessClassifier(1.0 * RBF(1.0)), 'GaussianProcessClassifier' ),
+    # ( RandomForestClassifier(), 'RandomForestClassifier' ),
+    # ( MLPClassifier(alpha=1, max_iter=1000), 'MLPClassifier' ),
+    # ( GaussianNB(), 'GaussianNB' ),
+    # ( KNeighborsClassifier(), 'KNeighborsClassifier' ),
+    # ( AdaBoostClassifier(), 'AdaBoostClassifier' ),
+    ( xgb.XGBClassifier(), 'XGBClassifier' ),
+    ( xgb.XGBRFClassifier(), 'XGBRFClassifier' ),
     # ( QuadraticDiscriminantAnalysis(), 'QuadraticDiscriminantAnalysis')
   ]
 
@@ -165,7 +166,7 @@ def run_models(features_df):
     classifier_cross_validate_score = cross_validate(
       classifier,
       X,
-      y,
+      LabelEncoder().fit_transform(y) if classifier_name == 'XGBClassifier' else y,
       cv=10,
       scoring=scoring
     )
@@ -218,6 +219,24 @@ def run_grid_search_cv(features_df, classifiers_to_test):
       'reg_param': [0.00001, 0.0001, 0.001,0.01, 0.1, 0.2, 0.3, 0.4, 0.5], 
       'store_covariance': [True, False],
       'tol': (0.0001, 0.001,0.01, 0.1)
+      }),
+
+      'XGBClassifier': ( xgb.XGBClassifier(), {
+        'max_depth':range(3,10,2),
+        'min_child_weight':range(1,6,2),
+        'gamma':[i/10.0 for i in range(0,5)],
+        'subsample':[i/10.0 for i in range(6,10)],
+        'colsample_bytree':[i/10.0 for i in range(6,10)],
+        'reg_alpha':[1e-5, 1e-2, 0.1, 1, 100]
+      }),
+
+      'XGBRFClassifier': ( xgb.XGBRFClassifier(), {
+        'max_depth':range(3,10,2),
+        'min_child_weight':range(1,6,2),
+        'gamma':[i/10.0 for i in range(0,5)],
+        'subsample':[i/10.0 for i in range(6,10)],
+        'colsample_bytree':[i/10.0 for i in range(6,10)],
+        'reg_alpha':[1e-5, 1e-2, 0.1, 1, 100]
       })
   }
 

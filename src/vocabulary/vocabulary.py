@@ -129,8 +129,14 @@ def create_post_pre_map_for_london_poorly_similar_with_chops_with_placeholder_fo
   poorly_with_chops_corpus = thesisDataReader.get_london_poorly_similar_with_chops_with_placeholder_for_empty_sentences()
   return zip(poorly_with_chops_corpus, original_london_corpus) 
 
+def create_post_pre_dictionary_for_london_poorly_similar_with_chops_with_placeholder_for_empty_sentences():
+  return { chop: original for chop, original in list(create_post_pre_map_for_london_poorly_similar_with_chops_with_placeholder_for_empty_sentences()) }
+
 def create_post_pre_map_for_zwickau_poorly_similar_with_chops_with_placeholder_for_empty_sentences():
   original_zwickau_corpus = thesisDataReader.get_zwickau_by_new_line_without_words_processing() 
   # in zwickau no empty sentences in poorly similar with chops corpus
   poorly_with_chops_corpus = thesisDataReader.get_zwickau_poorly_similar_with_chops_corpus()
   return zip(poorly_with_chops_corpus, original_zwickau_corpus) 
+
+def create_post_pre_dictionary_for_zwickau_poorly_similar_with_chops_with_placeholder_for_empty_sentences():
+  return { chop: original for chop, original in list(create_post_pre_map_for_zwickau_poorly_similar_with_chops_with_placeholder_for_empty_sentences()) }
