@@ -224,10 +224,10 @@ def run_grid_search_cv(features_df, classifiers_to_test):
       'XGBClassifier': ( xgb.XGBClassifier(), {
         'max_depth':range(3,10,2),
         'min_child_weight':range(1,6,2),
-        'gamma':[i/10.0 for i in range(0,5)],
-        'subsample':[i/10.0 for i in range(6,10)],
-        'colsample_bytree':[i/10.0 for i in range(6,10)],
-        'reg_alpha':[1e-5, 1e-2, 0.1, 1, 100]
+        # 'gamma':[i/10.0 for i in range(0,5)],
+        # 'subsample':[i/10.0 for i in range(6,10)],
+        # 'colsample_bytree':[i/10.0 for i in range(6,10)],
+        # 'reg_alpha':[1e-5, 1e-2, 0.1, 1, 100]
       }),
 
       'XGBRFClassifier': ( xgb.XGBRFClassifier(), {
@@ -304,7 +304,7 @@ def get_model_wrong_prediction(*, features_df, classifier,  splits = 10):
   return results
 
 def get_london_vs_zwickau_best_model():
-  with open('../computed_data/models/best_models/london_vs_zwickau/AdaBoostClassifier_0_799.pkl', 'rb') as f:
+  with open('../computed_data/models/london_vs_zwickau/best_models/AdaBoostClassifier(learning_rate=0.01, n_estimators=1000)_0_799.pkl', 'rb') as f:
     clf = pickle.load(f)
   
   return clf
@@ -449,3 +449,30 @@ def run_zwickau_burchard_best_model_on_zwickau_wrong_predictions(wrong_predictio
     __wrong_prediction[index].append(fixed_prediction)
 
   return __wrong_prediction
+
+def create_london_zwickau_with_processing_features_tfidf_2_5_gram_cosine_similarity_long_p_df():
+  return create_features_df(
+    thesisDataReader.get_london_poorly_similar_with_chops_long_p_corpus(),
+    thesisDataReader.get_zwickau_poorly_similar_with_chops_long_p_corpus(),
+    None,
+    n_gram = (2,5),
+    features = { 'tfidf', 'inner_mean_cosine_similarity_score' }
+    )
+
+def create_london_burchard_with_processing_features_tfidf_2_5_gram_cosine_similarity_long_p_df():
+  return create_features_df(
+    thesisDataReader.get_london_poorly_similar_with_chops_long_p_corpus(),
+    None,
+    thesisDataReader.get_burchard_candidate_version_based_on_strongly_similar_london_base_long_p_corpus(),
+    n_gram = (2,5),
+    features = { 'tfidf', 'inner_mean_cosine_similarity_score' }
+    )
+
+def create_zwickau_burchard_with_processing_features_tfidf_2_5_gram_cosine_similarity_long_p_df():
+  return create_features_df(
+    None,
+    thesisDataReader.get_zwickau_poorly_similar_with_chops_long_p_corpus(),
+    thesisDataReader.get_burchard_candidate_version_based_on_strongly_similar_london_base_long_p_corpus(),
+    n_gram = (2,5),
+    features = { 'tfidf', 'inner_mean_cosine_similarity_score' }
+    )

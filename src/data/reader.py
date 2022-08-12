@@ -57,6 +57,15 @@ def get_london_poorly_similar_with_chops_corpus():
   raw_text = read_london_poorly_similar_with_chops()
   return thesisCleanUp.tokenize_text(raw_text)
 
+def get_london_poorly_similar_with_chops_long_p_corpus():
+  return list(filter(lambda x: len(x.split()) > 20, get_london_poorly_similar_with_chops_corpus()))
+
+def get_zwickau_poorly_similar_with_chops_long_p_corpus():
+  return list(filter(lambda x: len(x.split()) > 20, get_zwickau_poorly_similar_with_chops_corpus()))
+
+def get_burchard_candidate_version_based_on_strongly_similar_london_base_long_p_corpus():
+  return list(filter(lambda x: len(x.split()) > 20, get_burchard_candidate_version_based_on_strongly_similar_london_base()))
+
 def get_london_poorly_similar_with_chops_with_placeholder_for_empty_sentences():
   raw_text = read_london_poorly_similar_with_chops()
   result = []
