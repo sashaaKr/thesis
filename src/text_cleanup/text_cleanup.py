@@ -172,3 +172,4 @@ def create_lemmatized_tokens(tokens):
     for l in lemmatized:
         result.add(l[1])
     return result
+

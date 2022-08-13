@@ -35,6 +35,16 @@ def get_version_shared_words(version_a_dictionary, version_a_name, version_b_dic
             }
     return shared_words
 
+def get_2_version_shared_words(version_a_dictionary, version_a_name, version_b_dictionary, version_b_name):
+    shared_words = {}
+    for word in version_a_dictionary:
+        if version_b_dictionary.get(word) is not None:
+            shared_words[word] = {
+                version_a_name: version_a_dictionary[word],
+                version_b_name: version_b_dictionary[word]
+            }
+    return shared_words
+
 # Create vocabulary that shared in version a and b, but not in c - for all permutations
 def get_shared_vocabulary_for_2_versions(
     corpus_a, 

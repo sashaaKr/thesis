@@ -224,7 +224,7 @@ def run_grid_search_cv(features_df, classifiers_to_test):
       'XGBClassifier': ( xgb.XGBClassifier(), {
         'max_depth':range(3,10,2),
         'min_child_weight':range(1,6,2),
-        # 'gamma':[i/10.0 for i in range(0,5)],
+        'gamma':[i/10.0 for i in range(0,5)],
         # 'subsample':[i/10.0 for i in range(6,10)],
         # 'colsample_bytree':[i/10.0 for i in range(6,10)],
         # 'reg_alpha':[1e-5, 1e-2, 0.1, 1, 100]
@@ -234,9 +234,9 @@ def run_grid_search_cv(features_df, classifiers_to_test):
         'max_depth':range(3,10,2),
         'min_child_weight':range(1,6,2),
         'gamma':[i/10.0 for i in range(0,5)],
-        'subsample':[i/10.0 for i in range(6,10)],
-        'colsample_bytree':[i/10.0 for i in range(6,10)],
-        'reg_alpha':[1e-5, 1e-2, 0.1, 1, 100]
+        # 'subsample':[i/10.0 for i in range(6,10)],
+        # 'colsample_bytree':[i/10.0 for i in range(6,10)],
+        # 'reg_alpha':[1e-5, 1e-2, 0.1, 1, 100]
       })
   }
 
@@ -256,6 +256,8 @@ def run_grid_search_cv(features_df, classifiers_to_test):
       cv = 10, 
       n_jobs = -1,
     )
+
+    y = LabelEncoder().fit_transform(y) if classifier_name == 'XGBClassifier' or classifier_name == 'XGBRFClassifier' else y
     param_grid.fit(X, y)
     grid_results.append(param_grid)
 

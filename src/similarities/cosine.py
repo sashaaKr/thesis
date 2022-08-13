@@ -1,3 +1,4 @@
+import string
 import numpy as np
 import pandas as pd
 import data.reader as thesisDataReader
@@ -5,6 +6,9 @@ import features.tf_idf.n_gram as thesisTfIdfNgramFeatures
 import utils.utils as thesisUtils
 import features.count_vectorizer.n_gram as thesisCountVectorizerNgramFeatures
 from sklearn.metrics.pairwise import cosine_similarity
+from typing import List
+import matplotlib.pyplot as plt
+
 
 # FEATURE_NAMES = {
 #     # TF_IDF: {},
@@ -41,12 +45,12 @@ def calculate_p_to_version_similarity(paragraph_to_test, version_corpus, get_fea
     relevant_data = mixed_similarities_df.iloc[0,:]
     return relevant_data
 
-def get_ordered_similatiries_without_self(series_similarity):
+def get_ordered_similarities_without_self(series_similarity):
     without_self_p = series_similarity.drop(index=[0])
     reindexed = without_self_p.set_axis(range(0, without_self_p.size))
-    sorted_similatieis = reindexed.sort_values(ascending=False)
+    sorted_similarities = reindexed.sort_values(ascending=False)
     # without_self_p = sorted_similatieis.drop(index=[0])
-    return list(sorted_similatieis.items())
+    return list(sorted_similarities.items())
 
 def get_inner_version_best_similarities(version):
     all_best_result = {}
@@ -75,7 +79,7 @@ def get_cross_version_best_similarities(version_1, version_2, features=FEATURES)
 
         for [featire_name, get_feature] in features:
             smltr = calculate_p_to_version_similarity(p, version_2, get_feature)
-            smltr_ordered = get_ordered_similatiries_without_self(smltr)
+            smltr_ordered = get_ordered_similarities_without_self(smltr)
             
             all_best[featire_name] = smltr_ordered[0]
             uniq_best.add(smltr_ordered[0][0])
@@ -270,7 +274,7 @@ def create_statistics_df(version_1, version_2, version_1_name):
     for [feature_name, get_feature] in FEATURES:
         for p_index, p in enumerate(version_1):
             smltr = calculate_p_to_version_similarity(p, version_2, get_feature)
-            smltr_ordered = get_ordered_similatiries_without_self(smltr)
+            smltr_ordered = get_ordered_similarities_without_self(smltr)
             
             closest = smltr_ordered[0]
             closest_similarity = closest[1]
@@ -309,6 +313,7 @@ def create_statistics_df(version_1, version_2, version_1_name):
             
     return pd.DataFrame(all_data, columns=columns)
 
+# the difference between this impelementation and in CrossVersionSimilarity is that here self not removed
 def cross_version_similarity(version_1_corpus, version_2_corpus, get_features):
   res = []
 
@@ -333,3 +338,94 @@ def get_max_similarity_per_p(similarities):
     res.append(max_similarity)
 
   return res
+
+class SimilarityMatch:
+  def __init__(self, original_index, match_index, score):
+    self.score = score
+    self.match_index = match_index
+    self.original_index = original_index
+  
+  def __repr__(self) -> str:
+    return f'{self.original_index} -> {self.match_index}: {self.score}'
+
+class SimilarityMatchList:
+  def __init__(self):
+    self.matches = []
+  
+  def __len__(self):
+    return len(self.matches)
+  
+  def append(self, match):
+    self.matches.append(match)
+  
+  def original_indexes(self):
+    return [i.original_index for i in self.matches]
+
+class CrossVersionSimilarity:
+  def __init__(self, corpus_1, corpus_2, vectorizer):
+    self.corpus_1 = corpus_1
+    self.corpus_2 = corpus_2
+    self.vectorizer = vectorizer
+
+    self.raw_matches = []
+    self.best_matches = []
+    self.all_matches_without_self = []
+    
+  def calculate(self):
+    self.raw_matches = []
+    self.best_matches = []
+    self.all_matches_without_self = []
+    
+    for i, p in enumerate(self.corpus_1.corpus):
+      smltr = calculate_p_to_version_similarity(p, self.corpus_2.corpus, self.vectorizer)
+      smltr_ordered = get_ordered_similarities_without_self(smltr)
+
+      self.raw_matches.append(smltr.values.tolist())
+      self.best_matches.append(SimilarityMatch(i, smltr_ordered[0][0], smltr_ordered[0][1]))
+      
+      self.all_matches_without_self.append(smltr_ordered)
+
+  def text_alignment(self):
+    alignment = {}
+    for index, match in enumerate(self.best_matches):
+      best_match_index = match[0]
+      text_1 = self.corpus_1.corpus[index]
+      text_2 = self.corpus_2.corpus[best_match_index]
+      alignment[text_1] = text_2
+    return alignment
+  
+  def text_alignment_df(self):
+    columns = [self.corpus_1.corpus_name, self.corpus_2.corpus_name, 'score']
+    data = []
+    for match in self.best_matches:
+      text_1 = self.corpus_1.corpus[match.original_index]
+      text_2 = self.corpus_2.corpus[match.match_index]
+      data.append([text_1, text_2, match.score])
+    return pd.DataFrame(data, columns=columns)
+  
+  def get_matches_higher_than(self, threshold: int) -> SimilarityMatchList:
+    res = SimilarityMatchList()
+    for match in self.best_matches:
+      if match.score > threshold:
+        res.append(match)
+    return res
+  
+  def plot_max_similarity_per_paragraph(self):
+    fig, ax = plt.subplots(figsize=(35, 5))
+
+    ax.plot([similarity.score for similarity in self.best_matches], label=f'{self.corpus_1.corpus_name} -> {self.corpus_2.corpus_name}')
+
+    ax.set_ylim([0,1])
+    ax.set_xlim([-5,325])
+    ax.legend()
+    plt.title(f'Max cross similarity per p: {self.corpus_1.corpus_name} -> {self.corpus_2.corpus_name}')
+    plt.show()
+
+class CrossVersionSimilarity5Gram(CrossVersionSimilarity):
+  def __init__(self, corpus_1, corpus_2):
+    super().__init__(corpus_1, corpus_2, thesisTfIdfNgramFeatures.create_5_gram)
+
+class CrossVersionSimilarity8Gram(CrossVersionSimilarity):
+  def __init__(self, corpus_1, corpus_2):
+    super().__init__(corpus_1, corpus_2, thesisTfIdfNgramFeatures.create_8_gram)
+

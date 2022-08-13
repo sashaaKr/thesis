@@ -8,11 +8,13 @@ import pandas as pd
 import utils.utils as thesisUtils
 import text_cleanup.text_cleanup as thesisCleanUp
 import vocabulary.vocabulary as thesisVocabulary
+from sklearn.feature_extraction.text import CountVectorizer
+from collections import Counter
 
-A_ZWICKAU_FILE_NAME = "A_Zwickau_RB_I_XII_5 (12).txt"
+ZWICKAU_FILE_NAME = "A_Zwickau_RB_I_XII_5 (12).txt"
 A_ZWICKAU_WITH_SECTION_SEPARATION_FILE_NAME = "A_Zwickau_RB_I_XII_5 with section separation.txt"
 
-B_LONDON_FILE_NAME = "B_London_BL_Add_18929 (6).txt"
+LONDON_FILE_NAME = "B_London_BL_Add_18929 (6).txt"
 B_LONDON_WITH_SECTION_SEPARATION_FILE_NAME = "B_London_BL_Add_18929 with section separation.txt"
 
 BREALAU_FILE_NAME = 'SV_Breslau_221-transcription2.txt'
@@ -29,8 +31,8 @@ LONG_P_THRESHOLD = 20
 def get_data_file_path(file_name):
     return os.path.join(ROOT, 'full', file_name)
 
-a_zwickau_file_path = get_data_file_path(A_ZWICKAU_FILE_NAME)
-b_london_file_path = get_data_file_path(B_LONDON_FILE_NAME)
+a_zwickau_file_path = get_data_file_path(ZWICKAU_FILE_NAME)
+b_london_file_path = get_data_file_path(LONDON_FILE_NAME)
 breslau_file_path = get_data_file_path(BREALAU_FILE_NAME)
 
 stop_words_file_path = get_data_file_path(STOP_WORDS_FILE_NAME)
@@ -103,13 +105,13 @@ def read_breslau():
 def read_london_with_section_separation():
   return read_file(get_data_file_path(B_LONDON_WITH_SECTION_SEPARATION_FILE_NAME))
 
-def get_london_corpus():
-  london_text = read_london()
-  london_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(london_text))
-  return london_corpus
+# def get_london_corpus():
+#   london_text = read_london()
+#   london_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(london_text))
+#   return london_corpus
 
-def get_london_by_new_line():
-  return get_london_corpus()
+# def get_london_by_new_line():
+#   return get_london_corpus()
 
 def get_london_by_new_line_without_words_processing():
   london_text = read_london()
@@ -121,13 +123,13 @@ def get_zwickau_by_new_line_without_words_processing():
   zwickau_corpus = thesisCleanUp.create_corpus_by_line_without_word_replacements(zwickau_text)
   return zwickau_corpus
 
-def get_zwickau_corpus():
-  zwickau_text = read_zwickau()
-  zwickau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(zwickau_text))
-  return zwickau_corpus
+# def get_zwickau_corpus():
+#   zwickau_text = read_zwickau()
+#   zwickau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(zwickau_text))
+#   return zwickau_corpus
 
-def get_zwickau_by_new_line():
-  return get_zwickau_corpus()
+# def get_zwickau_by_new_line():
+#   return get_zwickau_corpus()
 
 def get_breslau_corpus():
   breslau_text = read_breslau()
@@ -380,3 +382,52 @@ def get_zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p(
   print(f'Long p corpus length: {len(zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p)}')
 
   return zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p 
+
+
+class Corpus:
+  def __init__(self, path, corpus_name):
+    self.path = path
+    self.corpus_name = corpus_name
+
+    self.raw_text = self.read()
+    self.corpus = self.text_processing()
+
+  def read(self): 
+    return open(self.path, encoding='utf-8').read()
+  
+  def get_n_grams_words_dictionary(self, ngram_from=2, ngram_to=2):    
+    vec = CountVectorizer(
+        ngram_range = (ngram_from, ngram_to),
+        token_pattern = r"(?u)\b\w+\b"
+    ).fit(self.corpus)
+    bag_of_words = vec.transform(self.corpus)
+    sum_words = bag_of_words.sum(axis = 0) 
+    words_freq = [(word, sum_words[0, i]) for word, i in vec.vocabulary_.items()]
+    words_freq = sorted(words_freq, key = lambda x: x[1], reverse = True)
+
+    words_freq_dic = {}
+    for i in words_freq:
+        [word, count] = i
+        words_freq_dic[word] = count
+    return words_freq_dic
+
+  # here is neat graph for count: https://www.absentdata.com/python-graphs/python-word-frequency/
+  def words_frequency(self):    
+    word_counter =  Counter(self.raw_text.split())
+    return sorted(word_counter.items(), key=lambda item: item[1], reverse=True) 
+
+
+class CorpusByNewLine(Corpus):
+  @staticmethod
+  def london():
+    return CorpusByNewLine(get_data_file_path(LONDON_FILE_NAME), 'london')
+
+  @staticmethod
+  def zwickau():
+    return CorpusByNewLine(get_data_file_path(ZWICKAU_FILE_NAME), 'zwickau')
+  
+  def __init__(self, path, corpus_name):
+    super().__init__(path, corpus_name)
+
+  def text_processing(self):
+    return thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(self.raw_text))

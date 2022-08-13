@@ -108,7 +108,7 @@ def create_p_aligment_df_with_chop_by_london(p_aligment_df):
     zwickau_text = row['zwickau text']
 
     london_without_shared_words = london_text
-    zwickau_withoud_shared_words = zwickau_text
+    zwickau_without_shared_words = zwickau_text
 
     for word in london_text.split():
       match_in_london = re.search(r'\b' + word + r'\b', london_text)
@@ -116,9 +116,9 @@ def create_p_aligment_df_with_chop_by_london(p_aligment_df):
 
       if match_in_london and match_in_zwickau:
         london_without_shared_words = re.sub(r'\b' + word + r'\b', '', london_without_shared_words, count = 1).replace('  ', ' ').strip()
-        zwickau_withoud_shared_words = re.sub(r'\b' + word + r'\b', '', zwickau_withoud_shared_words, count = 1).replace('  ', ' ').strip()
+        zwickau_without_shared_words = re.sub(r'\b' + word + r'\b', '', zwickau_without_shared_words, count = 1).replace('  ', ' ').strip()
 
-    chops.append([london_without_shared_words, zwickau_withoud_shared_words])
+    chops.append([london_without_shared_words, zwickau_without_shared_words])
   
   p_aligment_df_with_chop_df = pd.DataFrame(
     data=chops, 

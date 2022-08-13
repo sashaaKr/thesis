@@ -9,21 +9,21 @@ def get_features(corpus, n_gram):
     df = pd.DataFrame(doc_term_matrix, columns=vectorizer.get_feature_names())
     return df
 
-def get_ngrams_words_dictionary(text, ngram_from=2, ngram_to=2):    
-    vec = CountVectorizer(
-        ngram_range = (ngram_from, ngram_to),
-        token_pattern = r"(?u)\b\w+\b"
-    ).fit(text)
-    bag_of_words = vec.transform(text)
-    sum_words = bag_of_words.sum(axis = 0) 
-    words_freq = [(word, sum_words[0, i]) for word, i in vec.vocabulary_.items()]
-    words_freq = sorted(words_freq, key = lambda x: x[1], reverse = True)
+# def get_ngrams_words_dictionary(text, ngram_from=2, ngram_to=2):    
+#     vec = CountVectorizer(
+#         ngram_range = (ngram_from, ngram_to),
+#         token_pattern = r"(?u)\b\w+\b"
+#     ).fit(text)
+#     bag_of_words = vec.transform(text)
+#     sum_words = bag_of_words.sum(axis = 0) 
+#     words_freq = [(word, sum_words[0, i]) for word, i in vec.vocabulary_.items()]
+#     words_freq = sorted(words_freq, key = lambda x: x[1], reverse = True)
 
-    words_freq_dic = {}
-    for i in words_freq:
-        [word, count] = i
-        words_freq_dic[word] = count
-    return words_freq_dic
+#     words_freq_dic = {}
+#     for i in words_freq:
+#         [word, count] = i
+#         words_freq_dic[word] = count
+#     return words_freq_dic
 
 def create_n_gram_corpus(corpus, n_gram):
     vectorizer = CountVectorizer(ngram_range=(n_gram, n_gram), analyzer='char')
