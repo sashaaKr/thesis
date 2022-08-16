@@ -22,15 +22,15 @@ import matplotlib.pyplot as plt
 
 FEATURES = [
     # ['2_gram', thesisTfIdfNgramFeatures.create_2_gram],
-    ['3_gram', thesisTfIdfNgramFeatures.create_3_gram],
-    ['4_gram', thesisTfIdfNgramFeatures.create_4_gram],
+    # ['3_gram', thesisTfIdfNgramFeatures.create_3_gram],
+    # ['4_gram', thesisTfIdfNgramFeatures.create_4_gram],
     ['5_gram', thesisTfIdfNgramFeatures.create_5_gram],
-    ['6_gram', thesisTfIdfNgramFeatures.create_6_gram],
-    ['7_gram', thesisTfIdfNgramFeatures.create_7_gram],
-    ['8_gram', thesisTfIdfNgramFeatures.create_8_gram],
+    # ['6_gram', thesisTfIdfNgramFeatures.create_6_gram],
+    # ['7_gram', thesisTfIdfNgramFeatures.create_7_gram],
+    # ['8_gram', thesisTfIdfNgramFeatures.create_8_gram],
 
-    ['2_5_gram', thesisTfIdfNgramFeatures.create_2_5_gram],
-    ['3_5_gram', thesisTfIdfNgramFeatures.create_3_5_gram],
+    # ['2_5_gram', thesisTfIdfNgramFeatures.create_2_5_gram],
+    # ['3_5_gram', thesisTfIdfNgramFeatures.create_3_5_gram],
 
     # count_vectorizer_features
     # ['count_vectorizer_5_gram', thesisCountVectorizerNgramFeatures.create_5_gram]
@@ -355,11 +355,24 @@ class SimilarityMatchList:
   def __len__(self):
     return len(self.matches)
   
+  def __iter__(self):
+    for match in self.matches:
+      yield match
+
+  def __getitem__(self, index):
+    return self.matches[index]
+  
+  def __repr__(self) -> str:
+    return '\n'.join(map(str, self.matches))
+  
   def append(self, match):
     self.matches.append(match)
   
   def original_indexes(self):
     return [i.original_index for i in self.matches]
+  
+  def scores(self):
+    return [i.score for i in self.matches]
 
 class CrossVersionSimilarity:
   def __init__(self, corpus_1, corpus_2, vectorizer):
@@ -368,12 +381,12 @@ class CrossVersionSimilarity:
     self.vectorizer = vectorizer
 
     self.raw_matches = []
-    self.best_matches = []
+    self.best_matches = SimilarityMatchList()
     self.all_matches_without_self = []
     
   def calculate(self):
     self.raw_matches = []
-    self.best_matches = []
+    self.best_matches = SimilarityMatchList()
     self.all_matches_without_self = []
     
     for i, p in enumerate(self.corpus_1.corpus):
@@ -395,12 +408,18 @@ class CrossVersionSimilarity:
     return alignment
   
   def text_alignment_df(self):
-    columns = [self.corpus_1.corpus_name, self.corpus_2.corpus_name, 'score']
+    columns = [
+      f'{self.corpus_1.corpus_name} index',
+      self.corpus_1.corpus_name, 
+      f'{self.corpus_2.corpus_name} index', 
+      self.corpus_2.corpus_name, 
+      'score'
+      ]
     data = []
     for match in self.best_matches:
       text_1 = self.corpus_1.corpus[match.original_index]
       text_2 = self.corpus_2.corpus[match.match_index]
-      data.append([text_1, text_2, match.score])
+      data.append([match.original_index, text_1, match.match_index, text_2, match.score])
     return pd.DataFrame(data, columns=columns)
   
   def get_matches_higher_than(self, threshold: int) -> SimilarityMatchList:
@@ -420,6 +439,23 @@ class CrossVersionSimilarity:
     ax.legend()
     plt.title(f'Max cross similarity per p: {self.corpus_1.corpus_name} -> {self.corpus_2.corpus_name}')
     plt.show()
+  
+  def get_best_match_of(self, index) -> SimilarityMatch:
+    return self.best_matches[index]
+  
+  def get_bidirectional_matches_by_threshold(self, threshold, crossVersionSimilarity) -> SimilarityMatchList:
+    result = SimilarityMatchList()
+
+    for match in self.best_matches:
+      match_from_another_side = crossVersionSimilarity.get_best_match_of(match.match_index)
+
+      if match.score < threshold: continue
+      if match_from_another_side.score < threshold: continue
+      if match_from_another_side.match_index != match.original_index: continue
+
+      result.append(match)
+
+    return result
 
 class CrossVersionSimilarity5Gram(CrossVersionSimilarity):
   def __init__(self, corpus_1, corpus_2):

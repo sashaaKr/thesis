@@ -105,13 +105,15 @@ def read_breslau():
 def read_london_with_section_separation():
   return read_file(get_data_file_path(B_LONDON_WITH_SECTION_SEPARATION_FILE_NAME))
 
-# def get_london_corpus():
-#   london_text = read_london()
-#   london_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(london_text))
-#   return london_corpus
+# TODO: remove this function
+def get_london_corpus():
+  london_text = read_london()
+  london_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(london_text))
+  return london_corpus
 
-# def get_london_by_new_line():
-#   return get_london_corpus()
+# TODO: remove this function
+def get_london_by_new_line():
+  return get_london_corpus()
 
 def get_london_by_new_line_without_words_processing():
   london_text = read_london()
@@ -123,13 +125,15 @@ def get_zwickau_by_new_line_without_words_processing():
   zwickau_corpus = thesisCleanUp.create_corpus_by_line_without_word_replacements(zwickau_text)
   return zwickau_corpus
 
-# def get_zwickau_corpus():
-#   zwickau_text = read_zwickau()
-#   zwickau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(zwickau_text))
-#   return zwickau_corpus
+# TODO: remove this function
+def get_zwickau_corpus():
+  zwickau_text = read_zwickau()
+  zwickau_corpus = thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(zwickau_text))
+  return zwickau_corpus
 
-# def get_zwickau_by_new_line():
-#   return get_zwickau_corpus()
+# TODO: remove this function
+def get_zwickau_by_new_line():
+  return get_zwickau_corpus()
 
 def get_breslau_corpus():
   breslau_text = read_breslau()
@@ -413,8 +417,25 @@ class Corpus:
 
   # here is neat graph for count: https://www.absentdata.com/python-graphs/python-word-frequency/
   def words_frequency(self):    
-    word_counter =  Counter(self.raw_text.split())
-    return sorted(word_counter.items(), key=lambda item: item[1], reverse=True) 
+    word_counter = Counter(self.raw_text.split())
+    return sorted(word_counter.items(), key = lambda item: item[1], reverse = True) 
+
+  def get_shared_n_grams(self, corpus, ngram):
+    self_n_gram_dictionary = self.get_n_grams_words_dictionary(ngram, ngram)
+    another_corpus_n_gram_dictionary = corpus.get_n_grams_words_dictionary(ngram, ngram)
+
+    shared_words = {}
+    
+    for (word, counter) in self_n_gram_dictionary.items():
+      if another_corpus_n_gram_dictionary.get(word) is not None:
+        result = {}
+        result[self.corpus_name] = counter
+        result[corpus.corpus_name] = another_corpus_n_gram_dictionary[word]
+        shared_words[word] = result 
+    
+    return shared_words
+
+
 
 
 class CorpusByNewLine(Corpus):
