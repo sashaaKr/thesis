@@ -1,4 +1,5 @@
-import string
+import os
+import pickle
 import numpy as np
 import pandas as pd
 import data.reader as thesisDataReader
@@ -9,6 +10,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from typing import List
 import matplotlib.pyplot as plt
 
+USER_HOME_DIR = os.path.expanduser('~')
+ROOT = os.path.join(USER_HOME_DIR, 'thesis') 
 
 # FEATURE_NAMES = {
 #     # TF_IDF: {},
@@ -380,17 +383,47 @@ class CrossVersionSimilarity:
     self.corpus_2 = corpus_2
     self.vectorizer = vectorizer
 
-    self.raw_matches = []
-    self.best_matches = SimilarityMatchList()
-    self.all_matches_without_self = []
+    # self.raw_matches = []
+    # self.best_matches = SimilarityMatchList()
+    # self.all_matches_without_self = []
+
+  def load(self):
+    path = self.__path_to_data_store()
+    data_to_load = ['raw_matches', 'best_matches', 'all_matches_without_self']
+
+    for data in data_to_load:
+      with open(os.path.join(path, f'{data}.pickle'), 'rb') as f:
+        setattr(self, data, pickle.load(f))
+
+    with open(os.path.join(path, 'raw_matches.pickle'), 'rb') as f:
+      raw_matches = pickle.load(f)
+      self.raw_matches = raw_matches
     
+  def save(self):
+    path = self.__path_to_data_store()
+    data_to_load = ['raw_matches', 'best_matches', 'all_matches_without_self']
+
+    for data in data_to_load:
+      with open(os.path.join(path, f'{data}.pickle'), 'wb') as f:
+        pickle.dump(getattr(self, data), f, pickle.HIGHEST_PROTOCOL)
+
+  def __path_to_data_store(self):
+    vectorizer_name = str(self.vectorizer.name).replace(" ", "")
+    return os.path.join(
+      ROOT, 
+      'src',
+      'similarities', 
+      'saved_similarities', 
+      f'{self.corpus_1.corpus_name}_{self.corpus_2.corpus_name}_{vectorizer_name}'
+      )
+
   def calculate(self):
     self.raw_matches = []
     self.best_matches = SimilarityMatchList()
     self.all_matches_without_self = []
     
     for i, p in enumerate(self.corpus_1.corpus):
-      smltr = calculate_p_to_version_similarity(p, self.corpus_2.corpus, self.vectorizer)
+      smltr = calculate_p_to_version_similarity(p, self.corpus_2.corpus, self.vectorizer.get_features)
       smltr_ordered = get_ordered_similarities_without_self(smltr)
 
       self.raw_matches.append(smltr.values.tolist())
@@ -400,10 +433,9 @@ class CrossVersionSimilarity:
 
   def text_alignment(self):
     alignment = {}
-    for index, match in enumerate(self.best_matches):
-      best_match_index = match[0]
-      text_1 = self.corpus_1.corpus[index]
-      text_2 = self.corpus_2.corpus[best_match_index]
+    for match in self.best_matches:
+      text_1 = self.corpus_1.corpus[match.original_index]
+      text_2 = self.corpus_2.corpus[match.match_index]
       alignment[text_1] = text_2
     return alignment
   
@@ -459,7 +491,7 @@ class CrossVersionSimilarity:
 
 class CrossVersionSimilarity5Gram(CrossVersionSimilarity):
   def __init__(self, corpus_1, corpus_2):
-    super().__init__(corpus_1, corpus_2, thesisTfIdfNgramFeatures.create_5_gram)
+    super().__init__(corpus_1, corpus_2, thesisTfIdfNgramFeatures.TfIdf5GramCharFeatures())
 
 class CrossVersionSimilarity8Gram(CrossVersionSimilarity):
   def __init__(self, corpus_1, corpus_2):

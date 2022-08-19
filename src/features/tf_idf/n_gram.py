@@ -13,6 +13,23 @@ def get_features(corpus, n_gram):
   df = pd.DataFrame(doc_term_matrix, columns=vectorizer.get_feature_names())
   return df
 
+class TfIdfFeatures:
+  def __init__(self, ngram_range, analyzer):
+    self.analyzer = analyzer
+    self.ngram_range = ngram_range
+    self.vectorizer = TfidfVectorizer(ngram_range = self.ngram_range, analyzer = self.analyzer)
+    self.name = str(self.vectorizer)
+  
+  def get_features(self, corpus):
+    sparse_matrix = self.vectorizer.fit_transform(corpus)
+    doc_term_matrix = sparse_matrix.todense()
+    df = pd.DataFrame(doc_term_matrix, columns = self.vectorizer.get_feature_names())
+    return df
+  
+class TfIdf5GramCharFeatures(TfIdfFeatures):
+  def __init__(self):
+    super().__init__((5,5), 'char')
+
 
 def create_2_gram(corpus):
   return get_features(corpus, 2)
