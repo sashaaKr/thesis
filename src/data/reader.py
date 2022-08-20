@@ -9,6 +9,7 @@ import utils.utils as thesisUtils
 import text_cleanup.text_cleanup as thesisCleanUp
 import vocabulary.vocabulary as thesisVocabulary
 from sklearn.feature_extraction.text import CountVectorizer
+import similarities.cosine as thesisCosineSimilarity
 from collections import Counter
 
 ZWICKAU_FILE_NAME = "A_Zwickau_RB_I_XII_5 (12).txt"
@@ -17,14 +18,14 @@ A_ZWICKAU_WITH_SECTION_SEPARATION_FILE_NAME = "A_Zwickau_RB_I_XII_5 with section
 LONDON_FILE_NAME = "B_London_BL_Add_18929 (6).txt"
 B_LONDON_WITH_SECTION_SEPARATION_FILE_NAME = "B_London_BL_Add_18929 with section separation.txt"
 
-BREALAU_FILE_NAME = 'SV_Breslau_221-transcription2.txt'
+BRESLAU_FILE_NAME = 'SV_Breslau_221-transcription2.txt'
 
 STOP_WORDS_FILE_NAME = "stop_words.json"
 
 SECTION_SEPARATOR = '*********** SECTION ***********'
 
 USER_HOME_DIR = os.path.expanduser('~')
-ROOT = os.path.join(USER_HOME_DIR, 'thesis',) 
+ROOT = os.path.join(USER_HOME_DIR, 'thesis') 
 
 LONG_P_THRESHOLD = 20
 
@@ -33,7 +34,7 @@ def get_data_file_path(file_name):
 
 a_zwickau_file_path = get_data_file_path(ZWICKAU_FILE_NAME)
 b_london_file_path = get_data_file_path(LONDON_FILE_NAME)
-breslau_file_path = get_data_file_path(BREALAU_FILE_NAME)
+breslau_file_path = get_data_file_path(BRESLAU_FILE_NAME)
 
 stop_words_file_path = get_data_file_path(STOP_WORDS_FILE_NAME)
 
@@ -389,9 +390,9 @@ def get_zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p(
 
 
 class Corpus:
-  def __init__(self, path, corpus_name):
+  def __init__(self, path, name):
     self.path = path
-    self.corpus_name = corpus_name
+    self.name = name
 
     self.raw_text = self.read()
     self.corpus = self.text_processing()
@@ -429,14 +430,11 @@ class Corpus:
     for (word, counter) in self_n_gram_dictionary.items():
       if another_corpus_n_gram_dictionary.get(word) is not None:
         result = {}
-        result[self.corpus_name] = counter
-        result[corpus.corpus_name] = another_corpus_n_gram_dictionary[word]
+        result[self.name] = counter
+        result[corpus.name] = another_corpus_n_gram_dictionary[word]
         shared_words[word] = result 
     
     return shared_words
-
-
-
 
 class CorpusByNewLine(Corpus):
   @staticmethod
@@ -447,8 +445,65 @@ class CorpusByNewLine(Corpus):
   def zwickau():
     return CorpusByNewLine(get_data_file_path(ZWICKAU_FILE_NAME), 'zwickau')
   
-  def __init__(self, path, corpus_name):
-    super().__init__(path, corpus_name)
+  @staticmethod
+  def breslau():
+    return CorpusByNewLine(get_data_file_path(BRESLAU_FILE_NAME), 'breslau')
+  
+  def __init__(self, path, name):
+    super().__init__(path, name)
 
   def text_processing(self):
     return thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(self.raw_text))
+
+class BurchardCorpus:
+  def __init__(self, corpus_1, corpus_2):
+    self.name = f'burchard_candidate_by_{corpus_1.name}_{corpus_2.name}'
+    self.corpus_1 = corpus_1
+    self.corpus_2 = corpus_2
+    self.similarities_1 = thesisCosineSimilarity.CrossVersionSimilarity5Gram(corpus_1, corpus_2)
+    self.similarities_2 = thesisCosineSimilarity.CrossVersionSimilarity5Gram(corpus_2, corpus_1)
+    self.similarities_1.load()
+    self.similarities_2.load()
+    self.corpus = self.build_corpus()
+  
+  def build_corpus(self):
+    corpus = []
+    for match in self.similarities_1.get_bidirectional_matches_by_threshold(0.5, self.similarities_2):
+      corpus.append(' '.join(thesisUtils.get_shared_words(match.original_text, match.match_text)))
+    return corpus
+
+class LeftoversCorpus:
+  def __init__(self, corpus_1, corpus_2):
+    self.name = f'leftovers_{corpus_1.name}'
+    self.corpus_1 = corpus_1
+    self.corpus_2 = corpus_2
+    self.similarities_1 = thesisCosineSimilarity.CrossVersionSimilarity5Gram(corpus_1, corpus_2)
+    self.similarities_2 = thesisCosineSimilarity.CrossVersionSimilarity5Gram(corpus_2, corpus_1)
+    self.similarities_1.load()
+    self.similarities_2.load()
+    self.corpus = self.build_corpus()
+
+  def build_corpus(self):
+    corpus = []
+    strongly_similar = set(self.similarities_1.get_bidirectional_matches_by_threshold(0.5, self.similarities_2).original_indexes())
+
+    for index, row in self.similarities_1.text_alignment_df().iterrows():
+      index = row[f'{self.corpus_1.name} index']
+      corpus_1_p = row[self.corpus_1.name]
+      corpus_2_p = row[self.corpus_2.name]
+
+      corpus_1_p_without_shared_words = corpus_1_p
+      # corpus_2_p_without_shared_words = corpus_2_p
+
+      if index in strongly_similar:
+        # for word in corpus_2_p.split(): # THIS IS HOW ZWICKAU LEFTOVERS WAS CALCULATED
+        for word in corpus_1_p.split():
+          match_in_corpus_1 = re.search(r'\b' + word + r'\b', corpus_1_p)
+          match_in_corpus_2 = re.search(r'\b' + word + r'\b', corpus_2_p)
+          if match_in_corpus_1 and match_in_corpus_2:
+            corpus_1_p_without_shared_words = re.sub(r'\b' + word + r'\b', '', corpus_1_p_without_shared_words, count = 1).replace('  ', ' ').strip() 
+            # corpus_2_p_without_shared_words = re.sub(r'\b' + word + r'\b', '', corpus_2_p_without_shared_words, count = 1).replace('  ', ' ').strip() 
+
+      corpus.append(corpus_1_p_without_shared_words)
+
+    return corpus

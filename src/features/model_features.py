@@ -146,17 +146,17 @@ def run_models(features_df):
 
   # TODO: add LinearRegression model
   classifiers = [
-    # ( SVC(kernel="linear", C=0.025), 'SVM_linear' ),
-    # ( SVC(gamma=2, C=1), 'SVM_RBF' ),
-    # ( DecisionTreeClassifier(), 'DecisionTreeClassifier' ),
-    # ( GaussianProcessClassifier(1.0 * RBF(1.0)), 'GaussianProcessClassifier' ),
-    # ( RandomForestClassifier(), 'RandomForestClassifier' ),
-    # ( MLPClassifier(alpha=1, max_iter=1000), 'MLPClassifier' ),
-    # ( GaussianNB(), 'GaussianNB' ),
-    # ( KNeighborsClassifier(), 'KNeighborsClassifier' ),
-    # ( AdaBoostClassifier(), 'AdaBoostClassifier' ),
+    ( SVC(kernel="linear", C=0.025), 'SVM_linear' ),
+    ( SVC(gamma=2, C=1), 'SVM_RBF' ),
+    ( DecisionTreeClassifier(), 'DecisionTreeClassifier' ),
+    ( GaussianProcessClassifier(1.0 * RBF(1.0)), 'GaussianProcessClassifier' ),
+    ( RandomForestClassifier(), 'RandomForestClassifier' ),
+    ( MLPClassifier(alpha=1, max_iter=1000), 'MLPClassifier' ),
+    ( GaussianNB(), 'GaussianNB' ),
+    ( KNeighborsClassifier(), 'KNeighborsClassifier' ),
+    ( AdaBoostClassifier(), 'AdaBoostClassifier' ),
     ( xgb.XGBClassifier(), 'XGBClassifier' ),
-    ( xgb.XGBRFClassifier(), 'XGBRFClassifier' ),
+    # ( xgb.XGBRFClassifier(), 'XGBRFClassifier' ),
     # ( QuadraticDiscriminantAnalysis(), 'QuadraticDiscriminantAnalysis')
   ]
 

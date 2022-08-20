@@ -32,7 +32,7 @@ FEATURES = [
     # ['7_gram', thesisTfIdfNgramFeatures.create_7_gram],
     # ['8_gram', thesisTfIdfNgramFeatures.create_8_gram],
 
-    # ['2_5_gram', thesisTfIdfNgramFeatures.create_2_5_gram],
+    ['2_5_gram', thesisTfIdfNgramFeatures.create_2_5_gram],
     # ['3_5_gram', thesisTfIdfNgramFeatures.create_3_5_gram],
 
     # count_vectorizer_features
@@ -343,10 +343,12 @@ def get_max_similarity_per_p(similarities):
   return res
 
 class SimilarityMatch:
-  def __init__(self, original_index, match_index, score):
+  def __init__(self, original_index, match_index, score, original_text, match_text):
     self.score = score
     self.match_index = match_index
     self.original_index = original_index
+    self.original_text = original_text
+    self.match_text = match_text
   
   def __repr__(self) -> str:
     return f'{self.original_index} -> {self.match_index}: {self.score}'
@@ -391,6 +393,7 @@ class CrossVersionSimilarity:
     path = self.__path_to_data_store()
     data_to_load = ['raw_matches', 'best_matches', 'all_matches_without_self']
 
+    print(f'loading data: {path}')
     for data in data_to_load:
       with open(os.path.join(path, f'{data}.pickle'), 'rb') as f:
         setattr(self, data, pickle.load(f))
@@ -414,7 +417,7 @@ class CrossVersionSimilarity:
       'src',
       'similarities', 
       'saved_similarities', 
-      f'{self.corpus_1.corpus_name}_{self.corpus_2.corpus_name}_{vectorizer_name}'
+      f'{self.corpus_1.name}_{self.corpus_2.name}_{vectorizer_name}'
       )
 
   def calculate(self):
@@ -427,7 +430,8 @@ class CrossVersionSimilarity:
       smltr_ordered = get_ordered_similarities_without_self(smltr)
 
       self.raw_matches.append(smltr.values.tolist())
-      self.best_matches.append(SimilarityMatch(i, smltr_ordered[0][0], smltr_ordered[0][1]))
+      best_match = SimilarityMatch(i, smltr_ordered[0][0], smltr_ordered[0][1], p, self.corpus_2.corpus[smltr_ordered[0][0]])
+      self.best_matches.append(best_match)
       
       self.all_matches_without_self.append(smltr_ordered)
 
@@ -440,18 +444,20 @@ class CrossVersionSimilarity:
     return alignment
   
   def text_alignment_df(self):
+    data = []
     columns = [
-      f'{self.corpus_1.corpus_name} index',
-      self.corpus_1.corpus_name, 
-      f'{self.corpus_2.corpus_name} index', 
-      self.corpus_2.corpus_name, 
+      f'{self.corpus_1.name} index',
+      self.corpus_1.name, 
+      f'{self.corpus_2.name} index', 
+      self.corpus_2.name, 
       'score'
       ]
-    data = []
+
     for match in self.best_matches:
       text_1 = self.corpus_1.corpus[match.original_index]
       text_2 = self.corpus_2.corpus[match.match_index]
       data.append([match.original_index, text_1, match.match_index, text_2, match.score])
+
     return pd.DataFrame(data, columns=columns)
   
   def get_matches_higher_than(self, threshold: int) -> SimilarityMatchList:
@@ -464,12 +470,12 @@ class CrossVersionSimilarity:
   def plot_max_similarity_per_paragraph(self):
     fig, ax = plt.subplots(figsize=(35, 5))
 
-    ax.plot([similarity.score for similarity in self.best_matches], label=f'{self.corpus_1.corpus_name} -> {self.corpus_2.corpus_name}')
+    ax.plot([similarity.score for similarity in self.best_matches], label=f'{self.corpus_1.name} -> {self.corpus_2.name}')
 
     ax.set_ylim([0,1])
     ax.set_xlim([-5,325])
     ax.legend()
-    plt.title(f'Max cross similarity per p: {self.corpus_1.corpus_name} -> {self.corpus_2.corpus_name}')
+    plt.title(f'Max cross similarity per p: {self.corpus_1.name} -> {self.corpus_2.name}')
     plt.show()
   
   def get_best_match_of(self, index) -> SimilarityMatch:
