@@ -393,7 +393,6 @@ class CrossVersionSimilarity:
     path = self.__path_to_data_store()
     data_to_load = ['raw_matches', 'best_matches', 'all_matches_without_self']
 
-    print(f'loading data: {path}')
     for data in data_to_load:
       with open(os.path.join(path, f'{data}.pickle'), 'rb') as f:
         setattr(self, data, pickle.load(f))

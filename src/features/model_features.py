@@ -478,3 +478,4 @@ def create_zwickau_burchard_with_processing_features_tfidf_2_5_gram_cosine_simil
     n_gram = (2,5),
     features = { 'tfidf', 'inner_mean_cosine_similarity_score' }
     )
+
