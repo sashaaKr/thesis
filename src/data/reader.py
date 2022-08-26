@@ -468,9 +468,12 @@ class BurchardCorpus:
   
   def build_corpus(self):
     corpus = []
-    for match in self.similarities_1.get_bidirectional_matches_by_threshold(0.5, self.similarities_2):
+    for match in self.similarities_1.get_bidirectional_strongly_similar(self.similarities_2):
       corpus.append(' '.join(thesisUtils.get_shared_words(match.original_text, match.match_text)))
     return corpus
+
+  # def paragraph_aligment_to_corpuses(self):
+
 
 class LeftoversCorpus:
   def __init__(self, corpus_1, corpus_2):

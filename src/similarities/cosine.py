@@ -443,6 +443,9 @@ class CrossVersionSimilarity:
     return alignment
   
   def text_alignment_df(self):
+    return self.build_alignment_df(self.best_matches)
+  
+  def build_alignment_df(self, matches):
     data = []
     columns = [
       f'{self.corpus_1.name} index',
@@ -452,13 +455,13 @@ class CrossVersionSimilarity:
       'score'
       ]
 
-    for match in self.best_matches:
+    for match in matches:
       text_1 = self.corpus_1.corpus[match.original_index]
       text_2 = self.corpus_2.corpus[match.match_index]
       data.append([match.original_index, text_1, match.match_index, text_2, match.score])
 
     return pd.DataFrame(data, columns=columns)
-  
+
   def get_matches_higher_than(self, threshold: int) -> SimilarityMatchList:
     res = SimilarityMatchList()
     for match in self.best_matches:
@@ -493,6 +496,13 @@ class CrossVersionSimilarity:
       result.append(match)
 
     return result
+
+  def get_bidirectional_strongly_similar(self, crossVersionSimilarity) -> SimilarityMatchList: 
+    return self.get_bidirectional_matches_by_threshold(0.5, crossVersionSimilarity)
+  
+  def get_bidirectional_strongly_similar_df(self, crossVersionSimilarity):
+    bidirectional_strongly_similar = self.get_bidirectional_strongly_similar(crossVersionSimilarity)
+    return self.build_alignment_df(bidirectional_strongly_similar)
 
 class CrossVersionSimilarity5Gram(CrossVersionSimilarity):
   def __init__(self, corpus_1, corpus_2):
