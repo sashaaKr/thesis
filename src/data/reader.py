@@ -388,6 +388,8 @@ def get_zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p(
 
   return zwickau_poorly_similar_with_chops_corpus_without_word_processing_long_p 
 
+def filter_short_p(corpus):
+    return list(filter(lambda x: len(x.split()) > 20, corpus))
 
 class Corpus:
   def __init__(self, path, name):
@@ -464,16 +466,41 @@ class BurchardCorpus:
     self.similarities_2 = thesisCosineSimilarity.CrossVersionSimilarity5Gram(corpus_2, corpus_1)
     self.similarities_1.load()
     self.similarities_2.load()
-    self.corpus = self.build_corpus()
+
+    corpus, matches_used_for_build = self.build_corpus()
+    self.corpus = corpus
+    self.matches_used_for_build = matches_used_for_build
   
   def build_corpus(self):
     corpus = []
+    matches_used_for_build = []
     for match in self.similarities_1.get_bidirectional_strongly_similar(self.similarities_2):
       corpus.append(' '.join(thesisUtils.get_shared_words(match.original_text, match.match_text)))
-    return corpus
+      matches_used_for_build.append(match)
+    return corpus, matches_used_for_build
+  
+  def corpus_for_predictions(self):
+    return filter_short_p(self.corpus)
 
-  # def paragraph_aligment_to_corpuses(self):
+  def with_classifier_predictions(self, wrong_predictions_1, wrong_predictions_2):
+    is_burchard = True
+    temp_corpus = [ [p, is_burchard, is_burchard] for p in self.corpus_for_predictions() ]
 
+    for prediction in wrong_predictions_1:
+      temp_corpus[prediction.index][1] = False
+    for prediction in wrong_predictions_2:
+      temp_corpus[prediction.index][2] = False
+
+    return temp_corpus
+  
+  def get_burchard_predicted_truly(self, wrong_predictions_1, wrong_predictions_2):
+    with_classifiers_result = self.with_classifier_predictions(wrong_predictions_1, wrong_predictions_2)
+    result = []
+    for index, item in enumerate(with_classifiers_result):
+      if item[1] and item[2]:
+        result.append({ 'text': item[0], 'index': index  })
+    
+    return result
 
 class LeftoversCorpus:
   def __init__(self, corpus_1, corpus_2):
@@ -486,6 +513,34 @@ class LeftoversCorpus:
     self.similarities_2.load()
     self.corpus = self.build_corpus()
 
+  def corpus_for_predictions(self):
+    return filter_short_p(self.corpus)
+
+  def corpus_with_placeholders_for_empty(self):
+    result = []
+    for p in self.corpus:
+      result.append('___EMPTY___PARAGRAPH___PLACEHOLDER' if p == '' else p)
+    return result
+
+  def with_classifier_predictions(self, wrong_predictions_1, wrong_predictions_2):
+    temp_corpus = [ [p, True, True] for p in self.corpus_for_predictions() ]
+
+    for prediction in wrong_predictions_1:
+      temp_corpus[prediction.index][1] = False
+    for prediction in wrong_predictions_2:
+      temp_corpus[prediction.index][2] = False
+
+    return temp_corpus
+
+  def leftovers_predicted_falsy(self, wrong_predictions_1, wrong_predictions_2):
+    with_classifiers_result = self.with_classifier_predictions(wrong_predictions_1, wrong_predictions_2)
+    result = []
+    for index, item in enumerate(with_classifiers_result):
+      if not item[1] and not item[2]:
+        result.append({ 'text': item[0], 'index': index  })
+    
+    return result
+
   def build_corpus(self):
     corpus = []
     strongly_similar = set(self.similarities_1.get_bidirectional_matches_by_threshold(0.5, self.similarities_2).original_indexes())
@@ -496,16 +551,13 @@ class LeftoversCorpus:
       corpus_2_p = row[self.corpus_2.name]
 
       corpus_1_p_without_shared_words = corpus_1_p
-      # corpus_2_p_without_shared_words = corpus_2_p
 
       if index in strongly_similar:
-        # for word in corpus_2_p.split(): # THIS IS HOW ZWICKAU LEFTOVERS WAS CALCULATED
         for word in corpus_1_p.split():
           match_in_corpus_1 = re.search(r'\b' + word + r'\b', corpus_1_p)
           match_in_corpus_2 = re.search(r'\b' + word + r'\b', corpus_2_p)
           if match_in_corpus_1 and match_in_corpus_2:
             corpus_1_p_without_shared_words = re.sub(r'\b' + word + r'\b', '', corpus_1_p_without_shared_words, count = 1).replace('  ', ' ').strip() 
-            # corpus_2_p_without_shared_words = re.sub(r'\b' + word + r'\b', '', corpus_2_p_without_shared_words, count = 1).replace('  ', ' ').strip() 
 
       corpus.append(corpus_1_p_without_shared_words)
 

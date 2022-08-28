@@ -278,6 +278,86 @@ def run_grid_search_cv(features_df, classifiers_to_test):
   
   return scores_df, grid_results
 
+def encode_y_if_needed(classifier_name, y):
+  return LabelEncoder().fit_transform(y) if classifier_name == 'XGBClassifier' or classifier_name == 'XGBRFClassifier' else y
+
+class WrongPrediction:
+  def __init__(self, prediction, expected, index):
+    self.prediction = int(prediction)
+    self.expected = int(expected)
+    self.index = int(index)
+  
+  def __repr__(self) -> str:
+    return f'Row {self.index} has been classified as {self.prediction}({version_label_to_human_readable(self.prediction)}) and should be {self.expected}({version_label_to_human_readable(self.expected)})'
+
+class GetModelStratifiedKFoldWrongPredictionExperiment:
+  def __init__(self, features, classifier, splits = 10):
+    self.features = features
+    self.classifier = classifier
+    self.splits = splits
+
+  def run(self):
+    self.wrong_predictions = []
+    X, y = create_X_y(self.features)
+    skf = StratifiedKFold(n_splits = self.splits)
+    
+    if self.should_encode_y():
+      y = self.encode_y(y)
+
+    for train_indexes, test_indexes in skf.split(X, y):
+      result = []
+      X_train, X_test = X.iloc[train_indexes], X.iloc[test_indexes]
+      y_train, y_test = y[train_indexes], y[test_indexes]
+
+      self.classifier.fit(X_train, y_train)
+      predicted = self.classifier.predict(X_test)
+
+      for (prediction, label, index) in zip(predicted, y_test, test_indexes):
+        if prediction != label:
+          index_in_text =  self.features.loc[index, 'index']
+          result.append(
+            WrongPrediction(
+              self.decode_y([prediction])[0] if self.should_encode_y() else prediction,
+              self.decode_y([label])[0] if self.should_encode_y() else label,
+              index_in_text
+              )
+            )
+          
+      self.wrong_predictions.append(result)
+      print(f'score is: {self.classifier.score(X_test, y_test)}')
+
+  def get_burchard_wrong_predictions(self):
+    return self.__get_wrong_predictions_for(BURCHARD_VERSION_LABEL)
+
+  def get_london_wrong_predictions(self):
+    return self.__get_wrong_predictions_for(LONDON_VERSION_LABEL)
+
+  def get_zwickau_wrong_predictions(self):
+    return self.__get_wrong_predictions_for(ZWICKAU_VERSION_LABEL)
+
+  def __get_wrong_predictions_for(self, wrong_predictions_for):
+    result = []
+    for fold_result in self.wrong_predictions:
+      for prediction in fold_result:
+        if prediction.expected == wrong_predictions_for:
+          result.append(prediction)
+    
+    return result
+
+  def get_classifier_name(self):
+    return self.classifier.__class__.__name__
+
+  def should_encode_y(self):
+    classifier_name = self.get_classifier_name()
+    return classifier_name == 'XGBClassifier' or classifier_name == 'XGBRFClassifier'
+  
+  def encode_y(self, y):
+    self.encoder = LabelEncoder().fit(y) 
+    return self.encoder.transform(y)
+
+  def decode_y(self, y):
+    return self.encoder.inverse_transform(y)
+
 def get_model_wrong_prediction(*, features_df, classifier,  splits = 10):
   results = []
   X, y = create_X_y(features_df)
@@ -291,6 +371,9 @@ def get_model_wrong_prediction(*, features_df, classifier,  splits = 10):
     X_train, X_test = X.iloc[train_indexes], X.iloc[test_indexes]
     y_train, y_test = y[train_indexes], y[test_indexes]
 
+    y_train = encode_y_if_needed(classifier.__class__.__name__, y_train)
+    y_test = encode_y_if_needed(classifier.__class__.__name__, y_test)
+
     classifier.fit(X_train, y_train)
     predicted = classifier.predict(X_test)
 
@@ -298,7 +381,8 @@ def get_model_wrong_prediction(*, features_df, classifier,  splits = 10):
       if prediction != label:
         index_in_text =  features_df.loc[index, 'index']
         print('Row', index_in_text, 'has been classified as ', prediction, 'and should be ', label)
-        result.append((prediction, label, index_in_text))
+        # result.append((prediction, label, index_in_text))
+        result.append(WrongPrediction(prediction, label, index_in_text))
     
     results.append(result)
     print(f'score is: {classifier.score(X_test, y_test)}')

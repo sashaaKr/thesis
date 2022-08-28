@@ -49,3 +49,6 @@ def get_shared_words(text1, text2):
       shared_words.append(word)
   
   return shared_words
+
+def flatten(arr):
+  return [item for sublist in arr for item in sublist] 
