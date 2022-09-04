@@ -111,14 +111,14 @@ def cleanup(t, word_replacements = True):
 
 
 def tokenize_text(raw_text):
-    lowered_text = raw_text.lower()
-    tokenizer = LineTokenizer('latin')
+  lowered_text = raw_text.lower()
+  tokenizer = LineTokenizer('latin')
 
-    # without that rule: Mons Bethulie Inde ad 3 leucis est mons Bethulie, ubi Iudit occidit Holofernem.  Qui mons per totam fere Galileam videtur, pulcher valde et firmus.
-    # will be distinguished as 2 lines
-    lowered_text = lowered_text.replace(" ", "")
+  # without that rule: Mons Bethulie Inde ad 3 leucis est mons Bethulie, ubi Iudit occidit Holofernem.  Qui mons per totam fere Galileam videtur, pulcher valde et firmus.
+  # will be distinguished as 2 lines
+  lowered_text = lowered_text.replace(" ", "")
 
-    return tokenizer.tokenize(lowered_text)
+  return tokenizer.tokenize(lowered_text)
 
 def create_corpus_by_line(raw_text):
   return [ cleanup(t) for t in tokenize_text(raw_text) ]
@@ -127,7 +127,7 @@ def create_corpus_by_line_without_word_replacements(raw_text):
   return [ cleanup(t, word_replacements = False) for t in tokenize_text(raw_text) ]
 
 def create_corpus_by_2_sentences(raw_text):
-    return create_corpus_by_n_sentences(raw_text, 2)
+  return create_corpus_by_n_sentences(raw_text, 2)
 
 def create_corpus_by_3_sentences(raw_text):
     return create_corpus_by_n_sentences(raw_text, 3)
@@ -145,31 +145,31 @@ def create_corpus_by_3_sentences(raw_text):
     # return [ cleanup(t) for t in corpus_limited_by_lenght ]
 
 def create_corpus_by_n_sentences(raw_text, n):
-    corpus_by_line = tokenize_text(raw_text)
+  corpus_by_line = tokenize_text(raw_text)
 
-    corpus_limited_by_lenght = []
-    for line in corpus_by_line:
-        line_by_sentences = sent_tokenize(line)
-        if len(line_by_sentences) > 2 * n:
-            chunks = list(thesisUtils.chunks(line_by_sentences, 3))
-            for c in chunks:
-                corpus_limited_by_lenght.append(" ".join(c))
-        else: corpus_limited_by_lenght.append(line)
+  corpus_limited_by_lenght = []
+  for line in corpus_by_line:
+    line_by_sentences = sent_tokenize(line)
+    if len(line_by_sentences) > 2 * n:
+      chunks = list(thesisUtils.chunks(line_by_sentences, 3))
+      for c in chunks:
+        corpus_limited_by_lenght.append(" ".join(c))
+      else: corpus_limited_by_lenght.append(line)
 
     return [ cleanup(t) for t in corpus_limited_by_lenght ]
 
 def jvtext(text): #TODO: how it can affect style recognition?
-    replacer = latAlphabet.JVReplacer()
-    return replacer.replace(text)
+  replacer = latAlphabet.JVReplacer()
+  return replacer.replace(text)
 
 def lemmatize(tokens):
-    lemmatizer = latLemmatize.LatinBackoffLemmatizer()
-    return lemmatizer.lemmatize(tokens)
+  lemmatizer = latLemmatize.LatinBackoffLemmatizer()
+  return lemmatizer.lemmatize(tokens)
 
 def create_lemmatized_tokens(tokens):
-    lemmatized = lemmatize(tokens)
-    result = set()
-    for l in lemmatized:
-        result.add(l[1])
-    return result
+  lemmatized = lemmatize(tokens)
+  result = set()
+  for l in lemmatized:
+    result.add(l[1])
+  return result
 
