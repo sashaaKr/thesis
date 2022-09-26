@@ -1,3 +1,4 @@
+import time
 import pickle
 from statistics import mean
 import numpy as np
@@ -358,6 +359,7 @@ class GetModelStratifiedKFoldWrongPredictionExperiment:
   def decode_y(self, y):
     return self.encoder.inverse_transform(y)
 
+# DEPRECATED: use GetModelStratifiedKFoldWrongPredictionExperiment
 def get_model_wrong_prediction(*, features_df, classifier,  splits = 10):
   results = []
   X, y = create_X_y(features_df)
@@ -563,3 +565,146 @@ def create_zwickau_burchard_with_processing_features_tfidf_2_5_gram_cosine_simil
     features = { 'tfidf', 'inner_mean_cosine_similarity_score' }
     )
 
+class Model:
+  def __init__(self, classifier):
+    self.classifier = classifier
+
+  def get_classifier_name(self):
+    return self.classifier.__class__.__name__
+
+  def get_wrong_predictions(self, features_df, splits = 10):
+    self.wrong_predictions_experiment = GetModelStratifiedKFoldWrongPredictionExperiment(features_df, self.classifier, splits) 
+    self.wrong_predictions_experiment.run()
+    return self.wrong_predictions_experiment.wrong_predictions 
+
+  def run_cross_validate(self, features_df):
+    X, y = create_X_y(features_df)
+    scoring = ('precision_macro', 'recall_macro', 'f1_macro', 'f1_micro', 'f1_weighted', 'accuracy')
+    cross_validate_score = cross_validate(
+      self.classifier,
+      X,
+      LabelEncoder().fit_transform(y) if self.get_classifier_name() == 'XGBClassifier' else y,
+      cv=10,
+      scoring=scoring
+      )
+    self.cross_validate_score = cross_validate_score
+    return self.cross_validate_score
+  
+  def run_greed_search_cv(self, features_df, grid_search_params):
+    X, y = create_X_y(features_df)
+    param_grid = GridSearchCV(
+      self.classifier, 
+      grid_search_params, 
+      return_train_score = True, 
+      cv = 10, 
+      n_jobs = -1,
+    )
+
+    y = LabelEncoder().fit_transform(y) if self.get_classifier_name() == 'XGBClassifier' or self.get_classifier_name() == 'XGBRFClassifier' else y
+    param_grid.fit(X, y) 
+    self.greed_search_cv_result = param_grid
+    return self.greed_search_cv_result
+
+    # results = []
+    # X, y = create_X_y(features_df)
+
+    # # TODO: test with shuffle
+    # skf = StratifiedKFold(n_splits = splits) # TODO: add random_state
+
+    # for train_indexes, test_indexes in skf.split(X, y):
+    #   result = []
+
+    #   X_train, X_test = X.iloc[train_indexes], X.iloc[test_indexes]
+    #   y_train, y_test = y[train_indexes], y[test_indexes]
+
+    #   y_train = encode_y_if_needed(self.classifier.__class__.__name__, y_train)
+    #   y_test = encode_y_if_needed(self.classifier.__class__.__name__, y_test)
+
+    #   self.classifier.fit(X_train, y_train)
+    #   predicted = self.classifier.predict(X_test)
+
+    #   for (prediction, label, index) in zip(predicted, y_test, test_indexes):
+    #     if prediction != label:
+    #       index_in_text =  features_df.loc[index, 'index']
+    #       print('Row', index_in_text, 'has been classified as ', prediction, 'and should be ', label)
+    #       # result.append((prediction, label, index_in_text))
+    #       result.append(WrongPrediction(prediction, label, index_in_text))
+    
+    #   results.append(result)
+    #   print(f'score is: {self.classifier.score(X_test, y_test)}')
+    
+    # self.wrong_predictions = results
+    # return self.wrong_predictions
+
+class ModelsExperiment:
+  def __init__(self, features_df, experiment_name):
+    self.features_df = features_df
+    self.experiment_name = experiment_name
+
+    # TODO: add LinearRegression model
+    self.models = [
+      ( Model(DecisionTreeClassifier()), 'DecisionTreeClassifier', { 'criterion': ['gini', 'entropy'], 'max_depth': [None,4,5,6,7,8,9,10,11,12,15,20,30,40,50,70,90,120,150]} ),
+      ( Model(GaussianProcessClassifier()), 'GaussianProcessClassifier', { 'kernel': [1*RBF(), 1*DotProduct(), 1*Matern(),  1*RationalQuadratic(), 1*WhiteKernel()] } ),
+      ( Model(RandomForestClassifier()), 'RandomForestClassifier', { 
+        'n_estimators': [50, 100, 150, 200, 250, 300, 400, 500], 
+        'criterion': ['gini', 'entropy', 'log_loss'], 
+        'max_features': ['auto', 'sqrt', 'log2'], 
+        'max_depth' : [4,5,6,7,8,9,10,11,12], 
+        'random_state': [0], 
+        'max_features': ['auto', 'sqrt', 'log2']
+      }),
+      # ( Model(MLPClassifier()), 'MLPClassifier' ),
+      ( Model(GaussianNB()), 'GaussianNB', { 'var_smoothing': np.logspace(0,-9, num=100) } ),
+      ( Model(KNeighborsClassifier()), 'KNeighborsClassifier', {
+        'n_neighbors': [3,5,11,19],
+        'weights': ['uniform', 'distance'],
+        'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']
+      }),
+      ( Model(AdaBoostClassifier()), 'AdaBoostClassifier', { 'n_estimators':[5, 10, 30, 50, 100, 300, 500,1000,2000], 'learning_rate':[.001,0.01,.1, .5, 1, 2] } ),
+      ( Model(xgb.XGBClassifier()), 'XGBClassifier', {
+        'max_depth':range(3,10,2),
+        'min_child_weight':range(1,6,2),
+        'gamma':[i/10.0 for i in range(0,5)],
+      } ),
+    ]
+  
+  def run_cross_validate(self):
+    scores_df = pd.DataFrame(dtype=float)
+    scoring = ('precision_macro', 'recall_macro', 'f1_macro', 'f1_micro', 'f1_weighted', 'accuracy')
+
+    cross_validate_results = []
+    for m, classifier_name, greed_search_cv_params in self.models:
+      print(f'running: {classifier_name}')
+      start_time = time.time()
+      classifier_cross_validate_score = m.run_cross_validate(self.features_df)
+      elapsed_time = time.time() - start_time
+      print(f"Elapsed time to compute the cross validate: {elapsed_time/60:.3f} minutes")
+      cross_validate_results.append(classifier_cross_validate_score)
+      for s in scoring:
+        scores_df.loc[classifier_name, s] = classifier_cross_validate_score[f'test_{s}'].mean()
+  
+    self.cross_validation_scores = scores_df
+    self.cross_validation_results = cross_validate_results
+
+  def show_cross_validate_results(self):
+    return self.cross_validation_scores.sort_values(by=['accuracy'], ascending=False)
+
+  def get_n_best_models(self, n):
+    best_models_names = self.show_cross_validate_results().index[:n]
+    best_models = []
+    for m, name, greed_search_cv_params in self.models:
+      if name in best_models_names: best_models.append((m, name, greed_search_cv_params))
+    return best_models
+
+  def run_greed_search_cv_for_n_best_models(self, n):
+    best_models = self.get_n_best_models(n)
+    
+    self.greed_search_cv_results = [] 
+    for m, classifier_name, greed_search_cv_params in best_models:
+      print(f'running: {classifier_name}')
+      start_time = time.time()
+      greed_search_cv_result = m.run_greed_search_cv(self.features_df, greed_search_cv_params)
+      elapsed_time = time.time() - start_time
+      print(f"Elapsed time to compute the greed search cv: {elapsed_time/60:.3f} minutes")
+      self.greed_search_cv_results.append(greed_search_cv_result)
+  

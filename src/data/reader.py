@@ -30,7 +30,7 @@ ROOT = os.path.join(USER_HOME_DIR, 'thesis')
 LONG_P_THRESHOLD = 20
 
 def get_data_file_path(file_name):
-    return os.path.join(ROOT, 'full', file_name)
+  return os.path.join(ROOT, 'full', file_name)
 
 a_zwickau_file_path = get_data_file_path(ZWICKAU_FILE_NAME)
 b_london_file_path = get_data_file_path(LONDON_FILE_NAME)
@@ -399,6 +399,20 @@ class Corpus:
     self.raw_text = self.read()
     self.corpus = self.text_processing()
 
+    self.len = len(self.corpus)
+    self.total_words = self.calculate_total_words()
+    self.unique_words = self.calculate_unique_words()
+    self.avg_paragraph_len =  self.calculate_avg_paragraph_len()
+
+  def calculate_total_words(self):
+    return sum([ len(i.split()) for i in self.corpus])
+
+  def calculate_avg_paragraph_len(self):
+    return np.average([ len(i.split()) for i in self.corpus])
+
+  def calculate_unique_words(self):
+    return len(set(thesisUtils.flatten([ i.split() for i in self.corpus])))
+
   def read(self): 
     return open(self.path, encoding='utf-8').read()
   
@@ -478,6 +492,20 @@ class BurchardCorpus:
       corpus.append(' '.join(thesisUtils.get_shared_words(match.original_text, match.match_text)))
       matches_used_for_build.append(match)
     return corpus, matches_used_for_build
+  
+  def with_build_references(self):
+    result = []
+    for i, p in enumerate(self.corpus):
+      match = self.matches_used_for_build[i]
+      result.append([
+        p,
+        match.original_text,
+        match.match_text
+      ])
+    
+    return result
+
+
   
   def corpus_for_predictions(self):
     return filter_short_p(self.corpus)
@@ -562,3 +590,13 @@ class LeftoversCorpus:
       corpus.append(corpus_1_p_without_shared_words)
 
     return corpus
+
+# class ParagraphsSharedWordsRanges:
+#   def __init__(self, paragraph_1, paragraph_2):
+#     self.paragraph_1 = paragraph_1
+#     self.paragraph_2 = paragraph_2
+  
+#   def calculate(self):
+#     for word in self.paragraph_1.split():
+
+
