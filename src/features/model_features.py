@@ -98,13 +98,15 @@ def load_zwickau_burchard_vectorizer(name):
     return pickle.load(f)
 
 def create_features_df(
-  london_corpus, 
-  zwickau_corpus, 
-  burchard_corpus, 
+  *,
+  london_corpus = None, 
+  zwickau_corpus = None, 
+  burchard_corpus = None, 
   n_gram,
   features = { TFIDF_FEATURE_NAME },
   analyzer = 'char',
-  vectorizer = None
+  vectorizer = None,
+  return_vectorizer = False
   ):
   combined_corpus = []
   corpuses = []
@@ -131,7 +133,9 @@ def create_features_df(
   if TFIDF_FEATURE_NAME in features: columns = columns + vectorizer.get_feature_names()
   if INNER_MEAN_COSINE_SIMILARITY_SCORE in features: columns = columns + [INNER_MEAN_COSINE_SIMILARITY_SCORE]
 
-  return pd.DataFrame(all_features, columns=columns)
+  df = pd.DataFrame(all_features, columns=columns)
+  if return_vectorizer: return df, vectorizer
+  return df
 
 def create_X_y(features_df):
   y = features_df['corpus_version_label']
@@ -653,7 +657,7 @@ class ModelsExperiment:
         'random_state': [0], 
         'max_features': ['auto', 'sqrt', 'log2']
       }),
-      # ( Model(MLPClassifier()), 'MLPClassifier' ),
+      ( Model(MLPClassifier()), 'MLPClassifier', {} ),
       ( Model(GaussianNB()), 'GaussianNB', { 'var_smoothing': np.logspace(0,-9, num=100) } ),
       ( Model(KNeighborsClassifier()), 'KNeighborsClassifier', {
         'n_neighbors': [3,5,11,19],

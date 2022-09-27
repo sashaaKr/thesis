@@ -505,10 +505,11 @@ class BurchardCorpus:
     
     return result
 
+  def filter_short_p(self):
+    return list(filter(lambda x: len(x.split()) > LONG_P_THRESHOLD, self.corpus))
 
-  
   def corpus_for_predictions(self):
-    return filter_short_p(self.corpus)
+    return self.filter_short_p()
 
   def with_classifier_predictions(self, wrong_predictions_1, wrong_predictions_2):
     is_burchard = True
@@ -539,10 +540,16 @@ class LeftoversCorpus:
     self.similarities_2 = thesisCosineSimilarity.CrossVersionSimilarity5Gram(corpus_2, corpus_1)
     self.similarities_1.load()
     self.similarities_2.load()
-    self.corpus = self.build_corpus()
+    corpus, map_to_original = self.build_corpus()
+
+    self.corpus = corpus
+    self.map_to_original = map_to_original
 
   def corpus_for_predictions(self):
     return filter_short_p(self.corpus)
+
+  def filter_short_p(self):
+    return list(filter(lambda x: len(x.split()) > LONG_P_THRESHOLD, self.corpus))
 
   def corpus_with_placeholders_for_empty(self):
     result = []
@@ -571,6 +578,8 @@ class LeftoversCorpus:
 
   def build_corpus(self):
     corpus = []
+    map_to_original = {}
+
     strongly_similar = set(self.similarities_1.get_bidirectional_matches_by_threshold(0.5, self.similarities_2).original_indexes())
 
     for index, row in self.similarities_1.text_alignment_df().iterrows():
@@ -588,8 +597,9 @@ class LeftoversCorpus:
             corpus_1_p_without_shared_words = re.sub(r'\b' + word + r'\b', '', corpus_1_p_without_shared_words, count = 1).replace('  ', ' ').strip() 
 
       corpus.append(corpus_1_p_without_shared_words)
+      map_to_original[corpus_1_p_without_shared_words] = corpus_1_p
 
-    return corpus
+    return corpus, map_to_original
 
 # class ParagraphsSharedWordsRanges:
 #   def __init__(self, paragraph_1, paragraph_2):
