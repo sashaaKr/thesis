@@ -25,7 +25,18 @@ class TfIdfFeatures:
     doc_term_matrix = sparse_matrix.todense()
     df = pd.DataFrame(doc_term_matrix, columns = self.vectorizer.get_feature_names())
     return df
-  
+
+class TfIdf2GramCharFeatures(TfIdfFeatures):
+  def __init__(self):
+    super().__init__((2,2), 'char')
+
+class TfIdf3GramCharFeatures(TfIdfFeatures):
+  def __init__(self):
+    super().__init__((3,3), 'char')
+
+class TfIdf4GramCharFeatures(TfIdfFeatures):
+  def __init__(self):
+    super().__init__((4,4), 'char')
 class TfIdf5GramCharFeatures(TfIdfFeatures):
   def __init__(self):
     super().__init__((5,5), 'char')

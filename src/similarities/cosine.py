@@ -504,6 +504,17 @@ class CrossVersionSimilarity:
     bidirectional_strongly_similar = self.get_bidirectional_strongly_similar(crossVersionSimilarity)
     return self.build_alignment_df(bidirectional_strongly_similar)
 
+class CrossVersionSimilarity2Gram(CrossVersionSimilarity):
+  def __init__(self, corpus_1, corpus_2):
+    super().__init__(corpus_1, corpus_2, thesisTfIdfNgramFeatures.TfIdf2GramCharFeatures())
+
+class CrossVersionSimilarity3Gram(CrossVersionSimilarity):
+  def __init__(self, corpus_1, corpus_2):
+    super().__init__(corpus_1, corpus_2, thesisTfIdfNgramFeatures.TfIdf3GramCharFeatures())
+
+class CrossVersionSimilarity4Gram(CrossVersionSimilarity):
+  def __init__(self, corpus_1, corpus_2):
+    super().__init__(corpus_1, corpus_2, thesisTfIdfNgramFeatures.TfIdf4GramCharFeatures())
 class CrossVersionSimilarity5Gram(CrossVersionSimilarity):
   def __init__(self, corpus_1, corpus_2):
     super().__init__(corpus_1, corpus_2, thesisTfIdfNgramFeatures.TfIdf5GramCharFeatures())
