@@ -1,14 +1,18 @@
 from lib2to3.pgen2.pgen import DFAState
 import data.reader as dataReader
 import features.model_features as thesisModelFeatures
+from data.reader import Corpus
 
 class FeaturesFactory:
   def __init__(
     self,
     *,
-    london_corpus,
-    zwickau_corpus,
+    london_corpus: Corpus,
+    zwickau_corpus: Corpus,
     ):
+    self.london = london_corpus
+    self.zwickau = zwickau_corpus
+
     self.london_leftovers = dataReader.LeftoversCorpus(london_corpus, zwickau_corpus)
     self.zwickau_leftovers = dataReader.LeftoversCorpus(zwickau_corpus, london_corpus)
 
@@ -50,6 +54,18 @@ class FeaturesFactory:
     self.london_vs_zwickau_features_df = df
     self.london_vs_zwickau_vectorizer = vectorizer
     return self.london_vs_zwickau_features_df
+  
+  def london_original_VS_zwickau_original(self, *, n_gram = (2, 5,), features = { 'tfidf', 'inner_mean_cosine_similarity_score' }):
+    df, vectorizer = thesisModelFeatures.create_features_df(
+      london_corpus = self.london.corpus,
+      zwickau_corpus = self.zwickau.corpus,
+      n_gram = n_gram,
+      features = features,
+      return_vectorizer = True,
+      )
+    self.london_original_vs_zwickau_original_features_df = df
+    self.london_original_vs_zwickau_original_vectorizer = vectorizer
+    return self.london_original_vs_zwickau_original_features_df
 
   def london_by_burchard_by_london_VS_zwickau_vectorizer(self):
     df = thesisModelFeatures.create_features_df(

@@ -106,11 +106,12 @@ class BurchardResults:
     london_predictions_by_burchard_vs_zwickau_classifier,
     zwickau_predictions_by_burchard_vs_london_classifier,
     ):
-    self.sheet_id = '1AjK7zwT53CLma3P-uUy_zzHi2oGZvPinsOjWU7AGBfY'
+    # self.sheet_id = '1AjK7zwT53CLma3P-uUy_zzHi2oGZvPinsOjWU7AGBfY' # full report
+    self.sheet_id = '1yHIAiLzQhggD3lTXhDlaXijFlOzTM4DOxBIXZoqa4a0' # short report
 
     self.client = GoogleSheetsClient(self.sheet_id, 0, 'Burchard')
-    self.london_left_overs_client = GoogleSheetsClient(self.sheet_id, 1931837305, 'London leftovers')
-    self.zwickau_left_overs_client = GoogleSheetsClient(self.sheet_id, 482353935, 'Zwickau leftovers')
+    self.london_left_overs_client = GoogleSheetsClient(self.sheet_id, 252698650, 'London leftovers')
+    self.zwickau_left_overs_client = GoogleSheetsClient(self.sheet_id, 428320307, 'Zwickau leftovers')
 
     self.burchard_corpus = burchard_corpus
     self.london_left_overs_corpus = london_left_overs_corpus
@@ -148,25 +149,25 @@ class BurchardResults:
     self.write_zwickau_predictions_by_burchard_vs_london_classifier()
   
   def write_london_predictions_by_burchard_vs_zwickau_classifier(self):
-    self.london_left_overs_client.write(self.london_predictions_by_burchard_vs_zwickau_classifier, 'D2')
+    self.london_left_overs_client.write(self.london_predictions_by_burchard_vs_zwickau_classifier, 'E2')
 
   def write_zwickau_predictions_by_burchard_vs_london_classifier(self):
-    self.zwickau_left_overs_client.write(self.zwickau_predictions_by_burchard_vs_london_classifier, 'D2')
+    self.zwickau_left_overs_client.write(self.zwickau_predictions_by_burchard_vs_london_classifier, 'E2')
 
   def write_london_wrong_predictions(self):
     predictions = [['London'] for i in range(157)]
     for wrong_prediction in self.burchard_vs_london_london_wrong_predictions:
       predictions[wrong_prediction.index][0] = 'Burchard'
-    self.london_left_overs_client.write(predictions, 'C2')
+    self.london_left_overs_client.write(predictions, 'D2')
 
   def write_zwickau_wrong_predictions(self):
     predictions = [['Zwickau'] for i in range(146)]
     for wrong_prediction in self.burchard_vs_zwickau_zwickau_wrong_predictions:
       predictions[wrong_prediction.index][0] = 'Burchard'
-    self.zwickau_left_overs_client.write(predictions, 'C2')
+    self.zwickau_left_overs_client.write(predictions, 'D2')
 
   def build_left_overs_data(self, leftovers):
-    return [ [ i, leftovers.map_to_original[i] ] for i in  leftovers.filter_short_p() ]
+    return [ [ i, leftovers.map_to_original[i], leftovers.similarity_scores[i] ] for i in  leftovers.filter_short_p() ]
 
   def write_london_left_overs_paragraphs(self):
     self.london_left_overs_client.write(self.london_lef_overs_data, 'A2')
@@ -193,6 +194,7 @@ class BurchardResults:
         [
           'Leftovers text',
           'Original Text',
+          'Similarity score',
           'Burchard VS London classification',
           'Burchard VS Zwickau classification'
         ]
@@ -204,6 +206,7 @@ class BurchardResults:
         [
           'Letfovers text',
           'Original text',
+          'Similarity score',
           'Burchar VS Zwickau classification',
           'Burchard VS London classification'
         ]

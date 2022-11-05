@@ -647,6 +647,13 @@ class ModelsExperiment:
 
     # TODO: add LinearRegression model
     self.models = [
+      ( Model(SVC(kernel="linear", C=0.025)), 'SVM_linear', {} ),
+      ( Model(SVC(gamma=2, C=1)), 'SVM_RBF', {} ),
+      ( Model(DecisionTreeClassifier()), 'DecisionTreeClassifier', {} ),
+      ( Model(QuadraticDiscriminantAnalysis()), 'QuadraticDiscriminantAnalysis', {}),
+
+      ###################
+
       ( Model(DecisionTreeClassifier()), 'DecisionTreeClassifier', { 'criterion': ['gini', 'entropy'], 'max_depth': [None,4,5,6,7,8,9,10,11,12,15,20,30,40,50,70,90,120,150]} ),
       ( Model(GaussianProcessClassifier()), 'GaussianProcessClassifier', { 'kernel': [1*RBF(), 1*DotProduct(), 1*Matern(),  1*RationalQuadratic(), 1*WhiteKernel()] } ),
       ( Model(RandomForestClassifier()), 'RandomForestClassifier', { 

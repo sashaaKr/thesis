@@ -469,6 +469,13 @@ class CrossVersionSimilarity:
         res.append(match)
     return res
   
+  def get_matches_between(self, min_threshold: int, max_threshold: int) -> SimilarityMatchList:
+    res = SimilarityMatchList()
+    for match in self.best_matches:
+      if match.score >= min_threshold and match.score <= max_threshold:
+        res.append(match)
+    return res
+  
   def plot_max_similarity_per_paragraph(self):
     fig, ax = plt.subplots(figsize=(35, 5))
 
@@ -480,14 +487,18 @@ class CrossVersionSimilarity:
     plt.title(f'Max cross similarity per p: {self.corpus_1.name} -> {self.corpus_2.name}')
     plt.show()
   
-  def get_best_match_of(self, index) -> SimilarityMatch:
+  def get_best_match_of_index(self, index) -> SimilarityMatch:
     return self.best_matches[index]
+
+  def get_best_match_of_text(self, paragraph_text) -> SimilarityMatch:
+    index = self.corpus_1.corpus.index(paragraph_text)
+    return self.get_best_match_of_index(index)
   
   def get_bidirectional_matches_by_threshold(self, threshold, crossVersionSimilarity) -> SimilarityMatchList:
     result = SimilarityMatchList()
 
     for match in self.best_matches:
-      match_from_another_side = crossVersionSimilarity.get_best_match_of(match.match_index)
+      match_from_another_side = crossVersionSimilarity.get_best_match_of_index(match.match_index)
 
       if match.score < threshold: continue
       if match_from_another_side.score < threshold: continue

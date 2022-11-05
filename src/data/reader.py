@@ -398,6 +398,7 @@ class Corpus:
 
     self.raw_text = self.read()
     self.corpus = self.text_processing()
+    self.corpus_without_processing = self.build_corpus_without_processing()
 
     self.len = len(self.corpus)
     self.total_words = self.calculate_total_words()
@@ -471,6 +472,9 @@ class CorpusByNewLine(Corpus):
   def text_processing(self):
     return thesisCleanUp.create_corpus_by_line(thesisCleanUp.jvtext(self.raw_text))
 
+  def build_corpus_without_processing(self):
+    return thesisCleanUp.create_corpus_by_line_without_word_replacements(self.raw_text)
+
 class BurchardCorpus:
   def __init__(self, corpus_1, corpus_2):
     self.name = f'burchard_candidate_by_{corpus_1.name}_{corpus_2.name}'
@@ -540,10 +544,11 @@ class LeftoversCorpus:
     self.similarities_2 = thesisCosineSimilarity.CrossVersionSimilarity5Gram(corpus_2, corpus_1)
     self.similarities_1.load()
     self.similarities_2.load()
-    corpus, map_to_original = self.build_corpus()
+    corpus, map_to_original, similarity_scores = self.build_corpus()
 
     self.corpus = corpus
     self.map_to_original = map_to_original
+    self.similarity_scores = similarity_scores
 
   def corpus_for_predictions(self):
     return filter_short_p(self.corpus)
@@ -579,6 +584,7 @@ class LeftoversCorpus:
   def build_corpus(self):
     corpus = []
     map_to_original = {}
+    similarity_scores = {}
 
     strongly_similar = set(self.similarities_1.get_bidirectional_matches_by_threshold(0.5, self.similarities_2).original_indexes())
 
@@ -598,8 +604,9 @@ class LeftoversCorpus:
 
       corpus.append(corpus_1_p_without_shared_words)
       map_to_original[corpus_1_p_without_shared_words] = corpus_1_p
+      similarity_scores[corpus_1_p_without_shared_words] = self.similarities_1.get_best_match_of_index(index).score
 
-    return corpus, map_to_original
+    return corpus, map_to_original, similarity_scores
 
 # class ParagraphsSharedWordsRanges:
 #   def __init__(self, paragraph_1, paragraph_2):
