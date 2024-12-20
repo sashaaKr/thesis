@@ -296,20 +296,27 @@ class WrongPrediction:
     return f'Row {self.index} has been classified as {self.prediction}({version_label_to_human_readable(self.prediction)}) and should be {self.expected}({version_label_to_human_readable(self.expected)})'
 
 class GetModelStratifiedKFoldWrongPredictionExperiment:
-  def __init__(self, features, classifier, splits = 10):
+  def __init__(self, features, classifier, splits = 10, KFold = None):
     self.features = features
     self.classifier = classifier
     self.splits = splits
+    if KFold is None:
+      self.kfold = StratifiedKFold(n_splits=splits)
+    else:
+      self.kfold = KFold
 
   def run(self):
     self.wrong_predictions = []
     X, y = create_X_y(self.features)
-    skf = StratifiedKFold(n_splits = self.splits)
+    # skf = StratifiedKFold(n_splits = self.splits)
     
     if self.should_encode_y():
       y = self.encode_y(y)
 
-    for train_indexes, test_indexes in skf.split(X, y):
+    print(f'X len is: ${len(X)}')
+    iteration_index = 1
+    
+    for train_indexes, test_indexes in self.kfold.split(X, y):
       result = []
       X_train, X_test = X.iloc[train_indexes], X.iloc[test_indexes]
       y_train, y_test = y[train_indexes], y[test_indexes]
@@ -329,7 +336,8 @@ class GetModelStratifiedKFoldWrongPredictionExperiment:
             )
           
       self.wrong_predictions.append(result)
-      print(f'score is: {self.classifier.score(X_test, y_test)}')
+      print(f'${iteration_index}. score is: {self.classifier.score(X_test, y_test)}')
+      iteration_index += 1
 
   def get_burchard_wrong_predictions(self):
     return self.__get_wrong_predictions_for(BURCHARD_VERSION_LABEL)
